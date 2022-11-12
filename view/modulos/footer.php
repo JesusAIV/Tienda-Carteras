@@ -55,9 +55,10 @@
                     <div><p>CATEGORÍAS</p></div>
                     <div class="caja-footer">
                         <ul>
-                            <li>Carteras</li>
-                            <li>Morrales</li>
-                            <li>Mochilas</li>
+                            <li><a href="producto">Carteras</a></li>
+                            <li><a href="producto">Morrales</a></li>
+                            <li><a href="producto">Mochilas</a></li>
+                            <li><a href="producto">Bolsos</a></li>
                         </ul>
                     </div>
                 </div>
