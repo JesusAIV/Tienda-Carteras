@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Secular One', sans-serif;
+    /* font-family: 'Secular One', sans-serif; */
+    font-family: 'Syne', sans-serif;
+
+
 }
 *::selection{
     background-color: #54BDE0;
@@ -34,6 +39,10 @@ li{
 }
 .nav-item{
     width: 10rem;
+}
+
+.nav-item a{
+    font-weight: 600;
 }
 
 
