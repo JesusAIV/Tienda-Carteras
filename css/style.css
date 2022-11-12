@@ -113,3 +113,10 @@ li{
 hr{
     margin: 1rem 0;
 }
+
+
+/* PÁGINA TIENDAS */
+.tiendas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
