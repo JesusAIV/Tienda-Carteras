@@ -11,6 +11,14 @@
     <!-- Header -->
     <header>
         <!-- Barra de navegación -->
+        <section class="contacto">
+            <p>
+                Horario de atencion - Lunes a Sábado de 6:00 AM a 1:00 PM
+            </p>
+            <P>
+                +51 939 304 773
+            </P>
+        </section>
         <nav class="navbar navbar-center">
             <div class="navbar-center">
                 <img style="margin-right: 1rem;" src="img/png/bolso.png" alt="">
