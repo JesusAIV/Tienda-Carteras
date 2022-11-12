@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <?php include "./modulos/header.php" ?>
 
     <?php include "./modulos/footer.php" ?>
