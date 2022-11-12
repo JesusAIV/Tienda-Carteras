@@ -22,12 +22,12 @@
         <div class="cuenta">
             <div class="cuenta-iniciarSesion">
                 <a href=""><h2>Iniciar sesion  /  Registrarse</h2></a>
-                <img src="../../img/svg/user.svg" alt="user">
+                <img src="./img/svg/user.svg" alt="user">
             </div>
         </div>
 
         <div class="bolsa">
-            <img src="../../img/svg/bag.svg" alt="bolsa">
+            <img src="./img/svg/bag.svg" alt="bolsa">
             <div class="separador"></div>
             .
         </div>
