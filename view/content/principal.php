@@ -1,2 +1,8 @@
+<section>
+    <p>
+        Horario de atención - Lunes a Sánado 
+    </p>
+    <p>
 
-<h1> Hola </h1>
+    </p>
+</section>
