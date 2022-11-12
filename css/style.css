@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Secular One', sans-serif;
+}
+*::selection{
+    background-color: #54BDE0;
+    color: #000;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* Barra de navegación */
+.navbar{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-color: #AC78F4;
+}
+.navbar a{
+    color: #ffffff;
+}
+.navbar-center{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-item{
+    width: 10rem;
+}
+
+
+/* Footer */
+.footer{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-color: #AC78F4;
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    padding: 1rem 5rem;
+}
+.footer a{
+    color: #ffffff;
+}
+.footer-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer-logo{
+    font-size: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.logo-img{
+    width: 30px;
+}
+.footer-puntos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.caja-footer{
+    margin-top: 1rem;
+    line-height: 2;
+}
+.redes-sociales{
+    display: flex;
+    align-items: center;
+}
+.redes-sociales a{
+    margin-right: 1rem;
+}
+.derechos-reservados{
+    text-align: center;
+}
+hr{
+    margin: 1rem 0;
+}
