@@ -20,7 +20,7 @@
         else:
     ?>
 
-    <div class="">
+    <div class="main">
         <?php require_once $vistas;?>
     </div>
 
