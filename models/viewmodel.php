@@ -7,10 +7,10 @@
                 if(is_file("./view/content/".$views.".php")){
                     $contenido = "./view/content/".$views.".php";
                 }else{
-                    $contenido = "login";
+                    $contenido = "principal";
                 }
             }else{
-                $contenido = "login";
+                $contenido = "principal";
             }
             return $contenido;
         }

@@ -9,8 +9,25 @@
 </head>
 <body>
 
-    <?php include "./modulos/header.php" ?>
+    <?php include "modulos/header.php"; ?>
+    <?php
+        require_once "./controller/viewcontroller.php";
+        $view = new viewcontroller();
+        $vistas = $view -> obtenervistacontrolador();
 
-    <?php include "./modulos/footer.php" ?>
+        if($vistas == "principal"):
+            require_once "./view/content/principal.php";
+        else:
+    ?>
+
+    <div class="">
+        <?php require_once $vistas;?>
+    </div>
+
+    <?php
+        endif;
+    ?>
+
+    <?php include "modulos/footer.php"; ?>
 </body>
 </html>
