@@ -25,7 +25,13 @@
                 <img src="../../img/svg/user.svg" alt="user">
             </div>
         </div>
-        
+
+        <div class="bolsa">
+            <img src="../../img/svg/bag.svg" alt="bolsa">
+            <div class="separador"></div>
+            .
+        </div>
+
     </section>
 
     <!-- Barra de navegación -->
