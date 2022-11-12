@@ -44,9 +44,9 @@
                     <div><p>PÁGINAS</p></div>
                     <div class="caja-footer">
                         <ul>
-                            <li>¿Quiénes somos?</li>
-                            <li>Nuestras tiendas</li>
-                            <li>Contacto</li>
+                            <li><a>¿Quiénes somos?</a></li>
+                            <li><a href="tiendas">Nuestras tiendas</a></li>
+                            <li><a>Contacto</a></li>
                         </ul>
                     </div>
                 </div>
