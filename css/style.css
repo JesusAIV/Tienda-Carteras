@@ -84,7 +84,6 @@ li{
 /* Footer */
 .footer{
     width: 100%;
-    height: auto;
     padding: 1rem;
     background-color: #AC78F4;
     color: #ffffff;
@@ -132,4 +131,7 @@ hr{
 .tiendas{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.tiendas__info{
+
 }
