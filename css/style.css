@@ -16,6 +16,14 @@
     background-color: #54BDE0;
     color: #000;
 }
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+.main{
+    padding: 1em;
+}
 a{
     text-decoration: none;
 }
