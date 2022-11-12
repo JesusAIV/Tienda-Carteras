@@ -12,17 +12,23 @@
         </div>
     </section>
 
-    <!-- Logo -->
-    <section class="logo">
-        <div class="">
-            <img style="margin-right: 1rem;" src="img/png/bolso.png" alt="Logo">
-            <a href="">
-                <h1>Confecciones Milagros</h1>
-            </a>
+    <!-- Logo/Inicar sesion/Bolsa -->
+    <section class="container">
+        <div class="logo">
+            <img class="logo-img" style="margin-right: 1rem;" src="img/png/bolso.png" alt="Logo">
+            <a class="logo-enlace" href="#">Confecciones Milagros</a>
         </div>
-    </section>
-    <!-- Barra de navegación -->
 
+        <div class="cuenta">
+            <div class="cuenta-iniciarSesion">
+                <a href=""><h2>Iniciar sesion  /  Registrarse</h2></a>
+                <img src="../../img/svg/user.svg" alt="user">
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-center">
         <div>
             <ul class="navbar-center">
