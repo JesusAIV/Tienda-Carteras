@@ -47,10 +47,15 @@
     <nav class="navbar navbar-center">
         <div>
             <ul class="navbar-center">
-                <li class="nav-item"><a href="">NOSOTROS</a></li>
-                <li class="nav-item"><a href="">CONTACTO</a></li>
-                <li class="nav-item"><a href="">CATEGORIAS</a></li>
+                <li class="nav-item"><a href="">CARTERAS</a></li>
+                <li class="nav-item"><a href="">BOLSOS</a></li>
+                <li class="nav-item"><a href="">MOCHILAS</a></li>
+                <li class="nav-item"><a href="">MORRALES</a></li>
             </ul>
+        </div>
+        <div class="search">
+            <input class="search-input" type="text" name="buscarProducto" id="buscarProducto" placeholder="Buscar producto">
+            <img class="search-icon" src="./img/svg/search.svg" alt="search">
         </div>
     </nav>
 </header>
