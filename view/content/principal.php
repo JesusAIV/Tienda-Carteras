@@ -119,4 +119,7 @@
             </div>
         </div>
     </div>
+    <div class="principal__opiniones">
+
+    </div>
 </div>
