@@ -47,4 +47,76 @@
             </div>
         </div>
     </div>
+    <div class="principal__ofrece">
+        <div class="ofrece__opcion">
+            <div class="oferece__title">
+                <p>CONFECCIONES MILAGROS TE OFRECE</p>
+            </div>
+            <div class="ofrece__opcion--grid">
+                <div>
+                    <div class="opcion--center">
+                        <img src="./img/svg/card.svg" alt="">
+                    </div>
+                    <div class="opcion__parrafo">
+                        <p>Pagos 100% seguros</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="opcion--center">
+                        <img src="./img/svg/camion.svg" alt="">
+                    </div>
+                    <div class="opcion__parrafo">
+                        <p>Envíos a domicilio</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="opcion--center">
+                        <img src="./img/svg/recojo.svg" alt="">
+                    </div>
+                    <div class="opcion__parrafo">
+                        <p>Recojo en tienda</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="opcion--center">
+                        <img src="./img/svg/atencioncliente.svg" alt="">
+                    </div>
+                    <div class="opcion__parrafo">
+                        <p>Atención al cliente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ofrece__opcion">
+            <div class="oferece__title">
+                <p>Métodos de pago</p>
+            </div>
+            <div class="opcion__pago--grid">
+                <div>
+                    <div class="opcion--center">
+                        <img src="./img/svg/yape.svg" alt="">
+                    </div>
+                    <div class="opcion__parrafo">
+                        <p>Yape</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="opcion--center">
+                        <img src="./img/svg/efectivo.svg" alt="">
+                    </div>
+                    <div class="opcion__parrafo">
+                        <p>Efectivo</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="opcion--center">
+                        <img src="./img/svg/dtbancaria.svg" alt="">
+                    </div>
+                    <div class="opcion__parrafo">
+                        <p>Depósito/Transferecia Bancaria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
