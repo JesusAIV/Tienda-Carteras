@@ -15,21 +15,31 @@
     <!-- Logo/Inicar sesion/Bolsa -->
     <section class="container">
         <div class="logo">
-            <img class="logo-img" style="margin-right: 1rem;" src="img/png/bolso.png" alt="Logo">
+            <img class="logo-img--header" src="img/png/bolso.png" alt="Logo">
             <a class="logo-enlace" href="#">Confecciones Milagros</a>
         </div>
 
         <div class="cuenta">
-            <div class="cuenta-iniciarSesion">
-                <a href=""><h2>Iniciar sesion  /  Registrarse</h2></a>
+            <a class="cuenta-iniciarSesion" href="">
+                <h2>Iniciar sesion / Registrarse</h2>
                 <img src="./img/svg/user.svg" alt="user">
-            </div>
+            </a>
         </div>
 
         <div class="bolsa">
-            <img src="./img/svg/bag.svg" alt="bolsa">
+            <div class="icon-container">
+                <a class="icon-enlace" href="">
+                    <img src="./img/svg/bag.svg" alt="bolsa">
+                    <p>bolsa</p>
+                </a>
+            </div>
             <div class="separador"></div>
-            .
+            <div class="precio-container">
+                <a href="#">
+                    <p>s/000.00</p>
+                    <p>0 productos</p>
+                </a>
+            </div>
         </div>
 
     </section>

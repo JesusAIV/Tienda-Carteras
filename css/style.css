@@ -53,8 +53,53 @@ li{
 /* Logo/Inicar sesion/Bolsa */
 .container{
     width: 100%;
-    height: 60px;
+    height: 40%;
     background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin: 0 0 0 30px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img--header{
+    width: 50px;
+}
+
+.logo-enlace{
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.cuenta{
+    width: 18%;
+}
+
+.cuenta-iniciarSesion{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bolsa{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-container::after{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+    display: block;
+    position: relative;
+    left: 50px;
 }
 
 /* Barra de navegación */
