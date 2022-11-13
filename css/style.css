@@ -269,14 +269,9 @@ hr{
 
 /* Whatsapp */
 .whatsapp{
-    position: absolute;
-    top: -70px;
-    right: 10px;
-}
-.whatsapp a{
-    position: relative;
-}
-.whatsapp img{
-    width: 50px;
+    position: fixed;
     z-index: 5;
+    right: -35px;
+    bottom: 10px;
+    width: 100px;
 }
