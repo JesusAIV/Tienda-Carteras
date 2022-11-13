@@ -18,8 +18,7 @@
         $vistas = $view -> obtenervistacontrolador();
 
         if($vistas == "principal"):
-            require_once "./view/content/principal.php";
-        else:
+            $vistas = "./view/content/principal.php";
     ?>
 
     <div class="main">
