@@ -55,7 +55,9 @@
         </div>
         <div class="search">
             <input class="search-input" type="text" name="buscarProducto" id="buscarProducto" placeholder="Buscar producto">
-            <img class="search-icon" src="./img/svg/search.svg" alt="search">
+            <button class="search-boton">
+                <img class="search-icon" src="./img/svg/search.svg" alt="search" name="buscar" id="buscar">
+            </button>
         </div>
     </nav>
 </header>

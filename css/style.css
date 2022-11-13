@@ -31,6 +31,11 @@ li{
     list-style: none;
 }
 
+header{
+    /* position: fixed; */
+    width: 100%;
+}
+
 /* Horario de Atencion */
 .horario{
     width: 100%;
@@ -139,7 +144,7 @@ li{
 /* Barra de navegación */
 .navbar{
     width: 100%;
-    height: auto;
+    height: 50px;
     padding: 1rem;
     background-color: #AC78F4;
 }
@@ -168,7 +173,7 @@ li{
 
 .search{
     width: 35%;
-    height: 30px;
+    height: 35px;
     display: flex;
     align-items: center;
     margin: 0 50px 0 0;
@@ -176,13 +181,23 @@ li{
 
 .search-input{
     width: 100%;
-    height: 40px;
+    height: 100%;
     border: 1px solid #47148f;
     border-radius: 3px;
-    background: #eeeeee;
+    background: #fff;
     outline: none;
-    padding: 0 5px;
+    padding: 0 15px;
     font-size: 1rem;
+}
+
+.search-boton{
+    height: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 3px;
+    right: 30px;
 }
 
 /* Footer */
