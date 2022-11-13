@@ -1,6 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700&display=swap');
 
+:root{
+    --color-separador: #605c5c;
+}
 
 *{
     margin: 0;
@@ -212,10 +215,49 @@ header{
 .footer a{
     color: #ffffff;
 }
+
+.footer-datos{
+    grid-area: footer-datos;
+    margin: 0 50px 0 0;
+}
+
+.footer-siguenos{
+    grid-area: footer-siguenos;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.copy{
+    font-size: .9rem;
+    text-align: center;
+}
+
+.footer-puntos{
+    grid-area: footer-puntos;
+}
+
 .footer-center{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template: 
+        "footer-datos footer-siguenos footer-puntos"    100px
+        "footer-datos footer-siguenos footer-puntos"    auto
+        "footer-datos footer-siguenos footer-puntos"    100px /
+        500px         450px            400px
 }
+
+.footer-datos::after{
+    content: "";
+    display: block;
+    width: .1rem;
+    height: 100%;
+    background-color: var(--color-separador);
+    position: relative;
+    bottom: 175px;
+    left: 500px;
+}
+
 .footer-logo{
     font-size: 0.5rem;
     display: flex;
@@ -228,6 +270,18 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+.footer-puntos::after{
+    content: "";
+    display: block;
+    width: .1rem;
+    height: 100%;
+    background-color: var(--color-separador);
+    position: relative;
+    bottom: 0;
+    right: 300px;
+}
+
 .caja-footer{
     margin-top: 1rem;
     line-height: 2;
