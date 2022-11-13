@@ -80,6 +80,8 @@ li{
 
 .cuenta{
     width: 18%;
+    position: relative;
+    left: 300px;
 }
 
 .cuenta-iniciarSesion{
@@ -101,17 +103,37 @@ li{
 .icon-container::after{
     content: '';
     width: 1px;
-    height: 70%;
+    height: 80%;
     background-color: #000;
     display: block;
     position: relative;
-    left: 50px;
-    bottom: 50px;
+    left: 60px;
+    bottom: 40px;
 }
 
 .icon-enlace{
     display: flex;
     flex-direction: column;
+}
+
+.icon-texto{
+    font-size: .8rem;
+}
+
+.precio-container{
+    margin: auto 0;
+}
+
+.precio-enlace{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.precio-texto{
+    font-size: .8rem;
+    color: #000;
 }
 
 /* Barra de navegación */
