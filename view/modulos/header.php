@@ -29,15 +29,14 @@
         <div class="bolsa">
             <div class="icon-container">
                 <a class="icon-enlace" href="">
-                    <img src="./img/svg/bag.svg" alt="bolsa">
-                    <p>bolsa</p>
+                    <img class="icon-img" src="./img/svg/bag.svg" alt="bolsa">
+                    <p class="icon-texto">bolsa</p>
                 </a>
             </div>
-            <div class="separador"></div>
             <div class="precio-container">
-                <a href="#">
-                    <p>s/000.00</p>
-                    <p>0 productos</p>
+                <a class="precio-enlace" href="#">
+                    <p class="precio-texto">s/000.00</p>
+                    <p class="precio-texto">0 productos</p>
                 </a>
             </div>
         </div>
