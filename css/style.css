@@ -271,8 +271,8 @@ hr{
 .whatsapp{
     position: fixed;
     z-index: 5;
-    right: -35px;
-    bottom: 10px;
+    right: -5px;
+    bottom: 80px;
     width: 100px;
 }
 .whatsapp img{
