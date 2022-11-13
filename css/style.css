@@ -132,6 +132,13 @@ hr{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.tiendas__info{
-
+.tiendas__info--center{
+    display: flex;
+    align-items: center;
+}
+.tiendas__title{
+    font-weight: 700;
+}
+.tiendas__icons{
+    width: 30px;
 }
