@@ -128,6 +128,16 @@ hr{
 
 
 /* PÁGINA TIENDAS */
+.container__tiendas{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+}
+.title__tiendas p{
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
 .tiendas{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -143,8 +153,8 @@ hr{
     padding: 0.5em 0;
 }
 .tiendas__title p{
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 25px;
     padding: 0.5em 0;
 }
 .tiendas__icons{
