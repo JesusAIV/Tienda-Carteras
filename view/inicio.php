@@ -17,8 +17,9 @@
         $view = new viewcontroller();
         $vistas = $view -> obtenervistacontrolador();
 
-        if($vistas == "principal"):
+        if($vistas == "principal"){
             $vistas = "./view/content/principal.php";
+        }
     ?>
 
     <div class="main">
@@ -26,7 +27,6 @@
     </div>
 
     <?php
-        endif;
     ?>
 
     <?php include "modulos/footer.php"; ?>
