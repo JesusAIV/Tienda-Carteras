@@ -238,7 +238,7 @@ header{
     grid-template: 
         "footer-datos footer-siguenos footer-puntos"    100px
         "footer-datos footer-siguenos footer-puntos"    100px/
-        400px         550px            auto;
+        400px         auto            auto;
 }
 
 
@@ -271,7 +271,6 @@ header{
     display: flex;
     justify-content: center;
     position: relative;
-    left: 8px;
 }
 
 .redes-sociales a{
