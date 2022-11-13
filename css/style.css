@@ -80,6 +80,8 @@ li{
 
 .cuenta{
     width: 18%;
+    position: relative;
+    left: 300px;
 }
 
 .cuenta-iniciarSesion{
@@ -101,17 +103,37 @@ li{
 .icon-container::after{
     content: '';
     width: 1px;
-    height: 70%;
+    height: 80%;
     background-color: #000;
     display: block;
     position: relative;
-    left: 50px;
-    bottom: 50px;
+    left: 60px;
+    bottom: 40px;
 }
 
 .icon-enlace{
     display: flex;
     flex-direction: column;
+}
+
+.icon-texto{
+    font-size: .8rem;
+}
+
+.precio-container{
+    margin: auto 0;
+}
+
+.precio-enlace{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.precio-texto{
+    font-size: .8rem;
+    color: #000;
 }
 
 /* Barra de navegación */
@@ -121,14 +143,17 @@ li{
     padding: 1rem;
     background-color: #AC78F4;
 }
+
 .navbar a{
     color: #ffffff;
 }
+
 .navbar-center{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
+
 .nav-item{
     width: 10rem;
 }
@@ -137,6 +162,28 @@ li{
     font-weight: 600;
 }
 
+.nav-item a:hover{
+    color: #47148f;
+}
+
+.search{
+    width: 35%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin: 0 50px 0 0;
+}
+
+.search-input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #47148f;
+    border-radius: 3px;
+    background: #eeeeee;
+    outline: none;
+    padding: 0 5px;
+    font-size: 1rem;
+}
 
 /* Footer */
 .footer{
