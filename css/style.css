@@ -145,6 +145,7 @@ li{
     background-color: #AC78F4;
     color: #ffffff;
     padding: 1rem 5rem;
+    position: relative;
 }
 .footer a{
     color: #ffffff;
@@ -217,4 +218,18 @@ hr{
 .tiendas__icons{
     width: 30px;
     margin-right: 0.3em;
+}
+
+/* Whatsapp */
+.whatsapp{
+    position: absolute;
+    top: -70px;
+    right: 10px;
+}
+.whatsapp a{
+    position: relative;
+}
+.whatsapp img{
+    width: 50px;
+    z-index: 5;
 }
