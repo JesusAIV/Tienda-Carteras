@@ -26,33 +26,30 @@
 
                 <div class="footer-siguenos">
                     <p>SIGUENOS EN</p>
-                    <div class="caja-footer">
+                    <div class="caja-footer caja-footer--icons">
                         <ul class="redes-sociales">
                             <li>
                                 <a href="facebook">
-                                    <img src="img/svg/fb.svg" alt="facebook">
+                                    <img class="redes-icon" src="img/svg/fb.svg" alt="facebook">
                                 </a>
                             </li>
                             <li>
                                 <a href="instagram">
-                                    <img src="img/svg/ig.svg" alt="">
+                                    <img class="redes-icon" src="img/svg/ig.svg" alt="">
                                 </a>
                             </li>
                             <li>
                                 <a href="tiktok">
-                                    <img src="img/svg/tiktok.svg" alt="">
+                                    <img class="redes-icon" src="img/svg/tiktok.svg" alt="">
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <p class="copy">Copyright © 2022 Confecciones Milagros - Todos los derechos reservados</p>
                 </div>
 
                 <div class="footer-puntos">
-                    <div>
-                        <div>
-                            <p>PÁGINAS</p>
-                        </div>
+                    <div class="footer-paginas">
+                        <p>PÁGINAS</p>
                         <div class="caja-footer">
                             <ul>
                                 <li><a href="quienessomos">¿Quiénes somos?</a></li>
@@ -62,7 +59,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div>
+                    <div class="footer-categorias">
                         <div>
                             <p>CATEGORÍAS</p>
                         </div>
