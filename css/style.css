@@ -270,7 +270,6 @@ header{
 .redes-sociales{
     display: flex;
     justify-content: center;
-    position: relative;
 }
 
 .redes-sociales a{
