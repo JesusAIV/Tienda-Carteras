@@ -1,24 +1,26 @@
 <div class="tiendas">
     <div class="tiendas__info">
-        <div class="tiendas__title">
-            <p>LIMA</p>
-        </div>
-        <div>
-            <div class="tiendas__info--center">
-                <img class="tiendas__icons" src="./img/svg/mapa.svg" alt="">
-                <span>Distrito: La Victoria Lima - Lima</span>
+        <div class="tiendas__infocontainer">
+            <div class="tiendas__title">
+                <p>LIMA</p>
             </div>
-            <div class="tiendas__info--center">
-                <img class="tiendas__icons" src="./img/svg/store.svg" alt="">
-                <p>Tienda N° 19</p>
-            </div>
-            <div class="tiendas__info--center">
-                <img class="tiendas__icons" src="./img/svg/mapa.svg" alt="">
-                <p>Jr. Renovación N° 104, Cercado de Lima 15033</p>
-            </div>
-            <div class="tiendas__info--center">
-                <img class="tiendas__icons" src="./img/svg/calendar.svg" alt="">
-                <span>Lunes, Martes, Miércoles, Jueves, Viernes y Sábado</span>
+            <div>
+                <div class="tiendas__info--center">
+                    <img class="tiendas__icons" src="./img/svg/mapa.svg" alt="">
+                    <span>Distrito: La Victoria Lima - Lima</span>
+                </div>
+                <div class="tiendas__info--center">
+                    <img class="tiendas__icons" src="./img/svg/store.svg" alt="">
+                    <p>Tienda N° 19</p>
+                </div>
+                <div class="tiendas__info--center">
+                    <img class="tiendas__icons" src="./img/svg/mapa.svg" alt="">
+                    <p>Jr. Renovación N° 104, Cercado de Lima 15033</p>
+                </div>
+                <div class="tiendas__info--center">
+                    <img class="tiendas__icons" src="./img/svg/calendar.svg" alt="">
+                    <span>Lunes, Martes, Miércoles, Jueves, Viernes y Sábado</span>
+                </div>
             </div>
         </div>
     </div>

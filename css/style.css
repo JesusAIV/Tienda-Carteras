@@ -132,6 +132,11 @@ hr{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.tiendas__info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .tiendas__info--center{
     display: flex;
     align-items: center;
