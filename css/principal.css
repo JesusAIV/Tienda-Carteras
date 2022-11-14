@@ -136,6 +136,16 @@
     height: 400px;
 }
 
+.product__enlace{
+    width: 100%;
+    height: 100%;
+}
+
+.product__img{
+    width: 100%;
+    height: 100%;
+}
+
 /* PRINCIPAL OFRECE */
 .principal__ofrece{
     margin: 3em 0;

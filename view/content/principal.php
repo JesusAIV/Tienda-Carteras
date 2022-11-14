@@ -34,16 +34,28 @@
         </div>
         <div class="principal__productos--lista">
             <div class="product__list--center">
-                <p>CARTERAS</p>
+                <a class="product__enlace" href="">
+                    <img class="product__img" src="./img/jpg/cartera.jpg" alt="Carteras">
+                    <p>CARTERAS</p>
+                </a>
             </div>
             <div class="product__list--center">
-                <p>MORRALES</p>
+                <a class="product__enlace" href="">
+                    <img class="product__img" src="./img/jpg/cartera.jpg" alt="Carteras">
+                    <p>MORRALES</p>
+                </a>
             </div>
             <div class="product__list--center">
-                <p>MOCHILAS</p>
+                <a class="product__enlace" href="">
+                    <img class="product__img" src="./img/jpg/cartera.jpg" alt="Carteras">
+                    <p>MOCHILAS</p>
+                </a>
             </div>
             <div class="product__list--center">
-                <p>BOLSOS</p>
+                <a class="product__enlace" href="">
+                    <img class="product__img" src="./img/jpg/cartera.jpg" alt="Carteras">
+                    <p>BOLSOS</p>
+                </a>
             </div>
         </div>
     </div>

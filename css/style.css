@@ -35,8 +35,13 @@ li{
 }
 
 header{
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
+    height: 150px;
+    transition: .5s;
+    box-sizing: border-box;
 }
 
 /* Horario de Atencion */
@@ -207,7 +212,7 @@ header{
 .footer{
     width: 100%;
     padding: 1rem;
-    background-color: #AC78F4;
+    background-color: #33086f;
     color: #ffffff;
     padding: 1rem 5rem;
     position: relative;
@@ -228,26 +233,6 @@ header{
     text-align: center;
 }
 
-.footer-siguenos::before{
-    content: "";
-    display: block;
-    width: .1rem;
-    height: 90%;
-    background-color: var(--color-separador);
-    right: 200px;
-    bottom: 100px;
-}
-
-.footer-siguenos::after{
-    content: "";
-    display: block;
-    width: .1rem;
-    height: 90%;
-    background-color: var(--color-separador);
-    left: 300px;
-    bottom: 100px;
-}
-
 .copy{
     font-size: .9rem;
     text-align: center;
@@ -256,9 +241,9 @@ header{
 .footer-center{
     display: grid;
     grid-template: 
-        "footer-datos footer-siguenos footer-puntos"    100px
-        "footer-datos footer-siguenos footer-puntos"    100px/
-        400px         auto            auto;
+        "footer-datos footer-siguenos footer-puntos"    auto
+        "footer-datos footer-siguenos footer-puntos"    auto/
+        500px         auto            300px;
 }
 
 
