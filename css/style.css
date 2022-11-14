@@ -26,6 +26,7 @@ body{
 }
 .main{
     padding: 1em;
+    margin-top: 150px;
 }
 a{
     text-decoration: none;
@@ -42,6 +43,7 @@ header{
     height: 150px;
     transition: .5s;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 /* Horario de Atencion */
