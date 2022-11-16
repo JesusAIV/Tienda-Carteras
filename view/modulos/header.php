@@ -16,13 +16,13 @@
     <section class="container">
         <div class="logo">
             <img class="logo-img--header" src="img/png/bolso.png" alt="Logo">
-            <a class="logo-enlace" href="/">Confecciones Milagros</a>
+            <a class="logo-enlace" href="">Confecciones Milagros</a>
         </div>
 
         <div class="cuenta">
             <a class="cuenta-iniciarSesion" href="">
-                <h2>Iniciar sesion / Registrarse</h2>
-                <img src="./img/svg/user.svg" alt="user">
+                <h2 class="cuenta__titulo">Iniciar sesion / Registrarse</h2>
+                <img class="cuenta__img" src="./img/svg/user.svg" alt="user">
             </a>
         </div>
 
