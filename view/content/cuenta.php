@@ -63,7 +63,6 @@
                             <div class="button-form">
                                 <button type="submit">Registrarse</button>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
