@@ -1,0 +1,12 @@
+.cuenta-header{
+    color: #ffffff;
+    background-color: #864DD6;
+    text-align: center;
+    width: 100%;
+}
+.cuenta-header-title p{
+    font-size: 2.5em;
+}
+.cuenta-header-subtitle p{
+    font-size: 1.5em;
+}
