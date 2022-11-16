@@ -41,7 +41,7 @@
             </div>
             <div class="product__list--center">
                 <a class="product__enlace" href="">
-                    <img class="product__img" src="./img/jpg/cartera.jpg" alt="Carteras">
+                    <img class="product__img" src="./img/jpg/morrales.jpg" alt="Carteras">
                     <p>MORRALES</p>
                 </a>
             </div>
@@ -53,7 +53,7 @@
             </div>
             <div class="product__list--center">
                 <a class="product__enlace" href="">
-                    <img class="product__img" src="./img/jpg/cartera.jpg" alt="Carteras">
+                    <img class="product__img" src="./img/jpg/bolso.jpg" alt="Carteras">
                     <p>BOLSOS</p>
                 </a>
             </div>

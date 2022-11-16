@@ -34,16 +34,6 @@ li{
     list-style: none;
 }
 
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 150px;
-    transition: .5s;
-    box-sizing: border-box;
-}
-
 /* Horario de Atencion */
 .horario{
     width: 100%;
