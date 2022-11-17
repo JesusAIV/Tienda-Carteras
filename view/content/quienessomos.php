@@ -6,11 +6,11 @@
             <p class="hero__quienesSomos__paragraph">
                 Confecciones Milagros lleva ya mas de 7 años de experiencia en la industria textil y confeccione. Nos
                 caracterizamos por ofrecer a nuestro público:
-                <ul class="hero__quienesSomos__items">
-                    <li class="hero__quienesSomos__item">Productos de alta calidad</li>
-                    <li class="hero__quienesSomos__item">Finos accesorios</li>
-                    <li class="hero__quienesSomos__item">Diseños únicos</li>
-                </ul>
+            <ul class="hero__quienesSomos__items">
+                <li class="hero__quienesSomos__item">Productos de alta calidad</li>
+                <li class="hero__quienesSomos__item">Finos accesorios</li>
+                <li class="hero__quienesSomos__item">Diseños únicos</li>
+            </ul>
             </p>
         </div>
 
@@ -35,8 +35,7 @@
             <div class="hero__empresa__vision">
                 <h2 class="hero__empresa__vision__title">VISION</h2>
                 <p class="hero__empresa__vision__paragraph">
-                    Satisfacer a nuestros clientes con productos de calidad y
-                    diseños exclusivos, superando siempre sus expectativas.
+                    Ser reconocidos a nivel nacional como la marca líder en confecciones y moda.
                 </p>
             </div>
         </div>

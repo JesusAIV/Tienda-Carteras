@@ -1,3 +1,32 @@
+:root{
+    --bg-container: #3333332e;
+}
+
+.hero{
+    width: 90%;
+    background-color: var(--bg-container);
+    height: auto;
+    margin: 0 auto;
+    padding: 1.3em 0;
+}
+
+.hero__title{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.hero__quienesSomos,
+.hero__nuestrosProductos,
+.hero__empresa{
+    margin: 1.1em 2em;
+}
+
+.hero__quienesSomos__title{
+    font-size: 1.1em;
+    padding: 1.1em 0;
+    font-weight: 700;
+}
+
 .hero__quienesSomos__item{
     list-style: disc;
 }

@@ -7,6 +7,7 @@
     <title>Confecciones Milagros</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/quienesSomos.css">
     <script defer src="js/main.js"></script>
 </head>
 <body>
