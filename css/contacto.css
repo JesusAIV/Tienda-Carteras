@@ -15,7 +15,7 @@
     "formContacto formContacto infoContacto infoContacto"
     "formContacto formContacto infoContacto infoContacto";
     border-radius: 20px 20px 0 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .mapa{
@@ -27,13 +27,14 @@
 
 .contacto__formulario{
     grid-area: formContacto;
-    /* background-color: #fff; */
+    box-shadow: -8px 50px 30px 30px #d0cdcd66;
 }
 
 .mapa__top{
     width: 100%;
     height: 100%;
     border: none;
+    border-radius: 20px 20px 0 0;
 }
 
 .contacto__information{
@@ -49,6 +50,10 @@
 .contacto__title{
     font-size: 1.3em;
     padding: 0 0 1em 0;
+}
+
+.contacto__title--color{
+    color: #fff;
 }
 
 .contacto__paragraph,
@@ -130,7 +135,7 @@
     justify-content: start;
     margin: 0 auto;
     min-height: max-content;
-    background-image: linear-gradient(#0000003e, #00000087),
+    background-image: linear-gradient(to bottom, #000000ee, #0000007b),
     url('../img/jpg/fondo.jpg');
     background-size: cover;
 }
@@ -183,8 +188,10 @@
 }
 
 .figure__link__icon{
-    width: 30px;
+    font-size: 1.6em;
+    color: #fff;
 }
+
 
 
 
