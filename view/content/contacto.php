@@ -46,40 +46,43 @@
     <section class="contacto__information">
         <h2 class="contacto__title">INFORMACIÓN DE CONTACTO</h2>
 
-        <div class="group">
-            <label for="direccion" class="group__label">Dirección</label>
-            <span class="group__leyend">Centro comercial Luna Pizarro, Lima, La Victoria 15033</span>
-        </div>
-
-        <div class="group">
-            <label for="celular" class="group__label">Celular</label>
-            <a href="https://api.whatsapp.com/send?phone=+51939304773&text=Hola, me gustaría comprar tu producto!" target="_blank">+51939304773</a>
-        </div>
-
-        <div class="group">
-            <label for="correo" class="group__label">Correo</label>
-            <a href="mailto:confeccionesmilagros@gmail.com">confeccionesmilagros@gmail.com</a>
+        <div class="contacto__body">
+            <div class="group">
+                <label for="direccion" class="group__label group__label--info">Dirección</label>
+                <span class="group__leyend">Centro comercial Luna Pizarro, Lima, La Victoria 15033</span>
+            </div>
+            
+            <div class="group">
+                <label for="celular" class="group__label group__label--info">Celular</label>
+                <a class="group__leyend" href="https://api.whatsapp.com/send?phone=+51939304773&text=Hola, me gustaría comprar tu producto!" target="_blank">+51939304773</a>
+            </div>
+            
+            <div class="group">
+                <label for="correo" class="group__label group__label--info">Correo</label>
+                <a class="group__leyend group__leyend--hover" href="mailto:confeccionesmilagros@gmail.com">confeccionesmilagros@gmail.com</a>
+            </div>
+            
         </div>
 
         <div class="redes">
-            <figure class="figure">
-                <a class="figure__link" href="#">
-                    <img class="figure__link__icon" src="./img/svg/fb_contacto.svg" alt="facebook">
-                </a>
-            </figure>
-
-            <figure class="figure">
-                <a class="figure__link" href="#">
-                    <img class="figure__link__icon" src="./img/svg/ig_contacto.svg" alt="instagram">
-                </a>
-            </figure>
-
-            <figure class="figure">
-                <a class="figure__link" href="#">
-                    <img class="figure__link__icon" src="img/svg/tiktok_contacto.svg" alt="tiktok">
-                </a>
-            </figure>
-        </div>
+                <figure class="figure">
+                    <a class="figure__link" href="#">
+                        <img class="figure__link__icon" src="./img/svg/fb_contacto.svg" alt="facebook">
+                    </a>
+                </figure>
+            
+                <figure class="figure">
+                    <a class="figure__link" href="#">
+                        <img class="figure__link__icon" src="./img/svg/ig_contacto.svg" alt="instagram">
+                    </a>
+                </figure>
+            
+                <figure class="figure">
+                    <a class="figure__link" href="#">
+                        <img class="figure__link__icon" src="img/svg/tiktok_contacto.svg" alt="tiktok">
+                    </a>
+                </figure>
+            </div>
 
     </section>
 

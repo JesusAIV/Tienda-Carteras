@@ -1,11 +1,12 @@
 :root{
     --bg-container: #3333332e;
     --borderInput-color: #8F8D8D;
+    --leyend-color: #333;
 }
 
 .main__contacto{
     width: 95%;
-    background: var(--bg-container);
+    /* background: var(--bg-container); */
     margin: 0 auto;
     display: grid;
     grid-template-areas: 
@@ -21,6 +22,7 @@
     grid-area: mapa;
     min-height: max-content;
     overflow: hidden;
+    height: 200px;
 }
 
 .contacto__formulario{
@@ -41,6 +43,7 @@
 .contacto__formulario,
 .contacto__information{
     padding: 1.1em 1.2em;
+    height: 100%;
 }
 
 .contacto__title{
@@ -111,7 +114,7 @@
 
 .group__input,
 .group__enviar{
-    height: 40px;
+    height: 50px;
 }
 
 .group__enviar{
@@ -121,17 +124,66 @@
 }
 
 .contacto__information{
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid;
+    justify-content: start;
     margin: 0 auto;
-    text-align: center;
+    min-height: max-content;
+    background-image: linear-gradient(#0000003e, #00000087),
+    url('../img/jpg/fondo.jpg');
+    background-size: cover;
+}
+
+.contacto__body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    margin-top: 2.5em;
+}
+
+.group{
+    width: 100%;
+    margin: 0 0 1.3em 0;
+}
+
+.group__label--info{
+    padding: 0;
+    color: var(--leyend-color);
+    font-weight: 700;
+}
+
+.group__label{
+    display: block;
+}
+
+.group__leyend{
+    width: 100%;
+    color: #fff;
+    font-weight: 500;
+}
+
+.group__leyend--hover::after{
+    content: "";
+    display: block;
+    width: 50%;
+    margin-top: .1em;
+}
+
+.group__leyend--hover:hover::after{
+    border-bottom: 2px solid #fff;
 }
 
 .redes{
     display: flex;
+    justify-content: center;
+    gap: 1.3em;
+}
+
+.figure__link__icon{
+    width: 30px;
 }
 
 
