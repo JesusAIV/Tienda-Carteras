@@ -34,7 +34,7 @@
         </div>
         <div class="principal__productos--lista">
             <div class="product__list--center">
-                <a class="product__enlace" href="">
+                <a class="product__enlace" href="./carteras.php">
                     <img class="product__img" src="./img/jpg/cartera.jpg" alt="Carteras">
                     <p>CARTERAS</p>
                 </a>
