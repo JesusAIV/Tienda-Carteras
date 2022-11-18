@@ -6,7 +6,6 @@
 
 .main__contacto{
     width: 95%;
-    /* background: var(--bg-container); */
     margin: 0 auto;
     display: grid;
     grid-template-areas: 
@@ -15,7 +14,6 @@
     "formContacto formContacto infoContacto infoContacto"
     "formContacto formContacto infoContacto infoContacto";
     border-radius: 20px 20px 0 0;
-    /* overflow: hidden; */
 }
 
 .mapa{
@@ -191,8 +189,3 @@
     font-size: 1.6em;
     color: #fff;
 }
-
-
-
-
-

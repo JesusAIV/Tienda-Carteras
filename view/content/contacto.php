@@ -68,21 +68,18 @@
             <figure class="figure">
                 <a class="figure__link" href="#">
                     <i class="figure__link__icon fa-brands fa-facebook-f"></i>
-                    <!-- <img class="" src="./img/svg/fb_contacto.svg" alt="facebook"> -->
                 </a>
             </figure>
 
             <figure class="figure">
                 <a class="figure__link" href="#">
                     <i class="figure__link__icon fa-brands fa-instagram"></i>
-                    <!-- <img class="" src="./img/svg/ig_contacto.svg" alt="instagram"> -->
                 </a>
             </figure>
 
             <figure class="figure">
                 <a class="figure__link" href="#">
                     <i class="figure__link__icon fa-brands fa-tiktok"></i>
-                    <!-- <img class="" src="img/svg/tiktok_contacto.svg" alt="tiktok"> -->
                 </a>
             </figure>
         </div>
