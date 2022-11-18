@@ -1,1 +1,139 @@
+:root{
+    --bg-container: #3333332e;
+    --borderInput-color: #8F8D8D;
+}
+
+.main__contacto{
+    width: 95%;
+    background: var(--bg-container);
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "mapa         mapa         mapa         mapa"
+    "mapa         mapa         mapa         mapa"
+    "formContacto formContacto infoContacto infoContacto"
+    "formContacto formContacto infoContacto infoContacto";
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.mapa{
+    grid-area: mapa;
+    min-height: max-content;
+    overflow: hidden;
+}
+
+.contacto__formulario{
+    grid-area: formContacto;
+    /* background-color: #fff; */
+}
+
+.mapa__top{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.contacto__information{
+    grid-area: infoContacto;
+}
+
+.contacto__formulario,
+.contacto__information{
+    padding: 1.1em 1.2em;
+}
+
+.contacto__title{
+    font-size: 1.3em;
+    padding: 0 0 1em 0;
+}
+
+.contacto__paragraph,
+.group__label{
+    font-size: .8em;
+    padding: 0 0 2em 0;
+}
+
+.formulario{
+    display: grid;
+    gap: 1.3em;
+    grid-template-areas: 
+    "nombres apellidos"
+    "celular correo"
+    "mensaje mensaje"
+    ".       btnEnviar";
+}
+
+.group1{
+    grid-area: nombres;
+}
+.group2{
+    grid-area: apellidos;
+}
+.group3{
+    grid-area: celular;
+}
+.group4{
+    grid-area: correo;
+}
+.group5{
+    grid-area: mensaje;
+}
+.group6{
+    grid-area: btnEnviar;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.group__input{
+    width: 100%;
+    border: 1px solid var(--borderInput-color);
+}
+
+.group__input,
+.mensaje{
+    margin: 1em 0 0 0;
+    padding: 1em 1.1em;
+    font-size: .9em;
+    
+}
+
+.mensaje{
+    width: 100%;
+}
+
+.group__input,
+.group__enviar,
+.mensaje{
+    border-radius: 4px 0 4px 0;
+    outline: none;
+}
+
+.group__input,
+.group__enviar{
+    height: 40px;
+}
+
+.group__enviar{
+    width: 50%;
+    border: 1px solid var(--borderInput-color);
+    cursor: pointer;
+}
+
+.contacto__information{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    border: 1px solid;
+    margin: 0 auto;
+}
+
+.group__leyend{
+    display: block;
+    width: 100%;
+}
+
+
+
 

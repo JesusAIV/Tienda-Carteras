@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/quienesSomos.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <script defer src="js/main.js"></script>
 </head>
 <body>
