@@ -34,13 +34,13 @@
         </div>
         <div class="principal__productos--lista">
             <div class="product__list--center">
-                <a class="product__enlace" href="./carteras.php">
+                <a class="product__enlace" href="carteras">
                     <img class="product__img" src="./img/jpg/cartera.jpg" alt="Carteras">
                     <p>CARTERAS</p>
                 </a>
             </div>
             <div class="product__list--center">
-                <a class="product__enlace" href="">
+                <a class="product__enlace" href="morrales">
                     <img class="product__img" src="./img/jpg/morrales.jpg" alt="Carteras">
                     <p>MORRALES</p>
                 </a>
