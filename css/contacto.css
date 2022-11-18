@@ -1,7 +1,7 @@
 :root{
     --bg-container: #3333332e;
     --borderInput-color: #8F8D8D;
-    --leyend-color: #333;
+    --leyend-color: #949292;
 }
 
 .main__contacto{
@@ -183,6 +183,8 @@
     display: flex;
     justify-content: center;
     gap: 1.3em;
+    position: relative;
+    bottom: 100px;
 }
 
 .figure__link__icon{
