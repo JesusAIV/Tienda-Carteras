@@ -50,7 +50,7 @@
                     <div class="card__product">
                         <picture class="product">
                             <a href="" class="product__item">
-                                <img src="" alt="" class="product__img">
+                                <img src="./img/jpg/cartera_view1.jpg" alt="" class="product__img">
                             </a>
                         </picture>
                         <h3 class="product__title">Nombre</h3>
@@ -63,7 +63,7 @@
                     <div class="card__product">
                         <picture class="product">
                             <a href="" class="product__item">
-                                <img src="" alt="" class="product__img">
+                                <img src="./img/jpg/cartera_view2.jpg" alt="" class="product__img">
                             </a>
                         </picture>
                         <h3 class="product__title">Nombre</h3>
@@ -76,7 +76,7 @@
                     <div class="card__product">
                         <picture class="product">
                             <a href="" class="product__item">
-                                <img src="" alt="" class="product__img">
+                                <img src="./img/jpg/cartera_view3.jpg" alt="" class="product__img">
                             </a>
                         </picture>
                         <h3 class="product__title">Nombre</h3>
@@ -89,7 +89,7 @@
                     <div class="card__product">
                         <picture class="product">
                             <a href="" class="product__item">
-                                <img src="" alt="" class="product__img">
+                                <img src="./img/jpg/cartera_view4.jpg" alt="" class="product__img">
                             </a>
                         </picture>
                         <h3 class="product__title">Nombre</h3>
