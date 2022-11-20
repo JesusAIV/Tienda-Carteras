@@ -20,7 +20,7 @@
         </div>
 
         <div class="cuenta">
-            <a class="cuenta-iniciarSesion" href="">
+            <a class="cuenta-iniciarSesion" href="cuenta">
                 <h2 class="cuenta__titulo">Iniciar sesion / Registrarse</h2>
                 <img class="cuenta__img" src="./img/svg/user.svg" alt="user">
             </a>
@@ -47,7 +47,7 @@
     <nav class="navbar navbar-center">
         <div>
             <ul class="navbar-center">
-                <li class="nav-item"><a href="">CARTERAS</a></li>
+                <li class="nav-item"><a href="carteras">CARTERAS</a></li>
                 <li class="nav-item"><a href="">BOLSOS</a></li>
                 <li class="nav-item"><a href="">MOCHILAS</a></li>
                 <li class="nav-item"><a href="">MORRALES</a></li>
