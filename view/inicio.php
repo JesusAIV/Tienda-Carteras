@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="css/micuenta.css">
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/a9045ee35a.js" crossorigin="anonymous"></script>
+    <script defer src="js/jquery.js"></script>
     <script defer src="js/main.js"></script>
+    <script defer src="js/functions.js"></script>
 </head>
 <body>
 
