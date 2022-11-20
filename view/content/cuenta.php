@@ -9,7 +9,7 @@
     </div>
     <div class="content-cuenta">
         <div class="form-cuenta">
-            <div class="login-cuenta" style="display: block;">
+            <div class="login-cuenta">
                 <div class="login-container">
                     <div class="login-header header-cuenta">
                         <p>Iniciar Sesión</p>
@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div>
-            <div class="registro-cuenta" style="display: none;">
+            <div class="registro-cuenta">
                 <div class="registro-container">
                     <div class="registro-header header-cuenta">
                         <p>Registrar cliente</p>
@@ -46,21 +46,21 @@
                             <p>Por favor complete el formulario y le crearemos una nueva cuenta en un abrir y cerrar de ojos</p>
                         </div>
                         <div class="campos-form">
-                            <div>
+                            <div class="campos-placeholder">
+                                <input type="text" id="nombre" name="nombre" required>
                                 <label for="nombre">Nombres</label>
-                                <input type="text">
                             </div>
-                            <div>
+                            <div class="campos-placeholder">
+                                <input type="text" name="apellidos" id="apellidos" required>
                                 <label for="apellidos">Apellidos</label>
-                                <input type="text" name="apellidos" id="apellidos">
                             </div>
-                            <div>
+                            <div class="campos-placeholder">
+                                <input type="text" name="email" id="email" required>
                                 <label for="email">Correo electrónico</label>
-                                <input type="email" name="password" id="password">
                             </div>
-                            <div>
+                            <div class="campos-placeholder">
+                                <input type="password" name="password" id="password" re<input type="text" name="apellidos" id="apellidos" required>
                                 <label for="password">Contraseña</label>
-                                <input type="password" name="password" id="password">
                             </div>
                             <div class="button-form">
                                 <button type="submit">Registrarse</button>
@@ -70,7 +70,7 @@
                 </div>
             </div>
         </div>
-        <div class="modulo-cuenta">
+        <div class="modulo-cuenta-registrar">
             <div class="modulo-cuenta-content">
                 <div class="header-cuenta-modulo header-cuenta">
                     <p>Crear nueva cuenta</p>
@@ -80,7 +80,21 @@
                     <p>Registrarse en este sitio le permite acceder al estado e historial de su pedido. Solo te pediremos la información necesaria para que el proceso de compra sea más rápido y sencillo.</p>
                 </div>
                 <div class="button-modulo">
-                    <button>Registrarse</button>
+                    <button id="registrarse">Registrarse</button>
+                </div>
+            </div>
+        </div>
+        <div class="modulo-cuenta-iniciar">
+            <div class="modulo-cuenta-content">
+                <div class="header-cuenta-modulo header-cuenta">
+                    <p>Iniciar sesión</p>
+                    <hr>
+                </div>
+                <div class="modulo-parrafo">
+                    <p>Inicia sesión con tu cuenta ya existente y sigue disfrutando de tus compras</p>
+                </div>
+                <div class="button-modulo">
+                    <button id="iniciarsesion">Iniciar sesión</button>
                 </div>
             </div>
         </div>

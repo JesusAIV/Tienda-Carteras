@@ -21,7 +21,7 @@
     font-size: 2.25em;
     font-weight: 600;
 }
-.form-cuenta, .modulo-cuenta{
+.form-cuenta, .modulo-cuenta-registrar, .modulo-cuenta-iniciar{
     background-color: #F6F6F6;
     padding: 1em;
 }
