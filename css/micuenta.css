@@ -77,7 +77,7 @@
     width: 100%;
     cursor: pointer;
 }
-.cuenta-paragraph p{
+.cuenta-paragraph p, .modulo-parrafo p{
     font-size: 1.25em;
 }
 .button-modulo{
