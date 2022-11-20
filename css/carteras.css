@@ -29,7 +29,17 @@
 .categorias{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+}
+
+.categorias__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
 }
 
 .product{
@@ -37,7 +47,7 @@
     padding: 1.6em 3em;
 }
 
-.product__img{
+.product__show{
     width: 80px;
-    height: 60px;
+    height: 80px;
 }

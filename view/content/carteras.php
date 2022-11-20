@@ -5,10 +5,10 @@
 
         <div class="content">
             <div class="caja1">
-                <h2 class="title">CARTERAS</h2>
+                <h2 class="caja1__title">CARTERAS</h2>
 
                 <div class="categorias">
-                    <h3 class="title">Categorias</h3>
+                    <h3 class="categorias__title">Categorias</h3>
                     <div class="categorias__links">
                         <a href="" class="categorias__link">Carteras</a>
                         <a href="" class="categorias__link">Morrales</a>
@@ -50,7 +50,7 @@
                     <div class="card__product">
                         <picture class="product">
                             <a href="" class="product__item">
-                                <img src="./img/jpg/cartera_view1.jpg" alt="" class="product__img">
+                                <img src="./img/jpg/cartera_view1.jpg" alt="" class="product__show">
                             </a>
                         </picture>
                         <h3 class="product__title">Nombre</h3>
@@ -63,7 +63,7 @@
                     <div class="card__product">
                         <picture class="product">
                             <a href="" class="product__item">
-                                <img src="./img/jpg/cartera_view2.jpg" alt="" class="product__img">
+                                <img src="./img/jpg/cartera_view2.jpg" alt="" class="product__show">
                             </a>
                         </picture>
                         <h3 class="product__title">Nombre</h3>
@@ -76,7 +76,7 @@
                     <div class="card__product">
                         <picture class="product">
                             <a href="" class="product__item">
-                                <img src="./img/jpg/cartera_view3.jpg" alt="" class="product__img">
+                                <img src="./img/jpg/cartera_view3.jpg" alt="" class="product__show">
                             </a>
                         </picture>
                         <h3 class="product__title">Nombre</h3>
@@ -89,7 +89,7 @@
                     <div class="card__product">
                         <picture class="product">
                             <a href="" class="product__item">
-                                <img src="./img/jpg/cartera_view4.jpg" alt="" class="product__img">
+                                <img src="./img/jpg/cartera_view4.jpg" alt="" class="product__show">
                             </a>
                         </picture>
                         <h3 class="product__title">Nombre</h3>
