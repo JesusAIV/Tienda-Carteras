@@ -3,10 +3,92 @@
     background-color: #864DD6;
     text-align: center;
     width: 100%;
+    padding: 1em 0;
 }
 .cuenta-header-title p{
     font-size: 2.5em;
 }
 .cuenta-header-subtitle p{
     font-size: 1.5em;
+}
+.content-cuenta{
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2em;
+}
+.header-cuenta p{
+    font-size: 2.25em;
+    font-weight: 600;
+}
+.form-cuenta, .modulo-cuenta{
+    background-color: #F6F6F6;
+    padding: 1em;
+}
+.campos-placeholder{
+    position: relative;
+    margin-bottom: 2em;
+}
+/* .campos-placeholder input{
+    padding: 0.5em;
+} */
+.campos-placeholder input {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+
+.campos-placeholder input:focus {
+    outline:none;
+}
+.campos-placeholder label{
+    color:#000;
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events: none;
+    left:20px;
+    top:10px;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+
+.campos-placeholder input:focus ~ label,
+.campos-placeholder input:valid ~ label {
+    top:-20px;
+    left: 0px;
+    font-size:14px;
+}
+.campos-form{
+    margin-top: 2em;
+    margin-right: 2em;
+}
+.button-form button{
+    background-color: #864DD6;
+    border:none;
+    padding: 1em;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+.cuenta-paragraph p{
+    font-size: 1.25em;
+}
+.button-modulo{
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.button-modulo button{
+    border:none;
+    padding: 1em;
+    cursor: pointer;
+    color: #864DD6;
 }

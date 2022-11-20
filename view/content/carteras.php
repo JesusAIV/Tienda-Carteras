@@ -65,7 +65,6 @@
                     </div>
 
                     <div class="mostrar">
-                        <span class="text">Mostrar: </span>
                         <form class="ordenar" method="POST">
                             <label class="ordenar__label" for="">Ordenar por: </label>
                             <select class="ordenar__select" name="ordenar" id="ordenar">
