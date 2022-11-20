@@ -85,7 +85,7 @@
                         </picture>
                         <h3 class="product__title">Nombre</h3>
                         <span class="product__price">S/000.00</span>
-                        <a href="" class="product__ver">
+                        <a href="productoDetalle" class="product__ver">
                             Ver producto
                         </a>
                     </div>
@@ -98,7 +98,7 @@
                         </picture>
                         <h3 class="product__title">Nombre</h3>
                         <span class="product__price">S/000.00</span>
-                        <a href="" class="product__ver">
+                        <a href="productoDetalle" class="product__ver">
                             Ver producto
                         </a>
                     </div>
