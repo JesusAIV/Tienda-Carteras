@@ -1,9 +1,9 @@
-    <div class="hero__carteras">
-        <picture class="banner">
+    <div class="principal">
+        <div class="banner">
             <img src="./img/jpg/banner-carteras.jpg" alt="banner-carteras" class="banner__img">
-        </picture>
+        </div>
 
-        <div class="content">
+        <div class="content__carteras">
             <div class="caja1">
                 <h2 class="caja1__title">CARTERAS</h2>
 
@@ -18,29 +18,60 @@
                 </div>
 
                 <div class="color">
-                    <input class="color__item" type="color" name="color" id="color">
-                    <input class="color__item" type="color" name="color" id="color">
-                    <input class="color__item" type="color" name="color" id="color">
-                    <input class="color__item" type="color" name="color" id="color">
-                    <input class="color__item" type="color" name="color" id="color">
+                    <h3 class="color__title">Filtrar por color</h3>
+                    <div class="color__container">
+                        <ul class="color__items">
+                            <li class="color__item">
+                                <a href="" class="color__select">
+                                    <span class="color__filter amarillo"></span>
+                                </a>
+                            </li>
+                            <li class="color__item">
+                                <a href="" class="color__select">
+                                    <span class="color__filter blue"></span>
+                                </a>
+                            </li>
+                            <li class="color__item">
+                                <a href="" class="color__select">
+                                    <span class="color__filter red"></span>
+                                </a>
+                            </li>
+                            <li class="color__item">
+                                <a href="" class="color__select">
+                                    <span class="color__filter beig"></span>
+                                </a>
+                            </li>
+                            <li class="color__item">
+                                <a href="" class="color__select">
+                                    <span class="color__filter white"></span>
+                                </a>
+                            </li>
+                            <li class="color__item">
+                                <a href="" class="color__select">
+                                    <span class="color__filter orange"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
             </div>
 
             <div class="caja2">
                 <div class="menu">
                     <div class="menu__navegacion">
-                        <a href="" class="menu__navegacion__link">incio</a> /
-                        <a href="" class="menu__navegacion__link">carteras</a>
+                        <a href="principal" class="menu__navegacion__link">incio</a>
+                        <span class="menu__navegacion__name">Nombre de la sección</span>
                     </div>
 
                     <div class="mostrar">
                         <span class="text">Mostrar: </span>
                         <form class="ordenar" method="POST">
                             <label class="ordenar__label" for="">Ordenar por: </label>
-                            <select name="ordenar" id="ordenar">
-                                <option value="ordenar">Orden por defecto</option>
-                                <option value="ordenar">Orden por bajo precio</option>
-                                <option value="ordenar">Orden por alto precio</option>
+                            <select class="ordenar__select" name="ordenar" id="ordenar">
+                                <option value="" class="ordenar__option">Orden por bajo precio</option>
+                                <option value="" class="ordenar__option">Orden por alto precio</option>
+                                <option value="" class="ordenar__option">Orden por defecto</option>
                             </select>
                         </form>
                     </div>
