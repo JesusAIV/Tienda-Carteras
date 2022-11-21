@@ -14,4 +14,21 @@ $(document).ready(function () {
         $(".modulo-cuenta-registrar").show();
         $(".modulo-cuenta-iniciar").hide();
     });
+
+    $('.btn-exit').on('click', function(e){
+        e.preventDefault();
+        Swal.fire({
+            title: '¿Seguro que desea cerrar sesion?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            cancelButtonText: '<i class="fa-solid fa-xmark"></i>',
+            confirmButtonText: '<i class="fa-solid fa-check"></i>'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.location.href='ajax/logoutAjax.php'
+            }
+        })
+    })
 });
