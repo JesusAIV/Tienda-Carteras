@@ -43,8 +43,12 @@
                     $_SESSION['usuario']=$row['usuario'];
                     $_SESSION['email']=$row['email'];
                     $_SESSION['password']=$row['password'];
-                    $url = "inventario";
 
+                    if ($row['idrol'] == 1){
+                        $url = "inventario";
+                    }else{
+                        $url = "inicio";
+                    }
                     return $urlLocation = '<script> window.location="'.$url.'"</script>';
                 }else{
                     $alerta=[

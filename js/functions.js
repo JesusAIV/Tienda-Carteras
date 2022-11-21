@@ -31,4 +31,16 @@ $(document).ready(function () {
             }
         })
     })
+
+    $("#menu-bars").click(function () {
+        if ($(".header-inventario").css("margin-left") == "240px"){
+            $(".header-inventario").css("margin-left", "0");
+            $(".main-inventario").css("margin-left", "0");
+            $(".menu-lateral").hide();
+        }else{
+            $(".header-inventario").css("margin-left", "15em");
+            $(".main-inventario").css("margin-left", "15em");
+            $(".menu-lateral").show();
+        }
+    });
 });

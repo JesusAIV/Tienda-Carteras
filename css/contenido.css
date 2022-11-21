@@ -1,0 +1,117 @@
+.main-inventario{
+    margin-left: 240px;
+    margin-top: 64px;
+    padding: 10px;
+}
+.menu-lateral{
+    background-color: #E4E3E3;
+    width: 15em;
+    position: fixed;
+    height: 100%;
+    text-align: center;
+    padding: 1em 0.5em;
+    z-index: 1;
+}
+.bienvenida-inventario{
+    margin: 1em 0;
+    font-weight: 600;
+}
+.opciones-inventario{
+    background-color: #8F8D8D;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+}
+.opciones-inventario a, .opciones-inventario i{
+    color: #000000;
+    font-weight: 600;
+}
+.nav-item-inventario{
+    margin: 10px;
+    display: flex;
+    gap: 1em;
+}
+.header-inventario{
+    margin-left: 15em;
+    position: fixed;
+    background-color: #864DD6;
+    width: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+    padding: 1em 2em 1em 1em;
+    z-index: 99;
+}
+.menu-bars{
+    cursor: pointer;
+}
+.menu-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+.header-inventario i{
+    font-size: 2em;
+}
+.cuenta-cerrarsesion{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.inventario-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4em 0;
+}
+.inventario-title p{
+    font-weight: 600;
+    font-size: 3em;
+}
+.opc-inventario-container{
+    margin-left: 2em;
+    color: #000000;
+    width: 100%;
+    display: flex;
+    gap: 5em;
+    align-items: center;
+}
+.opc-inventario-container a{
+    color: #000000;
+}
+.opc-inventario-main{
+    width: 270px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.opc-inventario-icon{
+    background-color: #8F8D8D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+    padding: 1em;
+}
+.opc-inventario-icon img{
+    width: 60px;
+    margin: 1em 0;
+}
+.opc-inventario-title{
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+    padding: 1em;
+}
+.opc-inventario-title p{
+    font-size: 2em;
+    font-weight: 600;
+}
