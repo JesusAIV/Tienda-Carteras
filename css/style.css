@@ -3,6 +3,16 @@
 
 :root{
     --color-separador: #605c5c;
+    /* PALETA 1 */
+    --color1: #41436a;
+    --color2: #974063;
+    --color3: #f13255;
+    --color4: #ff9677;
+    /* PALETA 2 */
+    /* --color1: #252525;
+    --color2: #ff0000;
+    --color3: #af0404;
+    --color4: #414141; */
     
 }
 
@@ -216,7 +226,7 @@ header{
 .footer{
     width: 100%;
     padding: 1rem;
-    background-color: #33086f;
+    background-color: var(--color3);
     color: #ffffff;
     padding: 1rem 5rem;
     position: relative;

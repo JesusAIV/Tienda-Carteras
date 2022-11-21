@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/sweetalert2.min.css">
     <link rel="stylesheet" href="css/datatables.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="css/quienesSomos.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/carteras.css">

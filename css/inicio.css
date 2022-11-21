@@ -1,3 +1,10 @@
+:root{
+    --color1: #41436a;
+    --color2: #974063;
+    --color3: #f13255;
+    --color4: #ff9677;
+}
+
 .mySlides {
     display: none
 }
@@ -127,6 +134,7 @@
 .principal__productos--lista p{
     font-weight: 700;
     font-size: 1.8em;
+    color: var(--color3);
 }
 .product__list--center{
     display: flex;
