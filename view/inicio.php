@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/carteras.css">
     <link rel="stylesheet" href="css/micuenta.css">
     <link rel="stylesheet" href="css/productoDetalle.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/a9045ee35a.js" crossorigin="anonymous"></script>
     <script defer src="js/jquery.js"></script>

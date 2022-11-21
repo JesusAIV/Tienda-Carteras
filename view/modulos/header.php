@@ -23,11 +23,18 @@
             <?php
                 if(!isset($_SESSION['email'])){
                     ?>
-                <a class="cuenta-iniciarSesion" href="cuenta">
-                    <h2 class="cuenta__titulo">Iniciar sesion / Registrarse</h2>
-                    <img class="cuenta__img" src="./img/svg/user.svg" alt="user">
-                </a>
-            <?php
+                        <a class="cuenta-iniciarSesion" href="cuenta">
+                            <h2 class="cuenta__titulo">Iniciar sesion / Registrarse</h2>
+                            <img class="cuenta__img" src="./img/svg/user.svg" alt="user">
+                        </a>
+                    <?php
+                    }else{
+                    ?>
+                        <a class="cuenta-iniciarSesion btn-exit" href="">
+                            <i class="fa-solid fa-power-off"></i>
+                            <h2 class="cuenta__titulo">Cerrar Sesión</h2>
+                        </a>
+                    <?php
                 }
             ?>
         </div>
