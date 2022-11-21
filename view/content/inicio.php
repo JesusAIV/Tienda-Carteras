@@ -41,19 +41,19 @@
             </div>
             <div class="product__list--center">
                 <a class="product__enlace" href="morrales">
-                    <img class="product__img" src="./img/jpg/morrales.jpg" alt="Carteras">
+                    <img class="product__img" src="./img/jpg/morrales.jpg" alt="Morrales">
                     <p>MORRALES</p>
                 </a>
             </div>
             <div class="product__list--center">
                 <a class="product__enlace" href="">
-                    <img class="product__img" src="./img/jpg/cartera.jpg" alt="Carteras">
+                    <img class="product__img" src="./img/jpg/mochila.jpg" alt="Mochilas">
                     <p>MOCHILAS</p>
                 </a>
             </div>
             <div class="product__list--center">
                 <a class="product__enlace" href="">
-                    <img class="product__img" src="./img/jpg/bolso.jpg" alt="Carteras">
+                    <img class="product__img" src="./img/jpg/bolso.jpg" alt="Bolsos">
                     <p>BOLSOS</p>
                 </a>
             </div>

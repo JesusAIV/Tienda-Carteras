@@ -14,10 +14,10 @@
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 891px;
+    max-width: 1000px;
     position: relative;
     margin: auto;
-    min-width: 900px;
+    min-width: 1000px;
 }
 
 /* nextslider & previous buttons */
@@ -124,7 +124,14 @@
     text-align: center;
     font-weight: 700;
     font-size: 1.8em;
+    color: var(--color1);
 }
+
+.principal__productos--title p,
+.oferece__title p{
+    margin-bottom: 1em;
+}
+
 .principal__productos--lista{
     text-align: center;
     display: grid;
@@ -134,7 +141,7 @@
 .principal__productos--lista p{
     font-weight: 700;
     font-size: 1.8em;
-    color: var(--color3);
+    color: var(--color4);
 }
 .product__list--center{
     display: flex;
@@ -166,7 +173,7 @@
     max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
-    gap: 30px;
+    gap: 50px;
 }
 .ofrece__opcion{
     display: grid;

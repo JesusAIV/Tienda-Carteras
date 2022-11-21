@@ -8,6 +8,7 @@
     --color2: #974063;
     --color3: #f13255;
     --color4: #ff9677;
+    --blanco: #fff;
     /* PALETA 2 */
     /* --color1: #252525;
     --color2: #ff0000;
@@ -60,7 +61,7 @@ header{
 .horario{
     width: 100%;
     height: 50px;
-    background: #333;
+    background: var(--color-separador);
 }
 
 .content{
@@ -80,7 +81,7 @@ header{
 .container{
     width: 100%;
     height: auto;
-    background-color: #eee;
+    background-color: var(--blanco);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,19 +102,31 @@ header{
 
 .logo-enlace{
     font-size: 1.2rem;
-    color: #000;
     font-weight: 700;
 }
 
 .cuenta{
-    width: 15%;
-    position: relative;
-    left: 300px;
+    margin: 0 2em 0;
 }
 
 .cuenta-iniciarSesion{
     display: flex;
     justify-content: space-between;
+}
+
+.cuenta__titulo{
+    position: relative;
+    right: 10px;
+    transition: .2s;
+}
+
+.cuenta__titulo:hover{
+    color: var(--color1);
+}
+
+.cuenta__titulo,
+.logo-enlace{
+    color: var(--color3);
 }
 
 .bolsa{
@@ -168,29 +181,44 @@ header{
     width: 100%;
     height: 50px;
     padding: 1rem;
-    background-color: #AC78F4;
+    background-color: var(--blanco);
+    border-top: var(--color-separador);
+    border-bottom: var(--color-separador);
 }
 
 .navbar a{
-    color: #ffffff;
+    color: var(--color1);
 }
 
 .navbar-center{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 4em;
 }
 
 .nav-item{
-    width: 10rem;
+    width: 100%;
 }
 
 .nav-item a{
     font-weight: 600;
 }
 
-.nav-item a:hover{
-    color: #47148f;
+.nav-item::after{
+    content: "";
+    display: block;
+    width: 90%;
+    height: 3px;
+    background-color: var(--color1);
+    margin-top: .1em;
+    --clipy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    clip-path: var(--clipy);
+    transition: clip-path .2s;
+}
+
+.nav-item:hover::after{
+    --clipy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .search{
@@ -204,12 +232,13 @@ header{
 .search-input{
     width: 100%;
     height: 100%;
-    border: 1px solid #47148f;
+    border: 1px solid var(--color1);
     border-radius: 3px;
-    background: #fff;
+    background: transparent;
     outline: none;
     padding: 0 15px;
     font-size: 1rem;
+    color: var(--color1);
 }
 
 .search-boton{
@@ -220,6 +249,10 @@ header{
     position: relative;
     top: 3px;
     right: 30px;
+}
+
+.division{
+    color: var(--color-separador);
 }
 
 /* Footer */

@@ -39,7 +39,8 @@
             ?>
         </div>
 
-        <div class="bolsa">
+        <!-- LA PARTE DE BOLSA LO COMENTO A RAZÓN DE QUE NO SE VA A VENDER NADA PORA LA WEB -->
+        <!-- <div class="bolsa">
             <div class="icon-container">
                 <a class="icon-enlace" href="">
                     <img class="icon-img" src="./img/svg/bag.svg" alt="bolsa">
@@ -52,9 +53,11 @@
                     <p class="precio-texto">0 productos</p>
                 </a>
             </div>
-        </div>
+        </div> -->
 
     </section>
+
+    <hr class="division">
 
     <!-- Barra de navegación -->
     <nav class="navbar navbar-center">
@@ -66,6 +69,7 @@
                 <li class="nav-item"><a href="">MORRALES</a></li>
             </ul>
         </div>
+        
         <div class="search">
             <input class="search-input" type="text" name="buscarProducto" id="buscarProducto" placeholder="Buscar producto">
             <button class="search-boton">
