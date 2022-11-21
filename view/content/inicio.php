@@ -36,25 +36,25 @@
             <div class="product__list--center">
                 <a class="product__enlace" href="carteras">
                     <img class="product__img" src="./img/jpg/carteras.jpg" alt="Carteras">
-                    <p>CARTERAS</p>
+                    <p class="product__leyend">CARTERAS</p>
                 </a>
             </div>
             <div class="product__list--center">
                 <a class="product__enlace" href="morrales">
                     <img class="product__img" src="./img/jpg/morrales.jpg" alt="Morrales">
-                    <p>MORRALES</p>
+                    <p class="product__leyend">MORRALES</p>
                 </a>
             </div>
             <div class="product__list--center">
                 <a class="product__enlace" href="">
                     <img class="product__img" src="./img/jpg/mochila.jpg" alt="Mochilas">
-                    <p>MOCHILAS</p>
+                    <p class="product__leyend">MOCHILAS</p>
                 </a>
             </div>
             <div class="product__list--center">
                 <a class="product__enlace" href="">
                     <img class="product__img" src="./img/jpg/bolsos.jpg" alt="Bolsos">
-                    <p>BOLSOS</p>
+                    <p class="product__leyend">BOLSOS</p>
                 </a>
             </div>
         </div>
