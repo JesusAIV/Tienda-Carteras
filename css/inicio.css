@@ -124,12 +124,24 @@
     text-align: center;
     font-weight: 700;
     font-size: 1.8em;
-    color: var(--color1);
 }
 
 .principal__productos--title p,
 .oferece__title p{
     margin-bottom: 1em;
+    color: var(--color1);
+}
+
+.principal__productos--title p::after,
+.oferece__title p::after{
+    content: "";
+    display: block;
+    width: 3%;
+    height: 3px;
+    background-color: var(--color1);
+    position: relative;
+    bottom: 0;
+    margin: .3em auto 0;
 }
 
 .principal__productos--lista{

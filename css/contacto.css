@@ -14,6 +14,7 @@
     "formContacto formContacto infoContacto infoContacto"
     "formContacto formContacto infoContacto infoContacto";
     border-radius: 20px 20px 0 0;
+    margin-bottom: 3em;
 }
 
 .mapa{
@@ -68,6 +69,7 @@
     "celular correo"
     "mensaje mensaje"
     ".       btnEnviar";
+    margin-top: 2em;
 }
 
 .group1{

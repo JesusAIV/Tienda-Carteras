@@ -9,6 +9,7 @@
     --color3: #f13255;
     --color4: #ff9677;
     --blanco: #fff;
+    --gris: #e0e0e0;
     /* PALETA 2 */
     /* --color1: #252525;
     --color2: #ff0000;
@@ -37,7 +38,7 @@ body{
     grid-template-rows: auto 1fr auto;
 }
 .main{
-    margin-top: 170px;
+    margin-top: 150px;
 }
 a{
     text-decoration: none;
@@ -253,6 +254,7 @@ header{
 
 .division{
     color: var(--color-separador);
+    margin: 0;
 }
 
 /* Footer */
@@ -260,13 +262,13 @@ header{
     width: 100%;
     padding: 1rem;
     background-color: var(--color3);
-    color: #ffffff;
+    color: var(--gris);
     padding: 1rem 5rem;
     position: relative;
     z-index: 2;
 }
 .footer a{
-    color: #ffffff;
+    color: var(--gris);
 }
 
 .footer-datos{
@@ -347,6 +349,8 @@ hr{
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 10px;
+    margin-top: 2em;
+    margin-bottom: 3em;
 }
 .title__tiendas p{
     text-align: center;

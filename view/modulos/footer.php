@@ -10,7 +10,7 @@
                 <div class="footer-datos">
                     <div class="footer-logo">
                         <img class="logo-img" style="margin-right: 1rem;" src="img/png/bolso.png" alt="">
-                        <a href="">
+                        <a href="inicio">
                             <h1>Confecciones Milagros</h1>
                         </a>
                     </div>
