@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confecciones Milagros</title>
     <!-- CSS -->
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/quienesSomos.css">
@@ -19,6 +20,7 @@
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/a9045ee35a.js" crossorigin="anonymous"></script>
     <script defer src="js/jquery.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
     <script defer src="js/main.js"></script>
     <script defer src="js/functions.js"></script>
 </head>

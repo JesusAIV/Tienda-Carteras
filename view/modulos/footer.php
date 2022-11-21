@@ -55,7 +55,13 @@
                                 <li><a href="quienessomos">¿Quiénes somos?</a></li>
                                 <li><a href="tiendas">Nuestras tiendas</a></li>
                                 <li><a href="contacto">Contacto</a></li>
-                                <li><a href="cuenta">Mi Cuenta</a></li>
+                                <?php
+                                    if(!isset($_SESSION['email'])){
+                                        ?>
+                                        <li><a href="cuenta">Mi Cuenta</a></li>
+                                        <?php
+                                    }
+                                ?>
                             </ul>
                         </div>
                     </div>

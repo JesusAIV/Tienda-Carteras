@@ -20,10 +20,16 @@
         </div>
 
         <div class="cuenta">
-            <a class="cuenta-iniciarSesion" href="cuenta">
-                <h2 class="cuenta__titulo">Iniciar sesion / Registrarse</h2>
-                <img class="cuenta__img" src="./img/svg/user.svg" alt="user">
-            </a>
+            <?php
+                if(!isset($_SESSION['email'])){
+                    ?>
+                <a class="cuenta-iniciarSesion" href="cuenta">
+                    <h2 class="cuenta__titulo">Iniciar sesion / Registrarse</h2>
+                    <img class="cuenta__img" src="./img/svg/user.svg" alt="user">
+                </a>
+            <?php
+                }
+            ?>
         </div>
 
         <div class="bolsa">
