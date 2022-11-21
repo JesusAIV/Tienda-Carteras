@@ -79,7 +79,7 @@
                 <div class="container__products">
                     <div class="card__product">
                         <picture class="product">
-                            <a href="" class="product__item">
+                            <a href="productoDetalle" class="product__item">
                                 <img src="./img/jpg/cartera_view1.jpg" alt="" class="product__show">
                             </a>
                         </picture>
