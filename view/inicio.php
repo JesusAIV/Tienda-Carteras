@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -23,12 +26,13 @@
 
     <?php include "modulos/header.php"; ?>
     <?php
+        $Ajax = false;
         require_once "./controller/viewcontroller.php";
         $view = new viewcontroller();
         $vistas = $view -> obtenervistacontrolador();
 
-        if($vistas == "principal"){
-            $vistas = "./view/content/principal.php";
+        if($vistas == "inicio"){
+            $vistas = "./view/content/inicio.php";
         }
     ?>
 

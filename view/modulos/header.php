@@ -16,7 +16,7 @@
     <section class="container">
         <div class="logo">
             <img class="logo-img--header" src="img/png/bolso.png" alt="Logo">
-            <a class="logo-enlace" href="principal">Confecciones Milagros</a>
+            <a class="logo-enlace" href="inicio">Confecciones Milagros</a>
         </div>
 
         <div class="cuenta">

@@ -12,7 +12,7 @@
         
         <section class="principal__detail">
             <div class="menu__navegacion">
-                <a href="principal" class="menu__navegacion__link">incio</a>
+                <a href="inicio" class="menu__navegacion__link">incio</a>
                 <span class="menu__navegacion__name">Nombre de la sección</span>
             </div>
 

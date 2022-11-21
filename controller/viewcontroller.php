@@ -13,7 +13,7 @@
                 $ruta = explode("/", $_GET['views']);
                 $respuesta = viewmodel::obtenervistamodelo($ruta[0]);
             } else {
-                $respuesta = "principal";
+                $respuesta = "inicio";
             }
             return $respuesta;
         }

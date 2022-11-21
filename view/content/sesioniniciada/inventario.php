@@ -1,0 +1,1 @@
+<h1>Bienvanido al inventario</h1>
