@@ -14,10 +14,10 @@
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 891px;
+    max-width: 1000px;
     position: relative;
     margin: auto;
-    min-width: 900px;
+    min-width: 1000px;
 }
 
 /* nextslider & previous buttons */
@@ -124,6 +124,7 @@
     text-align: center;
     font-weight: 700;
     font-size: 1.8em;
+    color: var(--color1);
 }
 .principal__productos--lista{
     text-align: center;

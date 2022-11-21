@@ -39,7 +39,7 @@
             ?>
         </div>
 
-
+        <!-- LA PARTE DE BOLSA LO COMENTO A RAZÓN DE QUE NO SE VA A VENDER NADA PORA LA WEB -->
         <!-- <div class="bolsa">
             <div class="icon-container">
                 <a class="icon-enlace" href="">
@@ -69,6 +69,7 @@
                 <li class="nav-item"><a href="">MORRALES</a></li>
             </ul>
         </div>
+        
         <div class="search">
             <input class="search-input" type="text" name="buscarProducto" id="buscarProducto" placeholder="Buscar producto">
             <button class="search-boton">

@@ -32,6 +32,8 @@
     <link rel="stylesheet" href="css/productoDetalle.css">
     <link rel="stylesheet" href="css/contenido.css">
     <link rel="stylesheet" href="css/productos.css">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./img/jpg/bolso.ico" type="image/x-icon">
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/a9045ee35a.js" crossorigin="anonymous"></script>
     <script defer src="js/jquery.js"></script>
