@@ -1,7 +1,3 @@
-<?php
-    session_start();
-    echo $_SESSION['idrol'];
-?>
 <div class="principal">
     <div class="slider">
         <div class="slideshow-container">
