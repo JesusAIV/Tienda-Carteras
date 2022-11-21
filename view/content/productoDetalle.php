@@ -34,7 +34,7 @@
                             <li class="detail__item">Color: </li>
                             <span class="detail__item__text">Beige</span>
                         </div>
-                        
+
                         <div class="group">
                             <li class="detail__item">Material: </li>
                             <span class="detail__item__text">Cuero</span>
@@ -42,23 +42,27 @@
                     </ul>
 
                     <div class="stock">
+                        <img class="stock__icon" src="./img/svg/check.svg" alt="check-icon">
                         <h3 class="stock__number">200</h3>
                         <h3 class="stock__text">disponibles</h3>
                     </div>
 
                     <ul class="detail__extra">
                         <li class="detail__item">
-                            <p class="detail__name">Garantía</p>
-                            <img src="./img/svg/arrow-bottom.svg" class="detail__icon">
-                            
-                            <p class="detail__content">
+                            <div class="group">
+                                <p class="detail__name">Garantía</p>
+                                <img src="./img/svg/arrow-bottom.svg" class="detail__icon">
+                            </div>
+                            <p class="detail__paragraph">
                             Este producto cuenta con una garantía por defecto de fabricación de 90 días calendario, contados a partir de la fecha de compra del producto. Para mayor información puede comunicarse a <a class="detail__references" href="mailto:confeccionesmilagros@gmail.com" target="_blank">confeccionesmilagros@gmail.com</a> o al whatsapp <a class="detail__references" href="https://wa.me/51972351346">+51972351346</a>
                             </p>
                         </li>
         
                         <li class="detail__item">
-                            <p class="detail__name">Cuidado del producto</p>
-                            <img src="./img/svg/arrow-bottom.svg" class="detail__icon">
+                            <div class="group">
+                                <p class="detail__name">Cuidado del producto</p>
+                                <img src="./img/svg/arrow-bottom.svg" class="detail__icon">
+                            </div>
         
                             <ul class="product__care">
                                 <li class="care__item">Evita exponerlo a sustancias químicas como alcohol, perfume o acetona.</li>

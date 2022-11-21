@@ -76,9 +76,15 @@
     gap: 1em;
 }
 
-.detail__body__title{
-    font-weight: 400;
-    font-size: 1.1rem;
+.detail__body__title,
+.detail__name{
+    font-size: 1.2rem;
+}
+
+.stock__text,
+.detail__body__title,
+.detail__name{
+    font-weight: 500;
 }
 
 .group{
@@ -90,3 +96,44 @@
     font-weight: 700;
 }
 
+.stock{
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}
+
+.stock__number{
+    font-size: 1.2rem;
+}
+
+.detail__extra{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.detail__icon{
+    cursor: pointer;
+}
+
+.detail__paragraph,
+.care__item{
+    font-weight: 500;
+}
+
+.detail__paragraph{
+    line-height: 1.5em;
+}
+
+.detail__references{
+    color: #333;
+}
+
+.detail__references:hover{
+    border-bottom: 1px solid #333;
+}
+
+.care__item{
+    list-style: disc;
+    margin-left: 10px;
+}
