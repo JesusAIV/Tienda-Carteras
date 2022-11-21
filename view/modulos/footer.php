@@ -11,7 +11,7 @@
                     <div class="footer-logo">
                         <img class="logo-img" style="margin-right: 1rem;" src="img/png/bolso.png" alt="">
                         <a href="inicio">
-                            <h1>Confecciones Milagros</h1>
+                            <h1 class="inicio__title">Confecciones Milagros</h1>
                         </a>
                     </div>
                     <div class="caja-footer">
@@ -25,23 +25,24 @@
                 </div>
 
                 <div class="footer-siguenos">
-                    <p>SIGUENOS EN</p>
+                    <p class="footer__leyend">SIGUENOS EN</p>
                     <div class="caja-footer caja-footer--icons">
                         <ul class="redes-sociales">
                             <li>
-                                <a href="facebook">
-                                    <img class="redes-icon" src="img/svg/fb.svg" alt="facebook">
+                                <a href="">
+                                    <i class="redes-icon fa-brands fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="instagram">
-                                    <img class="redes-icon" src="img/svg/ig.svg" alt="">
+                                <a href="">
+                                    <i class="redes-icon fa-brands fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="tiktok">
-                                    <img class="redes-icon" src="img/svg/tiktok.svg" alt="">
+                                <a href="">
+                                    <i class="redes-icon fa-brands fa-tiktok"></i>
                                 </a>
+
                             </li>
                         </ul>
                     </div>
@@ -49,25 +50,25 @@
 
                 <div class="footer-puntos">
                     <div class="footer-paginas">
-                        <p>PÁGINAS</p>
+                        <p class="footer__leyend">PÁGINAS</p>
                         <div class="caja-footer">
                             <ul>
                                 <li><a href="quienessomos">¿Quiénes somos?</a></li>
                                 <li><a href="tiendas">Nuestras tiendas</a></li>
                                 <li><a href="contacto">Contacto</a></li>
                                 <?php
-                                    if(!isset($_SESSION['email'])){
-                                        ?>
-                                        <li><a href="cuenta">Mi Cuenta</a></li>
-                                        <?php
-                                    }
+                                if (!isset($_SESSION['email'])) {
+                                ?>
+                                    <li><a href="cuenta">Mi Cuenta</a></li>
+                                <?php
+                                }
                                 ?>
                             </ul>
                         </div>
                     </div>
                     <div class="footer-categorias">
                         <div>
-                            <p>CATEGORÍAS</p>
+                            <p class="footer__leyend">CATEGORÍAS</p>
                         </div>
                         <div class="caja-footer">
                             <ul>
