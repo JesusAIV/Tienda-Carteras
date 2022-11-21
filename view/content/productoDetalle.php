@@ -4,8 +4,8 @@
         <section class="principal__show">
             <div class="principal__image">
                 <div class="principal__circle">
-                    <img src="./img/svg/lupa.svg" alt="">
-                    <img src="" alt="img_producto" class="principal__img">
+                    <img src="./img/svg/lupa.svg" alt="" class="principal__icon">
+                    <img src="./img/jpg/cartera_view1.jpg" alt="img_producto" class="principal__img">
                 </div>
             </div>
         </section>
@@ -25,12 +25,20 @@
                 <div class="detail__body">
                     <h3 class="detail__body__title">Descripción</h3>
                     <ul class="detail__items">
-                        <li class="detail__item">Medidas: </li>
-                        <span class="detail__item__text">19cm x 25cm</span>
-                        <li class="detail__item">Color: </li>
-                        <span class="detail__item__text">Beige</span>
-                        <li class="detail__item">Material: </li>
-                        <span class="detail__item__text">Cuero</span>
+                        <div class="group">
+                            <li class="detail__item">Medidas: </li>
+                            <span class="detail__item__text">19cm x 25cm</span>
+                        </div>
+
+                        <div class="group">
+                            <li class="detail__item">Color: </li>
+                            <span class="detail__item__text">Beige</span>
+                        </div>
+                        
+                        <div class="group">
+                            <li class="detail__item">Material: </li>
+                            <span class="detail__item__text">Cuero</span>
+                        </div>
                     </ul>
 
                     <div class="stock">
@@ -67,6 +75,6 @@
             </div>
 
         </section>
-        
+
     </div>
 </div>
