@@ -39,7 +39,8 @@
             ?>
         </div>
 
-        <div class="bolsa">
+
+        <!-- <div class="bolsa">
             <div class="icon-container">
                 <a class="icon-enlace" href="">
                     <img class="icon-img" src="./img/svg/bag.svg" alt="bolsa">
@@ -52,9 +53,11 @@
                     <p class="precio-texto">0 productos</p>
                 </a>
             </div>
-        </div>
+        </div> -->
 
     </section>
+
+    <hr class="division">
 
     <!-- Barra de navegación -->
     <nav class="navbar navbar-center">

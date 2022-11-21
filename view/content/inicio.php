@@ -47,7 +47,7 @@
             </div>
             <div class="product__list--center">
                 <a class="product__enlace" href="">
-                    <img class="product__img" src="./img/jpg/cartera.jpg" alt="Carteras">
+                    <img class="product__img" src="./img/jpg/mochila.jpg" alt="Carteras">
                     <p>MOCHILAS</p>
                 </a>
             </div>
