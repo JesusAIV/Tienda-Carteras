@@ -1,5 +1,5 @@
 <?php
-    if($_SESSION['idrol'] == 1):
+    if(isset($_SESSION['idrol']) && $_SESSION['idrol'] == 1):
         include "sesioniniciada/inventario.php";
     else:
         echo "
