@@ -3,10 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-11-2022 a las 01:23:59
+-- Tiempo de generación: 21-11-2022 a las 03:00:14
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
--- Base de datos
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -30,6 +29,7 @@ USE `cmilagros`;
 -- Estructura de tabla para la tabla `categoria`
 --
 
+DROP TABLE IF EXISTS `categoria`;
 CREATE TABLE `categoria` (
   `idcategoria` int(11) NOT NULL,
   `categoria` varchar(60) NOT NULL
@@ -55,6 +55,7 @@ INSERT INTO `categoria` (`idcategoria`, `categoria`) VALUES
 -- Estructura de tabla para la tabla `colores`
 --
 
+DROP TABLE IF EXISTS `colores`;
 CREATE TABLE `colores` (
   `idcolor` int(11) NOT NULL,
   `color` varchar(20) NOT NULL,
@@ -83,6 +84,7 @@ INSERT INTO `colores` (`idcolor`, `color`, `codigohex`) VALUES
 -- Estructura de tabla para la tabla `producto`
 --
 
+DROP TABLE IF EXISTS `producto`;
 CREATE TABLE `producto` (
   `idproducto` int(11) NOT NULL,
   `idcategoria` int(11) NOT NULL,
@@ -114,6 +116,7 @@ INSERT INTO `producto` (`idproducto`, `idcategoria`, `idcolor`, `producto`, `des
 -- Estructura de tabla para la tabla `rol`
 --
 
+DROP TABLE IF EXISTS `rol`;
 CREATE TABLE `rol` (
   `idrol` int(11) NOT NULL,
   `rol` varchar(20) NOT NULL
@@ -137,13 +140,15 @@ INSERT INTO `rol` (`idrol`, `rol`) VALUES
 -- Estructura de tabla para la tabla `usuario`
 --
 
+DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE `usuario` (
   `idusuario` int(11) NOT NULL,
   `idrol` int(11) NOT NULL,
-  `Nombre` varchar(100) NOT NULL,
-  `Apellidos` varchar(100) NOT NULL,
-  `Email` varchar(100) NOT NULL,
-  `Password` varchar(250) NOT NULL
+  `nombre` varchar(100) NOT NULL,
+  `apellidos` varchar(100) NOT NULL,
+  `usuario` varchar(20) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -156,8 +161,8 @@ CREATE TABLE `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`idusuario`, `idrol`, `Nombre`, `Apellidos`, `Email`, `Password`) VALUES
-(1, 1, 'Milagros', 'Reque Vasquez', 'milagros@gmail.com', 'milagros123');
+INSERT INTO `usuario` (`idusuario`, `idrol`, `nombre`, `apellidos`, `usuario`, `email`, `password`) VALUES
+(1, 1, 'Milagros', 'Reque Vasquez', '', 'milagros@gmail.com', 'milagros123');
 
 --
 -- Índices para tablas volcadas
