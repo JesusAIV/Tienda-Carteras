@@ -135,16 +135,21 @@
     align-items: center;
 }
 
-.detail__paragraph{
+.detail__paragraph,
+.product__care{
     line-height: 1.5em;
-    overflow: hidden;
-    height: 0;
-    transition: .3s height;
+    padding: .8em 0 0;
 }
 
-.detail__paragraph::before, .detail__paragraph::after{
-    content: "";
-    display: block;
-    height: 20px;
-    background-color: transparent;
+.detail__item{
+    --clipy: polygon(0 0, 100% 0%, 100% 0, 0 0);
+}
+
+.detail__paragraph{
+    clip-path: var(--clipy);
+    transition: clip-path .3s;
+}
+
+.detail__item:checked{
+    --clipy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }

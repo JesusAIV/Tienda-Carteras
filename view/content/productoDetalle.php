@@ -58,11 +58,9 @@
                         </li>
 
                         <li class="detail__item">
-                            <div class="group">
-                                <p class="detail__name">Cuidado del producto</p>
+                            <p class="detail__name">Cuidado del producto
                                 <img src="./img/svg/arrow-bottom.svg" class="detail__icon">
-                            </div>
-
+                            </p>
                             <ul class="product__care">
                                 <li class="care__item">Evita exponerlo a sustancias químicas como alcohol, perfume o acetona.</li>
                                 <li class="care__item">No la guardes es espacios cerrados, húmedos ni en bolsas plásticas.</li>
