@@ -9,10 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         <?php
-            $text = $_GET['views'];
-            $Title = explode("/", $_GET['views']);
-            $NomTitle = ucfirst($Title[0]);
-            echo $NomTitle;
+            if(empty($_GET['views'])){
+                $NomTitle = "Confecciones Milagros";
+                echo $NomTitle;
+            } else {
+                $text = $_GET['views'];
+                $Title = explode("/", $_GET['views']);
+                $NomTitle = ucfirst($Title[0]);
+                echo $NomTitle;
+            }
         ?>
     </title>
     <!-- CSS -->
@@ -52,16 +57,21 @@
     ?>
 
     <?php
-        if($NomTitle == "Inventario" || "Productos"){
-            include "modulos/contenido.php";
-            $clasemain = "main-inventario";
+        if(isset($_SESSION["idrol"])){
+            if($NomTitle == "Inventario" || $NomTitle ==  "Productos"){
+                include "modulos/contenido.php";
+                $clasemain = "main-inventario";
+            }else{
+                include "modulos/header.php";
+                $clasemain = "main";
+            }
         }else{
             include "modulos/header.php";
             $clasemain = "main";
         }
     ?>
 
-    <div class="<?php echo $clasemain; ?>">
+    <div class="<?php echo $clasemain ?>">
         <?php require_once $vistas;?>
     </div>
 
