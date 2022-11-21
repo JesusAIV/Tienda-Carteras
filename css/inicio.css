@@ -187,7 +187,6 @@
 }
 
 .product__leyend::before{
-    /* content: "CARTERAS"; */
     position: absolute;
     top: 0;
     left: 0;
@@ -195,8 +194,8 @@
     right: 0;
     background-color: var(--color-opacity);
     color: var(--blanco);
-    transform: translateX(100%);
-    transition: transform .3s;
+    clip-path: circle(0 at center);
+    transition: clip-path .8s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,7 +203,7 @@
 }
 
 .product__leyend:hover::before{
-    transform: translateX(0);
+    clip-path: circle(100% at center);
 }
 
 .product__enlace{
