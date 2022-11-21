@@ -49,18 +49,21 @@
 
                     <ul class="detail__extra">
                         <li class="detail__item">
-                            <p class="detail__name">Garantía
+                            <label class="detail__name" for="acordion">Garantía
                                 <img src="./img/svg/arrow-bottom.svg" class="detail__icon">
-                            </p>
+                            </label>
+                            <input type="checkbox" id="acordion" class="detail__input">
+
                             <p class="detail__paragraph">
                                 Este producto cuenta con una garantía por defecto de fabricación de 90 días calendario, contados a partir de la fecha de compra del producto. Para mayor información puede comunicarse a <a class="detail__references" href="mailto:confeccionesmilagros@gmail.com" target="_blank">confeccionesmilagros@gmail.com</a> o al whatsapp <a class="detail__references" href="https://wa.me/51972351346">+51972351346</a>
                             </p>
                         </li>
 
                         <li class="detail__item">
-                            <p class="detail__name">Cuidado del producto
+                            <label class="detail__name" for="acordion_cuidado">Cuidado del producto
                                 <img src="./img/svg/arrow-bottom.svg" class="detail__icon">
-                            </p>
+                            </label>
+                            <input type="checkbox" id="acordion_cuidado" class="detail__input">
                             <ul class="product__care">
                                 <li class="care__item">Evita exponerlo a sustancias químicas como alcohol, perfume o acetona.</li>
                                 <li class="care__item">No la guardes es espacios cerrados, húmedos ni en bolsas plásticas.</li>

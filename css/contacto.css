@@ -57,7 +57,7 @@
 .contacto__paragraph,
 .group__label{
     font-size: .8em;
-    padding: 0 0 1em 0;
+    padding: 0 0 .7em 0;
 }
 
 .formulario{
@@ -98,9 +98,9 @@
 
 .group__input,
 .mensaje{
-    margin: 1em 0 0 0;
+    margin: .7em 0 0 0;
     padding: 1em 1.1em;
-    font-size: .9em;
+    font-size: 1rem;
     
 }
 
