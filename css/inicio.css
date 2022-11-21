@@ -170,6 +170,15 @@
 .leyend1::before{
     content: "CARTERAS";
 }
+.leyend2::before{
+    content: "MORRALES";
+}
+.leyend3::before{
+    content: "MOCHILAS";
+}
+.leyend4::before{
+    content: "BOLSOS";
+}
 
 .product__leyend{
     position: relative;
