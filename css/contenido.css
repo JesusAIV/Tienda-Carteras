@@ -75,18 +75,18 @@
     font-size: 3em;
 }
 .opc-inventario-container{
+    margin-left: 2em;
     color: #000000;
     width: 100%;
     display: flex;
-    gap: 12em;
+    gap: 5em;
     align-items: center;
-    justify-content: center;
 }
 .opc-inventario-container a{
     color: #000000;
 }
 .opc-inventario-main{
-    width: 200px;
+    width: 270px;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -100,6 +100,7 @@
 }
 .opc-inventario-icon img{
     width: 60px;
+    margin: 1em 0;
 }
 .opc-inventario-title{
     background-color: #D9D9D9;
@@ -110,6 +111,6 @@
     padding: 1em;
 }
 .opc-inventario-title p{
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 600;
 }
