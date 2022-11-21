@@ -126,6 +126,12 @@
     font-size: 1.8em;
     color: var(--color1);
 }
+
+.principal__productos--title p,
+.oferece__title p{
+    margin-bottom: 1em;
+}
+
 .principal__productos--lista{
     text-align: center;
     display: grid;
@@ -167,7 +173,7 @@
     max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
-    gap: 30px;
+    gap: 50px;
 }
 .ofrece__opcion{
     display: grid;

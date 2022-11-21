@@ -194,18 +194,31 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 4em;
 }
 
 .nav-item{
-    width: 10rem;
+    width: 100%;
 }
 
 .nav-item a{
     font-weight: 600;
 }
 
-.nav-item a:hover{
-    color: #47148f;
+.nav-item::after{
+    content: "";
+    display: block;
+    width: 90%;
+    height: 3px;
+    background-color: var(--color1);
+    margin-top: .1em;
+    --clipy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    clip-path: var(--clipy);
+    transition: clip-path .2s;
+}
+
+.nav-item:hover::after{
+    --clipy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .search{
@@ -240,7 +253,6 @@ header{
 
 .division{
     color: var(--color-separador);
-    margin: 0;
 }
 
 /* Footer */
