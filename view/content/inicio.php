@@ -35,7 +35,7 @@
         <div class="principal__productos--lista">
             <div class="product__list--center">
                 <a class="product__enlace" href="carteras">
-                    <img class="product__img" src="./img/jpg/cartera.jpg" alt="Carteras">
+                    <img class="product__img" src="./img/jpg/carteras.jpg" alt="Carteras">
                     <p>CARTERAS</p>
                 </a>
             </div>
@@ -53,7 +53,7 @@
             </div>
             <div class="product__list--center">
                 <a class="product__enlace" href="">
-                    <img class="product__img" src="./img/jpg/bolso.jpg" alt="Bolsos">
+                    <img class="product__img" src="./img/jpg/bolsos.jpg" alt="Bolsos">
                     <p>BOLSOS</p>
                 </a>
             </div>
