@@ -87,11 +87,6 @@
     font-weight: 500;
 }
 
-.group{
-    display: flex;
-    gap: .7em;
-}
-
 .detail__item{
     font-weight: 700;
 }
@@ -107,22 +102,15 @@
 }
 
 .detail__extra{
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
 
-.detail__icon{
-    cursor: pointer;
-}
-
 .detail__paragraph,
 .care__item{
     font-weight: 500;
-}
-
-.detail__paragraph{
-    line-height: 1.5em;
 }
 
 .detail__references{
@@ -135,5 +123,28 @@
 
 .care__item{
     list-style: disc;
-    margin-left: 10px;
+    margin: 0 1em 0;
+}
+
+.detail__name{
+    cursor: pointer;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    align-items: center;
+}
+
+.detail__paragraph{
+    line-height: 1.5em;
+    overflow: hidden;
+    height: 0;
+    transition: .3s height;
+}
+
+.detail__paragraph::before, .detail__paragraph::after{
+    content: "";
+    display: block;
+    height: 20px;
+    background-color: transparent;
 }
