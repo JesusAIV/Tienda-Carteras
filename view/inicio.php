@@ -50,12 +50,14 @@
     <?php
         if($NomTitle == "Inventario"){
             include "modulos/contenido.php";
+            $clasemain = "main-inventario";
         }else{
             include "modulos/header.php";
+            $clasemain = "main";
         }
     ?>
 
-    <div class="main">
+    <div class="<?php echo $clasemain; ?>">
         <?php require_once $vistas;?>
     </div>
 

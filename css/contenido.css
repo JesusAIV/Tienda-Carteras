@@ -1,4 +1,65 @@
+.main-inventario{
+    margin-left: 240px;
+    margin-top: 64px;
+    padding: 10px;
+}
 .menu-lateral{
-    background-color: aquamarine;
-    width: 12.5rem;
+    background-color: #E4E3E3;
+    width: 15em;
+    position: fixed;
+    height: 100%;
+    text-align: center;
+    padding: 1em 0.5em;
+}
+.bienvenida-inventario{
+    margin: 1em 0;
+    font-weight: 600;
+}
+.opciones-inventario{
+    background-color: #8F8D8D;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+}
+.opciones-inventario a, .opciones-inventario i{
+    color: #000000;
+    font-weight: 600;
+}
+.nav-item-inventario{
+    margin: 10px;
+    display: flex;
+    gap: 1em;
+}
+.header-inventario{
+    margin-left: 15em;
+    position: fixed;
+    background-color: #864DD6;
+    width: -webkit-fill-available;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+    padding: 1em 2em 1em 1em;
+    z-index: 99;
+}
+.menu-bars{
+    cursor: pointer;
+}
+.menu-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+.header-inventario i{
+    font-size: 2em;
+}
+.cuenta-cerrarsesion{
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
