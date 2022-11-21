@@ -1,4 +1,4 @@
-.detail{
+.detail {
     width: 90%;
     padding: 1.3em 2em;
     margin: 0 auto;
@@ -8,18 +8,18 @@
     grid-template-columns: repeat(6, 1fr);
 }
 
-.principal__show{
+.principal__show {
     grid-column: 1/4;
 }
 
-.principal__image{
+.principal__image {
     width: 100%;
     max-width: 600px;
     height: 600px;
     padding: 1em 1.3em;
 }
 
-.principal__circle{
+.principal__circle {
     width: 100%;
     height: 100%;
 
@@ -27,14 +27,14 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.principal__icon{
+.principal__icon {
     grid-column: 1/-1;
     grid-row: 1/3;
     justify-self: end;
     width: 35px;
 }
 
-.principal__img{
+.principal__img {
     grid-column: 1/-1;
     grid-row: 2/-1;
     border-radius: 50%;
@@ -42,15 +42,15 @@
     height: 100%;
 }
 
-.principal__detail{
+.principal__detail {
     grid-column: 4/-1;
 }
 
-.detail__content{
+.detail__content {
     margin-top: 1em;
 }
 
-.detail__header{
+.detail__header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,18 +58,18 @@
     gap: 1em;
 }
 
-.detail__title{
+.detail__title {
     font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: 1.2px;
 }
 
-.detail__price{
+.detail__price {
     font-size: 2.2rem;
     font-weight: 500;
 }
 
-.detail__body{
+.detail__body {
     margin-top: 1em;
     display: flex;
     flex-direction: column;
@@ -77,31 +77,31 @@
 }
 
 .detail__body__title,
-.detail__name{
+.detail__name {
     font-size: 1.2rem;
 }
 
 .stock__text,
 .detail__body__title,
-.detail__name{
+.detail__name {
     font-weight: 500;
 }
 
-.detail__item{
+.detail__item {
     font-weight: 700;
 }
 
-.stock{
+.stock {
     display: flex;
     align-items: center;
     gap: .7em;
 }
 
-.stock__number{
+.stock__number {
     font-size: 1.2rem;
 }
 
-.detail__extra{
+.detail__extra {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -109,24 +109,24 @@
 }
 
 .detail__paragraph,
-.care__item{
+.care__item {
     font-weight: 500;
 }
 
-.detail__references{
+.detail__references {
     color: #333;
 }
 
-.detail__references:hover{
+.detail__references:hover {
     border-bottom: 1px solid #333;
 }
 
-.care__item{
+.care__item {
     list-style: disc;
     margin: 0 1em 0;
 }
 
-.detail__name{
+.detail__name {
     cursor: pointer;
 
     display: grid;
@@ -136,20 +136,38 @@
 }
 
 .detail__paragraph,
-.product__care{
+.product__care {
     line-height: 1.5em;
     padding: .8em 0 0;
 }
 
-.detail__item{
+.detail__item,
+.product__care {
     --clipy: polygon(0 0, 100% 0%, 100% 0, 0 0);
+
 }
 
-.detail__paragraph{
+.detail__paragraph,
+.product__care {
     clip-path: var(--clipy);
     transition: clip-path .3s;
 }
 
-.detail__item:checked{
+.detail__input:checked+.detail__paragraph,
+.detail__input:checked+.product__care {
     --clipy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+.detail__input {
+    display: none;
+}
+
+.detail__icon{
+    rotate: -90deg;
+    transition: rotate .3s;
+}
+
+.detail__icon:hover{
+    rotate: 0deg;
 }

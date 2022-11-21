@@ -81,8 +81,8 @@ header{
     margin: 0 0 0 30px;
     width: 20%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 1em;
 }
 
 .logo-img--header{
@@ -96,7 +96,7 @@ header{
 }
 
 .cuenta{
-    width: 7%;
+    width: 15%;
     position: relative;
     left: 300px;
 }
