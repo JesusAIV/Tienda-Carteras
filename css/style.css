@@ -220,6 +220,7 @@ header{
     color: #ffffff;
     padding: 1rem 5rem;
     position: relative;
+    z-index: 2;
 }
 .footer a{
     color: #ffffff;

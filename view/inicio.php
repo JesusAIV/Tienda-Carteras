@@ -17,6 +17,7 @@
     </title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/datatables.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/quienesSomos.css">
@@ -25,12 +26,15 @@
     <link rel="stylesheet" href="css/micuenta.css">
     <link rel="stylesheet" href="css/productoDetalle.css">
     <link rel="stylesheet" href="css/contenido.css">
+    <link rel="stylesheet" href="css/productos.css">
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/a9045ee35a.js" crossorigin="anonymous"></script>
     <script defer src="js/jquery.js"></script>
     <script src="js/sweetalert2.min.js"></script>
+    <script defer src="js/datatables.min.js"></script>
     <script defer src="js/main.js"></script>
     <script defer src="js/functions.js"></script>
+    <script defer src="js/adfunctions.js"></script>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
 </head>
 <body>
@@ -48,7 +52,7 @@
     ?>
 
     <?php
-        if($NomTitle == "Inventario"){
+        if($NomTitle == "Inventario" || "Productos"){
             include "modulos/contenido.php";
             $clasemain = "main-inventario";
         }else{
