@@ -1,1 +1,9 @@
+.detail{
+    width: 90%;
+    padding: 1.3em 2em;
+    margin: 4em auto;
+    overflow: hidden;
 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
