@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-11-2022 a las 03:00:14
+-- Tiempo de generación: 22-11-2022 a las 02:51:56
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -22,6 +22,42 @@ SET time_zone = "+00:00";
 --
 CREATE DATABASE IF NOT EXISTS `cmilagros` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `cmilagros`;
+
+DELIMITER $$
+--
+-- Procedimientos
+--
+DROP PROCEDURE IF EXISTS `InformacionProducto`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `InformacionProducto` (IN `idproducto` INT)   SELECT 
+	tbp.idproducto,
+	tbp.producto, 
+    tbp.precio,
+    tbp.descripcion,
+    tbp.stock,
+    tbc.categoria,
+    tbcol.color
+FROM producto AS tbp 
+JOIN categoria AS tbc
+ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
+ON (tbp.idcolor = tbcol.idcolor) 
+WHERE tbp.idproducto = idproducto$$
+
+DROP PROCEDURE IF EXISTS `ListarProductos`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ListarProductos` ()   SELECT 
+	tbp.idproducto,
+	tbp.producto, 
+    tbp.precio,
+    tbp.descripcion,
+    tbp.stock,
+    tbc.categoria,
+    tbcol.color
+FROM producto AS tbp 
+JOIN categoria AS tbc
+ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
+ON (tbp.idcolor = tbcol.idcolor)
+ORDER BY tbp.stock$$
+
+DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -91,6 +127,7 @@ CREATE TABLE `producto` (
   `idcolor` int(11) NOT NULL,
   `producto` varchar(50) NOT NULL,
   `descripcion` varchar(150) NOT NULL,
+  `stock` int(11) NOT NULL,
   `precio` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -106,9 +143,9 @@ CREATE TABLE `producto` (
 -- Volcado de datos para la tabla `producto`
 --
 
-INSERT INTO `producto` (`idproducto`, `idcategoria`, `idcolor`, `producto`, `descripcion`, `precio`) VALUES
-(1, 1, 5, 'campana', 'Cartera exclusiva para usarlo en toda ocasión ', 12.5),
-(2, 2, 4, 'tambor', 'Buen espacio para guardar y mantener seguro tus objetos', 19.5);
+INSERT INTO `producto` (`idproducto`, `idcategoria`, `idcolor`, `producto`, `descripcion`, `stock`, `precio`) VALUES
+(1, 1, 5, 'campana', 'Cartera exclusiva para usarlo en toda ocasión ', 50, 12.5),
+(2, 2, 4, 'tambor', 'Buen espacio para guardar y mantener seguro tus objetos', 50, 19.5);
 
 -- --------------------------------------------------------
 
