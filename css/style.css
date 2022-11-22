@@ -5,6 +5,7 @@
     --color-separador: #605c5c;
     --color-header: #8e8d8d;
     --redes-sociales: #333;
+    --color-negro: #000;
     /* PALETA 1 */
     --color1: #41436a;
     --color2: #974063;
@@ -26,7 +27,7 @@
     box-sizing: border-box;
     /* font-family: 'Secular One', sans-serif; */
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 
 
 }
@@ -83,6 +84,11 @@ header {
     font-size: .9rem;
     color: #fff;
     margin: 0 0 0 2em;
+    transition: color .2s;
+}
+
+.txt--cell:hover{
+    color: var(--color-negro);
 }
 
 /* Logo/Inicar sesion/Bolsa */
@@ -94,6 +100,16 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: .2em 0;
+}
+
+.container__login::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-separador);
+    position: absolute;
+    top: 73%;
 }
 
 .logo {
@@ -120,6 +136,7 @@ header {
 .cuenta-iniciarSesion {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .cuenta__titulo {
@@ -203,6 +220,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 4em;
+    padding: 2.5em 1em 2.2em;
 }
 
 .nav-item {
@@ -240,7 +258,8 @@ header {
 .search-input {
     width: 100%;
     height: 100%;
-    border: 1px solid var(--color1);
+    border: none;
+    border-bottom: 2px solid var(--color1);
     border-radius: 3px;
     background: transparent;
     outline: none;
@@ -259,10 +278,6 @@ header {
     right: 30px;
 }
 
-.division {
-    color: var(--color-separador);
-    margin: 0;
-}
 
 /* Footer */
 .footer {
@@ -389,8 +404,6 @@ header {
     text-shadow: 0 0 5px var(--color4);
 }
 
-/* -------------------------------------------- */
-
 .redes-sociales {
     display: flex;
     justify-content: center;
@@ -405,6 +418,9 @@ header {
     font-size: 2rem;
 }
 
+/* -------------------------------------------- */
+
+
 .derechos-reservados {
     text-align: center;
 }
@@ -418,7 +434,7 @@ hr {
 }
 
 .producto:hover,
-.caja-footer a:hover {
+.footer__link:hover {
     color: var(--color1);
     transition: color .2s;
 }
@@ -465,6 +481,10 @@ hr {
 .tiendas__icons {
     width: 30px;
     margin-right: 0.3em;
+}
+
+.tiendas__leyend{
+    color: var(--color1);
 }
 
 /* Whatsapp */

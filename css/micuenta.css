@@ -1,21 +1,60 @@
+:root{
+    --color-separador: #605c5c;
+    --color-header: #8e8d8d;
+    --redes-sociales: #333;
+    --color-negro: #000;
+    /* PALETA 1 */
+    --color1: #41436a;
+    --color2: #974063;
+    --color3: #f13255;
+    --color4: #ff9677;
+    --blanco: #fff;
+    --gris: #e0e0e0;
+}
+
 .cuenta-header{
     color: #ffffff;
-    background-color: #864DD6;
+    background-color: var(--color1);
     text-align: center;
     width: 100%;
-    padding: 1em 0;
+    padding: 5em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .8em;
 }
 .cuenta-header-title p{
-    font-size: 2.5em;
+    font-size: 3.8rem;
+    font-weight: 700;
 }
-.cuenta-header-subtitle p{
-    font-size: 1.5em;
+
+.cuenta__link,
+.cuenta__section{
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-size: .8rem;
 }
+
+.cuenta__link:hover{
+    color: var(--color3);
+    transition: color .3s;
+}
+
+.cuenta__link::after{
+    content: "/";
+    display: inline-block;
+    padding: 0 8px;
+}
+
 .content-cuenta{
-    padding: 1em;
+    padding: 1.5em 1em 5em;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 2em;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
 }
 .header-cuenta p{
     font-size: 2.25em;
@@ -68,7 +107,7 @@
     margin-right: 2em;
 }
 .button-form button{
-    background-color: #864DD6;
+    background-color: var(--color1);
     border:none;
     padding: 1em;
     color: #fff;

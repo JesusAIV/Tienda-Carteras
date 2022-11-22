@@ -167,16 +167,16 @@
     border-radius: 4px;
 }
 
-.leyend1::before{
+.leyend1::after{
     content: "CARTERAS";
 }
-.leyend2::before{
+.leyend2::after{
     content: "MORRALES";
 }
-.leyend3::before{
+.leyend3::after{
     content: "MOCHILAS";
 }
-.leyend4::before{
+.leyend4::after{
     content: "BOLSOS";
 }
 
@@ -186,7 +186,7 @@
     cursor: pointer;
 }
 
-.product__leyend::before{
+.product__leyend::after{
     position: absolute;
     top: 0;
     left: 0;
@@ -202,7 +202,7 @@
     font-size: 2rem;
 }
 
-.product__leyend:hover::before{
+.product__leyend:hover::after{
     clip-path: circle(100% at center);
 }
 

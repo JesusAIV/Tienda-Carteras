@@ -1,12 +1,12 @@
 <div class="container__tiendas">
     <div class="title__tiendas">
-        <p>TIENDAS</p>
+        <p class="tiendas__leyend">TIENDAS</p>
     </div>
     <div class="tiendas">
         <div class="tiendas__info">
             <div class="tiendas__infocontainer">
                 <div class="tiendas__title">
-                    <p>LIMA</p>
+                    <p class="tiendas__leyend">LIMA</p>
                 </div>
                 <div>
                     <div class="tiendas__info--center">

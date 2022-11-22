@@ -18,8 +18,16 @@
                         <ul>
                             <li>Centro comercial Luna Pizarro, Lima, La Victoria 15033</li>
                             <li>Teléfono: +51 972351346</li>
-                            <li>Whatsapp : (+51) 982055208</li>
-                            <li>confeccionesmilagros@gmail.com</li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=+51939304773&text=Hola, me gustaría comprar tu producto!" target="_blank"">
+                                    Whatsapp : (+51) 939304773
+                                </a>
+                            </li>
+                            <li>
+                                <a href=" mailto:confeccionesmilagros@gmail.com">
+                                    confeccionesmilagros@gmail.com
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -53,13 +61,13 @@
                         <p class="footer__leyend">PÁGINAS</p>
                         <div class="caja-footer">
                             <ul>
-                                <li><a href="quienessomos">¿Quiénes somos?</a></li>
-                                <li><a href="tiendas">Nuestras tiendas</a></li>
-                                <li><a href="contacto">Contacto</a></li>
+                                <li><a class="footer__link" href="quienessomos">¿Quiénes somos?</a></li>
+                                <li><a class="footer__link" href="tiendas">Nuestras tiendas</a></li>
+                                <li><a class="footer__link" href="contacto">Contacto</a></li>
                                 <?php
                                 if (!isset($_SESSION['email'])) {
                                 ?>
-                                    <li><a href="cuenta">Mi Cuenta</a></li>
+                                    <li><a class="footer__link" href="cuenta">Mi Cuenta</a></li>
                                 <?php
                                 }
                                 ?>
@@ -72,10 +80,10 @@
                         </div>
                         <div class="caja-footer">
                             <ul>
-                                <li><a href="producto">Carteras</a></li>
-                                <li><a href="producto">Morrales</a></li>
-                                <li><a href="producto">Mochilas</a></li>
-                                <li><a href="producto">Bolsos</a></li>
+                                <li><a class="footer__link" href="producto">Carteras</a></li>
+                                <li><a class="footer__link" href="producto">Morrales</a></li>
+                                <li><a class="footer__link" href="producto">Mochilas</a></li>
+                                <li><a class="footer__link" href="producto">Bolsos</a></li>
                             </ul>
                         </div>
                     </div>
@@ -83,7 +91,7 @@
             </div>
             <hr>
             <div class="derechos-reservados">
-                <p>Copyright &#169; 2022 Confecciones Milagros - Todos los derechos reservados</p>
+                <p>Copyright &#169; 2022 Confecciones Milagros - Todos los derechos reservados / Diseñado por Alvaro Villanueva & Jesús Isique</p>
             </div>
         </div>
     </footer>

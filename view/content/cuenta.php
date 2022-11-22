@@ -7,7 +7,8 @@
                 <p>Mi Cuenta</p>
             </div>
             <div class="cuenta-header-subtitle">
-                <p>casa | mi cuenta</p>
+                <a class="cuenta__link" href="inicio">casa</a>
+                <span class="cuenta__section">mi cuenta</span>
             </div>
         </div>
         <div class="content-cuenta">

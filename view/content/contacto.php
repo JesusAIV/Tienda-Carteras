@@ -14,22 +14,22 @@
             <form action="#" method="POST" class="formulario">
                 <div class="group1">
                     <label for="nombres" class="group__label">Nombres</label>
-                    <input type="text" class="group__input" name="nombres" id="nombres">
+                    <input type="text" class="group__input" name="nombres" id="nombres" placeholder="Ingrese sus nombres">
                 </div>
     
                 <div class="group2">
                     <label for="apellidos" class="group__label">Apellidos</label>
-                    <input type="text" class="group__input" name="apellidos" id="apellidos">
+                    <input type="text" class="group__input" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos">
                 </div>
     
                 <div class="group3">
                     <label for="celular" class="group__label">Celular</label>
-                    <input type="tel" class="group__input" name="celular" id="celular">
+                    <input type="tel" class="group__input" name="celular" id="celular" placeholder="+51">
                 </div>
     
                 <div class="group4">
                     <label for="correo" class="group__label">Correo</label>
-                    <input type="email" class="group__input" name="correo" id="correo">
+                    <input type="email" class="group__input" name="correo" id="correo" placeholder="ejemplo@gmail.com">
                 </div>
     
                 <div class="group5">

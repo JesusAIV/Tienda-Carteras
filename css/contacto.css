@@ -2,11 +2,23 @@
     --bg-container: #3333332e;
     --borderInput-color: #8F8D8D;
     --leyend-color: #949292;
+    --color-separador: #605c5c;
+    --color-header: #8e8d8d;
+    --redes-sociales: #333;
+    --color-negro: #000;
+    /* PALETA 1 */
+    --color1: #41436a;
+    --color2: #974063;
+    --color3: #f13255;
+    --color4: #ff9677;
+    --blanco: #fff;
+    --gris: #e0e0e0;
 }
 
 .main__contacto{
     width: 95%;
     margin: 0 auto;
+    margin-top: 3em;
     display: grid;
     grid-template-areas: 
     "mapa         mapa         mapa         mapa"
@@ -15,6 +27,7 @@
     "formContacto formContacto infoContacto infoContacto";
     border-radius: 20px 20px 0 0;
     margin-bottom: 3em;
+    box-shadow: -8px 10px 30px 30px #d0cdcd66;
 }
 
 .mapa{
@@ -26,7 +39,6 @@
 
 .contacto__formulario{
     grid-area: formContacto;
-    box-shadow: -8px 50px 30px 30px #d0cdcd66;
 }
 
 .mapa__top{
@@ -49,6 +61,7 @@
 .contacto__title{
     font-size: 1.3em;
     padding: 0 0 1em 0;
+    color: var(--color1);
 }
 
 .contacto__title--color{
@@ -102,7 +115,7 @@
 .mensaje{
     margin: .7em 0 0 0;
     padding: 1em 1.1em;
-    font-size: 1rem;
+    font-size: 1.1rem;
     
 }
 
@@ -162,6 +175,7 @@
 
 .group__label{
     display: block;
+    color: var(--color1);
 }
 
 .group__leyend{

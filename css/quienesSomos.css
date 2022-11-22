@@ -1,5 +1,16 @@
 :root{
     --bg-container: #3333332e;
+    --color-separador: #605c5c;
+    --color-header: #8e8d8d;
+    --redes-sociales: #333;
+    --color-negro: #000;
+    /* PALETA 1 */
+    --color1: #41436a;
+    --color2: #974063;
+    --color3: #f13255;
+    --color4: #ff9677;
+    --blanco: #fff;
+    --gris: #e0e0e0;
 }
 
 .hero{
@@ -14,6 +25,11 @@
     text-align: center;
 }
 
+.hero__title,
+.title{
+    color: var(--color1);
+}
+
 .hero__quienesSomos,
 .hero__nuestrosProductos,
 .hero__empresa{
@@ -26,9 +42,11 @@
     font-weight: 700;
 }
 
-.paragraph{
+.paragraph,
+.hero__quienesSomos__item{
     letter-spacing: .2px;
     line-height: 1.5em;
+    color: var(--redes-sociales);
 }
 
 .paragraph__container{
