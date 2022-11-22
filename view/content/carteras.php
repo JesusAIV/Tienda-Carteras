@@ -1,7 +1,7 @@
     <div class="principal">
-        <div class="banner">
+        <!-- <div class="banner">
             <img src="./img/jpg/banner-carteras.jpg" alt="banner-carteras" class="banner__img">
-        </div>
+        </div> -->
 
         <div class="content__carteras">
             <div class="caja1">
@@ -10,10 +10,10 @@
                 <div class="categorias">
                     <h3 class="categorias__title">Categorias</h3>
                     <div class="categorias__links">
-                        <a href="" class="categorias__link">Carteras</a>
-                        <a href="" class="categorias__link">Morrales</a>
-                        <a href="" class="categorias__link">Mochilas</a>
-                        <a href="" class="categorias__link">Bolsos</a>
+                        <a href="carteras" class="categorias__link">Carteras</a>
+                        <a href="inicio" class="categorias__link">Morrales</a>
+                        <a href="inicio" class="categorias__link">Mochilas</a>
+                        <a href="inicio" class="categorias__link">Bolsos</a>
                     </div>
                 </div>
 
@@ -80,12 +80,16 @@
                     <div class="card__product">
                         <picture class="product">
                             <a href="productoDetalle" class="product__item">
-                                <img src="./img/jpg/cartera_view1.jpg" alt="" class="product__show">
+                                <img src="./img/png/cartera_view1.png" alt="" class="product__show">
                             </a>
                         </picture>
                         <h3 class="product__title">Nombre</h3>
                         <span class="product__price">S/000.00</span>
-                        <a href="productoDetalle" class="product__ver">
+                        <a href="productoDetalle" class="product__ver button">
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
                             Ver producto
                         </a>
                     </div>
@@ -93,12 +97,16 @@
                     <div class="card__product">
                         <picture class="product">
                             <a href="" class="product__item">
-                                <img src="./img/jpg/cartera_view2.jpg" alt="" class="product__show">
+                                <img src="./img/png/cartera_view2.png" alt="" class="product__show">
                             </a>
                         </picture>
                         <h3 class="product__title">Nombre</h3>
                         <span class="product__price">S/000.00</span>
-                        <a href="productoDetalle" class="product__ver">
+                        <a href="productoDetalle" class="product__ver button">
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
                             Ver producto
                         </a>
                     </div>
@@ -106,12 +114,16 @@
                     <div class="card__product">
                         <picture class="product">
                             <a href="" class="product__item">
-                                <img src="./img/jpg/cartera_view3.jpg" alt="" class="product__show">
+                                <img src="./img/png/cartera_view3.png" alt="" class="product__show">
                             </a>
                         </picture>
                         <h3 class="product__title">Nombre</h3>
                         <span class="product__price">S/000.00</span>
-                        <a href="" class="product__ver">
+                        <a href="productoDetalle" class="product__ver button">
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
                             Ver producto
                         </a>
                     </div>
@@ -119,12 +131,16 @@
                     <div class="card__product">
                         <picture class="product">
                             <a href="" class="product__item">
-                                <img src="./img/jpg/cartera_view4.jpg" alt="" class="product__show">
+                                <img src="./img/png/cartera_view4.png" alt="" class="product__show">
                             </a>
                         </picture>
                         <h3 class="product__title">Nombre</h3>
                         <span class="product__price">S/000.00</span>
-                        <a href="" class="product__ver">
+                        <a href="productoDetalle" class="product__ver button">
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
                             Ver producto
                         </a>
                     </div>

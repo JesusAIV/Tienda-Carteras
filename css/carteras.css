@@ -3,22 +3,20 @@
     --color-border-caja: #797777;
     --color-price: #AC78F4;
     --bg-boton: #6e35bf;
-}
-
-.banner{
-    width: 100%;
-    min-height: 300px;
-}
-
-.banner__img{
-    width: 100%;
-    height: 300px;
-    object-position: center;
-    object-fit: contain;
+    --color-header: #8e8d8d;
+    --redes-sociales: #333;
+    --color-negro: #000;
+    --blanco: #fff;
+    --gris: #e0e0e0;
+    /* PALETA 1 */
+    --color1: #41436a;
+    --color2: #974063;
+    --color3: #f13255;
+    --color4: #ff9677;
 }
 
 .content__carteras{
-    padding: 1.2em 1em;
+    padding: 3em 2em 5em;
     display: grid;
     grid-template-areas: 
     "caja1 caja2 caja2"
@@ -137,16 +135,15 @@
 }
 
 .menu__navegacion__link::after{
-    content: "";
+    content: "/";
     display: inline-block;
-    height: 100%;
-    width: 1px;
     position: relative;
-    left: 3px;
-    top: 5px;
-    margin: 0 .6em;
-    background-color: var(--color-separador);
-    rotate: 20deg;
+    padding: 0 .3em;
+}
+
+.menu__navegacion__link:hover{
+    color: var(--color3);
+    transition: color .3s;
 }
 
 .menu__navegacion__name{
@@ -191,7 +188,11 @@
 
 .product__ver{
     padding: .8em 2em;
-    border: 1px solid var(--color-price);
-    background-color: var(--bg-boton);
-    color: #fff;
+    background-color: var(--blanco);
+    color: var(--bg-boton);
+}
+
+.product__ver:hover{
+    font-weight: 700;
+    transition: font-weight .3s;
 }

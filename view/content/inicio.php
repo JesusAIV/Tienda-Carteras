@@ -28,6 +28,7 @@
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </div>
+
     <div class="principal__productos">
         <div class="principal__productos--title">
             <p>NUESTROS PRODUCTOS</p>
@@ -55,6 +56,7 @@
             </div>
         </div>
     </div>
+
     <div class="principal__ofrece">
         <div class="ofrece__opcion">
             <div class="oferece__title">
@@ -95,6 +97,7 @@
                 </div>
             </div>
         </div>
+
         <div class="ofrece__opcion">
             <div class="oferece__title">
                 <p>Métodos de pago</p>
@@ -127,7 +130,21 @@
             </div>
         </div>
     </div>
-    <div class="principal__opiniones">
 
+    <div class="principal__opiniones">
+        <img src="./img/svg/left-arrow.svg" class="slider__arrow" id="before">
+
+        <section class="slider__body" data-id="1">
+            <div class="slider__texts">
+                <h2 class="subtitle">¡Hola! mi nombres es Roberto</h2>
+                <p class="slider__review">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis necessitatibus quam neque illum ducimus temporibus.
+                </p>
+            </div>
+
+            <figure class="slider__picture">
+                <img src="./img/jpg/" alt="" class="slider__img">
+            </figure>
+        </section>
     </div>
 </div>
