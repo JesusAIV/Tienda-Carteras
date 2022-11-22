@@ -73,7 +73,7 @@
                     </div>
                     <div class="campos-new-produc">
                         <label for="addpprecio">Precio</label>
-                        <input type="text" id="addpprecio" class="addpprecio" name="addpprecio">
+                        <input type="text" id="addpprecio" class="addpprecio" name="addpprecio" pattern="^\d*(\.\d{0,2})?$">
                     </div>
                     <div class="campos-new-produc">
                         <label for="addpdescripcion">Descripcion</label>

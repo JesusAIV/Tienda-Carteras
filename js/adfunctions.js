@@ -1,10 +1,10 @@
-$(document).ready( function () {
+$(document).ready(function () {
     listarproductos();
     modalNewProducto();
     crudProducto();
-} );
+});
 
-function listarproductos(){
+function listarproductos() {
     $('#table-productos').DataTable({
         'ajax': {
             'url': "./ajax/productos.php",
@@ -13,23 +13,23 @@ function listarproductos(){
             'method': 'POST'
         },
         'columns': [
-            {'data': 'contador'},
-            {'data': 'producto'},
-            {'data': 'precio'},
-            {'data': 'descripcion'},
-            {'data': 'stock'},
-            {'data': 'categoria'},
-            {'data': 'color'},
-            {'data': 'editar'},
-            {'data': 'estado'}
+            { 'data': 'contador' },
+            { 'data': 'producto' },
+            { 'data': 'precio' },
+            { 'data': 'descripcion' },
+            { 'data': 'stock' },
+            { 'data': 'categoria' },
+            { 'data': 'color' },
+            { 'data': 'editar' },
+            { 'data': 'estado' }
         ],
-    'language': {
+        'language': {
             "url": "./js/datatable-es.json"
         },
         responsive: false
     });
 }
-function modalNewProducto(){
+function modalNewProducto() {
     $("#new-producto").click(function () {
         $(".modal-registro-nuevo-fondo").show();
     });
@@ -37,8 +37,8 @@ function modalNewProducto(){
         $(".modal-registro-nuevo-fondo").hide();
     });
 }
-function crudProducto(){
-    $('.ProductosAjax').submit(function(e){
+function crudProducto() {
+    $('.ProductosAjax').submit(function (e) {
         e.preventDefault();
 
         var form = $(this);
@@ -48,26 +48,26 @@ function crudProducto(){
         var metodo = form.attr('method');
         var respuesta = form.children('.RespuestaAjax');
 
-        var msjError="<script>Swal.fire('Ocurrio un error inesperado', 'Error', 'error');</script>";
+        var msjError = "<script>Swal.fire('Ocurrio un error inesperado', 'Error', 'error');</script>";
         var formdata = new FormData(this);
 
         var textoAlerta;
-        if(tipo==="add-producto"){
-            textoAlerta="Los datos que enviaras quedaran almacenados en el sistema";
-        }else if(tipo == "delete"){
-            textoAlerta="Los datos serán eliminados completamente del sistema";
-        }else if(tipo === "update"){
-            textoAlerta="Los datos del sistema serán actualizados";
-        }else if(tipo === "generate"){
-            textoAlerta="Se va a generar un nuevo usuario";
-        }else if(tipo === "disabled"){
-            textoAlerta="El usuario será desabilitado del sistema";
-        }else if(tipo === "enable"){
-            textoAlerta="El usuario será habilitado del sistema";
-        }else if(tipo === "update-perfil"){
-            textoAlerta="Los datos del sistema serán actualizados";
-        }else{
-            textoAlerta="Quieres realizar la operación solicitada"
+        if (tipo === "add-producto") {
+            textoAlerta = "Los datos que enviaras quedaran almacenados en el sistema";
+        } else if (tipo == "delete") {
+            textoAlerta = "Los datos serán eliminados completamente del sistema";
+        } else if (tipo === "update") {
+            textoAlerta = "Los datos del sistema serán actualizados";
+        } else if (tipo === "generate") {
+            textoAlerta = "Se va a generar un nuevo usuario";
+        } else if (tipo === "disabled") {
+            textoAlerta = "El usuario será desabilitado del sistema";
+        } else if (tipo === "enable") {
+            textoAlerta = "El usuario será habilitado del sistema";
+        } else if (tipo === "update-perfil") {
+            textoAlerta = "Los datos del sistema serán actualizados";
+        } else {
+            textoAlerta = "Quieres realizar la operación solicitada"
         }
 
         Swal.fire({
@@ -90,7 +90,7 @@ function crudProducto(){
                         respuesta.html(data);
                         form[0].reset();
                     },
-                    error: function() {
+                    error: function () {
                         respuesta.html(msjError);
                     }
                 });
@@ -99,3 +99,15 @@ function crudProducto(){
         })
     });
 }
+$(document).on('keydown', 'input[pattern]', function (e) {
+    var input = $('#addpprecio');
+    var oldVal = input.val();
+    var regex = new RegExp(input.attr('pattern'), 'g');
+
+    setTimeout(function () {
+        var newVal = input.val();
+        if (!regex.test(newVal)) {
+            input.val(oldVal);
+        }
+    }, 1);
+});
