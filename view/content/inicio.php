@@ -33,28 +33,24 @@
             <p>NUESTROS PRODUCTOS</p>
         </div>
         <div class="principal__productos--lista">
-            <div class="product__list--center">
+            <div class="product__list--center product__leyend leyend1">
                 <a class="product__enlace" href="carteras">
-                    <img class="product__img" src="./img/jpg/cartera.jpg" alt="Carteras">
-                    <p>CARTERAS</p>
+                    <img class="product__img" src="./img/jpg/carteras.jpg" alt="Carteras">
                 </a>
             </div>
-            <div class="product__list--center">
+            <div class="product__list--center product__leyend leyend2">
                 <a class="product__enlace" href="morrales">
                     <img class="product__img" src="./img/jpg/morrales.jpg" alt="Morrales">
-                    <p>MORRALES</p>
                 </a>
             </div>
-            <div class="product__list--center">
+            <div class="product__list--center product__leyend leyend3">
                 <a class="product__enlace" href="">
                     <img class="product__img" src="./img/jpg/mochila.jpg" alt="Mochilas">
-                    <p>MOCHILAS</p>
                 </a>
             </div>
-            <div class="product__list--center">
+            <div class="product__list--center product__leyend leyend4">
                 <a class="product__enlace" href="">
-                    <img class="product__img" src="./img/jpg/bolso.jpg" alt="Bolsos">
-                    <p>BOLSOS</p>
+                    <img class="product__img" src="./img/jpg/bolsos.jpg" alt="Bolsos">
                 </a>
             </div>
         </div>
