@@ -18,7 +18,7 @@
             <hr>
         </div>
         <div class="tabla-productos">
-            <table id="table-productos">
+            <table id="table-productos" class="cell-border" style="width:100%">
                 <thead>
                     <tr>
                         <th>#</th>
@@ -27,20 +27,22 @@
                         <th>Descripcion</th>
                         <th>Stock</th>
                         <th>Categorias</th>
+                        <th>Color</th>
                         <th>Detalle</th>
                         <th>Estado</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
-                        <td>Nombre</td>
-                        <td>Precio</td>
-                        <td>Descripcion</td>
-                        <td>Stock</td>
-                        <td>Categorias</td>
-                        <td>Detalle</td>
-                        <td>Estado</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td class="td-mostrar-producto"></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
