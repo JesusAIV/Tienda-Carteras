@@ -1,5 +1,5 @@
 <div>
-    <div class="menu-lateral">
+    <div class="menu-lateral" id="menu-lateral">
         <div class="logo">
             <img class="logo-img--header" src="img/png/bolso.png" alt="Logo">
             <a class="logo-enlace" href="inicio">Confecciones Milagros</a>
