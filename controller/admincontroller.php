@@ -117,4 +117,9 @@
             }
             return mainModel::sweet_alert($alerta);
         }
+        public function DatosCategoria($nombrecategoria){
+            $hola = "hola";
+
+            return $hola;
+        }
     }

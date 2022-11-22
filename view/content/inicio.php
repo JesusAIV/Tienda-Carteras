@@ -34,22 +34,22 @@
         </div>
         <div class="principal__productos--lista">
             <div class="product__list--center category1">
-                <a class="product__enlace product__leyend leyend1" href="carteras">
+                <a class="product__enlace product__leyend leyend1" href="categoria/carteras">
                     <img class="product__img" src="./img/jpg/carteras.jpg" alt="Carteras">
                 </a>
             </div>
             <div class="product__list--center category2">
-                <a class="product__enlace product__leyend leyend2" href="morrales">
+                <a class="product__enlace product__leyend leyend2" href="categoria/morrales">
                     <img class="product__img" src="./img/jpg/morrales.jpg" alt="Morrales">
                 </a>
             </div>
             <div class="product__list--center category3">
-                <a class="product__enlace product__leyend leyend3" href="">
+                <a class="product__enlace product__leyend leyend3" href="categoria/mochilas">
                     <img class="product__img" src="./img/jpg/mochila.jpg" alt="Mochilas">
                 </a>
             </div>
             <div class="product__list--center category4">
-                <a class="product__enlace product__leyend leyend4" href="">
+                <a class="product__enlace product__leyend leyend4" href="categoria/bolsos">
                     <img class="product__img" src="./img/jpg/bolsos.jpg" alt="Bolsos">
                 </a>
             </div>
