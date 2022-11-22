@@ -7,8 +7,8 @@ function listarproductos(){
         'ajax': {
             'url': "./ajax/productos.php",
             'dataSrc': '',
-            'action': 'listarproductos',
-            'action': 'POST'
+            'data': { action: 'listarproductos' },
+            'method': 'POST'
         },
         'columns': [
             {'data': 'contador'},

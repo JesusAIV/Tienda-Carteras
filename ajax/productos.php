@@ -6,6 +6,6 @@
 
     $opciones = new adminController();
 
-    if ('listarproductos' == 'listarproductos') {
+    if ($_POST['action'] == 'listarproductos') {
         echo $opciones->listarproductos();
     }
