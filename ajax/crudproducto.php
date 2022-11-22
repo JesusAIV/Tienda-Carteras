@@ -5,6 +5,10 @@
     require_once "../controller/admincontroller.php";
     $opciones = new adminController();
 
-    if ($_POST['action'] == 'listarproductos') {
-        echo $opciones->listarproductos();
+    if (isset($_POST['addpname'])){
+
+        if (isset($_POST['addpname'])) {
+            echo $opciones->agregarProductoC();
+        }
+
     }

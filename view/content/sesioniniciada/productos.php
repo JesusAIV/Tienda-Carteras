@@ -64,7 +64,7 @@
                 <img class="modal-registro-nuevo-close" src="./img/svg/close.svg" alt="">
             </div>
         </div>
-        <form action="" method="POST">
+        <form action="./ajax/crudproducto.php" method="POST" class="ProductosAjax" data-form="add-producto" autocomplete="off" enctype="multipart/form-data">
             <div class="form-new-produc">
                 <div class="form-new-produc-data">
                     <div class="campos-new-produc">
@@ -116,6 +116,7 @@
                     Aceptar
                 </button>
             </div>
+            <div class="RespuestaAjax"></div>
         </form>
     </div>
 </div>

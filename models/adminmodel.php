@@ -22,4 +22,22 @@
 
             return $estadoproduc;
         }
+        protected function agregarProducto($datos){
+            $conexion = Conexion::conectar();
+
+            $idcategoria=$datos['idcategoria'];
+            $idcolor=$datos['idcolor'];
+            $producto=$datos['producto'];
+            $descripcion=$datos['descripcion'];
+            $stock=$datos['stock'];
+            $precio=$datos['precio'];
+
+            echo $idcategoria;
+
+            $sql = "CALL AgregarProducto('$producto', $precio, '$descripcion', $idcolor, $idcategoria, $stock)";
+
+            $result = $conexion->query($sql);
+
+            return $result;
+        }
     }
