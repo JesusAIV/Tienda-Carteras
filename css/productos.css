@@ -48,3 +48,64 @@
 .estadoagotado{
     background-color: #FF1313;
 }
+.modal-registro-nuevo-fondo{
+    background-color: rgba(255, 255, 255, 0.473);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+.modal-registro-nuevo{
+    background-color: #F6F6F6;
+    border-radius: 10px;
+}
+.modal-registro-nuevo-close{
+    cursor: pointer;
+}
+.modal-new-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 5em;
+    gap: 5em;
+    border-bottom: 1px solid #000000;
+}
+.modal-new-header-parrafo p{
+    font-size: 2em;
+}
+.form-new-produc{
+    padding: 1em 5em;
+}
+.save-new-produc{
+    border-top: 1px solid #000000;
+    padding: 1em 5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.save-new-produc button{
+    background-color: #1355FF;
+    color: #FFFFFF;
+    border: none;
+    padding: 1em 1.5em;
+    cursor: pointer;
+}
+.campos-new-produc label,
+.campos-new-produc input,
+.campos-new-produc select{
+    outline: none;
+    font-size: 1.3em;
+    padding: 0.3em;
+    margin: 1em 0;
+    width: 100%;
+}
+.campos-new-produc{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 0.5fr 1fr;
+}

@@ -1,5 +1,12 @@
 $(document).ready( function () {
     listarproductos();
+
+    $("#new-producto").click(function () {
+        $(".modal-registro-nuevo-fondo").show();
+    });
+    $(".modal-registro-nuevo-close").click(function () {
+        $(".modal-registro-nuevo-fondo").hide();
+    });
 } );
 
 function listarproductos(){

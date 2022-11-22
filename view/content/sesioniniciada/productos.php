@@ -1,3 +1,8 @@
+<?php
+    $Ajax = false;
+    require_once "./controller/admincontroller.php";
+    $Admin = new adminController();
+?>
 <div class="container-productos">
     <div class="productos-title">
         <p>PRODUCTOS</p>
@@ -8,7 +13,7 @@
                 <div class="productos-n-text">
                     <p>Administrar Productos</p>
                 </div>
-                <div class="new-producto">
+                <div class="new-producto" id="new-producto">
                     <button>
                         <img src="./img/svg/bag.svg" alt="bolsa">
                         <span>Nuevo</span>
@@ -47,5 +52,70 @@
                 </tbody>
             </table>
         </div>
+    </div>
+</div>
+<div class="modal-registro-nuevo-fondo" style="display: none;">
+    <div class="modal-registro-nuevo">
+        <div class="modal-new-header">
+            <div class="modal-new-header-parrafo">
+                <p>Nuevo producto</p>
+            </div>
+            <div>
+                <img class="modal-registro-nuevo-close" src="./img/svg/close.svg" alt="">
+            </div>
+        </div>
+        <form action="" method="POST">
+            <div class="form-new-produc">
+                <div class="form-new-produc-data">
+                    <div class="campos-new-produc">
+                        <label for="addpname">Nombre</label>
+                        <input type="text" id="addpname" class="addpname" name="addpname">
+                    </div>
+                    <div class="campos-new-produc">
+                        <label for="addpprecio">Precio</label>
+                        <input type="text" id="addpprecio" class="addpprecio" name="addpprecio">
+                    </div>
+                    <div class="campos-new-produc">
+                        <label for="addpdescripcion">Descripcion</label>
+                        <input type="text" id="addpdescripcion" class="addpdescripcion" name="addpdescripcion">
+                    </div>
+                    <div class="campos-new-produc">
+                        <label for="addpcolor">Color</label>
+                        <select id="addpcolor" class="addpcolor" name="addpcolor">
+                            <?php
+                                $centros =  $Admin->ListarColores();
+                                foreach ($centros as $key) {
+                                    ?>
+                                    <option value="<?php echo $key['idcolor'] ?>"><?php echo $key['color'] ?></option>
+                                    <?php
+                                }
+                            ?>
+                        </select>
+                    </div>
+                    <div class="campos-new-produc">
+                        <label for="addpcategoria">Categoria</label>
+                        <select id="addpcategoria" class="addpcategoria" name="addpcategoria">
+                            <?php
+                                $centros =  $Admin->ListarCategorias();
+                                foreach ($centros as $key) {
+                                    ?>
+                                    <option value="<?php echo $key['idcategoria'] ?>"><?php echo $key['categoria'] ?></option>
+                                    <?php
+                                }
+                            ?>
+                        </select>
+                    </div>
+                    <div class="campos-new-produc">
+                        <label for="addpstock">Stock</label>
+                        <input type="number" min="0" id="addpstock" class="addpstock" name="addpstock">
+                    </div>
+                </div>
+            </div>
+            <div class="save-new-produc">
+                <button>
+                    Aceptar
+                </button>
+            </div>
+        </form>
     </div>
 </div>

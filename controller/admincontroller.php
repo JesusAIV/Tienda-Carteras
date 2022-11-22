@@ -46,4 +46,18 @@
 
             return $data;
         }
+        public function ListarCategorias(){
+            $conexion = Conexion::conectar();
+            $sql = "CALL ListarCategorias()";
+            $consulta = $conexion->query($sql);
+            $consulta = $consulta->fetch_all(MYSQLI_ASSOC);
+            return $consulta;
+        }
+        public function ListarColores(){
+            $conexion = Conexion::conectar();
+            $sql = "CALL ListarColores()";
+            $consulta = $conexion->query($sql);
+            $consulta = $consulta->fetch_all(MYSQLI_ASSOC);
+            return $consulta;
+        }
     }
