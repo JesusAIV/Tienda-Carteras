@@ -24,3 +24,27 @@
     cursor: pointer;
     gap: 2px;
 }
+.mostrar-producto{
+    background-color: #E8D106;
+    padding: 0 1em;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    cursor: pointer;
+}
+#table-productos td, #table-productos th{
+    text-align: center;
+}
+.estadostock, .estadoagotado{
+    padding: 0.2em 1em;
+    color: #ffffff;
+    border: none;
+}
+.estadostock{
+    background-color: #3B9244;
+}
+.estadoagotado{
+    background-color: #FF1313;
+}
