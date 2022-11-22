@@ -39,17 +39,17 @@
                 </a>
             </div>
             <div class="product__list--center category2">
-                <a class="product__enlace product__leyend leyend2" href="morrales">
+                <a class="product__enlace product__leyend leyend2" href="inicio">
                     <img class="product__img" src="./img/jpg/morrales.jpg" alt="Morrales">
                 </a>
             </div>
             <div class="product__list--center category3">
-                <a class="product__enlace product__leyend leyend3" href="">
+                <a class="product__enlace product__leyend leyend3" href="inicio">
                     <img class="product__img" src="./img/jpg/mochila.jpg" alt="Mochilas">
                 </a>
             </div>
             <div class="product__list--center category4">
-                <a class="product__enlace product__leyend leyend4" href="">
+                <a class="product__enlace product__leyend leyend4" href="inicio">
                     <img class="product__img" src="./img/jpg/bolsos.jpg" alt="Bolsos">
                 </a>
             </div>

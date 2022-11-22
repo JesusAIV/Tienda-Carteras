@@ -1,5 +1,5 @@
 <?php
-    if(!isset($_SESSION['email'])):
+if (!isset($_SESSION['email'])) :
 ?>
     <div class="micuenta">
         <div class="cuenta-header">
@@ -16,7 +16,7 @@
                 <div class="login-cuenta">
                     <div class="login-container">
                         <div class="login-header header-cuenta">
-                            <p>Iniciar Sesión</p>
+                            <p class="cuenta__leyend">Iniciar Sesión</p>
                             <hr>
                         </div>
                         <div>
@@ -33,7 +33,7 @@
                                         <input type="password" name="password" id="password" required>
                                         <label for="password">Contraseña</label>
                                     </div>
-                                    <div class="button-form">
+                                    <div class="button-form btn1">
                                         <button type="submit" name="iniciarsesion">Iniciar sesión</button>
                                     </div>
                                 </div>
@@ -44,7 +44,7 @@
                 <div class="registro-cuenta">
                     <div class="registro-container">
                         <div class="registro-header header-cuenta">
-                            <p>Registrar cliente</p>
+                            <p class="cuenta__leyend">Registrar cliente</p>
                             <hr>
                         </div>
                         <div>
@@ -68,7 +68,7 @@
                                     <input type="password" name="password" id="password" re<input type="text" name="apellidos" id="apellidos" required>
                                     <label for="password">Contraseña</label>
                                 </div>
-                                <div class="button-form">
+                                <div class="button-form btn2">
                                     <button type="submit">Registrarse</button>
                                 </div>
                             </div>
@@ -79,45 +79,56 @@
             <div class="modulo-cuenta-registrar">
                 <div class="modulo-cuenta-content">
                     <div class="header-cuenta-modulo header-cuenta">
-                        <p>Crear nueva cuenta</p>
+                        <p class="cuenta__leyend">Crear nueva cuenta</p>
                         <hr>
                     </div>
                     <div class="modulo-parrafo">
                         <p>Registrarse en este sitio le permite acceder al estado e historial de su pedido. Solo te pediremos la información necesaria para que el proceso de compra sea más rápido y sencillo.</p>
                     </div>
                     <div class="button-modulo">
-                        <button id="registrarse">Registrarse</button>
+                        <button class="button" id="registrarse">
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
+                            Registrarse
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="modulo-cuenta-iniciar">
                 <div class="modulo-cuenta-content">
                     <div class="header-cuenta-modulo header-cuenta">
-                        <p>Iniciar sesión</p>
+                        <p class="cuenta__leyend">Iniciar sesión</p>
                         <hr>
                     </div>
                     <div class="modulo-parrafo">
                         <p>Inicia sesión con tu cuenta ya existente y sigue disfrutando de tus compras</p>
                     </div>
                     <div class="button-modulo">
-                        <button id="iniciarsesion">Iniciar sesión</button>
+                        <button class="button" id="iniciarsesion">
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
+                            <span class="button__span"></span>
+                            Iniciar sesión</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 <?php
-    else:
-        echo "
+else :
+    echo "
         <script>
             window.location.href='inicio'
         </script>";
-    endif;
+endif;
 ?>
 <?php
-    if(isset($_POST['email']) && isset($_POST['password']) && isset($_POST['iniciarsesion'])){
-        require_once "./controller/logincontroller.php";
-        $login = new logincontrolador();
-        echo $login->iniciar_sesion_controlador();
-    }
+if (isset($_POST['email']) && isset($_POST['password']) && isset($_POST['iniciarsesion'])) {
+    require_once "./controller/logincontroller.php";
+    $login = new logincontrolador();
+    echo $login->iniciar_sesion_controlador();
+}
 ?>
