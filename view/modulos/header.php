@@ -14,9 +14,13 @@
     </section>
 
     <!-- Logo/Inicar sesion/Bolsa -->
-    <section class="container container__login">
+    <section class=" container container__login">
                 <div class="logo">
-                    <img class="logo-img--header" src="img/png/bolso.png" alt="Logo">
+                    <label for="menu">
+                        <img class="menu__img" src="./img/svg/menu.svg" alt="menu__icon">
+                    </label>
+                    <input class="menu__input" type="checkbox" id="menu">
+                    <a href="inicio"><img class="logo-img--header" src="img/png/bolso.png" alt="Logo"></a>
                     <a class="logo-enlace" href="inicio">Confecciones Milagros</a>
                 </div>
 
@@ -41,20 +45,21 @@
                 </div>
 
                 <!-- LA PARTE DE BOLSA LO COMENTO A RAZÓN DE QUE NO SE VA A VENDER NADA PORA LA WEB -->
+
                 <!-- <div class="bolsa">
-            <div class="icon-container">
-                <a class="icon-enlace" href="">
-                    <img class="icon-img" src="./img/svg/bag.svg" alt="bolsa">
-                    <p class="icon-texto">bolsa</p>
-                </a>
-            </div>
-            <div class="precio-container">
-                <a class="precio-enlace" href="#">
-                    <p class="precio-texto">s/000.00</p>
-                    <p class="precio-texto">0 productos</p>
-                </a>
-            </div>
-        </div> -->
+                    <div class="icon-container">
+                        <a class="icon-enlace" href="">
+                            <img class="icon-img" src="./img/svg/bag.svg" alt="bolsa">
+                            <p class="icon-texto">bolsa</p>
+                        </a>
+                    </div>
+                    <div class="precio-container">
+                        <a class="precio-enlace" href="#">
+                            <p class="precio-texto">s/000.00</p>
+                            <p class="precio-texto">0 productos</p>
+                        </a>
+                    </div>
+                </div> -->
 
     </section>
 

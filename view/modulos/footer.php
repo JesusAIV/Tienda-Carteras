@@ -1,5 +1,5 @@
     <!-- Footer -->
-    <footer class="">
+    <footer class="footer">
         <div class="whatsapp">
             <a href="https://walink.co/a2556c" target="blanck">
                 <img src="./img/svg/whatsapp.svg" alt="">
