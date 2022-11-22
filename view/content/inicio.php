@@ -131,20 +131,54 @@
         </div>
     </div>
 
+    <div class="opiniones">
+        <div class="oferece__title">
+            <p class="opiniones__leyend">Nuestros clientes confirman que CONFECCIONES MILAGROS ES CALIDAD PRECIO</p>
+        </div>
+    </div>
+
     <div class="principal__opiniones">
         <img src="./img/svg/left-arrow.svg" class="slider__arrow" id="before">
 
-        <section class="slider__body" data-id="1">
+        <section class="slider__body slider__body--show" data-id="1">
             <div class="slider__texts">
-                <h2 class="subtitle">¡Hola! mi nombres es Roberto</h2>
+                <h2 class="subtitle">¡Hola! mi nombres es Martha</h2>
                 <p class="slider__review">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis necessitatibus quam neque illum ducimus temporibus.
+                    Desde que conocí esta magnifica tienda ya no sufro por buscar tipos de carteras, practicamente siempre encuentro lo que busco. Muy bonitos productos! y sobre todo calidad precio.
                 </p>
             </div>
 
             <figure class="slider__picture">
-                <img src="./img/jpg/" alt="" class="slider__img">
+                <img src="./img/jpg/person1.jpg" alt="" class="slider__img">
             </figure>
         </section>
+
+        <section class="slider__body" data-id="2">
+            <div class="slider__texts">
+                <h2 class="subtitle">¡Hola! mi nombres es Jessica</h2>
+                <p class="slider__review">
+                    Anteriormente me la pasa todo el día buscando un buen accesorio para ir a mis reuniones, no encontraba lo que buscaba, pero desde que encontré a "Confecciones Milagros", mi vida cambió, ahora puedo separar mi producto en el tiempo que quiera y poder disfrutar con mas elegencia mis reuniones de trabajo.
+                </p>
+            </div>
+
+            <figure class="slider__picture">
+                <img src="./img/jpg/person2.jpg" alt="" class="slider__img">
+            </figure>
+        </section>
+
+        <section class="slider__body" data-id="3">
+            <div class="slider__texts">
+                <h2 class="subtitle">¡Hola! mi nombres es Rosalinda</h2>
+                <p class="slider__review">
+                    Me considero exigente en cuento a accesorios y modas, eh encontrado varios luegares donde ofrecen productos de calidad, "Confecciones Milagros" no es la exepción, ofrecen un servicio y producto de calidad, sin duda debes visitarla, ¡Te encatará!.
+                </p>
+            </div>
+
+            <figure class="slider__picture">
+                <img src="./img/jpg/person3.jpg" alt="" class="slider__img">
+            </figure>
+        </section>
+
+        <img src="./img/svg/right-arrow.svg" class="slider__arrow" id="next">
     </div>
 </div>

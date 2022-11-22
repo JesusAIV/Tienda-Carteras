@@ -257,6 +257,92 @@
     font-size: 1.2em;
 }
 
+
+/* SLIDER OPINIONES */
+/* .container{
+    width: 90%;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+} */
+
+.opiniones{
+    text-align: center;
+    margin-top: 5em;
+}
+
+.opiniones__leyend{
+    margin: 0;
+}
+
+.slider{
+    background-color: var(--blanco);
+    padding: 40px 0;
+}
+
+.principal__opiniones{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    gap: 1em;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2em 0;
+}
+
+.slider__body{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    background-color: var(--blanco);
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+}
+
+.slider__body--show{
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.slider__texts{
+    max-width: 600px;
+}
+
+.subtitle{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.slider__review{
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.slider__img{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider__arrow{
+    cursor: pointer;
+    width: 90%;
+}
+
+.slider__arrow:nth-of-type(2){
+    justify-self: end;
+}
+
 @media (max-width: 375px){
     .principal__productos--lista{
         display: grid;
