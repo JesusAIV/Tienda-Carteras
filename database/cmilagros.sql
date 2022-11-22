@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-11-2022 a las 02:51:56
+-- Tiempo de generación: 22-11-2022 a las 07:05:45
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -27,8 +27,16 @@ DELIMITER $$
 --
 -- Procedimientos
 --
+DROP PROCEDURE IF EXISTS `AgregarProducto`$$
+CREATE PROCEDURE `AgregarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT)   BEGIN
+SET FOREIGN_KEY_CHECKS=0;
+INSERT INTO producto
+(`idcategoria`, `idcolor`, `producto`, `descripcion`, `stock`, `precio`) VALUES
+(idcategoria, idcolor, producto, descripcion, stock, precio);
+END$$
+
 DROP PROCEDURE IF EXISTS `InformacionProducto`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `InformacionProducto` (IN `idproducto` INT)   SELECT 
+CREATE PROCEDURE `InformacionProducto` (IN `idproducto` INT)   SELECT 
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -42,8 +50,14 @@ ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 ON (tbp.idcolor = tbcol.idcolor) 
 WHERE tbp.idproducto = idproducto$$
 
+DROP PROCEDURE IF EXISTS `ListarCategorias`$$
+CREATE PROCEDURE `ListarCategorias` ()   SELECT * FROM categoria$$
+
+DROP PROCEDURE IF EXISTS `ListarColores`$$
+CREATE PROCEDURE `ListarColores` ()   SELECT * FROM colores$$
+
 DROP PROCEDURE IF EXISTS `ListarProductos`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `ListarProductos` ()   SELECT 
+CREATE PROCEDURE `ListarProductos` ()   SELECT 
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -133,10 +147,10 @@ CREATE TABLE `producto` (
 
 --
 -- RELACIONES PARA LA TABLA `producto`:
---   `idcolor`
---       `colores` -> `idcolor`
 --   `idcategoria`
 --       `categoria` -> `idcategoria`
+--   `idcolor`
+--       `colores` -> `idcolor`
 --
 
 --
@@ -221,9 +235,7 @@ ALTER TABLE `colores`
 -- Indices de la tabla `producto`
 --
 ALTER TABLE `producto`
-  ADD PRIMARY KEY (`idproducto`),
-  ADD UNIQUE KEY `idcategoria` (`idcategoria`),
-  ADD UNIQUE KEY `idcolor` (`idcolor`);
+  ADD PRIMARY KEY (`idproducto`);
 
 --
 -- Indices de la tabla `rol`
@@ -259,7 +271,7 @@ ALTER TABLE `colores`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `idproducto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idproducto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `rol`
@@ -281,8 +293,8 @@ ALTER TABLE `usuario`
 -- Filtros para la tabla `producto`
 --
 ALTER TABLE `producto`
-  ADD CONSTRAINT `producto_ibfk_1` FOREIGN KEY (`idcolor`) REFERENCES `colores` (`idcolor`),
-  ADD CONSTRAINT `producto_ibfk_2` FOREIGN KEY (`idcategoria`) REFERENCES `categoria` (`idcategoria`);
+  ADD CONSTRAINT `producto_ibfk_2` FOREIGN KEY (`idcategoria`) REFERENCES `categoria` (`idcategoria`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `producto_ibfk_3` FOREIGN KEY (`idcolor`) REFERENCES `colores` (`idcolor`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `usuario`
