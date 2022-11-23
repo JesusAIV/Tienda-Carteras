@@ -15,7 +15,7 @@
                 </div>
                 <div class="new-producto" id="new-producto">
                     <button>
-                        <img src="./img/svg/bag.svg" alt="bolsa">
+                        <img src="<?php echo SERVERURL?>img/svg/bag.svg" alt="bolsa">
                         <span>Nuevo</span>
                     </button>
                 </div>
@@ -62,7 +62,7 @@
                 <p>Nuevo producto</p>
             </div>
             <div>
-                <img class="modal-registro-nuevo-close" src="./img/svg/close.svg" alt="">
+                <img class="modal-registro-nuevo-close" src="<?php echo SERVERURL?>img/svg/close.svg" alt="">
             </div>
         </div>
         <form action="./ajax/crudproducto.php" method="POST" class="ProductosAjax" data-form="add-producto" autocomplete="off" enctype="multipart/form-data">

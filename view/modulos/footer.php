@@ -7,14 +7,14 @@
     <footer class="footer">
         <div class="whatsapp">
             <a href="https://walink.co/a2556c" target="blanck">
-                <img src="./img/svg/whatsapp.svg" alt="">
+                <img src="<?php echo SERVERURL?>img/svg/whatsapp.svg" alt="">
             </a>
         </div>
         <div class="footer">
             <div class="footer-center">
                 <div class="footer-datos">
                     <div class="footer-logo">
-                        <img class="logo-img" style="margin-right: 1rem;" src="img/png/bolso.png" alt="">
+                        <img class="logo-img" style="margin-right: 1rem;" src="<?php echo SERVERURL?>img/png/bolso.png" alt="">
                         <a href="<?php echo SERVERURL ?>inicio">
                             <h1 class="inicio__title">Confecciones Milagros</h1>
                         </a>

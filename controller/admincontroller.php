@@ -37,7 +37,7 @@
                     "color" => $row['color'],
                     "imagen" => '<img class="image-table-product" src="'.$directorio.'">',
                     "editar" => '<button class="mostrar-producto">
-                                    <img src="./img/svg/eyes.svg">
+                                    <img src="'.SERVERURL.'img/svg/eyes.svg">
                                 </button>',
                     "estado" => $estadoproduc
 
