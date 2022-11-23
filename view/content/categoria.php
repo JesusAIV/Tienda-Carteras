@@ -55,7 +55,7 @@
             <div class="caja2">
                 <div class="menu">
                     <div class="menu__navegacion">
-                        <a href="inicio" class="menu__navegacion__link">incio</a>
+                        <a href="<?php echo SERVERURL ?>inicio" class="menu__navegacion__link">incio</a>
                         <span class="menu__navegacion__name"><?php echo $categoria; ?></span>
                     </div>
 

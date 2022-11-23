@@ -3,7 +3,7 @@
         <p>CONTROL DE INVENTARIO</p>
     </div>
     <div class="opc-inventario-container">
-        <a href="clientes">
+        <a href="<?php echo SERVERURL ?>clientes">
             <div class="opc-inventario-main">
                 <div class="opc-inventario-icon">
                     <img src="./img/svg/clientes.svg" alt="clientes">
@@ -13,7 +13,7 @@
                 </div>
             </div>
         </a>
-        <a href="productos">
+        <a href="<?php echo SERVERURL ?>productos">
             <div class="opc-inventario-main">
                 <div class="opc-inventario-icon">
                     <img src="./img/svg/bag.svg" alt="bolsa">

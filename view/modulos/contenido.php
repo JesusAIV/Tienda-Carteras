@@ -2,7 +2,7 @@
     <div class="menu-lateral" id="menu-lateral">
         <div class="logo">
             <img class="logo-img--header" src="img/png/bolso.png" alt="Logo">
-            <a class="logo-enlace" href="inicio">Confecciones Milagros</a>
+            <a class="logo-enlace" href="<?php echo SERVERURL ?>inicio">Confecciones Milagros</a>
         </div>
         <div class="bienvenida-inventario">
             <p>Bienvenid(a) <span> Administrador(a) Milagros</span></p>
@@ -12,11 +12,11 @@
                 <ul class="opciones-list--li">
                     <li class="nav-item-inventario">
                         <i class="fa-regular fa-user"></i>
-                        <a href="clientes">Clientes</a>
+                        <a href="<?php echo SERVERURL ?>clientes">Clientes</a>
                     </li>
                     <li class="nav-item-inventario">
                         <i class="fa-regular fa-tag"></i>
-                        <a href="productos">Productos</a>
+                        <a href="<?php echo SERVERURL ?>productos">Productos</a>
                     </li>
                 </ul>
             </div>

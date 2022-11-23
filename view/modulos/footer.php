@@ -1,4 +1,9 @@
-    <!-- Footer -->
+    <?php
+        $Ajax = false;
+        require_once "./controller/admincontroller.php";
+        $Admin = new adminController();
+    ?>
+<!-- Footer -->
     <footer class="footer">
         <div class="whatsapp">
             <a href="https://walink.co/a2556c" target="blanck">
@@ -10,7 +15,7 @@
                 <div class="footer-datos">
                     <div class="footer-logo">
                         <img class="logo-img" style="margin-right: 1rem;" src="img/png/bolso.png" alt="">
-                        <a href="inicio">
+                        <a href="<?php echo SERVERURL ?>inicio">
                             <h1 class="inicio__title">Confecciones Milagros</h1>
                         </a>
                     </div>
@@ -80,10 +85,16 @@
                         </div>
                         <div class="caja-footer">
                             <ul>
-                                <li><a class="footer__link" href="carteras">Carteras</a></li>
-                                <li><a class="footer__link" href="inicio">Morrales</a></li>
-                                <li><a class="footer__link" href="inicio">Mochilas</a></li>
-                                <li><a class="footer__link" href="inicio">Bolsos</a></li>
+                                <?php
+                                    $centros =  $Admin->ListarCategorias();
+                                    foreach ($centros as $key) {
+                                        ?>
+                                        <li>
+                                            <a href="<?php echo SERVERURL.'categoria/'.$key['categoria'] ?>"><?php echo ucfirst($key['categoria']) ?></a>
+                                        </li>
+                                <?php
+                                    }
+                                ?>
                             </ul>
                         </div>
                     </div>

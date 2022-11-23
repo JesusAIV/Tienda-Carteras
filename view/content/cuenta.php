@@ -7,7 +7,7 @@ if (!isset($_SESSION['email'])) :
                 <p>Mi Cuenta</p>
             </div>
             <div class="cuenta-header-subtitle">
-                <a class="cuenta__link" href="inicio">casa</a>
+                <a class="cuenta__link" href="<?php echo SERVERURL ?>inicio">casa</a>
                 <span class="cuenta__section">mi cuenta</span>
             </div>
         </div>

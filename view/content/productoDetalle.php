@@ -25,7 +25,7 @@
 
         <section class="principal__detail">
             <div class="menu__navegacion">
-                <a href="inicio" class="menu__navegacion__link">incio</a>
+                <a href="<?php echo SERVERURL ?>inicio" class="menu__navegacion__link">incio</a>
                 <span class="menu__navegacion__name"><?php echo $key['producto'] ?></span>
             </div>
 
