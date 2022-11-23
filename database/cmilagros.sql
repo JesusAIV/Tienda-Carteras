@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-11-2022 a las 17:16:32
+-- Tiempo de generación: 24-11-2022 a las 00:31:41
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -27,14 +27,22 @@ DELIMITER $$
 --
 -- Procedimientos
 --
-CREATE PROCEDURE `AgregarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT, IN `imagen` VARCHAR(200))   BEGIN
+CREATE DEFINER=`root`@`localhost` PROCEDURE `AgregarCategoria` (IN `pcategoria` VARCHAR(60))   INSERT INTO categoria
+(`categoria`) VALUES
+(pcategoria)$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `AgregarColor` (IN `color` VARCHAR(20), IN `codigohex` VARCHAR(8))   INSERT INTO colores
+(`color`, `codigohex`) VALUES
+(color, codigohex)$$
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `AgregarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT, IN `imagen` VARCHAR(200))   BEGIN
 SET FOREIGN_KEY_CHECKS=0;
 INSERT INTO producto
 (`idcategoria`, `idcolor`, `producto`, `descripcion`, `stock`, `precio`, `imagen`) VALUES
 (idcategoria, idcolor, producto, descripcion, stock, precio, imagen);
 END$$
 
-CREATE PROCEDURE `DatosCategoria` (IN `categoria` VARCHAR(50))   SELECT 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `DatosCategoria` (IN `categoria` VARCHAR(50))   SELECT 
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -49,7 +57,7 @@ ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 ON (tbp.idcolor = tbcol.idcolor)
 WHERE tbc.categoria = categoria$$
 
-CREATE PROCEDURE `DatosProducto` (IN `nomproducto` VARCHAR(50))   SELECT 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `DatosProducto` (IN `nomproducto` VARCHAR(50))   SELECT 
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -64,7 +72,7 @@ ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 ON (tbp.idcolor = tbcol.idcolor)
 WHERE tbp.producto = nomproducto$$
 
-CREATE PROCEDURE `InformacionProducto` (IN `idproducto` INT)   SELECT 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `InformacionProducto` (IN `idproducto` INT)   SELECT 
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -78,11 +86,11 @@ ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 ON (tbp.idcolor = tbcol.idcolor) 
 WHERE tbp.idproducto = idproducto$$
 
-CREATE PROCEDURE `ListarCategorias` ()   SELECT * FROM categoria$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ListarCategorias` ()   SELECT * FROM categoria$$
 
-CREATE PROCEDURE `ListarColores` ()   SELECT * FROM colores$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ListarColores` ()   SELECT * FROM colores$$
 
-CREATE PROCEDURE `ListarProductos` ()   SELECT 
+CREATE DEFINER=`root`@`localhost` PROCEDURE `ListarProductos` ()   SELECT 
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -150,7 +158,8 @@ INSERT INTO `colores` (`idcolor`, `color`, `codigohex`) VALUES
 (3, 'marron', '311901'),
 (4, 'camello', 'D39000'),
 (5, 'azul', '1B3375'),
-(6, 'guinda', '9C353F');
+(6, 'guinda', '9C353F'),
+(13, 'verde', '0b6672');
 
 -- --------------------------------------------------------
 
@@ -283,13 +292,13 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `idcategoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `idcategoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `colores`
 --
 ALTER TABLE `colores`
-  MODIFY `idcolor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idcolor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
