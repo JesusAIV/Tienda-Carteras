@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 22-11-2022 a las 07:05:45
+-- Tiempo de generación: 23-11-2022 a las 17:16:32
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -27,15 +27,43 @@ DELIMITER $$
 --
 -- Procedimientos
 --
-DROP PROCEDURE IF EXISTS `AgregarProducto`$$
-CREATE PROCEDURE `AgregarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT)   BEGIN
+CREATE PROCEDURE `AgregarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT, IN `imagen` VARCHAR(200))   BEGIN
 SET FOREIGN_KEY_CHECKS=0;
 INSERT INTO producto
-(`idcategoria`, `idcolor`, `producto`, `descripcion`, `stock`, `precio`) VALUES
-(idcategoria, idcolor, producto, descripcion, stock, precio);
+(`idcategoria`, `idcolor`, `producto`, `descripcion`, `stock`, `precio`, `imagen`) VALUES
+(idcategoria, idcolor, producto, descripcion, stock, precio, imagen);
 END$$
 
-DROP PROCEDURE IF EXISTS `InformacionProducto`$$
+CREATE PROCEDURE `DatosCategoria` (IN `categoria` VARCHAR(50))   SELECT 
+	tbp.idproducto,
+	tbp.producto, 
+    tbp.precio,
+    tbp.descripcion,
+    tbp.stock,
+    tbc.categoria,
+    tbcol.color,
+    tbp.imagen
+FROM producto AS tbp 
+JOIN categoria AS tbc
+ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
+ON (tbp.idcolor = tbcol.idcolor)
+WHERE tbc.categoria = categoria$$
+
+CREATE PROCEDURE `DatosProducto` (IN `nomproducto` VARCHAR(50))   SELECT 
+	tbp.idproducto,
+	tbp.producto, 
+    tbp.precio,
+    tbp.descripcion,
+    tbp.stock,
+    tbc.categoria,
+    tbcol.color,
+    tbp.imagen
+FROM producto AS tbp 
+JOIN categoria AS tbc
+ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
+ON (tbp.idcolor = tbcol.idcolor)
+WHERE tbp.producto = nomproducto$$
+
 CREATE PROCEDURE `InformacionProducto` (IN `idproducto` INT)   SELECT 
 	tbp.idproducto,
 	tbp.producto, 
@@ -50,13 +78,10 @@ ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 ON (tbp.idcolor = tbcol.idcolor) 
 WHERE tbp.idproducto = idproducto$$
 
-DROP PROCEDURE IF EXISTS `ListarCategorias`$$
 CREATE PROCEDURE `ListarCategorias` ()   SELECT * FROM categoria$$
 
-DROP PROCEDURE IF EXISTS `ListarColores`$$
 CREATE PROCEDURE `ListarColores` ()   SELECT * FROM colores$$
 
-DROP PROCEDURE IF EXISTS `ListarProductos`$$
 CREATE PROCEDURE `ListarProductos` ()   SELECT 
 	tbp.idproducto,
 	tbp.producto, 
@@ -64,7 +89,8 @@ CREATE PROCEDURE `ListarProductos` ()   SELECT
     tbp.descripcion,
     tbp.stock,
     tbc.categoria,
-    tbcol.color
+    tbcol.color,
+    tbp.imagen
 FROM producto AS tbp 
 JOIN categoria AS tbc
 ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
@@ -79,7 +105,6 @@ DELIMITER ;
 -- Estructura de tabla para la tabla `categoria`
 --
 
-DROP TABLE IF EXISTS `categoria`;
 CREATE TABLE `categoria` (
   `idcategoria` int(11) NOT NULL,
   `categoria` varchar(60) NOT NULL
@@ -105,7 +130,6 @@ INSERT INTO `categoria` (`idcategoria`, `categoria`) VALUES
 -- Estructura de tabla para la tabla `colores`
 --
 
-DROP TABLE IF EXISTS `colores`;
 CREATE TABLE `colores` (
   `idcolor` int(11) NOT NULL,
   `color` varchar(20) NOT NULL,
@@ -134,7 +158,6 @@ INSERT INTO `colores` (`idcolor`, `color`, `codigohex`) VALUES
 -- Estructura de tabla para la tabla `producto`
 --
 
-DROP TABLE IF EXISTS `producto`;
 CREATE TABLE `producto` (
   `idproducto` int(11) NOT NULL,
   `idcategoria` int(11) NOT NULL,
@@ -142,7 +165,8 @@ CREATE TABLE `producto` (
   `producto` varchar(50) NOT NULL,
   `descripcion` varchar(150) NOT NULL,
   `stock` int(11) NOT NULL,
-  `precio` double NOT NULL
+  `precio` double NOT NULL,
+  `imagen` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -157,9 +181,9 @@ CREATE TABLE `producto` (
 -- Volcado de datos para la tabla `producto`
 --
 
-INSERT INTO `producto` (`idproducto`, `idcategoria`, `idcolor`, `producto`, `descripcion`, `stock`, `precio`) VALUES
-(1, 1, 5, 'campana', 'Cartera exclusiva para usarlo en toda ocasión ', 50, 12.5),
-(2, 2, 4, 'tambor', 'Buen espacio para guardar y mantener seguro tus objetos', 50, 19.5);
+INSERT INTO `producto` (`idproducto`, `idcategoria`, `idcolor`, `producto`, `descripcion`, `stock`, `precio`, `imagen`) VALUES
+(42, 1, 3, 'Campana', 'Cartera exclusiva para usarlo en toda ocasión', 50, 12.5, 'img/productos/carteras/campana01.jpg-1669211932.jpeg'),
+(43, 1, 1, 'Bandolera', 'Buen espacio para guardar y mantener seguro tus objetos', 50, 19.5, 'img/productos/carteras/bandolera.webp-1669219807.webp');
 
 -- --------------------------------------------------------
 
@@ -167,7 +191,6 @@ INSERT INTO `producto` (`idproducto`, `idcategoria`, `idcolor`, `producto`, `des
 -- Estructura de tabla para la tabla `rol`
 --
 
-DROP TABLE IF EXISTS `rol`;
 CREATE TABLE `rol` (
   `idrol` int(11) NOT NULL,
   `rol` varchar(20) NOT NULL
@@ -191,7 +214,6 @@ INSERT INTO `rol` (`idrol`, `rol`) VALUES
 -- Estructura de tabla para la tabla `usuario`
 --
 
-DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE `usuario` (
   `idusuario` int(11) NOT NULL,
   `idrol` int(11) NOT NULL,
@@ -235,7 +257,9 @@ ALTER TABLE `colores`
 -- Indices de la tabla `producto`
 --
 ALTER TABLE `producto`
-  ADD PRIMARY KEY (`idproducto`);
+  ADD PRIMARY KEY (`idproducto`),
+  ADD KEY `producto_ibfk_2` (`idcategoria`),
+  ADD KEY `producto_ibfk_3` (`idcolor`);
 
 --
 -- Indices de la tabla `rol`
@@ -271,7 +295,7 @@ ALTER TABLE `colores`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `idproducto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `idproducto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT de la tabla `rol`
