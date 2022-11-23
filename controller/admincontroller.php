@@ -68,6 +68,30 @@
             $stock = $_POST['addpstock'];
             $precio = $_POST['addpprecio'];
 
+            $conexion = Conexion::conectar();
+
+            $sqlcat = "SELECT * FROM categoria WHERE idcategoria = '$idcategoria'";
+            $consultacat = $conexion->query($sqlcat);
+            $consultacat = $consultacat->fetch_all(MYSQLI_ASSOC);
+
+            foreach ($consultacat as $key){}
+
+            $dir = "img/productos/";
+            $nombreArchivo = $_FILES['addpimagen']['name'];
+            $tipo = $_FILES['addpimagen']['type'];
+            $tipo = strtolower($tipo);
+            $extension = substr($tipo,strpos($tipo,'/')+1);
+            $name = $nombreArchivo.'-'.time().'.'.$extension;
+
+            if(!is_dir($dir.$name)){
+                mkdir($dir.$name, 0777, true);
+            }
+
+            $imagen = $dir.$name;
+
+            move_uploaded_file($_FILES['addpimagen']['tmp_name'], $dir.$name);
+
+
             if (empty($idcategoria) || empty($idcolor) || empty($producto) || empty($descripcion) || empty($stock) || empty($precio)) {
                 // Dará una alerta de error
                 $alerta = [
@@ -84,7 +108,8 @@
                     "producto" => $producto,
                     "descripcion" => $descripcion,
                     "stock" => $stock,
-                    "precio" => $precio
+                    "precio" => $precio,
+                    "imagen" => $imagen
                 ];
 
                 // Ejecuta la función agregarPersonal obteniendo el array de datos

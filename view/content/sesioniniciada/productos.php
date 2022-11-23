@@ -109,6 +109,11 @@
                         <label for="addpstock">Stock</label>
                         <input type="number" min="0" id="addpstock" class="addpstock" name="addpstock">
                     </div>
+                    <div class="campos-new-produc">
+                        <label for="addpimagen01">Imagen</label>
+                        <label for="addpimagen" class="addpimagen">Seleccionar imagen</label>
+                        <input type="file" min="0" id="addpimagen" class="addpimagen" name="addpimagen">
+                    </div>
                 </div>
             </div>
             <div class="save-new-produc">

@@ -31,10 +31,11 @@
             $descripcion=$datos['descripcion'];
             $stock=$datos['stock'];
             $precio=$datos['precio'];
+            $imagen=$datos['imagen'];
 
             echo $idcategoria;
 
-            $sql = "CALL AgregarProducto('$producto', $precio, '$descripcion', $idcolor, $idcategoria, $stock)";
+            $sql = "CALL AgregarProducto('$producto', $precio, '$descripcion', $idcolor, $idcategoria, $stock, '$imagen')";
 
             $result = $conexion->query($sql);
 

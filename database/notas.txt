@@ -1,0 +1,2 @@
+Se agregó la columna imagen en la tabla producto con tipo de dato varchar 200
+Se modificó el SP AgregarProducto insertando la columna imagen

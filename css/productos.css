@@ -109,3 +109,15 @@
     gap: 2em;
     grid-template-columns: 0.5fr 1fr;
 }
+.campos-new-produc input.addpimagen{
+    display: none;
+}
+.campos-new-produc label.addpimagen{
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
