@@ -1,11 +1,24 @@
+<?php
+    $Ajax = false;
+    require_once "./controller/admincontroller.php";
+    $Admin = new adminController();
+
+    $pagina = explode("/", $_GET['views']);
+
+    $nombreproducto = $pagina[1];
+
+    $producto = $Admin->DatosProducto($nombreproducto);
+
+    foreach ($producto as $key) {}
+?>
 <div class="principal">
     <div class="detail">
 
         <section class="principal__show">
             <div class="principal__image">
                 <div class="principal__circle">
-                    <img src="./img/svg/lupa.svg" alt="" class="principal__icon">
-                    <img src="./img/png/cartera_view1.png" alt="img_producto" class="principal__img">
+                    <img src="<?php echo SERVERURL ?>img/svg/lupa.svg" alt="" class="principal__icon">
+                    <img src="<?php echo SERVERURL ?>img/png/cartera_view1.png" alt="img_producto" class="principal__img">
                 </div>
             </div>
         </section>
@@ -13,17 +26,17 @@
         <section class="principal__detail">
             <div class="menu__navegacion">
                 <a href="inicio" class="menu__navegacion__link">incio</a>
-                <span class="menu__navegacion__name">Nombre de la sección</span>
+                <span class="menu__navegacion__name"><?php echo $key['producto'] ?></span>
             </div>
 
             <div class="detail__content">
                 <div class="detail__header">
-                    <h1 class="detail__title">Nombre del producto</h1>
-                    <p class="detail__price">S/000.00</p>
+                    <h1 class="detail__title"><?php echo $key['producto'] ?></h1>
+                    <p class="detail__price"><?php echo $key['precio'] ?></p>
                 </div>
 
                 <div class="detail__body">
-                    <h3 class="detail__body__title">Descripción</h3>
+                    <h3 class="detail__body__title"><?php echo $key['descripcion'] ?></h3>
                     <ul class="detail__items">
                         <div class="group">
                             <li class="detail__item">Medidas: </li>
@@ -32,7 +45,7 @@
 
                         <div class="group">
                             <li class="detail__item">Color: </li>
-                            <span class="detail__item__text">Beige</span>
+                            <span class="detail__item__text"><?php echo $key['color'] ?></span>
                         </div>
 
                         <div class="group">
@@ -42,15 +55,15 @@
                     </ul>
 
                     <div class="stock">
-                        <img class="stock__icon" src="./img/svg/check.svg" alt="check-icon">
-                        <h3 class="stock__number">200</h3>
+                        <img class="stock__icon" src="<?php echo SERVERURL ?>img/svg/check.svg" alt="check-icon">
+                        <h3 class="stock__number"><?php echo $key['stock'] ?></h3>
                         <h3 class="stock__text">disponibles</h3>
                     </div>
 
                     <ul class="detail__extra">
                         <li class="detail__item">
                             <label class="detail__name" for="acordion">Garantía
-                                <img src="./img/svg/arrow-bottom.svg" class="detail__icon">
+                                <img src="<?php echo SERVERURL ?>img/svg/arrow-bottom.svg" class="detail__icon">
                             </label>
                             <input type="checkbox" id="acordion" class="detail__input">
 
@@ -61,7 +74,7 @@
 
                         <li class="detail__item">
                             <label class="detail__name" for="acordion_cuidado">Cuidado del producto
-                                <img src="./img/svg/arrow-bottom.svg" class="detail__icon">
+                                <img src="<?php echo SERVERURL ?>img/svg/arrow-bottom.svg" class="detail__icon">
                             </label>
                             <input type="checkbox" id="acordion_cuidado" class="detail__input">
                             <ul class="product__care">

@@ -61,13 +61,13 @@
                         <p class="footer__leyend">PÁGINAS</p>
                         <div class="caja-footer">
                             <ul>
-                                <li><a class="footer__link" href="quienessomos">¿Quiénes somos?</a></li>
-                                <li><a class="footer__link" href="tiendas">Nuestras tiendas</a></li>
-                                <li><a class="footer__link" href="contacto">Contacto</a></li>
+                                <li><a class="footer__link" href="<?php echo SERVERURL ?>quienessomos">¿Quiénes somos?</a></li>
+                                <li><a class="footer__link" href="<?php echo SERVERURL ?>tiendas">Nuestras tiendas</a></li>
+                                <li><a class="footer__link" href="<?php echo SERVERURL ?>contacto">Contacto</a></li>
                                 <?php
                                 if (!isset($_SESSION['email'])) {
                                 ?>
-                                    <li><a class="footer__link" href="cuenta">Mi Cuenta</a></li>
+                                    <li><a class="footer__link" href="<?php echo SERVERURL ?>cuenta">Mi Cuenta</a></li>
                                 <?php
                                 }
                                 ?>

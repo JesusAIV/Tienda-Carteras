@@ -1,3 +1,8 @@
+<?php
+    $Ajax = false;
+    require_once "./controller/admincontroller.php";
+    $Admin = new adminController();
+?>
 <!-- Header -->
 <header>
     <!-- Horario de Atención -->
@@ -66,10 +71,16 @@
     <nav class="navbar navbar-center">
         <div>
             <ul class="navbar-center">
-                <li class="nav-item"><a href="carteras">CARTERAS</a></li>
-                <li class="nav-item"><a href="">BOLSOS</a></li>
-                <li class="nav-item"><a href="">MOCHILAS</a></li>
-                <li class="nav-item"><a href="">MORRALES</a></li>
+                <?php
+                    $centros =  $Admin->ListarCategorias();
+                    foreach ($centros as $key) {
+                        ?>
+                        <li class="nav-item">
+                            <a href="<?php echo 'categoria/'.$key['categoria'] ?>"><?php echo $key['categoria'] ?></a>
+                        </li>
+                <?php
+                    }
+                ?>
             </ul>
         </div>
 

@@ -120,12 +120,19 @@
         public function DatosCategoria($nombrecategoria){
 
             $conexion = Conexion::conectar();
-            $sql = "CALL ListarCategorias()";
+            $sql = "CALL DatosCategoria('$nombrecategoria')";
             $consulta = $conexion->query($sql);
             $consulta = $consulta->fetch_all(MYSQLI_ASSOC);
 
-            $caja = '<button>'.$nombrecategoria.'</button>';
+            return $consulta;
+        }
+        public function DatosProducto($nombreproducto){
 
-            return $caja;
+            $conexion = Conexion::conectar();
+            $sql = "CALL DatosProducto('$nombreproducto')";
+            $consulta = $conexion->query($sql);
+            $consulta = $consulta->fetch_all(MYSQLI_ASSOC);
+
+            return $consulta;
         }
     }

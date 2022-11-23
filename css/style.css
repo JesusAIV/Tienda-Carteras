@@ -231,6 +231,7 @@ header {
 
 .nav-item a {
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .nav-item::after {
