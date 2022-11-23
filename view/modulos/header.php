@@ -9,7 +9,6 @@
             <a class="txt txt--cell" href="https://api.whatsapp.com/send?phone=+51939304773&text=Hola, me gustaría comprar tu producto!" target="_blank"">
                 +51 939 304 773
             </a>
-            
         </div>
     </section>
 
@@ -17,10 +16,10 @@
     <section class=" container container__login">
                 <div class="logo">
                     <label for="menu">
-                        <img class="menu__img" src="./img/svg/menu.svg" alt="menu__icon">
+                        <img class="menu__img" src="<?php echo SERVERURL ?>img/svg/menu.svg" alt="menu__icon">
                     </label>
                     <input class="menu__input" type="checkbox" id="menu">
-                    <a href="inicio"><img class="logo-img--header" src="img/png/bolso.png" alt="Logo"></a>
+                    <a href="inicio"><img class="logo-img--header" src="<?php echo SERVERURL ?>img/png/bolso.png" alt="Logo"></a>
                     <a class="logo-enlace" href="inicio">Confecciones Milagros</a>
                 </div>
 
@@ -30,7 +29,7 @@
                     ?>
                         <a class="cuenta-iniciarSesion" href="cuenta">
                             <h2 class="cuenta__titulo">Iniciar sesion / Registrarse</h2>
-                            <img class="cuenta__img" src="./img/svg/user.svg" alt="user">
+                            <img class="cuenta__img" src="<?php echo SERVERURL ?>img/svg/user.svg" alt="user">
                         </a>
                     <?php
                     } else {
@@ -77,7 +76,7 @@
         <div class="search">
             <input class="search-input" type="text" name="buscarProducto" id="buscarProducto" placeholder="Buscar producto">
             <button class="search-boton">
-                <img class="search-icon" src="./img/svg/search.svg" alt="search" name="buscar" id="buscar">
+                <img class="search-icon" src="<?php echo SERVERURL ?>img/svg/search.svg" alt="search" name="buscar" id="buscar">
             </button>
         </div>
     </nav>

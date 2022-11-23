@@ -1,5 +1,6 @@
 <?php
     session_start();
+    require_once "./core/constantes.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -21,27 +22,27 @@
         ?>
     </title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/sweetalert2.min.css">
-    <link rel="stylesheet" href="css/datatables.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/inicio.css">
-    <link rel="stylesheet" href="css/quienesSomos.css">
-    <link rel="stylesheet" href="css/contacto.css">
-    <link rel="stylesheet" href="css/carteras.css">
-    <link rel="stylesheet" href="css/micuenta.css">
-    <link rel="stylesheet" href="css/productoDetalle.css">
-    <link rel="stylesheet" href="css/contenido.css">
-    <link rel="stylesheet" href="css/productos.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/sweetalert2.min.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/datatables.min.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/style.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/inicio.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/quienesSomos.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/contacto.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/carteras.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/micuenta.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/productoDetalle.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/contenido.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/productos.css">
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="./img/jpg/bolso.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo SERVERURL ?>img/jpg/bolso.ico" type="image/x-icon">
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/a9045ee35a.js" crossorigin="anonymous"></script>
-    <script defer src="js/jquery.js"></script>
-    <script src="js/sweetalert2.min.js"></script>
-    <script defer src="js/datatables.min.js"></script>
-    <script defer src="js/main.js"></script>
-    <script defer src="js/functions.js"></script>
-    <script defer src="js/adfunctions.js"></script>
+    <script defer src="<?php echo SERVERURL ?>js/jquery.js"></script>
+    <script src="<?php echo SERVERURL ?>js/sweetalert2.min.js"></script>
+    <script defer src="<?php echo SERVERURL ?>js/datatables.min.js"></script>
+    <script defer src="<?php echo SERVERURL ?>js/main.js"></script>
+    <script defer src="<?php echo SERVERURL ?>js/functions.js"></script>
+    <script defer src="<?php echo SERVERURL ?>js/adfunctions.js"></script>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
 </head>
 <body>
