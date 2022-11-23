@@ -76,7 +76,7 @@
                     foreach ($centros as $key) {
                         ?>
                         <li class="nav-item">
-                            <a href="<?php echo 'categoria/'.$key['categoria'] ?>"><?php echo $key['categoria'] ?></a>
+                            <a href="<?php echo SERVERURL.'categoria/'.$key['categoria'] ?>"><?php echo $key['categoria'] ?></a>
                         </li>
                 <?php
                     }

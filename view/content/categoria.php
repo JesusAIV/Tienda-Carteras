@@ -19,10 +19,14 @@
                 <div class="categorias">
                     <h3 class="categorias__title">Categorias</h3>
                     <div class="categorias__links">
-                        <a href="carteras" class="categorias__link">Carteras</a>
-                        <a href="inicio" class="categorias__link">Morrales</a>
-                        <a href="inicio" class="categorias__link">Mochilas</a>
-                        <a href="inicio" class="categorias__link">Bolsos</a>
+                        <?php
+                            $centros =  $Admin->ListarCategorias();
+                            foreach ($centros as $key) {
+                                ?>
+                                <a href="<?php echo SERVERURL.'categoria/'.$key['categoria'] ?>" class="categorias__link"><?php echo $key['categoria'] ?></a>
+                        <?php
+                            }
+                        ?>
                     </div>
                 </div>
 
