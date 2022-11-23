@@ -1,3 +1,8 @@
+<?php
+    $Ajax = false;
+    require_once "./controller/admincontroller.php";
+    $Admin = new adminController();
+?>
 <div class="principal">
     <div class="slider">
         <div class="slideshow-container">
@@ -34,38 +39,20 @@
             <p>NUESTROS PRODUCTOS</p>
         </div>
         <div class="principal__productos--lista">
-            <div class="product__list--center category1">
-                <a class="product__enlace product__leyend leyend1" href="categoria/carteras">
-                    <img class="product__img" src="./img/jpg/carteras.jpg" alt="Carteras">
-                </a>
-            </div>
-            <div class="product__list--center category2">
-<<<<<<< HEAD
-                <a class="product__enlace product__leyend leyend2" href="categoria/morrales">
-=======
-                <a class="product__enlace product__leyend leyend2" href="inicio">
->>>>>>> f6e11e0353c66b66800b9839aa554cfd153de293
-                    <img class="product__img" src="./img/jpg/morrales.jpg" alt="Morrales">
-                </a>
-            </div>
-            <div class="product__list--center category3">
-<<<<<<< HEAD
-                <a class="product__enlace product__leyend leyend3" href="categoria/mochilas">
-=======
-                <a class="product__enlace product__leyend leyend3" href="inicio">
->>>>>>> f6e11e0353c66b66800b9839aa554cfd153de293
-                    <img class="product__img" src="./img/jpg/mochila.jpg" alt="Mochilas">
-                </a>
-            </div>
-            <div class="product__list--center category4">
-<<<<<<< HEAD
-                <a class="product__enlace product__leyend leyend4" href="categoria/bolsos">
-=======
-                <a class="product__enlace product__leyend leyend4" href="inicio">
->>>>>>> f6e11e0353c66b66800b9839aa554cfd153de293
-                    <img class="product__img" src="./img/jpg/bolsos.jpg" alt="Bolsos">
-                </a>
-            </div>
+            <?php
+                $centros =  $Admin->ListarCategorias();
+                $numcategoria = 1;
+                foreach ($centros as $key) {
+                    ?>
+                <div class="product__list--center category<?php echo $numcategoria ?>">
+                    <a class="product__enlace product__leyend leyend<?php echo $numcategoria ?>" href="<?php echo 'categoria/'.$key['categoria'] ?>">
+                        <img class="product__img" src="./img/jpg/<?php echo $key['categoria'] ?>.jpg" alt="<?php echo $key['categoria'] ?>">
+                    </a>
+                </div>
+            <?php
+                $numcategoria ++;
+                }
+            ?>
         </div>
     </div>
 
