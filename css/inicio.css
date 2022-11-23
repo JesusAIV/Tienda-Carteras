@@ -343,50 +343,231 @@
     justify-self: end;
 }
 
-@media (max-width: 375px){
+@media (max-width: 330px){
+
+    header{
+        width: inherit;
+        max-width: inherit;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .navbar-center{
+        display: flex;
+        flex-direction: column;
+        align-items: inherit;
+        width: 30%;
+        margin: inherit;
+
+    }
+
+    .horario{
+        height: 10em;
+    }
+
+    .container {
+        height: 120px;
+    }
+
+    .content{
+        padding: 0 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .txt{
+        font-size: 2.2rem;
+    }
+
+    .slider{
+        margin-top: 21em;
+    }
+
+    .slideshow-container{
+        max-width: inherit;
+        height: 100%;
+    }
+
     .principal__productos--lista{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 300px;
-        grid-template-areas: 
-        "carteras"
-        "morrales"
-        "mochila"
-        "bolsos";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
     }
 
     .category1{
-        grid-area: carteras;
+        grid-row: 1/3;
     }
 
     .category2{
-        grid-area: morrales;
+        grid-row: 3/5;
     }
 
     .category3{
-        grid-area: mochila;
+        grid-row: 5/7;
     }
 
     .category4{
-        grid-area: bolsos;
-    }
-
-    .principal__productos--lista p{
-        font-weight: 700;
-        font-size: 1.8em;
-        color: var(--color4);
-    }
-    
-    .product__list--center{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 350px;
-        border-radius: 4px;
+        grid-row: 7/9;
     }
 
     .product__img{
-        width: 50%;
-        height: 50%;
+        width: 80%;
+        height: 100%;
+    }
+
+    .product__list--center {
+        height: 900px;
+    }
+
+    .principal__productos--title p,
+    .oferece__title p{
+        font-size: 4rem;
+    }
+
+    .whatsapp{
+        width: 100%;
+        max-width: 100px;
+        height: 100px;
+        margin: 0 1em 0;
+    }
+
+    .whatsapp img{
+        width: 100%;
+    }
+
+    .menu__img{
+        width: 100px;
+    }
+
+    .logo-enlace{
+        font-size: 2.3rem;
+    }
+
+    .cuenta__img{
+        width: 100px;
+    }
+
+    .nav-item a{
+        font-size: 2.3rem;
+    }
+
+    .search{
+        justify-content: end;
+        position: relative;
+        inset: 0;
+        height: 90px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .search-input{
+        display: none;
+    }
+
+    .search-boton{
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        max-width: 70px;
+        height: 90px;
+    }
+
+    .search-icon{
+        width: 100%;
+    }
+
+    .ofrece__opcion--grid{
+        grid-template-columns: 1fr;
+        gap: 8em;
+    }
+
+    .opcion--center img{
+        width: 18em;
+    }
+
+    .opcion__parrafo p{
+        font-size: 4rem;
+    }
+
+    .oferece__title p{
+        padding: 1em 0 2em;
+    }
+
+    .opcion__pago--grid{
+        grid-template-columns: 1fr;
+        gap: 8em;
+    }
+
+    .opcion__parrafo p{
+        padding: 1em 0;
+    }
+
+    .opiniones__leyend{
+        font-size: .8rem;
+    }
+
+    .principal__opiniones{
+        gap: 6em;
+    }
+
+    .subtitle{
+        font-size: 4rem;
+        width: 100%;
+    }
+
+    .slider__review{
+        font-size: 2.2rem;
+    }
+
+    .slider__body {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2em;
+        width: 100%;
+    }
+
+    .slider__texts{
+        max-width: 800px;
+    }
+
+    .slider__img{
+        width: 500px;
+        height: 500px;
+    }
+
+    .slider__arrow{
+        width: 90px;
+        height: 90px;
+    }
+
+    .footer-center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo-img{
+        width: 80px;
+    }
+
+    .caja-footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes-sociales{
+        align-items: center;
+        margin: 0 auto;
     }
 }
