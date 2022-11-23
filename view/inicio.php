@@ -17,6 +17,12 @@
                 $text = $_GET['views'];
                 $Title = explode("/", $_GET['views']);
                 $NomTitle = ucfirst($Title[0]);
+
+                if ($NomTitle == 'Categoria' || $NomTitle == 'ProductoDetalle'){
+                    $NomTitle = ucfirst($Title[1]);
+                }else{
+                    $NomTitle = ucfirst($Title[0]);
+                }
                 echo $NomTitle;
             }
         ?>

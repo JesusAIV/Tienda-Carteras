@@ -74,6 +74,10 @@
                                 ?>
                                     <li><a class="footer__link" href="<?php echo SERVERURL ?>cuenta">Mi Cuenta</a></li>
                                 <?php
+                                }else{
+                                    ?>
+                                        <li><a class="footer__link" href="<?php echo SERVERURL ?>inventario">Inventario</a></li>
+                                    <?php
                                 }
                                 ?>
                             </ul>
