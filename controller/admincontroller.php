@@ -4,10 +4,12 @@
         // obtiene el archivo model/adminModel.php
         require_once "../models/adminmodel.php";
         require_once "../core/conexion.php";
+        require_once "../core/constantes.php";
     } else {
         // obtiene el archivo model/adminModel.php
         require_once "./models/adminmodel.php";
         require_once "./core/conexion.php";
+        require_once "./core/constantes.php";
     }
 
     // Se cre la clase adminController obteniendo las funciones de la clase adminModel
@@ -23,6 +25,7 @@
             $contador = 1;
             foreach ($datos as $row) {
                 $estadoproduc = adminModel::stockProducto($row['stock']);
+                $directorio = adminModel::imagenProducto($row['imagen']);
                 $data = [
                     "contador" => $contador,
                     "idproducto" => $row['idproducto'],
@@ -32,6 +35,7 @@
                     "stock" => $row['stock'],
                     "categoria" => $row['categoria'],
                     "color" => $row['color'],
+                    "imagen" => '<img class="image-table-product" src="'.$directorio.'">',
                     "editar" => '<button class="mostrar-producto">
                                     <img src="./img/svg/eyes.svg">
                                 </button>',
@@ -76,20 +80,22 @@
 
             foreach ($consultacat as $key){}
 
-            $dir = "img/productos/";
+            $dir = "../img/productos/".$key['categoria']."/";
             $nombreArchivo = $_FILES['addpimagen']['name'];
             $tipo = $_FILES['addpimagen']['type'];
             $tipo = strtolower($tipo);
             $extension = substr($tipo,strpos($tipo,'/')+1);
             $name = $nombreArchivo.'-'.time().'.'.$extension;
 
-            if(!is_dir($dir.$name)){
-                mkdir($dir.$name, 0777, true);
+            if(!is_dir($dir)){
+                mkdir($dir, 0777, true);
             }
 
-            $imagen = $dir.$name;
-
             move_uploaded_file($_FILES['addpimagen']['tmp_name'], $dir.$name);
+
+            $directorio = $dir.$name;
+
+            $imagen = substr($directorio, 3);
 
 
             if (empty($idcategoria) || empty($idcolor) || empty($producto) || empty($descripcion) || empty($stock) || empty($precio)) {

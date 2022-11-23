@@ -121,3 +121,6 @@
     border: 1px solid #000000;
     cursor: pointer;
 }
+.image-table-product{
+    max-width: 100px;
+}

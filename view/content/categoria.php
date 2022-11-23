@@ -79,7 +79,7 @@
                         <div class="card__product">
                             <picture class="product">
                                 <a href="<?php echo SERVERURL ?>productoDetalle/<?php echo $key['producto']?>" class="product__item">
-                                    <img src="<?php echo SERVERURL ?>img/png/cartera_view1.png" alt="" class="product__show">
+                                    <img src="<?php echo SERVERURL.$key['imagen'] ?>" alt="" class="product__show">
                                 </a>
                             </picture>
                             <h3 class="product__title"><?php echo $key['producto']?></h3>

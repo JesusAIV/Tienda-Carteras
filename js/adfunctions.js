@@ -20,6 +20,7 @@ function listarproductos() {
             { 'data': 'stock' },
             { 'data': 'categoria' },
             { 'data': 'color' },
+            { 'data': 'imagen' },
             { 'data': 'editar' },
             { 'data': 'estado' }
         ],

@@ -33,6 +33,7 @@
                         <th>Stock</th>
                         <th>Categorias</th>
                         <th>Color</th>
+                        <th>Imagen</th>
                         <th>Detalle</th>
                         <th>Estado</th>
                     </tr>
@@ -46,7 +47,7 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td class="td-mostrar-producto"></td>
+                        <td></td>
                         <td></td>
                     </tr>
                 </tbody>

@@ -1,8 +1,10 @@
 <?php
     if ($Ajax){
         require_once "../models/mainmodel.php";
+        require_once "../core/constantes.php";
     }else {
         require_once "./models/mainmodel.php";
+        require_once "./core/constantes.php";
     }
 
     class adminModel extends mainModel{
@@ -40,5 +42,10 @@
             $result = $conexion->query($sql);
 
             return $result;
+        }
+        protected function imagenProducto($ruta){
+            $directorio = SERVERURL.$ruta;
+
+            return $directorio;
         }
     }
