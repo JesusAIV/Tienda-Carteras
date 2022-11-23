@@ -899,8 +899,9 @@ hr {
         display: grid;
         grid-template-rows: auto 1fr;
         gap: 10px;
-        margin-top: 2em;
-        margin-bottom: 3em;
+        /* margin-top: 2em;
+        margin-bottom: 3em; */
+        padding: 4em 0;
     }
     
     .title__tiendas p {

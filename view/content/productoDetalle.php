@@ -5,7 +5,7 @@
             <div class="principal__image">
                 <div class="principal__circle">
                     <img src="./img/svg/lupa.svg" alt="" class="principal__icon">
-                    <img src="./img/jpg/cartera_view1.jpg" alt="img_producto" class="principal__img">
+                    <img src="./img/png/cartera_view1.png" alt="img_producto" class="principal__img">
                 </div>
             </div>
         </section>

@@ -27,7 +27,7 @@
     "formContacto formContacto infoContacto infoContacto";
     border-radius: 20px 20px 0 0;
     margin-bottom: 3em;
-    box-shadow: -8px 10px 30px 30px #d0cdcd66;
+    box-shadow: -8px 20px 50px 30px #d0cdcd66;
 }
 
 .mapa{
@@ -139,6 +139,17 @@
     width: 50%;
     border: 1px solid var(--borderInput-color);
     cursor: pointer;
+    background-color: var(--color3);
+    color: var(--blanco);
+    transform: scale(1);
+}
+
+.group__enviar:hover{
+    background-color: var(--blanco);
+    color: var(--color3);
+    font-weight: 700;
+    transform: scale(1.1);
+    transition: background-color .3s, color .3s, font-weight .3s, transform .5s;
 }
 
 .contacto__information{
@@ -167,15 +178,17 @@
     margin: 0 0 1.3em 0;
 }
 
-.group__label--info{
-    padding: 0;
-    color: var(--leyend-color);
-    font-weight: 700;
-}
 
 .group__label{
     display: block;
     color: var(--color1);
+}
+
+
+.group__label--info{
+    padding: 1.1em 0;
+    color: var(--leyend-color);
+    font-weight: 700;
 }
 
 .group__leyend{

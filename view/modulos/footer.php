@@ -80,10 +80,10 @@
                         </div>
                         <div class="caja-footer">
                             <ul>
-                                <li><a class="footer__link" href="producto">Carteras</a></li>
-                                <li><a class="footer__link" href="producto">Morrales</a></li>
-                                <li><a class="footer__link" href="producto">Mochilas</a></li>
-                                <li><a class="footer__link" href="producto">Bolsos</a></li>
+                                <li><a class="footer__link" href="carteras">Carteras</a></li>
+                                <li><a class="footer__link" href="inicio">Morrales</a></li>
+                                <li><a class="footer__link" href="inicio">Mochilas</a></li>
+                                <li><a class="footer__link" href="inicio">Bolsos</a></li>
                             </ul>
                         </div>
                     </div>
