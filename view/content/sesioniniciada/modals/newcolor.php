@@ -8,7 +8,7 @@
                 <img class="modal-registro-nuevo-close" src="<?php echo SERVERURL?>img/svg/close.svg" alt="">
             </div>
         </div>
-        <form action="./ajax/crudproducto.php" method="POST" class="ProductosAjax" data-form="add-producto" autocomplete="off" enctype="multipart/form-data">
+        <form action="<?php echo SERVERURL?>ajax/crudproducto.php" method="POST" class="ProductosAjax" data-form="add-producto" autocomplete="off" enctype="multipart/form-data">
             <div class="form-new-produc">
                 <div class="form-new-produc-data">
                     <div class="campos-new-produc">
@@ -23,11 +23,12 @@
                         <input type="file" id="addpimagencolorinput" class="addpimagencolor" name="addpimagencolor">
                         <img src="" alt="" id="addpimagencolor" data-adaptive-background >
                     </div>
-                    <span>Seleccione una imagen del que desea obtener el color</span>
-                    <div>
+                    <p class="text-center">Seleccione una imagen del que desea obtener el color</p>
+                    <div class="labelincolor">
                         <label for="averagecolor" id="averagecolorlabel"></label>
-                        <input type="text" id="averagecolor">
+                        <input readonly type="text" id="averagecolor" name="addpimagencolorhex">
                     </div>
+                    <p class="text-center">Si el color no te parece vuelve a intentar con una imagen que enfoque mejor al color</p>
                 </div>
             </div>
             <div class="save-new-produc">

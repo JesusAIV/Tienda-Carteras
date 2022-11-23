@@ -168,7 +168,6 @@ function uploadImage(e) {
 function switchImage(image) {
     var averagecolor = getaverageColor(image);
     var color = rgbToHex(averagecolor);
-    $(labelcolor).html("Nuevo valor");
     averagediv.style.backgroundColor = averagediv.value = color;
 }
 

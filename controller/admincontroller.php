@@ -166,4 +166,84 @@
 
             return $consulta;
         }
+        public function agregarColorC(){
+            $color = $_POST['addpnamecolor'];
+            $codigohex = $_POST['addpimagencolorhex'];
+
+            $conexion = Conexion::conectar();
+
+            $codigohex = substr($codigohex, 1);
+
+            $sqlcolor = "SELECT color FROM colores WHERE color = '$color'";
+            $result = $conexion->query($sqlcolor);
+            $cantidad = $result->num_rows;
+
+            if($cantidad >= 1){
+                $alerta = [
+                    "Alerta" => "mensaje",
+                    "Titulo" => "Ocurrio un error inesperado",
+                    "Texto" => "El color ya se encuestra registrado en el sistema",
+                    "Tipo" => "error"
+                ];
+            }else{
+                $sqlcolorhex = "SELECT codigohex FROM colores WHERE codigohex = '$codigohex'";
+                $resultt = $conexion->query($sqlcolorhex);
+                $cantidadt = $resultt->num_rows;
+
+                if($cantidadt >= 1){
+                    $alerta = [
+                        "Alerta" => "simple",
+                        "Titulo" => "Ocurrio un error inesperado",
+                        "Texto" => "El color ya se encuestra registrado en el sistema",
+                        "Tipo" => "error"
+                    ];
+                }else{
+                    if (empty($color) || empty($codigohex)) {
+                        // Dará una alerta de error
+                        $alerta = [
+                            "Alerta" => "simple",
+                            "Titulo" => "Ocurrio un error inesperado",
+                            "Texto" => "Debe completar todos los campos",
+                            "Tipo" => "error"
+                        ];
+                    } else {
+                        // Almacena los datos en un array
+                        $datosP = [
+                            "color" => $color,
+                            "codigohex" => $codigohex
+                        ];
+
+                        // Ejecuta la función agregarPersonal obteniendo el array de datos
+                        $addProducto = adminModel::agregarColor($datosP);
+
+                        if ($addProducto >= 1) { /* Si la consulta se ejecuta correctamente */
+                            // Dará una alerta de éxito
+                            $alerta = [
+                                "Alerta" => "simple",
+                                "Titulo" => "Color registrado",
+                                "Texto" => "El color se registró correctamente en el sistema",
+                                "Tipo" => "success"
+                            ];
+                            echo '
+                                <script>
+                                    $( function() {
+                                        $(".FormularioAjax")[0].reset();
+                                        $("#averagecolor").css("background-color", "white");
+                                    });
+                                </script>';
+                        } else {
+                            // Dará una alerta de error
+                            $alerta = [
+                                "Alerta" => "simple",
+                                "Titulo" => "Ocurrio un error inesperado",
+                                "Texto" => "No hemos podido agregar el producto",
+                                "Tipo" => "error"
+                            ];
+                        }
+                    }
+                }
+            }
+
+            return mainModel::sweet_alert($alerta);
+        }
     }

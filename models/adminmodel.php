@@ -35,8 +35,6 @@
             $precio=$datos['precio'];
             $imagen=$datos['imagen'];
 
-            echo $idcategoria;
-
             $sql = "CALL AgregarProducto('$producto', $precio, '$descripcion', $idcolor, $idcategoria, $stock, '$imagen')";
 
             $result = $conexion->query($sql);
@@ -47,5 +45,17 @@
             $directorio = SERVERURL.$ruta;
 
             return $directorio;
+        }
+        protected function agregarColor($datos){
+            $conexion = Conexion::conectar();
+
+            $color=$datos['color'];
+            $codigohex=$datos['codigohex'];
+
+            $sql = "CALL AgregarColor('$color', '$codigohex')";
+
+            $result = $conexion->query($sql);
+
+            return $result;
         }
     }
