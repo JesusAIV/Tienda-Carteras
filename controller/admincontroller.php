@@ -118,8 +118,14 @@
             return mainModel::sweet_alert($alerta);
         }
         public function DatosCategoria($nombrecategoria){
-            $hola = "hola";
 
-            return $hola;
+            $conexion = Conexion::conectar();
+            $sql = "CALL ListarCategorias()";
+            $consulta = $conexion->query($sql);
+            $consulta = $consulta->fetch_all(MYSQLI_ASSOC);
+
+            $caja = '<button>'.$nombrecategoria.'</button>';
+
+            return $caja;
         }
     }
