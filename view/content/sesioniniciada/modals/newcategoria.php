@@ -12,8 +12,8 @@
             <div class="form-new-produc">
                 <div class="form-new-produc-data">
                     <div class="campos-new-produc">
-                        <label for="addpname">Nombre</label>
-                        <input type="text" id="addpname" class="addpname" name="addpname">
+                        <label for="addpnamecategoria">Nombre</label>
+                        <input type="text" id="addpnamecategoria" class="addpnamecategoria" name="addpnamecategoria">
                     </div>
                 </div>
             </div>

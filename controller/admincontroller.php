@@ -246,4 +246,66 @@
 
             return mainModel::sweet_alert($alerta);
         }
+        public function agregarCategoriaC(){
+            $categoria = $_POST['addpnamecategoria'];
+
+            $conexion = Conexion::conectar();
+
+            $sqlcolor = "SELECT categoria FROM categoria WHERE categoria = '$categoria'";
+            $result = $conexion->query($sqlcolor);
+            $cantidad = $result->num_rows;
+
+            if($cantidad >= 1){
+                $alerta = [
+                    "Alerta" => "mensaje",
+                    "Titulo" => "Ocurrio un error inesperado",
+                    "Texto" => "La categoria ya se encuestra registrado en el sistema",
+                    "Tipo" => "error"
+                ];
+            }else{
+                if (empty($categoria)) {
+                    // Dará una alerta de error
+                    $alerta = [
+                        "Alerta" => "simple",
+                        "Titulo" => "Ocurrio un error inesperado",
+                        "Texto" => "Debe completar todos los campos",
+                        "Tipo" => "error"
+                    ];
+                } else {
+                    // Almacena los datos en un array
+                    $datosP = [
+                        "categoria" => $categoria
+                    ];
+
+                    // Ejecuta la función agregarPersonal obteniendo el array de datos
+                    $addProducto = adminModel::agregarCategoria($datosP);
+
+                    if ($addProducto >= 1) { /* Si la consulta se ejecuta correctamente */
+                        // Dará una alerta de éxito
+                        $alerta = [
+                            "Alerta" => "simple",
+                            "Titulo" => "Categoria registrado",
+                            "Texto" => "La categoria se registró correctamente en el sistema",
+                            "Tipo" => "success"
+                        ];
+                        echo '
+                            <script>
+                                $( function() {
+                                    $(".FormularioAjax")[0].reset();
+                                });
+                            </script>';
+                    } else {
+                        // Dará una alerta de error
+                        $alerta = [
+                            "Alerta" => "simple",
+                            "Titulo" => "Ocurrio un error inesperado",
+                            "Texto" => "No hemos podido agregar la categoria",
+                            "Tipo" => "error"
+                        ];
+                    }
+                }
+            }
+
+            return mainModel::sweet_alert($alerta);
+        }
     }
