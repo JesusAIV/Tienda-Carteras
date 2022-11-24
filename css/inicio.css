@@ -348,41 +348,40 @@
 @media (max-width: 330px){
 
     header{
-        width: inherit;
+        /* width: inherit; */
         max-width: inherit;
     }
 
     .navbar {
-        display: flex;
+        /* display: flex; */
     }
 
     .navbar-center{
-        display: flex;
-        flex-direction: column;
-        align-items: inherit;
-        width: 30%;
-        margin: inherit;
-
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: inherit; */
+        /* width: 30%; */
+        /* margin: inherit; */
     }
 
     .horario{
-        height: 10em;
+        /* height: 10em; */
     }
 
     .container {
-        height: 120px;
+        /* height: 120px; */
     }
 
     .content{
-        padding: 0 1em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3em;
+        /* padding: 0 1em; */
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* gap: 3em; */
     }
 
     .txt{
-        font-size: 2.2rem;
+        /* font-size: 2.2rem; */
     }
 
     .slider{
@@ -438,15 +437,15 @@
     }
 
     .whatsapp img{
-        width: 100%;
+        /* width: 100%; */
     }
 
     .menu__img{
-        width: 100px;
+        /* width: 100px; */
     }
 
     .logo-enlace{
-        font-size: 2.3rem;
+        /* font-size: 2.3rem; */
     }
 
     .cuenta__img{
@@ -454,32 +453,32 @@
     }
 
     .nav-item a{
-        font-size: 2.3rem;
+        /* font-size: 2.3rem; */
     }
 
     .search{
-        justify-content: end;
-        position: relative;
+        /* justify-content: end; */
+        /* position: relative;
         inset: 0;
         height: 90px;
         width: 100%;
-        margin: 0 auto;
+        margin: 0 auto; */
     }
 
     .search-input{
-        display: none;
+        /* display: none; */
     }
 
     .search-boton{
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        max-width: 70px;
-        height: 90px;
+        /* position: absolute; */
+        /* inset: 0; */
+        /* width: 100%; */
+        /* max-width: 70px; */
+        /* height: 90px; */
     }
 
     .search-icon{
-        width: 100%;
+        /* width: 100%; */
     }
 
     .ofrece__opcion--grid{
@@ -584,7 +583,7 @@
     }
 
     .logo-img{
-        width: 80px;
+        /* width: 80px; */
     }
 
     .caja-footer{
@@ -605,7 +604,7 @@
     }
 
     .inicio__title{
-        font-size: 2.5rem;
+        /* font-size: 2.5rem; */
     }
 
     /* .caja-footer ul li,

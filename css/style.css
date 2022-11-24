@@ -223,6 +223,7 @@ header {
     justify-content: space-between;
     gap: 4em;
     padding: 2.5em 1em 2.2em;
+    /* width: 100%; */
 }
 
 .nav-item {
@@ -535,7 +536,7 @@ hr {
     /* Horario de Atencion */
     .horario {
         width: 100%;
-        height: 30px;
+        /* height: 30px; */
     }
     
     .content {
@@ -574,12 +575,12 @@ hr {
     .logo {
         margin: 0;
         width: 100%;
-        display: flex;
+        /* display: flex; */
         gap: 0;
     }
     
     .logo-img--header {
-        display: none;
+        /* display: none; */
     }
     
     .logo-enlace {

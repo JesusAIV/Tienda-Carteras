@@ -20,9 +20,6 @@
     <!-- Logo/Inicar sesion/Bolsa -->
     <section class=" container container__login">
                 <div class="logo">
-                    <label for="menu">
-                        <img class="menu__img" src="<?php echo SERVERURL ?>img/svg/menu.svg" alt="menu__icon">
-                    </label>
                     <input class="menu__input" type="checkbox" id="menu">
                     <a href="<?php echo SERVERURL ?>inicio"><img class="logo-img--header" src="<?php echo SERVERURL ?>img/png/bolso.png" alt="Logo"></a>
                     <a class="logo-enlace" href="<?php echo SERVERURL ?>inicio">Confecciones Milagros</a>

@@ -20,8 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `cmilagros`
 --
-CREATE DATABASE IF NOT EXISTS `cmilagros` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `cmilagros`;
+-- CREATE DATABASE IF NOT EXISTS `cmilagros` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+-- USE `cmilagros`;
 
 DELIMITER $$
 --
@@ -48,7 +48,7 @@ END$$
 -- WHERE `idproducto` = idproducto;
 -- END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `DatosCategoria` (IN `categoria` VARCHAR(50))   SELECT 
+CREATE PROCEDURE `DatosCategoria` (IN `categoria` VARCHAR(50))   SELECT 
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
