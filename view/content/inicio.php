@@ -8,19 +8,19 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="<?php echo SERVERURL ?>img/jpg/img1.jpg" style="width:100%">
+                <img src="<?php echo SERVERURL ?>img/jpg/img1.jpg">
                 <div class="text">Caption Text</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="<?php echo SERVERURL ?>img/jpg/img2.jpg" style="width:100%">
+                <img src="<?php echo SERVERURL ?>img/jpg/img2.jpg">
                 <div class="text">Caption Two</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="<?php echo SERVERURL ?>img/jpg/img3.jpg" style="width:100%">
+                <img src="<?php echo SERVERURL ?>img/jpg/img3.jpg">
                 <div class="text">Caption Three</div>
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

@@ -20,7 +20,8 @@
     max-width: 1000px;
     position: relative;
     margin: auto;
-    min-width: 1000px;
+    min-width: 320px;
+    width: 100%;
 }
 
 /* nextslider & previous buttons */
@@ -115,7 +116,8 @@
 
 /* PRINCIPAL PRODUCTOS */
 .principal__productos{
-    margin: 7em 0;
+    FONT-WEIGHT: 600;
+    margin: 6;
     display: grid;
     grid-template-rows: auto auto;
     gap: 20px;
@@ -347,86 +349,115 @@
 
 @media (max-width: 320px){
 
+    .main{
+        max-width: 100vw;
+        min-width: 100vw;
+        width: 100%;
+    }
+
+    .principal{
+        width: 100vw;
+        width: 100%;
+        margin: 0 auto;
+    }
+
     header{
-        /* width: inherit; */
         max-width: inherit;
-    }
-
-    .navbar {
-        /* display: flex; */
-    }
-
-    .navbar-center{
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: inherit; */
-        /* width: 30%; */
-        /* margin: inherit; */
-    }
-
-    .horario{
-        /* height: 10em; */
-    }
-
-    .container {
-        /* height: 120px; */
-    }
-
-    .content{
-        /* padding: 0 1em; */
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* gap: 3em; */
-    }
-
-    .txt{
-        /* font-size: 2.2rem; */
     }
 
     .slider{
-        margin-top: 21em;
+        margin: 0;
+        width: 100%;
+        padding: 1em 0;
     }
 
-    .slideshow-container{
-        max-width: inherit;
+    .slideshow-container,
+    .opiniones{
+        max-width: 320px;
+        min-width: 320px;
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    .slideshow-container img{
+        width: 100%;
         height: 100%;
+    }
+
+    .dot{
+        width: 10px;
+        height: 10px;
+    }
+
+    .principal__productos{
+        max-width: 100vw;
+        min-width: 100vw;
+        margin: 0;
+        padding: 2em 1em 3em;
     }
 
     .principal__productos--lista{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
     }
 
-    .category1{
-        grid-row: 1/3;
+    .product__list--center {
+        width: 100%;
+        max-height: 350px;
     }
 
-    .category2{
-        grid-row: 3/5;
-    }
-
-    .category3{
-        grid-row: 5/7;
-    }
-
-    .category4{
-        grid-row: 7/9;
+    .product__enlace {
+        width: 100%;
+        height: 100%;
     }
 
     .product__img{
-        width: 80%;
+        width: 100%;
         height: 100%;
     }
 
     .product__list--center {
-        height: 900px;
+        height: 500px;
     }
 
     .principal__productos--title p,
     .oferece__title p{
-        font-size: 4rem;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .oferece__title p{
+        margin: 0;
+    }
+
+    .ofrece__opcion--grid{
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .opcion--center{
+        max-width: 70px;
+        max-height: 70px;
+        margin: 0 auto;
+    }
+
+    .opcion--center img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .oferece__title p{
+        text-transform: uppercase;
+    }
+
+    .opiniones__leyend{
+        font-size: .5rem;
+    }
+
+    .principal__ofrece{
+        margin: 0;
+        grid-template-rows: auto auto;
+        max-width: 320px;
     }
 
     .whatsapp{
@@ -436,54 +467,13 @@
         margin: 0 1em 0;
     }
 
-    .whatsapp img{
-        /* width: 100%; */
-    }
-
-    .menu__img{
-        /* width: 100px; */
-    }
-
-    .logo-enlace{
-        /* font-size: 2.3rem; */
-    }
-
     .cuenta__img{
         width: 100px;
     }
 
-    .nav-item a{
-        /* font-size: 2.3rem; */
-    }
-
-    .search{
-        /* justify-content: end; */
-        /* position: relative;
-        inset: 0;
-        height: 90px;
-        width: 100%;
-        margin: 0 auto; */
-    }
-
-    .search-input{
-        /* display: none; */
-    }
-
-    .search-boton{
-        /* position: absolute; */
-        /* inset: 0; */
-        /* width: 100%; */
-        /* max-width: 70px; */
-        /* height: 90px; */
-    }
-
-    .search-icon{
-        /* width: 100%; */
-    }
-
     .ofrece__opcion--grid{
         grid-template-columns: 1fr;
-        gap: 8em;
+        gap: 6em;
     }
 
     .opcion--center img{
@@ -491,7 +481,7 @@
     }
 
     .opcion__parrafo p{
-        font-size: 4rem;
+        font-size: 1.2rem;
     }
 
     .oferece__title p{
@@ -507,61 +497,52 @@
         padding: 1em 0;
     }
 
-    .opiniones__leyend{
-        font-size: .8rem;
-    }
-
     .principal__opiniones{
-        gap: 6em;
+        display: grid;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 2em 0;
+        gap: inherit;
     }
 
     .subtitle{
-        font-size: 4rem;
+        font-size: 1.1rem;
         width: 100%;
     }
 
     .slider__review{
-        font-size: 2.2rem;
+        font-size: .9rem;
+        text-align: left;
     }
 
     .slider__body {
         display: flex;
         flex-direction: column-reverse;
         gap: 2em;
+        max-width: 320px;
         width: 100%;
+        text-align: center;
     }
 
     .slider__texts{
-        max-width: 800px;
+        max-width: 320px;
     }
 
     .slider__img{
-        width: 500px;
-        height: 500px;
+        width: 100px;
+        height: 100px;
     }
 
     .slider__arrow{
-        width: 90px;
-        height: 90px;
-    }
-
-    .footer-center{
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        /* align-items: center; */
+        width: 30px;
+        height: 30px;
     }
 
     .footer-logo{
         display: flex;
         justify-content: space-around;
-    }
-
-    .footer-siguenos{
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* gap: 3em; */
     }
 
     .redes-sociales li a {
@@ -577,38 +558,4 @@
         color: var(--redes-sociales);
         transition: .5s;
     }
-
-    .redes-icon{
-        /* font-size: 1.3rem; */
-    }
-
-    .logo-img{
-        /* width: 80px; */
-    }
-
-    .caja-footer{
-        /* margin-bottom: 2.3em; */
-    }
-
-    .caja-footer ul{
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* align-items: center; */
-        /* gap: 2.8em; */
-    }
-
-    .caja-footer{
-        /* display: grid; */
-        /* grid-auto-flow: column; */
-        /* gap: 2em; */
-    }
-
-    .inicio__title{
-        /* font-size: 2.5rem; */
-    }
-
-    /* .caja-footer ul li,
-    .footer__link{
-        font-size: 1.6rem;
-    } */
 }
