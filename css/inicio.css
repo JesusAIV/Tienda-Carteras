@@ -749,11 +749,12 @@
 
 @media (max-width: 425px){
     body{
-        background: #000;
+        max-width: 100vw;
     }
     .main{
-        margin: 0;
+        padding: 5em 0 2em 0;
         max-width: 100vw;
+        margin: 0;
     }
     .principal{
         padding: 0 1em;
@@ -767,36 +768,31 @@
         height: 310px;
     }
 
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
     .prev{
         font-size: 15px;
-    }
-    
-    /* Slideshow container */
-    .slideshow-container {
-        max-width: 100%;
-        position: relative;
-        margin: 0 auto;
-        min-width: inherit;
     }
     
     /* nextslider & previous buttons */
     .prev,
     .nextslider {
         padding: 16px;
-        font-size: 15px;
+        font-size: 1.5rem;
     }
     
     /* Caption text */
     .text {
-        font-size: 13px;
+        font-size: 10px;
     }
     
     /* PRINCIPAL PRODUCTOS */
     .principal__productos{
         margin: 0;
-        display: grid;
-        gap: 0;
-        width: 100%;
+        padding: 3em 0;
     }
 
     .principal__productos--title p{
