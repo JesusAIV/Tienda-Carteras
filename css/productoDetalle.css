@@ -3,7 +3,6 @@
     padding: 1.3em 2em;
     margin: 0 auto;
     overflow: hidden;
-
     display: grid;
     grid-template-columns: repeat(6, 1fr);
 }

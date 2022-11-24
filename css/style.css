@@ -528,7 +528,6 @@ hr {
     
     header {
         position: inherit;
-        max-width: 380px;
         width: 100%;
         height: 60px;
     }
@@ -563,12 +562,6 @@ hr {
     }
     
     .container__login::after{
-        content: "";
-        display: block;
-        width: 100%;
-        height: 1px;
-        background-color: var(--color-separador);
-        position: absolute;
         top: 13%;
     }
     
@@ -743,18 +736,6 @@ hr {
         right: 30px;
     }
     
-    
-    /* Footer */
-    .footer {
-        width: 100%;
-        padding: 1rem;
-        background-color: var(--color3);
-        color: var(--gris);
-        padding: 1rem 5rem;
-        position: relative;
-        z-index: 2;
-    }
-    
     .footer a {
         color: var(--gris);
     }
@@ -814,36 +795,12 @@ hr {
         top: 50px;
     }
     
-    /* REDES SOCIALES */
-    .redes-sociales {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
     .redes-sociales li {
         list-style: none;
         margin: 0 15px;
     }
-    
-    .redes-sociales li a {
-        position: relative;
-        display: block;
-        width: 60px;
-        height: 60px;
-        text-align: center;
-        line-height: 63px;
-        background: var(--color3);
-        border-radius: 50%;
-        font-size: 30px;
-        color: var(--redes-sociales);
-        transition: .5s;
-    }
-    
+
+
     .redes-sociales li a::before {
         content: '';
         position: absolute;
@@ -952,16 +909,7 @@ hr {
     .tiendas__leyend{
         color: var(--color1);
     }
-    
-    /* Whatsapp */
-    .whatsapp {
-        position: fixed;
-        z-index: 5;
-        /* right: -5px; */
-        bottom: 80px;
-        /* width: 100px; */
-    }
-    
+
     .whatsapp img {
         width: 50px;
     }
