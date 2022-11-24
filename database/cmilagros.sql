@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-11-2022 a las 03:41:47
+-- Tiempo de generación: 24-11-2022 a las 07:13:30
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -77,6 +77,22 @@ JOIN categoria AS tbc
 ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 ON (tbp.idcolor = tbcol.idcolor)
 WHERE tbp.producto = nomproducto$$
+
+CREATE PROCEDURE `EditarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT, IN `imagen` VARCHAR(200), IN `idproducto` INT)   BEGIN
+SET FOREIGN_KEY_CHECKS=0;
+UPDATE 
+	producto 
+SET 
+	`producto` = producto,
+    `precio` = precio,
+    `descripcion` = descripcion,
+    `stock` = stock,
+    `idcategoria` = idcategoria,
+    `idcolor` = idcolor,
+    `imagen` = imagen
+WHERE 
+	`idproducto` = idproducto;
+END$$
 
 CREATE PROCEDURE `InformacionProducto` (IN `idproducto` INT)   SELECT 
 	tbp.idproducto,

@@ -423,6 +423,9 @@ header {
 
 /* -------------------------------------------- */
 
+.cuenta-iniciarSesion{
+    gap: 20px;
+}
 
 .derechos-reservados {
     text-align: center;
@@ -501,6 +504,13 @@ hr {
 
 .whatsapp img {
     width: 50px;
+}
+
+.navbar-container-grid{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
 @media (max-width: 380px){    
