@@ -251,6 +251,23 @@
 
             $conexion = Conexion::conectar();
 
+            $dir = "../img/categorias/";
+            $nombreArchivo = $_FILES['addpimagencategoria']['name'];
+            $tipo = $_FILES['addpimagencategoria']['type'];
+            $tipo = strtolower($tipo);
+            $extension = substr($tipo,strpos($tipo,'/')+1);
+            $name = $nombreArchivo.'-'.time().'.'.$extension;
+
+            if(!is_dir($dir)){
+                mkdir($dir, 0777, true);
+            }
+
+            move_uploaded_file($_FILES['addpimagencategoria']['tmp_name'], $dir.$name);
+
+            $directorio = $dir.$name;
+
+            $imagen = substr($directorio, 3);
+
             $sqlcolor = "SELECT categoria FROM categoria WHERE categoria = '$categoria'";
             $result = $conexion->query($sqlcolor);
             $cantidad = $result->num_rows;
@@ -274,7 +291,8 @@
                 } else {
                     // Almacena los datos en un array
                     $datosP = [
-                        "categoria" => $categoria
+                        "categoria" => $categoria,
+                        "imagen" => $imagen
                     ];
 
                     // Ejecuta la función agregarPersonal obteniendo el array de datos

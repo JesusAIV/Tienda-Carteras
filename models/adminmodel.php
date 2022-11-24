@@ -49,7 +49,7 @@
         protected function agregarColor($datos){
             $conexion = Conexion::conectar();
 
-            $color=$datos['categoria'];
+            $color=$datos['color'];
             $codigohex=$datos['codigohex'];
 
             $sql = "CALL AgregarColor('$color', '$codigohex')";
@@ -62,8 +62,9 @@
             $conexion = Conexion::conectar();
 
             $categoria=$datos['categoria'];
+            $imagen=$datos['imagen'];
 
-            $sql = "CALL AgregarCategoria('$categoria')";
+            $sql = "CALL AgregarCategoria('$categoria', '$imagen')";
 
             $result = $conexion->query($sql);
 

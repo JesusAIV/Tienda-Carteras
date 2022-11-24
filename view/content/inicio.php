@@ -46,8 +46,11 @@
                     ?>
                 <div class="product__list--center category<?php echo $numcategoria ?>">
                     <a class="product__enlace product__leyend leyend<?php echo $numcategoria ?>" href="<?php echo 'categoria/'.$key['categoria'] ?>">
-                        <img class="product__img" src="<?php echo SERVERURL.'img/jpg/'. $key['categoria'] ?>.jpg" alt="<?php echo $key['categoria'] ?>">
+                        <img class="product__img" src="<?php echo SERVERURL.$key['imagen'] ?>" alt="<?php echo $key['categoria'] ?>">
                     </a>
+                    <style>
+                        <?php echo '.leyend'.$numcategoria.'::after{ content: "'.strtoupper($key['categoria']).'"}' ?>
+                    </style>
                 </div>
             <?php
                 $numcategoria ++;
