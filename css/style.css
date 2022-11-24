@@ -223,6 +223,7 @@ header {
     justify-content: space-between;
     gap: 4em;
     padding: 2.5em 1em 2.2em;
+    /* width: 100%; */
 }
 
 .nav-item {
@@ -497,9 +498,9 @@ hr {
 .whatsapp {
     position: fixed;
     z-index: 5;
-    right: -5px;
+    right: 20px;
     bottom: 80px;
-    width: 100px;
+    /* width: 100px; */
 }
 
 .whatsapp img {
@@ -535,7 +536,7 @@ hr {
     /* Horario de Atencion */
     .horario {
         width: 100%;
-        height: 30px;
+        /* height: 30px; */
     }
     
     .content {
@@ -572,14 +573,14 @@ hr {
     }
     
     .logo {
-        margin: 0;
+        margin: 0 10px;
         width: 100%;
         display: flex;
-        gap: 0;
+        gap: 10px;
     }
     
     .logo-img--header {
-        display: none;
+        /* display: none; */
     }
     
     .logo-enlace {
@@ -871,7 +872,7 @@ hr {
     .redes-sociales {
         display: flex;
         justify-content: center;
-        gap: 3em;
+        gap: 0em;
     }
     
     .redes-sociales a {
@@ -956,9 +957,9 @@ hr {
     .whatsapp {
         position: fixed;
         z-index: 5;
-        right: -5px;
+        /* right: -5px; */
         bottom: 80px;
-        width: 100px;
+        /* width: 100px; */
     }
     
     .whatsapp img {
