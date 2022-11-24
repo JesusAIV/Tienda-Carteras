@@ -345,7 +345,7 @@
     justify-self: end;
 }
 
-@media (max-width: 330px){
+@media (max-width: 320px){
 
     header{
         width: inherit;
