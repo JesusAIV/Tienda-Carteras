@@ -42,11 +42,11 @@ INSERT INTO producto
 (idcategoria, idcolor, producto, descripcion, stock, precio, imagen);
 END$$
 
-CREATE PROCEDURE `EditarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT, IN `imagen` VARCHAR(200), IN `idproducto` INT)
-BEGIN
-UPDATE producto SET `producto` = producto AND `precio` = precio AND `descripcion` = descripcion AND `stock` = stock AND `idcategoria` = idcategoria AND `idcolor` = idcolor AND `imagen` = imagen
-WHERE `idproducto` = idproducto
-END$$
+-- CREATE PROCEDURE `EditarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT, IN `imagen` VARCHAR(200), IN `idproducto` INT)
+-- BEGIN
+-- UPDATE producto SET `producto` = producto AND `precio` = precio AND `descripcion` = descripcion AND `stock` = stock AND `idcategoria` = idcategoria AND `idcolor` = idcolor AND `imagen` = imagen
+-- WHERE `idproducto` = idproducto;
+-- END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DatosCategoria` (IN `categoria` VARCHAR(50))   SELECT 
 	tbp.idproducto,
