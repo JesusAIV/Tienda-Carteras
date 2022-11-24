@@ -42,10 +42,10 @@ INSERT INTO producto
 (idcategoria, idcolor, producto, descripcion, stock, precio, imagen);
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `EditarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock`, IN `idcolor` INT, INT, IN `idproducto` INT, IN `imagen` VARCHAR(200))   BEGIN
+CREATE PROCEDURE `EditarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT, IN `imagen` VARCHAR(200), IN `idproducto` INT)   BEGIN
 SET FOREIGN_KEY_CHECKS=0;
-UPDATE SET `producto` = producto, `precio` = precio, `descripcion` = descripcion, `stock` = stock, `idcategoria` = idcategoria, `idcolor` = idcolor, `imagen` = imagen
-WHERE  = `idproducto` = idproducto,
+UPDATE producto SET `producto` = producto AND `precio` = precio AND `descripcion` = descripcion AND `stock` = stock AND `idcategoria` = idcategoria AND `idcolor` = idcolor AND `imagen` = imagen
+WHERE `idproducto` = idproducto
 END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DatosCategoria` (IN `categoria` VARCHAR(50))   SELECT 
