@@ -38,6 +38,12 @@
   .main {
     margin-top: 200px;
   }
+  .detail {
+    grid-template-columns: none;
+  }
+  .principal__image {
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
