@@ -556,18 +556,58 @@
         justify-content: space-around;
     }
 
+    .footer-siguenos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .redes-sociales li a {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 63px;
+        background: var(--color3);
+        border-radius: 50%;
+        font-size: 30px;
+        color: var(--redes-sociales);
+        transition: .5s;
+    }
+
+    .redes-icon{
+        font-size: 1.3rem;
+    }
+
     .logo-img{
         width: 80px;
+    }
+
+    .caja-footer{
+        margin-bottom: 2.3em;
     }
 
     .caja-footer ul{
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 2.8em;
     }
 
-    .redes-sociales{
-        align-items: center;
-        margin: 0 auto;
+    .caja-footer{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 2em;
     }
+
+    .inicio__title{
+        font-size: 2.5rem;
+    }
+
+    /* .caja-footer ul li,
+    .footer__link{
+        font-size: 1.6rem;
+    } */
 }
