@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-11-2022 a las 03:41:47
+-- Tiempo de generación: 24-11-2022 a las 07:13:30
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -42,13 +42,7 @@ INSERT INTO producto
 (idcategoria, idcolor, producto, descripcion, stock, precio, imagen);
 END$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `EditarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock`, IN `idcolor` INT, INT, IN `idproducto` INT, IN `imagen` VARCHAR(200))   BEGIN
-SET FOREIGN_KEY_CHECKS=0;
-UPDATE SET `producto` = producto, `precio` = precio, `descripcion` = descripcion, `stock` = stock, `idcategoria` = idcategoria, `idcolor` = idcolor, `imagen` = imagen
-WHERE  = `idproducto` = idproducto,
-END$$
-
-CREATE DEFINER=`root`@`localhost` PROCEDURE `DatosCategoria` (IN `categoria` VARCHAR(50))   SELECT 
+CREATE PROCEDURE `DatosCategoria` (IN `categoria` VARCHAR(50))   SELECT 
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -77,6 +71,22 @@ JOIN categoria AS tbc
 ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 ON (tbp.idcolor = tbcol.idcolor)
 WHERE tbp.producto = nomproducto$$
+
+CREATE PROCEDURE `EditarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT, IN `imagen` VARCHAR(200), IN `idproducto` INT)   BEGIN
+SET FOREIGN_KEY_CHECKS=0;
+UPDATE 
+	producto 
+SET 
+	`producto` = producto,
+    `precio` = precio,
+    `descripcion` = descripcion,
+    `stock` = stock,
+    `idcategoria` = idcategoria,
+    `idcolor` = idcolor,
+    `imagen` = imagen
+WHERE 
+	`idproducto` = idproducto;
+END$$
 
 CREATE PROCEDURE `InformacionProducto` (IN `idproducto` INT)   SELECT 
 	tbp.idproducto,
