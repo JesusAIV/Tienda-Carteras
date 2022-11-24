@@ -32,7 +32,7 @@
             <div class="detail__content">
                 <div class="detail__header">
                     <h1 class="detail__title"><?php echo $key['producto'] ?></h1>
-                    <p class="detail__price"><?php echo $key['precio'] ?></p>
+                    <p class="detail__price"><?php echo 'S/'.$key['precio'] ?></p>
                 </div>
 
                 <div class="detail__body">

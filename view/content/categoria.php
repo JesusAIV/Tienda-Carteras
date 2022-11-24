@@ -83,7 +83,7 @@
                                 </a>
                             </picture>
                             <h3 class="product__title"><?php echo $key['producto']?></h3>
-                            <span class="product__price"><?php echo $key['precio']?></span>
+                            <span class="product__price"><?php echo 'S/'.$key['precio']?></span>
                             <a href="<?php echo SERVERURL ?>productoDetalle/<?php echo $key['producto']?>" class="product__ver button">
                                 <span class="button__span"></span>
                                 <span class="button__span"></span>
