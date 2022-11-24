@@ -1,3 +1,43 @@
-
+@media (max-width: 425px) {
+  .footer {
+    padding: 1rem;
+    text-align: center;
+  }
+  .footer-center {
+    grid-template: "footer-datos" 1fr "footer-siguenos" 1fr "footer-puntos" 1fr/1fr;
+  }
+  .footer-siguenos {
+    padding: 0.5rem;
+  }
+  .footer-logo {
+    justify-content: center;
+  }
+  .navbar-center {
+    gap: 2em;
+    padding: 0;
+  }
+  .navbar-container-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px 0;
+  }
+  .navbar {
+    height: auto;
+  }
+  .search {
+    width: 50%;
+    margin: auto;
+  }
+  .navbar-center-ul {
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+  .nav-item {
+    margin: 10px 0;
+  }
+  .main {
+    margin-top: 200px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
