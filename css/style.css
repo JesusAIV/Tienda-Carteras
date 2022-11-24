@@ -106,6 +106,7 @@ header {
     background-color: var(--color-separador);
     position: absolute;
     top: 73%;
+    right: 0;
 }
 
 .logo {
@@ -551,25 +552,8 @@ hr {
         margin: 0;
     }
     
-    /* Logo/Inicar sesion/Bolsa */
-    .container {
-        width: 100%;
-        height: inherit;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: inherit;
-    }
-    
     .container__login::after{
         top: 13%;
-    }
-    
-    .logo {
-        margin: 0 10px;
-        width: 100%;
-        display: flex;
-        gap: 10px;
     }
     
     .logo-img--header {
@@ -596,7 +580,7 @@ hr {
     
     
     .cuenta {
-        margin: 0 2em 0;
+        margin: 0 1em 0;
     }
     
     .cuenta__titulo {
@@ -676,7 +660,7 @@ hr {
     .navbar-center {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         gap: 4em;
         padding: 2.5em 1em 2.2em;
     }
