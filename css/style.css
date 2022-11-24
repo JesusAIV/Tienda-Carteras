@@ -498,9 +498,9 @@ hr {
 .whatsapp {
     position: fixed;
     z-index: 5;
-    right: -5px;
+    right: 20px;
     bottom: 80px;
-    width: 100px;
+    /* width: 100px; */
 }
 
 .whatsapp img {
@@ -573,10 +573,10 @@ hr {
     }
     
     .logo {
-        margin: 0;
+        margin: 0 10px;
         width: 100%;
-        /* display: flex; */
-        gap: 0;
+        display: flex;
+        gap: 10px;
     }
     
     .logo-img--header {
@@ -872,7 +872,7 @@ hr {
     .redes-sociales {
         display: flex;
         justify-content: center;
-        gap: 3em;
+        gap: 0em;
     }
     
     .redes-sociales a {
@@ -957,9 +957,9 @@ hr {
     .whatsapp {
         position: fixed;
         z-index: 5;
-        right: -5px;
+        /* right: -5px; */
         bottom: 80px;
-        width: 100px;
+        /* width: 100px; */
     }
     
     .whatsapp img {

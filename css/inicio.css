@@ -546,10 +546,10 @@
     }
 
     .footer-center{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
     }
 
     .footer-logo{
@@ -558,17 +558,17 @@
     }
 
     .footer-siguenos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 3em;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* gap: 3em; */
     }
 
     .redes-sociales li a {
         position: relative;
         display: block;
-        width: 30px;
-        height: 30px;
+        /* width: 40px; */
+        /* height: 40px; */
         text-align: center;
         line-height: 63px;
         background: var(--color3);
@@ -579,7 +579,7 @@
     }
 
     .redes-icon{
-        font-size: 1.3rem;
+        /* font-size: 1.3rem; */
     }
 
     .logo-img{
@@ -587,20 +587,20 @@
     }
 
     .caja-footer{
-        margin-bottom: 2.3em;
+        /* margin-bottom: 2.3em; */
     }
 
     .caja-footer ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2.8em;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* gap: 2.8em; */
     }
 
     .caja-footer{
-        display: grid;
-        grid-auto-flow: column;
-        gap: 2em;
+        /* display: grid; */
+        /* grid-auto-flow: column; */
+        /* gap: 2em; */
     }
 
     .inicio__title{
