@@ -167,7 +167,7 @@
     border-radius: 4px;
 }
 
-.leyend1::after{
+/* .leyend1::after{
     content: "CARTERAS";
 }
 .leyend2::after{
@@ -179,7 +179,9 @@
 .leyend4::after{
     content: "BOLSOS";
 }
-
+.leyend5::after{
+    content: "BOLSOS";
+} */
 .product__leyend{
     position: relative;
     overflow: hidden;

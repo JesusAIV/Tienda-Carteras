@@ -3,6 +3,7 @@ $(document).ready(function () {
     modalNew();
     crudProducto();
     validarPrecio();
+    previsualizarImagen();
     // obtenerColorImagen();
 });
 
@@ -178,3 +179,35 @@ document.getElementById("addpimagencolorinput").addEventListener("change", funct
     reader.onload = uploadImage;
     reader.readAsDataURL(file);
 });
+
+function previsualizarImagen() {
+    $("#addpimagencategoria").change(function () {
+        var img = this.files[0];
+
+        if (img["type"] != "image/jpeg" && img["type"] != "image/png") {
+
+            $("#addpimagencategoria").val("");
+            alert("Error al subir la imagen, La imagen debe estar en formato JPG o PNG");
+
+        } else if (Number(img["size"]) > 2000000) {
+            $("#addpimagencategoria").val("");
+            alert("Error al subir la imagen, La imagen no debe pesar más de 2 MB!");
+
+
+        } else {
+
+            var imagen = new FileReader;
+            console.log("imagen ", imagen);
+            imagen.readAsDataURL(img);
+
+            $(imagen).on("load", function (event) {
+
+                var rutaImagen = event.target.result;
+                $("#addpimagencategoriaimg").attr("src", rutaImagen);
+
+            })
+
+        }
+
+    })
+}

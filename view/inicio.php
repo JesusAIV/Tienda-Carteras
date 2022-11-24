@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="<?php echo SERVERURL ?>css/productoDetalle.css">
     <link rel="stylesheet" href="<?php echo SERVERURL ?>css/contenido.css">
     <link rel="stylesheet" href="<?php echo SERVERURL ?>css/productos.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/scss/style.css">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="<?php echo SERVERURL ?>img/jpg/bolso.ico" type="image/x-icon">
     <!-- FONT AWESOME -->

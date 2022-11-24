@@ -1,0 +1,29 @@
+{
+  "name": "tienda-carteras",
+  "version": "1.0.0",
+  "description": "Tienda de venta y confeccion de carteras de cuero",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesusAIV/Tienda-Carteras.git"
+  },
+  "keywords": [
+    "async"
+  ],
+  "author": "Jesus and Alvaro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JesusAIV/Tienda-Carteras/issues"
+  },
+  "homepage": "https://github.com/JesusAIV/Tienda-Carteras#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}

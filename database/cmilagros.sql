@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-11-2022 a las 00:31:41
+-- Tiempo de generación: 24-11-2022 a las 03:41:47
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -27,21 +27,22 @@ DELIMITER $$
 --
 -- Procedimientos
 --
-CREATE DEFINER=`root`@`localhost` PROCEDURE `AgregarCategoria` (IN `pcategoria` VARCHAR(60))   INSERT INTO categoria
-(`categoria`) VALUES
-(pcategoria)$$
+CREATE PROCEDURE `AgregarCategoria` (IN `pcategoria` VARCHAR(60), IN `pimagen` VARCHAR(200))   INSERT INTO categoria
+(`categoria`, `imagen`) VALUES
+(pcategoria, pimagen)$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `AgregarColor` (IN `color` VARCHAR(20), IN `codigohex` VARCHAR(8))   INSERT INTO colores
+CREATE PROCEDURE `AgregarColor` (IN `color` VARCHAR(20), IN `codigohex` VARCHAR(8))   INSERT INTO colores
 (`color`, `codigohex`) VALUES
 (color, codigohex)$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `AgregarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT, IN `imagen` VARCHAR(200))   BEGIN
+CREATE PROCEDURE `AgregarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT, IN `imagen` VARCHAR(200))   BEGIN
 SET FOREIGN_KEY_CHECKS=0;
 INSERT INTO producto
 (`idcategoria`, `idcolor`, `producto`, `descripcion`, `stock`, `precio`, `imagen`) VALUES
 (idcategoria, idcolor, producto, descripcion, stock, precio, imagen);
 END$$
 
+<<<<<<< HEAD
 CREATE DEFINER=`root`@`localhost` PROCEDURE `EditarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock`, IN `idcolor` INT, INT, IN `idproducto` INT, IN `imagen` VARCHAR(200))   BEGIN
 SET FOREIGN_KEY_CHECKS=0;
 UPDATE SET `producto` = producto, `precio` = precio, `descripcion` = descripcion, `stock` = stock, `idcategoria` = idcategoria, `idcolor` = idcolor, `imagen` = imagen
@@ -49,6 +50,9 @@ WHERE  = `idproducto` = idproducto,
 END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `DatosCategoria` (IN `categoria` VARCHAR(50))   SELECT 
+=======
+CREATE PROCEDURE `DatosCategoria` (IN `categoria` VARCHAR(50))   SELECT 
+>>>>>>> 3dfd589e72b334e1923398b32b6a47dcf35d62cc
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -63,7 +67,7 @@ ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 ON (tbp.idcolor = tbcol.idcolor)
 WHERE tbc.categoria = categoria$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `DatosProducto` (IN `nomproducto` VARCHAR(50))   SELECT 
+CREATE PROCEDURE `DatosProducto` (IN `nomproducto` VARCHAR(50))   SELECT 
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -78,7 +82,7 @@ ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 ON (tbp.idcolor = tbcol.idcolor)
 WHERE tbp.producto = nomproducto$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `InformacionProducto` (IN `idproducto` INT)   SELECT 
+CREATE PROCEDURE `InformacionProducto` (IN `idproducto` INT)   SELECT 
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -92,11 +96,11 @@ ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 ON (tbp.idcolor = tbcol.idcolor) 
 WHERE tbp.idproducto = idproducto$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `ListarCategorias` ()   SELECT * FROM categoria$$
+CREATE PROCEDURE `ListarCategorias` ()   SELECT * FROM categoria$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `ListarColores` ()   SELECT * FROM colores$$
+CREATE PROCEDURE `ListarColores` ()   SELECT * FROM colores$$
 
-CREATE DEFINER=`root`@`localhost` PROCEDURE `ListarProductos` ()   SELECT 
+CREATE PROCEDURE `ListarProductos` ()   SELECT 
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -121,7 +125,8 @@ DELIMITER ;
 
 CREATE TABLE `categoria` (
   `idcategoria` int(11) NOT NULL,
-  `categoria` varchar(60) NOT NULL
+  `categoria` varchar(60) NOT NULL,
+  `imagen` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -132,11 +137,12 @@ CREATE TABLE `categoria` (
 -- Volcado de datos para la tabla `categoria`
 --
 
-INSERT INTO `categoria` (`idcategoria`, `categoria`) VALUES
-(1, 'carteras'),
-(2, 'morrales'),
-(3, 'mochilas'),
-(4, 'bolsos');
+INSERT INTO `categoria` (`idcategoria`, `categoria`, `imagen`) VALUES
+(1, 'carteras', 'img/categorias/carteras.jpg-1669256184.jpeg'),
+(2, 'morrales', 'img/categorias/morrales.jpg-1669256251.jpeg'),
+(3, 'mochilas', 'img/categorias/mochilas.jpg-1669256282.jpeg'),
+(4, 'bolsos', 'img/categorias/bolsos.jpg-1669256307.jpeg'),
+(11, 'modernos', 'img/categorias/banner-carteras.jpg-1669256463.jpeg');
 
 -- --------------------------------------------------------
 
@@ -298,7 +304,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `categoria`
 --
 ALTER TABLE `categoria`
-  MODIFY `idcategoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `idcategoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `colores`

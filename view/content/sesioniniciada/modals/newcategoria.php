@@ -15,7 +15,16 @@
                         <label for="addpnamecategoria">Nombre</label>
                         <input type="text" id="addpnamecategoria" class="addpnamecategoria" name="addpnamecategoria">
                     </div>
+                    <div class="campos-new-produc">
+                        <label for="addpimagen01">
+                            Imagen
+                        </label>
+                        <label for="addpimagencategoria" class="addpimagencategoria">Seleccionar imagen</label>
+                        <input type="file" id="addpimagencategoria" class="addpimagencategoria" name="addpimagencategoria">
+                    </div>
+                    <img width="500px" src="" alt="" id="addpimagencategoriaimg">
                 </div>
+                <div id=""></div>
             </div>
             <div class="save-new-produc">
                 <button>

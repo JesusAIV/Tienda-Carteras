@@ -62,8 +62,9 @@
             $conexion = Conexion::conectar();
 
             $categoria=$datos['categoria'];
+            $imagen=$datos['imagen'];
 
-            $sql = "CALL AgregarCategoria('$categoria')";
+            $sql = "CALL AgregarCategoria('$categoria', '$imagen')";
 
             $result = $conexion->query($sql);
 

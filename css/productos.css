@@ -115,11 +115,13 @@
     grid-template-columns: 0.5fr 1fr;
 }
 .campos-new-produc input.addpimagen,
-.campos-new-produc input.addpimagencolor{
+.campos-new-produc input.addpimagencolor,
+.campos-new-produc input.addpimagencategoria{
     display: none;
 }
 .campos-new-produc label.addpimagen,
-.campos-new-produc label.addpimagencolor{
+.campos-new-produc label.addpimagencolor,
+.campos-new-produc label.addpimagencategoria{
     display: block;
     width: 100%;
     background-color: #ffffff;
