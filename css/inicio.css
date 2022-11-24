@@ -553,13 +553,13 @@
 @media (max-width: 375px){
     .main{
         margin: 0;
-        max-width: 100vw;
+        /* max-width: 100vw; */
     }
     .principal{
         padding: 0 1em;
     }
     header{
-        max-width: 100vw;
+        /* max-width: 100vw; */
         height: auto;
     }
     .mySlides img {
@@ -933,7 +933,7 @@
     }
 
     .container__login::after{
-        top: 16%;
+        /* top: 16%; */
     }
 
     .footer-center{
