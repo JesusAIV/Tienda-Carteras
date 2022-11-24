@@ -358,10 +358,10 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
 }
 
 .redes-sociales li {
@@ -569,7 +569,7 @@ hr {
         height: 1px;
         background-color: var(--color-separador);
         position: absolute;
-        top: 15%;
+        top: 13%;
     }
     
     .logo {

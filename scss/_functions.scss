@@ -1,0 +1,6 @@
+@function grid-t-columns($number) {
+    @return 'repeat('#{$number}#{', 1fr)'};
+}
+@function grid-t-rows($number) {
+    @return 'repeat('#{$number}#{', 1fr)'};
+}

@@ -1,0 +1,43 @@
+$media_queries : (
+    max320    : only #{'screen and (max-width: 320px)'},
+    max375    : only #{'screen and (max-width: 375px)'},
+    max425    : only #{'screen and (max-width: 425px)'},
+    max500    : only #{'screen and (max-width: 500px)'},
+    max580    : only #{'screen and (max-width: 580px)'},
+    max650    : only #{'screen and (max-width: 650px)'},
+    max720    : only #{'screen and (max-width: 720px)'},
+    max768    : only #{'screen and (max-width: 768px)'},
+    max960    : only #{'screen and (max-width: 960px)'},
+    max1024   : only #{'screen and (max-width: 1024px)'},
+    max1200   : only #{'screen and (max-width: 1200px)'},
+    max1366   : only #{'screen and (max-width: 1366px)'},
+    tablet    : only #{'screen and (min-width: 668px) and (max-width: 1024px)'},
+    min320    : only #{'screen and (min-width: 320px)'},
+    min360    : only #{'screen and (min-width: 360px)'},
+    min480    : only #{'screen and (min-width: 480px)'},
+    min576    : only #{'screen and (min-width: 576px)'},
+    min600    : only #{'screen and (min-width: 600px)'},
+    min720    : only #{'screen and (min-width: 720px)'},
+    min840    : only #{'screen and (min-width: 840px)'},
+    min1024   : only #{'screen and (min-width: 1024px)'},
+    min1280   : only #{'screen and (min-width: 1280px)'},
+    min1366   : only #{'screen and (min-width: 1366px)'},
+    min1920   : only #{'screen and (min-width: 1920px)'}
+);
+
+@mixin for_breakpoint($breakpoints) {
+    $conditions : ();
+    @each $breakpoint in $breakpoints {
+        // If the key exists in the map
+        $conditions: append(
+            $conditions,
+            #{inspect(map-get($media_queries, $breakpoint))},
+            comma
+        );
+    }
+
+    @media #{$conditions} {
+        @content;
+    }
+
+}
