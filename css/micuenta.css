@@ -50,8 +50,8 @@
 
 .content-cuenta{
     padding: 1.5em 1em 5em;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    /* display: grid; */
+    /* grid-template-columns: 1.5fr 1fr; */
     gap: 2em;
     width: 80%;
     margin: 0 auto;

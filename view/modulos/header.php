@@ -30,7 +30,6 @@
                     if (!isset($_SESSION['email'])) {
                     ?>
                         <a class="cuenta-iniciarSesion" href="<?php echo SERVERURL ?>cuenta">
-                            <h2 class="cuenta__titulo">Iniciar sesion / Registrarse</h2>
                             <img class="cuenta__img" src="<?php echo SERVERURL ?>img/svg/user.svg" alt="user">
                         </a>
                     <?php
