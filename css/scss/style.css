@@ -52,8 +52,12 @@
 }
 @media only screen and (max-width: 580px) {
   .footer-center {
-    grid-template: "footer-datos" 1fr "footer-siguenos" auto "footer-puntos" 1fr/auto;
+    grid-template:
+      "footer-datos" 1fr
+      "footer-siguenos" auto
+      "footer-puntos" 1fr/auto;
     gap: 2.5em;
+    padding: 2em 0 1em 0;
   }
   .redes-sociales {
     gap: 1em;
