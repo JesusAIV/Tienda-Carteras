@@ -81,3 +81,233 @@
 .hero__quienesSomos__item{
     list-style: disc;
 }
+
+@media (max-width: 320px){
+
+    .main{
+        margin: 5em 0 0 0!important;
+    }
+
+    .hero{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 4em;
+    }
+    
+    .paragraph,
+    .hero__quienesSomos__item{
+        letter-spacing: .2px;
+        line-height: 1.6em;
+        color: var(--redes-sociales);
+    }
+    
+    .paragraph__container{
+        padding: 0 0 .4em 0;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    
+    .hero__quienesSomos__item{
+        font-size: 1.1rem;
+    }
+    
+    .hero__quienesSomos__items{
+        padding: 0 0 0 1em;
+        line-height: 1.4em;
+    }
+    
+    .hero__empresa{
+        display: grid;
+        grid-template-areas: 
+        "mision"
+        "vision";
+        gap: .7em;
+    }
+}
+
+@media (max-width: 375px){
+    .main{
+        margin: 5em 0 0 0!important;
+    }
+
+    .hero{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 4em;
+    }
+    
+    .paragraph,
+    .hero__quienesSomos__item{
+        letter-spacing: .2px;
+        line-height: 1.6em;
+        color: var(--redes-sociales);
+    }
+    
+    .paragraph__container{
+        padding: 0 0 .4em 0;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    
+    .hero__quienesSomos__item{
+        font-size: 1.3rem;
+    }
+    
+    .hero__quienesSomos__items{
+        padding: 0 0 0 1em;
+        line-height: 1.4em;
+    }
+    
+    .hero__empresa{
+        display: grid;
+        grid-template-areas: 
+        "mision"
+        "vision";
+        gap: .7em;
+    }
+}
+
+@media (max-width: 425px){
+    .main{
+        margin: 20em 0 0 0!important;
+    }
+
+    .hero{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 0 4em;
+    }
+
+    .hero__title {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+    
+    .paragraph,
+    .hero__quienesSomos__item{
+        letter-spacing: .2px;
+        line-height: 1.6em;
+        color: var(--redes-sociales);
+    }
+    
+    .paragraph__container{
+        font-size: 1rem;
+    }
+    
+    .hero__quienesSomos__item{
+        font-size: 1rem;
+    }
+    
+    .hero__quienesSomos__items{
+        padding: .8em 0 0 1em;
+        line-height: 1.4em;
+    }
+    
+    .hero__empresa{
+        display: grid;
+        grid-template-areas: 
+        "mision"
+        "vision";
+        gap: .7em;
+    }
+}
+
+@media (max-width: 768px){
+    .main{
+        margin: 18em 0 0 0!important;
+    }
+
+    .hero{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 0 4em;
+    }
+
+    .hero__title {
+        font-size: 2.2rem;
+    }
+
+    .title {
+        font-size: 1.9rem;
+    }
+    
+    .paragraph,
+    .hero__quienesSomos__item{
+        letter-spacing: .2px;
+        line-height: 1.6em;
+        color: var(--redes-sociales);
+    }
+    
+    .paragraph__container{
+        font-size: 1.6rem;
+    }
+    
+    .hero__quienesSomos__item{
+        font-size: 1.6rem;
+    }
+    
+    .hero__quienesSomos__items{
+        padding: .8em 0 0 1em;
+        line-height: 1.4em;
+    }
+    
+    .hero__empresa{
+        display: grid;
+        grid-template-areas: 
+        "mision vision"
+        "mision vision";
+        gap: .7em;
+    }
+}
+
+@media (max-width: 1024px){
+    .main{
+        margin: 18em 0 0 0!important;
+    }
+
+    .hero{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 4em;
+    }
+
+    .hero__title {
+        font-size: 2.2rem;
+    }
+
+    .title {
+        font-size: 1.9rem;
+    }
+    
+    .paragraph,
+    .hero__quienesSomos__item{
+        letter-spacing: .2px;
+        line-height: 1.6em;
+        color: var(--redes-sociales);
+    }
+    
+    .paragraph__container{
+        font-size: 1.6rem;
+    }
+    
+    .hero__quienesSomos__item{
+        font-size: 1.6rem;
+    }
+    
+    .hero__quienesSomos__items{
+        padding: .8em 0 0 1em;
+        line-height: 1.4em;
+    }
+    
+    .hero__empresa{
+        display: grid;
+        grid-template-areas: 
+        "mision vision"
+        "mision vision";
+        gap: .7em;
+    }
+}
