@@ -37,6 +37,7 @@ body {
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
+    width: 100%;
 }
 
 .main {
@@ -556,10 +557,6 @@ hr {
         top: 13%;
     }
     
-    .logo-img--header {
-        /* display: none; */
-    }
-    
     .logo-enlace {
         width: 100%;
         font-size: 1rem;
@@ -575,9 +572,6 @@ hr {
     .menu__img{
         display: block;
     }
-    /* .menu__input:checked +  */
-
-    
     
     .cuenta {
         margin: 0 1em 0;
