@@ -13,6 +13,7 @@
 }
 .mySlides img {
     vertical-align: middle;
+    max-width: 100vw;
 }
 
 /* Slideshow container */
@@ -805,7 +806,7 @@
     .principal__productos--lista{
         text-align: center;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 1em;
     }
     .principal__productos--lista p{
@@ -817,7 +818,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 250px;
+        height: 340px;
     }
     
     .product__leyend::after{
@@ -845,13 +846,13 @@
     }
     .ofrece__opcion--grid{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         width: 85%;
         margin: 0 auto;
     }
     .opcion__pago--grid{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         width: 90%;
         margin: 0 auto;
         gap: 1.2em;
@@ -932,7 +933,7 @@
     }
 
     .container__login::after{
-        /* top: 16%; */
+        top: 52%;
     }
 
     .footer-center{

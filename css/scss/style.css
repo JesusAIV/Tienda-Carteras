@@ -98,6 +98,9 @@
   .redes-sociales li {
     margin: 0;
   }
+  .main {
+    margin-top: 20px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
