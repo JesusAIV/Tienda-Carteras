@@ -276,11 +276,11 @@
     }
 
     .hero__title {
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
 
     .title {
-        font-size: 1.9rem;
+        font-size: 2rem;
     }
     
     .paragraph,
@@ -308,6 +308,54 @@
         grid-template-areas: 
         "mision vision"
         "mision vision";
-        gap: .7em;
+        gap: 1.5em;
+    }
+}
+
+@media (max-width: 1336px){
+    .main{
+        margin: 18em 0 0 0!important;
+    }
+
+    .hero{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 4em;
+    }
+
+    .hero__title {
+        font-size: 2.4rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+    
+    .paragraph,
+    .hero__quienesSomos__item{
+        letter-spacing: .2px;
+        line-height: 1.6em;
+        color: var(--redes-sociales);
+    }
+    
+    .paragraph__container{
+        font-size: 1.6rem;
+    }
+    
+    .hero__quienesSomos__item{
+        font-size: 1.6rem;
+    }
+    
+    .hero__quienesSomos__items{
+        padding: .8em 0 0 1em;
+        line-height: 1.4em;
+    }
+    
+    .hero__empresa{
+        display: grid;
+        grid-template-areas: 
+        "mision vision"
+        "mision vision";
+        gap: 1.5em;
     }
 }
