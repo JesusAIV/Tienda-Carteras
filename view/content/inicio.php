@@ -126,7 +126,7 @@
                         <img src="<?php echo SERVERURL?>img/svg/dtbancaria.svg" alt="">
                     </div>
                     <div class="opcion__parrafo">
-                        <p>Depósito/Transferecia Bancaria</p>
+                        <p>Transferecia Bancaria</p>
                     </div>
                 </div>
             </div>

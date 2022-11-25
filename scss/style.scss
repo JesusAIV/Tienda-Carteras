@@ -50,8 +50,7 @@
     }
 
     .main {
-        margin-top: 200px;
-        width: 100%;
+        width: 100vw;
     }
 
     .detail {
@@ -69,7 +68,7 @@
             "footer-datos" 1fr
             "footer-siguenos"auto
             "footer-puntos"1fr/
-            1fr;
+            auto;
         gap: 2.5em;
     }
     .redes-sociales{
@@ -91,5 +90,32 @@
     }
     .footer__leyend{
         text-align: center;
+    }
+}
+@include for_breakpoint(max425){
+    .caja-footer ul,
+    .caja-footer li,
+    .caja-footer a,
+    .derechos-reservados p{
+        white-space: break-word;
+        font-size: 100%;
+    }
+    .main {
+        margin-top: 20px !important;
+    }
+}
+@include for_breakpoint(max380){
+    .caja-footer ul,
+    .caja-footer li,
+    .caja-footer a,
+    .derechos-reservados p{
+        white-space: break-word;
+        font-size: 100%;
+    }
+    .redes-sociales{
+        gap: 0;
+    }
+    .redes-sociales li{
+        margin: 0;
     }
 }
