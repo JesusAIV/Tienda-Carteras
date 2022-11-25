@@ -70,14 +70,10 @@
                                 <li><a class="footer__link" href="<?php echo SERVERURL ?>tiendas">Nuestras tiendas</a></li>
                                 <li><a class="footer__link" href="<?php echo SERVERURL ?>contacto">Contacto</a></li>
                                 <?php
-                                if (!isset($_SESSION['email'])) {
+                                if (isset($_SESSION['email'])) {
                                 ?>
-                                    <li><a class="footer__link" href="<?php echo SERVERURL ?>cuenta">Mi Cuenta</a></li>
+                                    <li><a class="footer__link" href="<?php echo SERVERURL ?>inventario">Inventario</a></li>
                                 <?php
-                                }else{
-                                    ?>
-                                        <li><a class="footer__link" href="<?php echo SERVERURL ?>inventario">Inventario</a></li>
-                                    <?php
                                 }
                                 ?>
                             </ul>

@@ -269,7 +269,7 @@
         display: grid;
         grid-template-areas: 
         "mision vision"
-        "mision vision" !important;
+        "mision vision";
         gap: 3em !important;
     }
 }
@@ -324,7 +324,7 @@
 
 @media (max-width: 1336px){
     .main{
-        margin: 18em 0 0 0!important;
+        margin: 18em 0 0 0;
     }
 
     .hero{

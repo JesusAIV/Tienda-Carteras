@@ -76,7 +76,7 @@ if (!isset($_SESSION['email'])) :
                     </div>
                 </div>
             </div>
-            <div class="modulo-cuenta-registrar">
+            <!-- <div class="modulo-cuenta-registrar">
                 <div class="modulo-cuenta-content">
                     <div class="header-cuenta-modulo header-cuenta">
                         <p class="cuenta__leyend">Crear nueva cuenta</p>
@@ -114,7 +114,7 @@ if (!isset($_SESSION['email'])) :
                             Iniciar sesión</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 <?php
