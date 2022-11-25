@@ -84,7 +84,7 @@ header {
     transition: color .2s;
 }
 
-.txt--cell:hover{
+.txt--cell:hover {
     color: var(--color-negro);
 }
 
@@ -99,7 +99,7 @@ header {
     padding: .2em 0;
 }
 
-.container__login::after{
+.container__login::after {
     content: "";
     display: block;
     width: 100%;
@@ -129,7 +129,7 @@ header {
 
 /* MENU HAMBURGUESA */
 .menu__input,
-.menu__img{
+.menu__img {
     display: none;
 }
 
@@ -426,7 +426,7 @@ header {
 
 /* -------------------------------------------- */
 
-.cuenta-iniciarSesion{
+.cuenta-iniciarSesion {
     gap: 20px;
 }
 
@@ -454,14 +454,18 @@ hr {
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 10px;
-    margin-top: 2em;
-    margin-bottom: 3em;
+    margin: 0;
+    padding: 7em 0 5em 0;
+}
+
+.title__tiendas{
+    padding: 0 0 4em 0;
 }
 
 .title__tiendas p {
     text-align: center;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 .tiendas {
@@ -478,13 +482,19 @@ hr {
 .tiendas__info--center {
     display: flex;
     align-items: center;
-    padding: 0.5em 0;
+    padding: 1em 0;
+    gap: .9em;
 }
 
 .tiendas__title p {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 2rem;
     padding: 0.5em 0;
+}
+
+.tiendas__info--center span,
+.tiendas__info--center p{
+    font-size: 1.3rem;
 }
 
 .tiendas__icons {
@@ -492,7 +502,7 @@ hr {
     margin-right: 0.3em;
 }
 
-.tiendas__leyend{
+.tiendas__leyend {
     color: var(--color1);
 }
 
@@ -509,37 +519,37 @@ hr {
     width: 50px;
 }
 
-.navbar-container-grid{
+.navbar-container-grid {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
 }
 
-@media (max-width: 380px){    
-    
+@media (max-width: 380px) {
+
     body {
         display: grid;
         min-height: 100vh;
         grid-template-rows: auto 1fr auto;
     }
-    
+
     .main {
         margin-top: inherit;
     }
-    
+
     header {
         position: inherit;
         width: 100%;
         height: 60px;
     }
-    
+
     /* Horario de Atencion */
     .horario {
         width: 100%;
         /* height: 30px; */
     }
-    
+
     .content {
         height: inherit;
         display: flex;
@@ -547,60 +557,60 @@ hr {
         padding: 0 1em;
         align-items: center;
     }
-    
+
     .txt {
         font-size: .7rem;
         margin: 0;
     }
-    
-    .container__login::after{
+
+    .container__login::after {
         top: 13%;
     }
-    
+
     .logo-enlace {
         width: 100%;
         font-size: 1rem;
         font-weight: 700;
     }
-    
+
     /* MENU HAMBURGUESA */
-    .menu{
+    .menu {
         position: absolute;
         left: 0;
     }
 
-    .menu__img{
+    .menu__img {
         display: block;
     }
-    
+
     .cuenta {
         margin: 0 1em 0;
     }
-    
+
     .cuenta__titulo {
         display: none;
     }
-    
+
     .cuenta__titulo:hover {
         color: var(--color1);
     }
-    
+
     .cuenta__titulo,
     .logo-enlace {
         color: var(--color3);
     }
-    
+
     .bolsa {
         width: 10%;
         display: flex;
         justify-content: space-between;
         margin: 0 30px 0 0;
     }
-    
+
     .icon-container {
         margin: 0 30px 0 0;
     }
-    
+
     .icon-container::after {
         content: '';
         width: 1px;
@@ -611,32 +621,32 @@ hr {
         left: 60px;
         bottom: 40px;
     }
-    
+
     .icon-enlace {
         display: flex;
         flex-direction: column;
     }
-    
+
     .icon-texto {
         font-size: .8rem;
     }
-    
+
     .precio-container {
         margin: auto 0;
     }
-    
+
     .precio-enlace {
         display: flex;
         flex-direction: column;
         align-content: center;
         text-align: center;
     }
-    
+
     .precio-texto {
         font-size: .8rem;
         color: #000;
     }
-    
+
     /* Barra de navegación */
     .navbar {
         width: 100%;
@@ -646,11 +656,11 @@ hr {
         border-top: var(--color-separador);
         border-bottom: var(--color-separador);
     }
-    
+
     .navbar a {
         color: var(--color1);
     }
-    
+
     .navbar-center {
         display: flex;
         align-items: center;
@@ -658,15 +668,15 @@ hr {
         gap: 4em;
         padding: 2.5em 1em 2.2em;
     }
-    
+
     .nav-item {
         width: 100%;
     }
-    
+
     .nav-item a {
         font-weight: 600;
     }
-    
+
     .nav-item::after {
         content: "";
         display: block;
@@ -678,11 +688,11 @@ hr {
         clip-path: var(--clipy);
         transition: clip-path .2s;
     }
-    
+
     .nav-item:hover::after {
         --clipy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
-    
+
     .search {
         width: 35%;
         height: 35px;
@@ -690,7 +700,7 @@ hr {
         align-items: center;
         margin: 0 50px 0 0;
     }
-    
+
     .search-input {
         width: 100%;
         height: 100%;
@@ -703,7 +713,7 @@ hr {
         font-size: 1rem;
         color: var(--color1);
     }
-    
+
     .search-boton {
         height: 100%;
         background: transparent;
@@ -713,27 +723,27 @@ hr {
         top: 3px;
         right: 30px;
     }
-    
+
     .footer a {
         color: var(--gris);
     }
-    
+
     .footer-datos {
         grid-area: footer-datos;
     }
-    
+
     .footer-siguenos {
         grid-area: footer-siguenos;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .copy {
         font-size: .9rem;
         text-align: center;
     }
-    
+
     .footer-center {
         display: grid;
         grid-template:
@@ -741,38 +751,38 @@ hr {
             "footer-datos footer-siguenos footer-puntos" auto/
             500px auto 300px;
     }
-    
-    
+
+
     .footer-logo {
         font-size: 0.5rem;
         display: flex;
         align-items: center;
     }
-    
+
     .inicio__title {
         font-size: 1.5rem;
         font-weight: 700;
     }
-    
+
     .logo-img {
         width: 30px;
     }
-    
+
     .footer-puntos {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
+
     .caja-footer {
         margin-top: 1rem;
         line-height: 2;
     }
-    
+
     .caja-footer--icons {
         position: relative;
         top: 50px;
     }
-    
+
     .redes-sociales li {
         list-style: none;
         margin: 0 15px;
@@ -792,54 +802,54 @@ hr {
         transform: scale(.9);
         z-index: -1;
     }
-    
+
     .redes-sociales li a:hover::before {
         transform: scale(1.1);
         box-shadow: 0 0 15px var(--color4);
     }
-    
+
     .redes-sociales li a:hover {
         color: var(--color4);
         box-shadow: 0 0 5px var(--color4);
         text-shadow: 0 0 5px var(--color4);
     }
-    
+
     .redes-sociales {
         display: flex;
         justify-content: center;
         gap: 0em;
     }
-    
+
     .redes-sociales a {
         margin-right: 1rem;
     }
-    
+
     .redes-icon {
         font-size: 2rem;
     }
-    
+
     /* -------------------------------------------- */
-    
-    
+
+
     .derechos-reservados {
         text-align: center;
     }
-    
+
     hr {
         margin: 1rem 0;
     }
-    
+
     .footer__leyend {
         font-weight: 700;
     }
-    
+
     .producto:hover,
     .footer__link:hover {
         color: var(--color1);
         transition: color .2s;
     }
-    
-    
+
+
     /* PÁGINA TIENDAS */
     .container__tiendas {
         display: grid;
@@ -849,46 +859,432 @@ hr {
         margin-bottom: 3em; */
         padding: 4em 0;
     }
-    
+
     .title__tiendas p {
         text-align: center;
         font-weight: 700;
         font-size: 30px;
     }
-    
+
     .tiendas {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
+
     .tiendas__info {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
     .tiendas__info--center {
         display: flex;
         align-items: center;
         padding: 0.5em 0;
     }
-    
+
     .tiendas__title p {
         font-weight: 600;
         font-size: 25px;
         padding: 0.5em 0;
     }
-    
+
     .tiendas__icons {
         width: 30px;
         margin-right: 0.3em;
     }
-    
-    .tiendas__leyend{
+
+    .tiendas__leyend {
         color: var(--color1);
     }
 
     .whatsapp img {
         width: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* PÁGINA TIENDAS */
+    .container__tiendas {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+        margin: 2em 0 3em 0;
+    }
+
+    .title__tiendas p{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.3rem !important;
+    }
+
+    .tiendas {
+        display: grid;
+        grid-template-columns: 1fr !important;
+    }
+
+    .tiendas__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 5em 0;
+    }
+
+    .tiendas__info--center {
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0;
+    }
+
+    .tiendas__info--center span,
+    .tiendas__info--center p{
+        font-size: 1.3rem;
+    }
+
+    .tiendas__title p {
+        font-weight: 600;
+        font-size: 25px;
+        padding: 0.5em 0;
+    }
+
+    .tiendas__icons {
+        width: 25px;
+        margin-right: 0.3em;
+    }
+
+    .tiendas__leyend {
+        color: var(--color1);
+        font-size: 2rem !important;
+    }
+
+    .tiendas__mapa{
+        width: 100%;
+        padding: 0 5em;
+    }
+}
+
+@media (max-width: 580px) {
+
+    /* PÁGINA TIENDAS */
+    .container__tiendas {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+        margin: 2em 0 3em 0;
+    }
+
+    .title__tiendas p{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.3rem !important;
+    }
+
+    .tiendas {
+        display: grid;
+        grid-template-columns: 1fr !important;
+    }
+
+    .tiendas__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 5em 0;
+    }
+
+    .tiendas__info--center {
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0;
+    }
+
+    .tiendas__info--center span,
+    .tiendas__info--center p{
+        font-size: 1.3rem;
+    }
+
+    .tiendas__title p {
+        font-weight: 600;
+        font-size: 25px;
+        padding: 0.5em 0;
+    }
+
+    .tiendas__icons {
+        width: 25px;
+        margin-right: 0.3em;
+    }
+
+    .tiendas__leyend {
+        color: var(--color1);
+        font-size: 2rem !important;
+    }
+
+    .tiendas__mapa{
+        width: 100%;
+        padding: 0 5em;
+    }
+}
+
+@media (max-width: 650px) {
+
+    /* PÁGINA TIENDAS */
+    .container__tiendas {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+        margin: 1em 0 3em 0;
+    }
+
+    .title__tiendas{
+        padding: 0 0 3em 0;
+    }
+
+    .title__tiendas p{
+        text-align: center;
+        font-weight: 700;
+        font-size: 3rem !important;
+
+    }
+
+    .tiendas {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .tiendas__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 5em 0;
+    }
+
+    .tiendas__info--center {
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0;
+        gap: 1.4em;
+    }
+
+    .tiendas__info--center span,
+    .tiendas__info--center p{
+        font-size: 1.7rem;
+    }
+
+    .tiendas__title p {
+        font-weight: 600;
+        font-size: 2.8rem !important;
+        padding: 0.5em 0;
+    }
+
+    .tiendas__icons {
+        width: 35px;
+        margin-right: 0.3em;
+    }
+
+    .tiendas__leyend {
+        color: var(--color1);
+    }
+
+    .tiendas__mapa{
+        width: 100%;
+        padding: 0 5em;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* PÁGINA TIENDAS */
+    .container__tiendas {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+        margin: 1em 0 3em 0;
+    }
+
+    .title__tiendas{
+        padding: 0 0 3em 0;
+    }
+
+    .title__tiendas p{
+        text-align: center;
+        font-weight: 700;
+        font-size: 3rem !important;
+
+    }
+
+    .tiendas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tiendas__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 5em 0;
+    }
+
+    .tiendas__info--center {
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0;
+        gap: 1.4em;
+    }
+
+    .tiendas__info--center span,
+    .tiendas__info--center p{
+        font-size: 1.7rem;
+    }
+
+    .tiendas__title p {
+        font-weight: 600;
+        font-size: 2.8rem !important;
+        padding: 0.5em 0;
+    }
+
+    .tiendas__icons {
+        width: 35px;
+        margin-right: 0.3em;
+    }
+
+    .tiendas__leyend {
+        color: var(--color1);
+    }
+
+    .tiendas__mapa{
+        width: 100%;
+        padding: 0 5em;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /* PÁGINA TIENDAS */
+    .container__tiendas {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+        margin: 1em 0 6em 0;
+    }
+
+    .title__tiendas{
+        padding: 0 0 3em 0;
+    }
+
+    .title__tiendas p{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.5rem !important;
+
+    }
+
+    .tiendas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tiendas__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 5em 0;
+    }
+
+    .tiendas__info--center {
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0;
+        gap: 1.4em;
+    }
+
+    .tiendas__info--center span,
+    .tiendas__info--center p{
+        font-size: 1.5rem;
+    }
+
+    .tiendas__title p {
+        font-weight: 600;
+        font-size: 2.5rem !important;
+        padding: 0.5em 0;
+    }
+
+    .tiendas__icons {
+        width: 30px;
+        margin-right: 0.3em;
+    }
+
+    .tiendas__leyend {
+        color: var(--color1);
+    }
+
+    .tiendas__mapa{
+        width: 100%;
+        padding: 0 5em;
+    }
+}
+
+@media (max-width: 1336px) {
+
+    /* PÁGINA TIENDAS */
+    .container__tiendas {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+        margin: 1em 0 6em 0;
+    }
+
+    .title__tiendas{
+        padding: 0 0 3em 0;
+    }
+
+    .title__tiendas p{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.5rem !important;
+
+    }
+
+    .tiendas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tiendas__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 5em 0;
+    }
+
+    .tiendas__info--center {
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0;
+        gap: 1.4em;
+    }
+
+    .tiendas__info--center span,
+    .tiendas__info--center p{
+        font-size: 1.5rem;
+    }
+
+    .tiendas__title p {
+        font-weight: 600;
+        font-size: 2.5rem !important;
+        padding: 0.5em 0;
+    }
+
+    .tiendas__icons {
+        width: 30px;
+        margin-right: 0.3em;
+    }
+
+    .tiendas__leyend {
+        color: var(--color1);
+    }
+
+    .tiendas__mapa{
+        width: 100%;
+        padding: 0 5em;
     }
 }
