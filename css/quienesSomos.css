@@ -20,7 +20,7 @@
 }
 
 .hero__title{
-    font-size: 1.8em;
+    font-size: 2.4rem;
     text-align: center;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .title{
-    font-size: 1.3em;
+    font-size: 1.7rem;
     padding: 1.1em 0;
     font-weight: 700;
 }
@@ -51,11 +51,11 @@
 .paragraph__container{
     padding: 0 0 .4em 0;
     width: 100%;
-    font-size: .9em;
+    font-size: 1.2rem;
 }
 
 .hero__quienesSomos__item{
-    font-size: .9em;
+    font-size: 1.2rem;
 }
 
 .hero__quienesSomos__items{
@@ -80,4 +80,292 @@
 
 .hero__quienesSomos__item{
     list-style: disc;
+}
+
+@media (max-width: 320px){
+
+    .main{
+        margin: 0 !important;
+    }
+
+    .hero{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 4em;
+    }
+
+    .hero__title{
+        font-size: 1.5rem !important;
+    }
+
+    .title {
+        font-size: 1.2rem !important;
+        padding: 1.1em 0;
+        font-weight: 700;
+    }
+    
+    .paragraph,
+    .hero__quienesSomos__item{
+        letter-spacing: .2px;
+        line-height: 1.6em;
+        color: var(--redes-sociales);
+    }
+    
+    .paragraph__container{
+        padding: 0 0 .4em 0;
+        width: 100%;
+        font-size: 1.2rem !important;
+    }
+    
+    .hero__quienesSomos__item{
+        font-size: 1.2rem !important;
+    }
+    
+    .hero__quienesSomos__items{
+        padding: 0 0 0 1em;
+        line-height: 1.4em;
+    }
+    
+    .hero__empresa{
+        display: grid;
+        grid-template-areas: 
+        "mision"
+        "vision" !important;
+        gap: .7em;
+    }
+}
+
+@media (max-width: 375px){
+    .main{
+        margin: 4em 0 0 0!important;
+    }
+
+    .hero{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 4em;
+    }
+    
+    .paragraph,
+    .hero__quienesSomos__item{
+        letter-spacing: .2px;
+        line-height: 1.6em;
+        color: var(--redes-sociales);
+    }
+    
+    .paragraph__container{
+        padding: 0 0 .4em 0;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    
+    .hero__quienesSomos__item{
+        font-size: 1.3rem;
+    }
+    
+    .hero__quienesSomos__items{
+        padding: 0 0 0 1em;
+        line-height: 1.4em;
+    }
+    
+    .hero__empresa{
+        display: grid;
+        grid-template-areas: 
+        "mision"
+        "vision";
+        gap: .7em;
+    }
+}
+
+@media (max-width: 425px){
+    .main{
+        margin: 25em 0 0 0!important;
+    }
+
+    .hero{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 0 4em;
+    }
+
+    .hero__title {
+        font-size: 1.1rem !important;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.1rem !important;
+    }
+    
+    .paragraph,
+    .hero__quienesSomos__item{
+        letter-spacing: .2px;
+        line-height: 1.6em;
+        color: var(--redes-sociales);
+    }
+    
+    .paragraph__container{
+        font-size: 1rem !important;
+    }
+    
+    .hero__quienesSomos__item{
+        font-size: 1rem !important;
+    }
+    
+    .hero__quienesSomos__items{
+        padding: .8em 0 0 1em;
+        line-height: 1.4em;
+    }
+    
+    .hero__empresa{
+        display: grid;
+        grid-template-areas: 
+        "mision"
+        "vision" !important;
+        gap: .7em !important;
+    }
+}
+
+@media (max-width: 768px){
+    .main{
+        margin: 18em 0 0 0!important;
+    }
+
+    .hero{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0 0 4em;
+    }
+
+    .hero__title {
+        font-size: 2.6rem !important;
+    }
+
+    .title {
+        font-size: 2.2rem !important;
+    }
+    
+    .paragraph,
+    .hero__quienesSomos__item{
+        letter-spacing: .2px;
+        line-height: 1.6em;
+        color: var(--redes-sociales);
+    }
+    
+    .paragraph__container{
+        font-size: 1.8rem !important;
+    }
+    
+    .hero__quienesSomos__item{
+        font-size: 1.6rem;
+    }
+    
+    .hero__quienesSomos__items{
+        padding: .8em 0 0 1em;
+        line-height: 1.4em;
+    }
+    
+    .hero__empresa{
+        display: grid;
+        grid-template-areas: 
+        "mision vision"
+        "mision vision" !important;
+        gap: 3em !important;
+    }
+}
+
+@media (max-width: 1024px){
+    .main{
+        margin: 18em 0 0 0!important;
+    }
+
+    .hero{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 4em;
+    }
+
+    .hero__title {
+        font-size: 2.4rem !important;
+    }
+
+    .title {
+        font-size: 2rem !important;
+    }
+    
+    .paragraph,
+    .hero__quienesSomos__item{
+        letter-spacing: .2px;
+        line-height: 1.6em;
+        color: var(--redes-sociales);
+    }
+    
+    .paragraph__container{
+        font-size: 1.6rem;
+    }
+    
+    .hero__quienesSomos__item{
+        font-size: 1.6rem;
+    }
+    
+    .hero__quienesSomos__items{
+        padding: .8em 0 0 1em;
+        line-height: 1.4em;
+    }
+    
+    .hero__empresa{
+        display: grid;
+        grid-template-areas: 
+        "mision vision"
+        "mision vision";
+        gap: 1.5em;
+    }
+}
+
+@media (max-width: 1336px){
+    .main{
+        margin: 18em 0 0 0!important;
+    }
+
+    .hero{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 4em;
+    }
+
+    .hero__title {
+        font-size: 2.4rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+    
+    .paragraph,
+    .hero__quienesSomos__item{
+        letter-spacing: .2px;
+        line-height: 1.6em;
+        color: var(--redes-sociales);
+    }
+    
+    .paragraph__container{
+        font-size: 1.6rem;
+    }
+    
+    .hero__quienesSomos__item{
+        font-size: 1.6rem;
+    }
+    
+    .hero__quienesSomos__items{
+        padding: .8em 0 0 1em;
+        line-height: 1.4em;
+    }
+    
+    .hero__empresa{
+        display: grid;
+        grid-template-areas: 
+        "mision vision"
+        "mision vision";
+        gap: 3em !important;
+    }
 }

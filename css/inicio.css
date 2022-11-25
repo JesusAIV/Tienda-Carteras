@@ -345,12 +345,11 @@
 @media (max-width: 320px){
 
     .main{
-        min-width: 100%;
+        width: 100%;
         margin: 0;
     }
 
     .principal{
-        width: 100vw;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -785,6 +784,14 @@
     /* Caption text */
     .text {
         font-size: 10px;
+    }
+
+    .slideshow-container {
+        max-width: 800px;
+        position: relative;
+        margin: auto;
+        min-width: 320px;
+        width: 100%;
     }
     
     /* PRINCIPAL PRODUCTOS */
