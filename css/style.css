@@ -283,7 +283,7 @@ header {
     background: transparent;
     border: none;
     cursor: pointer;
-    position: relative;
+    /* position: relative; */
     top: 3px;
     right: 30px;
 }
