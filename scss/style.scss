@@ -61,6 +61,22 @@
     .principal__image {
         height: auto;
     }
+    .content__carteras {
+        padding: 3em 2em 5em;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-areas: none;
+    }
+    .caja1, .caja2{
+        grid-area: auto;
+        width: 100%;
+    }
+    .categorias__links {
+        flex-direction: initial;
+    }
+    .categorias::after {
+        margin: 1.1em 0;
+    }
 }
 @include for_breakpoint(max580){
     .footer-center {
