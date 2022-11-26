@@ -522,11 +522,6 @@
         height: 30px;
     }
 
-    .footer-logo{
-        display: flex;
-        justify-content: space-around;
-    }
-
     .redes-sociales li a {
         position: relative;
         display: block;
@@ -723,21 +718,6 @@
         height: 33px;
     }
 
-    .footer{
-        max-width: 100vw;
-        margin: 0;
-        padding: 0;
-    }
-
-    .container__login::after{
-        top: 16%;
-    }
-
-    .footer-center{
-        width: 100%;
-        margin: 0;
-    }
-
 }
 
 @media (max-width: 425px){
@@ -927,21 +907,6 @@
     .slider__arrow{
         width: 33px;
         height: 33px;
-    }
-
-    .footer{
-        max-width: 100vw;
-        margin: 0;
-        padding: 0;
-    }
-
-    .container__login::after{
-        top: 52%;
-    }
-
-    .footer-center{
-        width: 100%;
-        margin: 0;
     }
 
 }
@@ -1135,21 +1100,6 @@
         height: 33px;
     }
 
-    .footer{
-        /* max-width: 100vw; */
-        margin: 0;
-        padding: 0;
-    }
-
-    .container__login::after{
-        top: 53%;
-    }
-
-    .footer-center{
-        width: 100%;
-        margin: 0;
-    }
-
 }
 
 @media (max-width: 640px){
@@ -1337,21 +1287,6 @@
     .slider__arrow{
         width: 33px;
         height: 33px;
-    }
-
-    .footer{
-        /* max-width: 100vw; */
-        margin: 0;
-        padding: 0;
-    }
-
-    .container__login::after{
-        /* top: 16%; */
-    }
-
-    .footer-center{
-        width: 100%;
-        margin: 0;
     }
 
 }
