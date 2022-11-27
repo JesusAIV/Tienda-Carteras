@@ -326,4 +326,35 @@
 
             return mainModel::sweet_alert($alerta);
         }
+        public function filtradoCategoria($filtro, $nombrecategoria){
+
+            $conexion = Conexion::conectar();
+            $sql = "CALL FiltradoPrecios('$filtro', '$nombrecategoria')";
+            $consulta = $conexion->query($sql);
+            $consulta = $consulta->fetch_all(MYSQLI_ASSOC);
+
+            $resultado = "";
+
+            foreach ($consulta as $key) {
+                $resultado .= '
+                            <div class="card__product">
+                                <picture class="product">
+                                    <a href="'.SERVERURL.'productoDetalle/'.$key['producto'].'" class="product__item">
+                                        <img src="'.SERVERURL.$key['imagen'].'" alt="'.$key['producto'].'" class="product__show">
+                                    </a>
+                                </picture>
+                                <h3 class="product__title">'.$key['producto'].'</h3>
+                                <span class="product__price">S/'.$key['precio'].'</span>
+                                <a href="'.SERVERURL.'productoDetalle/'.$key['producto'].'" class="product__ver button">
+                                <span class="button__span"></span>
+                                <span class="button__span"></span>
+                                <span class="button__span"></span>
+                                <span class="button__span"></span>
+                                Ver producto
+                            </a>
+                        </div>
+                    ';
+            }
+            return $resultado;
+        }
     }
