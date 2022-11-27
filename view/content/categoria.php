@@ -64,9 +64,9 @@
                         <form class="ordenar" method="POST">
                             <label class="ordenar__label" for="">Ordenar por: </label>
                             <select class="ordenar__select" name="ordenar" id="ordenar">
+                                <option value="defecto" data-order="defecto" class="ordenar__option">Orden por defecto</option>
                                 <option value="preciobajo" data-order="preciobajo" class="ordenar__option">Orden por bajo precio</option>
                                 <option value="precioalto" data-order="precioalto" class="ordenar__option">Orden por alto precio</option>
-                                <option value="defecto" data-order="defecto" class="ordenar__option">Orden por defecto</option>
                             </select>
                         </form>
                     </div>
