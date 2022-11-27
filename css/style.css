@@ -1013,10 +1013,82 @@ hr {
         font-size: 90%;
     }
 
+    /* PÁGINA TIENDAS */
+    .container__tiendas {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+        margin: 0;
+        padding: 0 1.5em 4em;
+    }
+
+    .title__tiendas p {
+        text-align: center;
+        font-weight: 700;
+        font-size: 110%;
+    }
+
+    .title__tiendas {
+    padding: 0 0 1em 0;
 }
 
-@media (min-width: 420px) {
+    .tiendas {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
+    .tiendas__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 2em 0;
+    }
+
+    .tiendas__info--center {
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0;
+    }
+
+    .tiendas__info--center span,
+    .tiendas__info--center p {
+        font-size: 85%;
+    }
+
+    .tiendas__title p {
+        font-weight: 600;
+        font-size: 100%;
+        padding: 0.5em 0;
+    }
+
+    .tiendas__icons {
+        width: 20px;
+        margin-right: 0.3em;
+    }
+
+    .tiendas__leyend {
+        color: var(--color1);
+        font-size: 2rem;
+    }
+
+    .tiendas__mapa {
+        width: 100%;
+        padding: 0;
+    }
+
+    .tiendas__iframe{
+        width: 100%;
+        height: 330px;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .main {
+        margin-top: 20em!important;
+    }
+    
     /* HEADER */
 
     header {
@@ -1124,7 +1196,7 @@ hr {
     }
 
     .txt {
-        font-size: 90%;
+        font-size: 73%;
         color: #fff;
         margin: 0;
         padding: 0px 0.5em;
@@ -1242,6 +1314,74 @@ hr {
 
     .derechos-reservados p{
         font-size: 90%;
+    }
+
+    /* PÁGINA TIENDAS */
+    .container__tiendas {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+        margin: 0;
+        padding: 0 3em 4em;
+    }
+
+    .title__tiendas p {
+        text-align: center;
+        font-weight: 700;
+        font-size: 130%;
+    }
+
+    .title__tiendas {
+    padding: 0 0 1em 0;
+}
+
+    .tiendas {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .tiendas__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 2em 0;
+    }
+
+    .tiendas__info--center {
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0;
+    }
+
+    .tiendas__info--center span,
+    .tiendas__info--center p {
+        font-size: 90%;
+    }
+
+    .tiendas__title p {
+        font-weight: 600;
+        font-size: 100%;
+        padding: 0.5em 0;
+    }
+
+    .tiendas__icons {
+        width: 20px;
+        margin-right: 0.3em;
+    }
+
+    .tiendas__leyend {
+        color: var(--color1);
+        font-size: 2rem;
+    }
+
+    .tiendas__mapa {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .tiendas__iframe{
+        width: 100%;
+        height: 330px;
     }
 
 }
@@ -1475,9 +1615,80 @@ hr {
         font-size: 90%;
     }
 
+    /* PÁGINA TIENDAS */
+    .container__tiendas {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+        margin: 0;
+        padding: 0 3em 4em;
+    }
+
+    .title__tiendas p {
+        text-align: center;
+        font-weight: 700;
+        font-size: 130%;
+    }
+
+    .title__tiendas {
+    padding: 0 0 1em 0;
+}
+
+    .tiendas {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .tiendas__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 0 5em 0;
+    }
+
+    .tiendas__info--center {
+        display: flex;
+        align-items: center;
+        padding: 0.5em 0;
+    }
+
+    .tiendas__info--center span,
+    .tiendas__info--center p {
+        font-size: 100%;
+    }
+
+    .tiendas__title p {
+        font-weight: 600;
+        font-size: 110%;
+        padding: 0.5em 0;
+    }
+
+    .tiendas__icons {
+        width: 25px;
+        margin-right: 0.3em;
+    }
+
+    .tiendas__leyend {
+        color: var(--color1);
+        font-size: 2rem;
+    }
+
+    .tiendas__mapa {
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .tiendas__iframe{
+        width: 100%;
+        height: 330px;
+    }
+
 }
 
 @media (min-width: 500px) {
+    .main {
+        margin: 19em 0 0 0;
+    }
 
     /* HEADER */
 
@@ -1709,14 +1920,19 @@ hr {
         display: grid;
         grid-template-rows: auto 1fr;
         gap: 10px;
-        margin: 2em 0 3em 0;
+        margin: 0;
+        padding: 0 0 4em 0;
     }
 
     .title__tiendas p {
         text-align: center;
         font-weight: 700;
-        font-size: 2.3rem;
+        font-size: 140%;
     }
+
+    .title__tiendas {
+    padding: 0 0 1em 0;
+}
 
     .tiendas {
         display: grid;
@@ -1738,12 +1954,12 @@ hr {
 
     .tiendas__info--center span,
     .tiendas__info--center p {
-        font-size: 1.3rem;
+        font-size: 100%;
     }
 
     .tiendas__title p {
         font-weight: 600;
-        font-size: 25px;
+        font-size: 120%;
         padding: 0.5em 0;
     }
 
@@ -1760,6 +1976,11 @@ hr {
     .tiendas__mapa {
         width: 100%;
         padding: 0 5em;
+    }
+
+    .tiendas__iframe{
+        width: 100%;
+        height: 330px;
     }
 }
 
