@@ -172,14 +172,6 @@ function switchImage(image) {
     averagediv.style.backgroundColor = averagediv.value = color;
 }
 
-document.getElementById("addpimagencolorinput").addEventListener("change", function (e) {
-    file = e.target.files[0];
-    if (!file.type.match(/image.*/)) return;
-    var reader = new FileReader();
-    reader.onload = uploadImage;
-    reader.readAsDataURL(file);
-});
-
 function previsualizarImagen() {
     $("#addpimagencategoria").change(function () {
         var img = this.files[0];
@@ -214,10 +206,10 @@ function previsualizarImagen() {
 
 function RegritroCategorias(filtro){
     $.ajax({
-        url: './ajax/productos.php',
+        url: 'http://localhost:8085/Tienda-Carteras/ajax/productos.php',
         type: 'POST',
         dataType: 'html',
-        data: { filtro : filtro, action : filtrocategoria},
+        data: { filtro : filtro, action : 'filtrocategoria'},
     })
     .done(function(resultado){
         $('#container__products').html(resultado);
@@ -227,8 +219,16 @@ $(document).on('change', '#ordenar', function(){
     var valorfiltro = $(this).val();
     if (valorfiltro != ""){
         RegritroCategorias(valorfiltro);
-        console.log(valorfiltro)
+        console.log(valorfiltro);
     }else{
         RegritroCategorias();
     }
+});
+
+document.getElementById("addpimagencolorinput").addEventListener("change", function (e) {
+    file = e.target.files[0];
+    if (!file.type.match(/image.*/)) return;
+    var reader = new FileReader();
+    reader.onload = uploadImage;
+    reader.readAsDataURL(file);
 });

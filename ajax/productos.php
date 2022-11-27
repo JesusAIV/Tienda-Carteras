@@ -8,3 +8,7 @@
     if ($_POST['action'] == 'listarproductos') {
         echo $opciones->listarproductos();
     }
+
+    if ($_POST['action'] == 'filtrocategoria') {
+        //echo $opciones->listarproductos();
+    }
