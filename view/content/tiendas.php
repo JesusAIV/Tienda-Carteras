@@ -10,19 +10,19 @@
                 </div>
                 <div>
                     <div class="tiendas__info--center">
-                        <img class="tiendas__icons" src="<?php echo SERVERURL?>img/svg/mapa.svg" alt="">
+                        <img class="tiendas__icons" src="<?php echo SERVERURL?>img/svg/mapa.svg" alt="mapa">
                         <span>Distrito: La Victoria Lima - Lima</span>
                     </div>
                     <div class="tiendas__info--center">
-                        <img class="tiendas__icons" src="<?php echo SERVERURL?>img/svg/store.svg" alt="">
+                        <img class="tiendas__icons" src="<?php echo SERVERURL?>img/svg/store.svg" alt="tiendas">
                         <p>Tienda N° 19</p>
                     </div>
                     <div class="tiendas__info--center">
-                        <img class="tiendas__icons" src="<?php echo SERVERURL?>img/svg/mapa.svg" alt="">
+                        <img class="tiendas__icons" src="<?php echo SERVERURL?>img/svg/mapa.svg" alt="mapa">
                         <p>Jr. Renovación N° 104, Cercado de Lima 15033</p>
                     </div>
                     <div class="tiendas__info--center">
-                        <img class="tiendas__icons" src="<?php echo SERVERURL?>img/svg/calendar.svg" alt="">
+                        <img class="tiendas__icons" src="<?php echo SERVERURL?>img/svg/calendar.svg" alt="calendario">
                         <span>Lunes, Martes, Miércoles, Jueves, Viernes y Sábado</span>
                     </div>
                 </div>

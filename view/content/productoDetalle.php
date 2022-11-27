@@ -17,7 +17,7 @@
         <section class="principal__show">
             <div class="principal__image">
                 <div class="principal__circle">
-                    <img src="<?php echo SERVERURL ?>img/svg/lupa.svg" alt="" class="principal__icon">
+                    <img src="<?php echo SERVERURL ?>img/svg/lupa.svg" alt="lupa" class="principal__icon">
                     <img src="<?php echo SERVERURL.$key['imagen'] ?>" alt="img_producto" class="principal__img">
                 </div>
             </div>
@@ -31,7 +31,7 @@
 
             <div class="detail__content">
                 <div class="detail__header">
-                    <h1 class="detail__title"><?php echo $key['producto'] ?></h1>
+                    <h2 class="detail__title"><?php echo $key['producto'] ?></h2>
                     <p class="detail__price"><?php echo 'S/'.$key['precio'] ?></p>
                 </div>
 

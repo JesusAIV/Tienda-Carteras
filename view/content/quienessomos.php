@@ -1,5 +1,5 @@
 <section class="hero">
-    <h1 class="hero__title">CONFECCIONES MILAGROS</h1>
+    <h2 class="hero__title">CONFECCIONES MILAGROS</h2>
 
     <div class="hero__quienesSomos">
         <h2 class="title">¿QUIÉNES SOMOS?</h2>

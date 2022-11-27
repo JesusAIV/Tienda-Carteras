@@ -5,7 +5,7 @@
                 <p>Nuevo categoria</p>
             </div>
             <div>
-                <img class="modal-registro-nuevo-close" src="<?php echo SERVERURL?>img/svg/close.svg" alt="">
+                <img class="modal-registro-nuevo-close" src="<?php echo SERVERURL?>img/svg/close.svg" alt="cerrar modal">
             </div>
         </div>
         <form action="./ajax/crudproducto.php" method="POST" class="ProductosAjax" data-form="add-producto" autocomplete="off" enctype="multipart/form-data">
@@ -22,7 +22,7 @@
                         <label for="addpimagencategoria" class="addpimagencategoria">Seleccionar imagen</label>
                         <input type="file" id="addpimagencategoria" class="addpimagencategoria" name="addpimagencategoria">
                     </div>
-                    <img width="500px" src="" alt="" id="addpimagencategoriaimg">
+                    <img width="500px" src="" alt="imagen de producto" id="addpimagencategoriaimg">
                 </div>
                 <div id=""></div>
             </div>

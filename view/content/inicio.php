@@ -67,7 +67,7 @@
             <div class="ofrece__opcion--grid">
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL?>img/svg/card.svg" alt="">
+                        <img src="<?php echo SERVERURL?>img/svg/card.svg" alt="pago tarjeta">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Pagos 100% seguros</p>
@@ -75,7 +75,7 @@
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL?>img/svg/camion.svg" alt="">
+                        <img src="<?php echo SERVERURL?>img/svg/camion.svg" alt="entrega domicilio">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Envíos a domicilio</p>
@@ -83,7 +83,7 @@
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL?>img/svg/recojo.svg" alt="">
+                        <img src="<?php echo SERVERURL?>img/svg/recojo.svg" alt="recogo en tienda">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Recojo en tienda</p>
@@ -91,7 +91,7 @@
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL?>img/svg/atencioncliente.svg" alt="">
+                        <img src="<?php echo SERVERURL?>img/svg/atencioncliente.svg" alt="atencion al cliente">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Atención al cliente</p>
@@ -107,7 +107,7 @@
             <div class="opcion__pago--grid">
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL?>img/svg/yape.svg" alt="">
+                        <img src="<?php echo SERVERURL?>img/svg/yape.svg" alt="pago yape">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Yape</p>
@@ -115,7 +115,7 @@
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL?>img/svg/efectivo.svg" alt="">
+                        <img src="<?php echo SERVERURL?>img/svg/efectivo.svg" alt="pago efectivo">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Efectivo</p>
@@ -123,7 +123,7 @@
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL?>img/svg/dtbancaria.svg" alt="">
+                        <img src="<?php echo SERVERURL?>img/svg/dtbancaria.svg" alt="pago banco">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Transferecia Bancaria</p>
@@ -151,7 +151,7 @@
             </div>
 
             <figure class="slider__picture">
-                <img src="<?php echo SERVERURL?>img/jpg/person1.jpg" alt="" class="slider__img">
+                <img src="<?php echo SERVERURL?>img/jpg/person1.jpg" alt="comentario1" class="slider__img">
             </figure>
         </section>
 
@@ -164,7 +164,7 @@
             </div>
 
             <figure class="slider__picture">
-                <img src="<?php echo SERVERURL?>img/jpg/person2.jpg" alt="" class="slider__img">
+                <img src="<?php echo SERVERURL?>img/jpg/person2.jpg" alt="comentario2" class="slider__img">
             </figure>
         </section>
 
@@ -177,7 +177,7 @@
             </div>
 
             <figure class="slider__picture">
-                <img src="<?php echo SERVERURL?>img/jpg/person3.jpg" alt="" class="slider__img">
+                <img src="<?php echo SERVERURL?>img/jpg/person3.jpg" alt="comentario3" class="slider__img">
             </figure>
         </section>
 

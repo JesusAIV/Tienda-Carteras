@@ -35,7 +35,7 @@
                     <?php
                     } else {
                     ?>
-                        <a class="cuenta-iniciarSesion btn-exit" href="">
+                        <a class="cuenta-iniciarSesion btn-exit" href="#">
                             <i class="fa-solid fa-power-off"></i>
                             <h2 class="cuenta__titulo">Cerrar Sesión</h2>
                         </a>
@@ -48,7 +48,7 @@
 
                 <!-- <div class="bolsa">
                     <div class="icon-container">
-                        <a class="icon-enlace" href="">
+                        <a class="icon-enlace" href="#">
                             <img class="icon-img" src="./img/svg/bag.svg" alt="bolsa">
                             <p class="icon-texto">bolsa</p>
                         </a>

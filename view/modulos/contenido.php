@@ -28,7 +28,7 @@
         </div>
         <div class="menu-right">
             <div>
-                <a class="cuenta-cerrarsesion btn-exit" href="">
+                <a class="cuenta-cerrarsesion btn-exit" href="#">
                     <i class="fa-solid fa-power-off"></i>
                     <h2 class="cuenta__titulo-">Cerrar Sesión</h2>
                 </a>

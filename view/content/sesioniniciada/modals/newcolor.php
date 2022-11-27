@@ -5,7 +5,7 @@
                 <p>Nuevo color</p>
             </div>
             <div>
-                <img class="modal-registro-nuevo-close" src="<?php echo SERVERURL?>img/svg/close.svg" alt="">
+                <img class="modal-registro-nuevo-close" src="<?php echo SERVERURL?>img/svg/close.svg" alt="cerrar modal">
             </div>
         </div>
         <form action="<?php echo SERVERURL?>ajax/crudproducto.php" method="POST" class="ProductosAjax" data-form="add-producto" autocomplete="off" enctype="multipart/form-data">
@@ -21,7 +21,7 @@
                         </label>
                         <label for="addpimagencolorinput" class="addpimagencolor">Seleccionar imagen</label>
                         <input type="file" id="addpimagencolorinput" class="addpimagencolor" name="addpimagencolor">
-                        <img src="" alt="" id="addpimagencolor" data-adaptive-background >
+                        <img src="" alt="imagen de color" id="addpimagencolor" data-adaptive-background >
                     </div>
                     <p class="text-center">Seleccione una imagen del que desea obtener el color</p>
                     <div class="labelincolor">
