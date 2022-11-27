@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-11-2022 a las 07:25:11
+-- Tiempo de generación: 27-11-2022 a las 06:13:55
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -20,8 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `cmilagros`
 --
--- CREATE DATABASE IF NOT EXISTS `cmilagros` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
--- USE `cmilagros`;
+CREATE DATABASE IF NOT EXISTS `cmilagros` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `cmilagros`;
 
 DELIMITER $$
 --
@@ -42,12 +42,6 @@ INSERT INTO producto
 (idcategoria, idcolor, producto, descripcion, stock, precio, imagen);
 END$$
 
--- CREATE PROCEDURE `EditarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT, IN `imagen` VARCHAR(200), IN `idproducto` INT)
--- BEGIN
--- UPDATE producto SET `producto` = producto AND `precio` = precio AND `descripcion` = descripcion AND `stock` = stock AND `idcategoria` = idcategoria AND `idcolor` = idcolor AND `imagen` = imagen
--- WHERE `idproducto` = idproducto;
--- END$$
-
 CREATE PROCEDURE `DatosCategoria` (IN `categoria` VARCHAR(50))   SELECT 
 	tbp.idproducto,
 	tbp.producto, 
@@ -61,7 +55,8 @@ FROM producto AS tbp
 JOIN categoria AS tbc
 ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 ON (tbp.idcolor = tbcol.idcolor)
-WHERE tbc.categoria = categoria$$
+WHERE tbc.categoria = categoria
+ORDER BY tbp.producto ASC$$
 
 CREATE PROCEDURE `DatosProducto` (IN `nomproducto` VARCHAR(50))   SELECT 
 	tbp.idproducto,
@@ -93,6 +88,53 @@ SET
 WHERE 
 	`idproducto` = idproducto;
 END$$
+
+CREATE PROCEDURE `FiltradoPrecios` (IN `orden` VARCHAR(20), IN `categoria` VARCHAR(30))   IF orden = 'preciobajo' THEN
+	SELECT 
+	tbp.idproducto,
+	tbp.producto, 
+    tbp.precio,
+    tbp.descripcion,
+    tbp.stock,
+    tbc.categoria,
+    tbcol.color,
+    tbp.imagen
+	FROM producto AS tbp 
+	JOIN categoria AS tbc
+	ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
+	ON (tbp.idcolor = tbcol.idcolor)
+	WHERE tbc.categoria = categoria ORDER BY tbp.precio ASC;
+ELSEIF orden = 'precioalto' THEN
+	SELECT 
+	tbp.idproducto,
+	tbp.producto, 
+    tbp.precio,
+    tbp.descripcion,
+    tbp.stock,
+    tbc.categoria,
+    tbcol.color,
+    tbp.imagen
+	FROM producto AS tbp 
+	JOIN categoria AS tbc
+	ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
+	ON (tbp.idcolor = tbcol.idcolor)
+	WHERE tbc.categoria = categoria ORDER BY tbp.precio DESC;
+ELSE
+	SELECT 
+	tbp.idproducto,
+	tbp.producto, 
+    tbp.precio,
+    tbp.descripcion,
+    tbp.stock,
+    tbc.categoria,
+    tbcol.color,
+    tbp.imagen
+	FROM producto AS tbp 
+	JOIN categoria AS tbc
+	ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
+	ON (tbp.idcolor = tbcol.idcolor)
+	WHERE tbc.categoria = categoria ORDER BY tbp.producto ASC;
+END IF$$
 
 CREATE PROCEDURE `InformacionProducto` (IN `idproducto` INT)   SELECT 
 	tbp.idproducto,
@@ -142,10 +184,6 @@ CREATE TABLE `categoria` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- RELACIONES PARA LA TABLA `categoria`:
---
-
---
 -- Volcado de datos para la tabla `categoria`
 --
 
@@ -153,8 +191,7 @@ INSERT INTO `categoria` (`idcategoria`, `categoria`, `imagen`) VALUES
 (1, 'carteras', 'img/categorias/carteras.jpg-1669256184.jpeg'),
 (2, 'morrales', 'img/categorias/morrales.jpg-1669256251.jpeg'),
 (3, 'mochilas', 'img/categorias/mochilas.jpg-1669256282.jpeg'),
-(4, 'bolsos', 'img/categorias/bolsos.jpg-1669256307.jpeg'),
-(11, 'modernos', 'img/categorias/banner-carteras.jpg-1669256463.jpeg');
+(4, 'bolsos', 'img/categorias/bolsos.jpg-1669256307.jpeg');
 
 -- --------------------------------------------------------
 
@@ -169,10 +206,6 @@ CREATE TABLE `colores` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- RELACIONES PARA LA TABLA `colores`:
---
-
---
 -- Volcado de datos para la tabla `colores`
 --
 
@@ -183,7 +216,8 @@ INSERT INTO `colores` (`idcolor`, `color`, `codigohex`) VALUES
 (4, 'camello', 'D39000'),
 (5, 'azul', '1B3375'),
 (6, 'guinda', '9C353F'),
-(13, 'verde', '0b6672');
+(13, 'verde', '0b6672'),
+(14, 'Beig', 'd0c8c9');
 
 -- --------------------------------------------------------
 
@@ -203,20 +237,18 @@ CREATE TABLE `producto` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- RELACIONES PARA LA TABLA `producto`:
---   `idcategoria`
---       `categoria` -> `idcategoria`
---   `idcolor`
---       `colores` -> `idcolor`
---
-
---
 -- Volcado de datos para la tabla `producto`
 --
 
 INSERT INTO `producto` (`idproducto`, `idcategoria`, `idcolor`, `producto`, `descripcion`, `stock`, `precio`, `imagen`) VALUES
 (42, 1, 3, 'Campana', 'Cartera exclusiva para usarlo en toda ocasión', 50, 12.5, 'img/productos/carteras/campana01.jpg-1669211932.jpeg'),
-(43, 1, 1, 'Bandolera', 'Buen espacio para guardar y mantener seguro tus objetos', 50, 19.5, 'img/productos/carteras/bandolera.webp-1669219807.webp');
+(43, 1, 1, 'Bandolera', 'Buen espacio para guardar y mantener seguro tus objetos', 50, 19.5, 'img/productos/carteras/bandolera.webp-1669219807.webp'),
+(44, 1, 4, 'Nicoletta', 'Interior: 3 compartimientos, 2 bolsillos abiertos, 1 bolsillo con cierre.', 50, 188.1, 'img/productos/carteras/1494-2067916.jpg-1669525056.jpeg'),
+(45, 1, 1, 'Brianna', 'Interior: 1 compartimientos, 3 bolsillos abiertos, 1 bolsillo con cierre.', 40, 179.1, 'img/productos/carteras/1404-2066488.jpg-1669525105.jpeg'),
+(46, 1, 2, 'Annalisa', 'Interior: 3 compartimientos, 1 bolsillo abierto, 1 bolsillo con cierre. • Exterior: 1 bolsillo posterior.', 80, 206.1, 'img/productos/carteras/1399-2066465.jpg-1669525150.jpeg'),
+(47, 2, 14, 'Gabriela', 'Interior: 1 bolsill interno', 40, 125.1, 'img/productos/morrales/0678-2068094.jpg-1669525425.jpeg'),
+(48, 2, 5, 'Amaia', 'Interior: 1 bolsill interno', 70, 98.1, 'img/productos/morrales/3577-2068168.jpg-1669525467.jpeg'),
+(49, 2, 4, 'Dania', 'Morral con asa regulable', 70, 143.1, 'img/productos/morrales/3627-2068098.jpg-1669525523.jpeg');
 
 -- --------------------------------------------------------
 
@@ -228,10 +260,6 @@ CREATE TABLE `rol` (
   `idrol` int(11) NOT NULL,
   `rol` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Tabla de roles para el usuario';
-
---
--- RELACIONES PARA LA TABLA `rol`:
---
 
 --
 -- Volcado de datos para la tabla `rol`
@@ -256,12 +284,6 @@ CREATE TABLE `usuario` (
   `email` varchar(100) NOT NULL,
   `password` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- RELACIONES PARA LA TABLA `usuario`:
---   `idrol`
---       `rol` -> `idrol`
---
 
 --
 -- Volcado de datos para la tabla `usuario`
@@ -322,13 +344,13 @@ ALTER TABLE `categoria`
 -- AUTO_INCREMENT de la tabla `colores`
 --
 ALTER TABLE `colores`
-  MODIFY `idcolor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `idcolor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `idproducto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `idproducto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- AUTO_INCREMENT de la tabla `rol`
