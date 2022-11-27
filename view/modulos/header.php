@@ -22,7 +22,7 @@
                 <div class="logo">
                     <input class="menu__input" type="checkbox" id="menu">
                     <a href="<?php echo SERVERURL ?>inicio"><img class="logo-img--header" src="<?php echo SERVERURL ?>img/png/bolso.png" alt="Logo"></a>
-                    <a class="logo-enlace" href="<?php echo SERVERURL ?>inicio">Confecciones Milagros</a>
+                    <a class="logo-enlace" href="<?php echo SERVERURL ?>inicio"><h1>Confecciones Milagros</h1></a>
                 </div>
 
                 <div class="cuenta">
