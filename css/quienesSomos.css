@@ -16,11 +16,11 @@
 .hero{
     width: 90%;
     margin: 0 auto;
-    padding: 4em 0;
+    padding: 5em 0;
 }
 
 .hero__title{
-    font-size: 2.4rem;
+    font-size: 110%;
     text-align: center;
 }
 
@@ -32,11 +32,11 @@
 .hero__quienesSomos,
 .hero__nuestrosProductos,
 .hero__empresa{
-    margin: 1.1em 2em;
+    margin: 3.1em 2em;
 }
 
 .title{
-    font-size: 1.7rem;
+    font-size: 100%;
     padding: 1.1em 0;
     font-weight: 700;
 }
@@ -51,11 +51,11 @@
 .paragraph__container{
     padding: 0 0 .4em 0;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 90%;
 }
 
 .hero__quienesSomos__item{
-    font-size: 1.2rem;
+    font-size: 90%;
 }
 
 .hero__quienesSomos__items{
@@ -65,9 +65,10 @@
 
 .hero__empresa{
     display: grid;
-    grid-template-areas: 
-    "mision vision"
-    "mision vision";
+    grid-template-areas:
+        "mision"
+        "vision";
+    gap: 1em;
 }
 
 .hero__empresa__mision{
@@ -143,8 +144,8 @@
     .hero{
         width: 90%;
         margin: 0 auto;
-        padding: 0 0 4em;
-        background: #888;
+        padding: 18em 0 4em;
+        /* background: #888; */
     }
     
     .paragraph,
@@ -157,7 +158,7 @@
     .paragraph__container{
         padding: 0 0 .4em 0;
         width: 100%;
-        font-size: 100%;
+        font-size: 95%;
     }
     
     .hero__quienesSomos__item{
@@ -176,27 +177,33 @@
         "vision";
         gap: .7em;
     }
+
+    .title {
+        font-size: 100%;
+        padding: 1.1em 0;
+        font-weight: 700;
+    }
 }
 
 @media (min-width: 425px){
     .main{
-        margin: 25em 0 0 0;
+        margin: 19em 0 0 0;
     }
 
     .hero{
         width: 95%;
         margin: 0 auto;
-        padding: 0 0 4em;
-        background: #888;
+        padding: 3em 0 4em;
+        /* background: #888; */
     }
 
     .hero__title {
-        font-size: 1.1rem;
+        font-size: 150%;
         text-align: center;
     }
 
     .title {
-        font-size: 1.1rem;
+        font-size: 130%;
     }
     
     .paragraph,
@@ -207,11 +214,11 @@
     }
     
     .paragraph__container{
-        font-size: 1rem;
+        font-size: 110%;
     }
     
     .hero__quienesSomos__item{
-        font-size: 1rem;
+        font-size: 110%;
     }
     
     .hero__quienesSomos__items{
@@ -230,7 +237,7 @@
 
 @media (min-width: 768px){
     .main{
-        margin: 15em 0 0;
+        margin: 17em 0 0;
     }
 
     .hero{
@@ -288,11 +295,11 @@
     }
 
     .hero__title {
-        font-size: 2.4rem;
+        font-size: 180%;
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 150%;
     }
     
     .paragraph,
@@ -303,11 +310,11 @@
     }
     
     .paragraph__container{
-        font-size: 1.6rem;
+        font-size: 130%;
     }
     
     .hero__quienesSomos__item{
-        font-size: 1.6rem;
+        font-size: 130%;
     }
     
     .hero__quienesSomos__items{
@@ -336,11 +343,11 @@
     }
 
     .hero__title {
-        font-size: 2.2rem;
+        font-size: 200%;
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 180%;
     }
     
     .paragraph,
@@ -351,11 +358,11 @@
     }
     
     .paragraph__container{
-        font-size: 1.6rem;
+        font-size: 150%;
     }
     
     .hero__quienesSomos__item{
-        font-size: 1.6rem;
+        font-size: 150%;
     }
     
     .hero__quienesSomos__items{
