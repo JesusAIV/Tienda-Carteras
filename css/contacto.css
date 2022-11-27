@@ -1,4 +1,4 @@
-:root{
+:root {
     --bg-container: #3333332e;
     --borderInput-color: #8F8D8D;
     --leyend-color: #949292;
@@ -15,127 +15,133 @@
     --gris: #e0e0e0;
 }
 
-.main__contacto{
+.main__contacto {
     width: 95%;
     margin: 0 auto;
     margin-top: 3em;
     display: grid;
-    grid-template-areas: 
-    "mapa         mapa         mapa         mapa"
-    "mapa         mapa         mapa         mapa"
-    "formContacto formContacto infoContacto infoContacto"
-    "formContacto formContacto infoContacto infoContacto";
+    grid-template-areas:
+        "mapa         mapa         mapa         mapa"
+        "mapa         mapa         mapa         mapa"
+        "formContacto formContacto infoContacto infoContacto"
+        "formContacto formContacto infoContacto infoContacto";
     border-radius: 20px 20px 0 0;
     margin-bottom: 3em;
     box-shadow: -8px 20px 50px 30px #d0cdcd66;
 }
 
-.mapa{
+.mapa {
     grid-area: mapa;
     min-height: max-content;
     overflow: hidden;
     height: 200px;
 }
 
-.contacto__formulario{
+.contacto__formulario {
     grid-area: formContacto;
 }
 
-.mapa__top{
+.mapa__top {
     width: 100%;
     height: 100%;
     border: none;
     border-radius: 20px 20px 0 0;
 }
 
-.contacto__information{
+.contacto__information {
     grid-area: infoContacto;
 }
 
 .contacto__formulario,
-.contacto__information{
+.contacto__information {
     padding: 1.1em 1.2em;
     height: 100%;
 }
 
-.contacto__title{
+.contacto__title {
     font-size: 1.3em;
     padding: 0 0 1em 0;
     color: var(--color1);
 }
 
-.contacto__title--color{
+.contacto__title--color {
     color: #fff;
 }
 
 .contacto__paragraph,
-.group__label{
+.group__label {
     font-size: .8em;
     padding: 0 0 .7em 0;
 }
 
-.formulario{
+.formulario {
     display: grid;
     gap: 1.3em;
-    grid-template-areas: 
-    "nombres apellidos"
-    "celular correo"
-    "mensaje mensaje"
-    ".       btnEnviar";
+    grid-template-areas:
+        "nombres apellidos"
+        "celular correo"
+        "mensaje mensaje"
+        ".       btnEnviar";
     margin-top: 2em;
 }
 
-.group1{
+.group1 {
     grid-area: nombres;
 }
-.group2{
+
+.group2 {
     grid-area: apellidos;
 }
-.group3{
+
+.group3 {
     grid-area: celular;
 }
-.group4{
+
+.group4 {
     grid-area: correo;
 }
-.group5{
+
+.group5 {
     grid-area: mensaje;
 }
-.group6{
+
+.group6 {
     grid-area: btnEnviar;
     display: flex;
     justify-content: flex-end;
 }
 
-.group__input{
+.group__input {
     width: 100%;
     border: 1px solid var(--borderInput-color);
 }
 
 .group__input,
-.mensaje{
+.mensaje {
     margin: .7em 0 0 0;
     padding: 1em 1.1em;
     font-size: 1.1rem;
-    
+
 }
 
-.mensaje{
+.mensaje {
     width: 100%;
 }
 
 .group__input,
 .group__enviar,
-.mensaje{
+.mensaje {
     border-radius: 4px 0 4px 0;
     outline: none;
 }
 
 .group__input,
-.group__enviar{
-    height: 50px;
+.group__enviar {
+    height: 35px;
+    font-size: inherit;
 }
 
-.group__enviar{
+.group__enviar {
     width: 50%;
     border: 1px solid var(--borderInput-color);
     cursor: pointer;
@@ -144,7 +150,7 @@
     transform: scale(1);
 }
 
-.group__enviar:hover{
+.group__enviar:hover {
     background-color: var(--blanco);
     color: var(--color3);
     font-weight: 700;
@@ -152,7 +158,7 @@
     transition: background-color .3s, color .3s, font-weight .3s, transform .5s;
 }
 
-.contacto__information{
+.contacto__information {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -160,55 +166,56 @@
     align-items: center;
     min-height: max-content;
     background-image: linear-gradient(to bottom, #000000ee, #0000007b),
-    url('../img/jpg/fondo.jpg');
+        url('../img/jpg/fondo.jpg');
     background-size: cover;
 }
 
-.contacto__body{
+.contacto__body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 1em;
     margin: 0 auto;
-    margin-top: 2.5em;
+    margin-top: 0.5em;
+    width: 85%;
 }
 
-.group{
+.group {
     width: 100%;
     margin: 0 0 1.3em 0;
 }
 
 
-.group__label{
+.group__label {
     display: block;
     color: var(--color1);
 }
 
 
-.group__label--info{
+.group__label--info {
     padding: 1.1em 0;
     color: var(--leyend-color);
     font-weight: 700;
 }
 
-.group__leyend{
+.group__leyend {
     width: 100%;
     color: #fff;
     font-weight: 500;
 }
 
-.group__leyend--hover::after{
+.group__leyend--hover::after {
     content: "";
     display: block;
     width: 50%;
     margin-top: .1em;
 }
 
-.group__leyend--hover:hover::after{
+.group__leyend--hover:hover::after {
     border-bottom: 2px solid #fff;
 }
 
-.redes{
+.redes {
     display: flex;
     justify-content: center;
     gap: 1.3em;
@@ -216,7 +223,1095 @@
     bottom: 100px;
 }
 
-.figure__link__icon{
+.figure__link__icon {
     font-size: 1.6em;
     color: #fff;
+}
+
+@media (min-width: 300px) {
+    .main {
+        margin: 18em 0 0 0;
+    }
+
+    .main__contacto {
+        width: 90%;
+        margin: 2em auto 5em !important;
+        /* margin-top: 3em; */
+        display: grid;
+        grid-template-areas:
+            "mapa mapa mapa mapa"
+            "mapa mapa mapa mapa"
+            "formContacto formContacto formContacto formContacto"
+            "infoContacto infoContacto infoContacto infoContacto";
+        /* border-radius: 20px 20px 0 0; */
+        /* margin-bottom: 3em; */
+        box-shadow: -8px 20px 50px 30px #d0cdcd66;
+    }
+
+    .mapa {
+        grid-area: mapa;
+        min-height: max-content;
+        overflow: hidden;
+        height: 250px;
+    }
+
+    .contacto__information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: max-content;
+        background-image: linear-gradient(to bottom, #000000ee, #0000007b), url(../img/jpg/fondo.jpg);
+        background-size: cover;
+    }
+
+    .contacto__title {
+        font-size: 1rem;
+        padding: 1em 0;
+        color: var(--color1);
+    }
+
+    .contacto__paragraph,
+    .group__label {
+        font-size: 0.7rem;
+        padding: 0 0 0.5em 0;
+    }
+    .group__input, .group__enviar {
+    height: 30px;
+    font-size: inherit;
+}
+
+    .formulario {
+        display: grid;
+        gap: 1.3em;
+        grid-template-areas:
+            "nombres nombres"
+            "apellidos apellidos"
+            "celular celular"
+            "correo correo"
+            "mensaje mensaje"
+            "btnEnviar btnEnviar";
+        margin-top: 2em;
+    }
+
+    .mensaje {
+        width: 100%;
+        height: 155px;
+        font-size: inherit;
+    }
+
+    .group__enviar {
+        width: 100%;
+        /* border: 1px solid var(--borderInput-color); */
+        /* cursor: pointer; */
+        /* background-color: var(--color3); */
+        /* color: var(--blanco); */
+        /* transform: scale(1); */
+        font-size: 1rem;
+    }
+    .group6 {
+    grid-area: btnEnviar;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 90%;
+}
+
+    .group__leyend {
+        width: 100%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 0.8rem;
+        word-spacing: 0.1em;
+    }
+
+    .group__leyend--hover::after {
+        content: "";
+        display: block;
+        width: 56%;
+        margin-top: 0.4em;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 4.3em;
+        position: relative;
+        bottom: 5px;
+        padding: 2em 0;
+    }
+
+    .figure__link__icon {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (min-width: 375px) {
+    .main {
+        margin: 18em 0 0 0;
+    }
+
+    .main__contacto {
+        width: 90%;
+        margin: 2em auto 5em !important;
+        /* margin-top: 3em; */
+        display: grid;
+        grid-template-areas:
+            "mapa mapa mapa mapa"
+            "mapa mapa mapa mapa"
+            "formContacto formContacto formContacto formContacto"
+            "infoContacto infoContacto infoContacto infoContacto";
+        /* border-radius: 20px 20px 0 0; */
+        /* margin-bottom: 3em; */
+        box-shadow: -8px 20px 50px 30px #d0cdcd66;
+    }
+
+    .mapa {
+        grid-area: mapa;
+        min-height: max-content;
+        overflow: hidden;
+        height: 250px;
+    }
+
+    .contacto__information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: max-content;
+        background-image: linear-gradient(to bottom, #000000ee, #0000007b), url(../img/jpg/fondo.jpg);
+        background-size: cover;
+    }
+
+    .contacto__title {
+        font-size: 1rem;
+        padding: 1em 0;
+        color: var(--color1);
+    }
+
+    .contacto__paragraph,
+    .group__label {
+        font-size: 0.7rem;
+        padding: 0 0 0.5em 0;
+    }
+
+    .formulario {
+        display: grid;
+        gap: 1.3em;
+        grid-template-areas:
+            "nombres nombres"
+            "apellidos apellidos"
+            "celular celular"
+            "correo correo"
+            "mensaje mensaje"
+            "btnEnviar btnEnviar";
+        margin-top: 2em;
+    }
+
+    .mensaje {
+        width: 100%;
+        height: 155px;
+        font-size: inherit;
+    }
+
+    .group__enviar {
+        width: 100%;
+        /* border: 1px solid var(--borderInput-color); */
+        /* cursor: pointer; */
+        /* background-color: var(--color3); */
+        /* color: var(--blanco); */
+        /* transform: scale(1); */
+        font-size: 1rem;
+    }
+    .group6 {
+    grid-area: btnEnviar;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 90%;
+}
+
+    .group__leyend {
+        width: 100%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 0.8rem;
+        word-spacing: 0.1em;
+    }
+
+    .group__leyend--hover::after {
+        content: "";
+        display: block;
+        width: 56%;
+        margin-top: 0.4em;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 4.3em;
+        position: relative;
+        bottom: 5px;
+        padding: 2em 0;
+    }
+
+    .figure__link__icon {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (min-width: 425px) {
+    .main {
+        margin: 18em 0 0 0;
+    }
+
+    .main__contacto {
+        width: 90%;
+        margin: 2em auto 5em !important;
+        /* margin-top: 3em; */
+        display: grid;
+        grid-template-areas:
+            "mapa mapa mapa mapa"
+            "mapa mapa mapa mapa"
+            "formContacto formContacto formContacto formContacto"
+            "infoContacto infoContacto infoContacto infoContacto";
+        /* border-radius: 20px 20px 0 0; */
+        /* margin-bottom: 3em; */
+        box-shadow: -8px 20px 50px 30px #d0cdcd66;
+    }
+
+    .mapa {
+        grid-area: mapa;
+        min-height: max-content;
+        overflow: hidden;
+        height: 250px;
+    }
+
+    .contacto__information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: max-content;
+        background-image: linear-gradient(to bottom, #000000ee, #0000007b), url(../img/jpg/fondo.jpg);
+        background-size: cover;
+    }
+
+    .contacto__title {
+        font-size: 1rem;
+        padding: 1em 0;
+        color: var(--color1);
+    }
+
+    .contacto__paragraph,
+    .group__label {
+        font-size: 0.7rem;
+        padding: 0 0 0.5em 0;
+    }
+
+    .formulario {
+        display: grid;
+        gap: 1.3em;
+        grid-template-areas:
+            "nombres nombres"
+            "apellidos apellidos"
+            "celular celular"
+            "correo correo"
+            "mensaje mensaje"
+            "btnEnviar btnEnviar";
+        margin-top: 2em;
+    }
+
+    .mensaje {
+        width: 100%;
+        height: 155px;
+        font-size: inherit;
+    }
+
+    .group__enviar {
+        width: 100%;
+        /* border: 1px solid var(--borderInput-color); */
+        /* cursor: pointer; */
+        /* background-color: var(--color3); */
+        /* color: var(--blanco); */
+        /* transform: scale(1); */
+        font-size: 1rem;
+    }
+    .group6 {
+    grid-area: btnEnviar;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 90%;
+}
+
+    .group__leyend {
+        width: 100%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 0.8rem;
+        word-spacing: 0.1em;
+    }
+
+    .group__leyend--hover::after {
+        content: "";
+        display: block;
+        width: 56%;
+        margin-top: 0.4em;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 4.3em;
+        position: relative;
+        bottom: 5px;
+        padding: 2em 0;
+    }
+
+    .figure__link__icon {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (min-width: 500px) {
+    .main {
+        margin: 18em 0 0 0;
+    }
+
+    .main__contacto {
+        width: 90%;
+        margin: 2em auto 5em !important;
+        /* margin-top: 3em; */
+        display: grid;
+        grid-template-areas:
+            "mapa mapa mapa mapa"
+            "mapa mapa mapa mapa"
+            "formContacto formContacto formContacto formContacto"
+            "infoContacto infoContacto infoContacto infoContacto";
+        /* border-radius: 20px 20px 0 0; */
+        /* margin-bottom: 3em; */
+        box-shadow: -8px 20px 50px 30px #d0cdcd66;
+    }
+
+    .mapa {
+        grid-area: mapa;
+        min-height: max-content;
+        overflow: hidden;
+        height: 250px;
+    }
+
+    .contacto__information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: max-content;
+        background-image: linear-gradient(to bottom, #000000ee, #0000007b), url(../img/jpg/fondo.jpg);
+        background-size: cover;
+    }
+
+    .contacto__title {
+        font-size: 1.1rem;
+        padding: 1em 0;
+        color: var(--color1);
+    }
+
+    .contacto__paragraph,
+    .group__label {
+        font-size: 0.8rem;
+        padding: 0 0 0.5em 0;
+    }
+
+    .formulario {
+        display: grid;
+        gap: 1.3em;
+        grid-template-areas:
+            "nombres nombres"
+            "apellidos apellidos"
+            "celular celular"
+            "correo correo"
+            "mensaje mensaje"
+            "btnEnviar btnEnviar";
+        margin-top: 2em;
+    }
+
+    .mensaje {
+        width: 100%;
+        height: 155px;
+        font-size: inherit;
+    }
+
+    .group__enviar {
+        width: 100%;
+        /* border: 1px solid var(--borderInput-color); */
+        /* cursor: pointer; */
+        /* background-color: var(--color3); */
+        /* color: var(--blanco); */
+        /* transform: scale(1); */
+        font-size: 1.1rem;
+    }
+    .group6 {
+    grid-area: btnEnviar;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 90%;
+}
+
+    .group__leyend {
+        width: 100%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 0.9rem;
+        word-spacing: 0.1em;
+    }
+
+    .group__leyend--hover::after {
+        content: "";
+        display: block;
+        width: 56%;
+        margin-top: 0.4em;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 4.3em;
+        position: relative;
+        bottom: 5px;
+        padding: 2em 0;
+    }
+
+    .figure__link__icon {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (min-width: 580px) {
+    .main {
+        margin: 19em 0 0 0;
+    }
+
+    .main__contacto {
+        width: 90%;
+        margin: 2em auto 5em !important;
+        /* margin-top: 3em; */
+        display: grid;
+        grid-template-areas:
+            "mapa mapa mapa mapa"
+            "mapa mapa mapa mapa"
+            "formContacto formContacto formContacto formContacto"
+            "infoContacto infoContacto infoContacto infoContacto";
+        /* border-radius: 20px 20px 0 0; */
+        /* margin-bottom: 3em; */
+        /* box-shadow: -8px 20px 30px 7px #d0cdcd66; */
+    }
+
+    .mapa {
+        grid-area: mapa;
+        min-height: max-content;
+        overflow: hidden;
+        height: 250px;
+    }
+
+    .contacto__information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: max-content;
+        background-image: linear-gradient(to bottom, #000000ee, #0000007b), url(../img/jpg/fondo.jpg);
+        background-size: cover;
+    }
+
+    .contacto__title {
+        font-size: 1.1rem;
+        padding: 1em 0;
+        color: var(--color1);
+    }
+
+    .contacto__paragraph,
+    .group__label {
+        font-size: 0.8rem;
+        padding: 0 0 0.5em 0;
+    }
+
+    .formulario {
+        display: grid;
+        gap: 1.3em;
+        grid-template-areas:
+            "nombres nombres"
+            "apellidos apellidos"
+            "celular celular"
+            "correo correo"
+            "mensaje mensaje"
+            "btnEnviar btnEnviar";
+        margin-top: 2em;
+    }
+
+    .mensaje {
+        width: 100%;
+        height: 155px;
+        font-size: inherit;
+    }
+
+    .group__enviar {
+        width: 100%;
+        /* border: 1px solid var(--borderInput-color); */
+        /* cursor: pointer; */
+        /* background-color: var(--color3); */
+        /* color: var(--blanco); */
+        /* transform: scale(1); */
+        font-size: 1.1rem;
+    }
+    .group6 {
+    grid-area: btnEnviar;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 90%;
+}
+
+    .group__leyend {
+        width: 100%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 0.9rem;
+        word-spacing: 0.1em;
+    }
+
+    .group__leyend--hover::after {
+        content: "";
+        display: block;
+        width: 56%;
+        margin-top: 0.4em;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 4.3em;
+        position: relative;
+        bottom: 5px;
+        padding: 2em 0;
+    }
+
+    .figure__link__icon {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (min-width: 650px) {
+    .main {
+        margin: 21em 0 0 0;
+    }
+
+    .main__contacto {
+        width: 90%;
+        margin: 2em auto 5em !important;
+        /* margin-top: 3em; */
+        display: grid;
+        grid-template-areas:
+            "mapa mapa mapa mapa"
+            "mapa mapa mapa mapa"
+            "formContacto formContacto formContacto formContacto"
+            "infoContacto infoContacto infoContacto infoContacto";
+        /* border-radius: 20px 20px 0 0; */
+        /* margin-bottom: 3em; */
+        box-shadow: -8px 20px 50px 30px #d0cdcd66;
+    }
+
+    .mapa {
+        grid-area: mapa;
+        min-height: max-content;
+        overflow: hidden;
+        height: 250px;
+    }
+
+    .contacto__information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: max-content;
+        background-image: linear-gradient(to bottom, #000000ee, #0000007b), url(../img/jpg/fondo.jpg);
+        background-size: cover;
+    }
+
+    .contacto__title {
+        font-size: 1.1rem;
+        padding: 1em 0;
+        color: var(--color1);
+    }
+
+    .contacto__paragraph,
+    .group__label {
+        font-size: 0.8rem;
+        padding: 0 0 0.5em 0;
+    }
+
+    .formulario {
+        display: grid;
+        gap: 1.3em;
+        grid-template-areas:
+            "nombres nombres"
+            "apellidos apellidos"
+            "celular celular"
+            "correo correo"
+            "mensaje mensaje"
+            "btnEnviar btnEnviar";
+        margin-top: 2em;
+    }
+
+    .mensaje {
+        width: 100%;
+        height: 155px;
+    }
+
+    .group__enviar {
+        width: 100%;
+        /* border: 1px solid var(--borderInput-color); */
+        /* cursor: pointer; */
+        /* background-color: var(--color3); */
+        /* color: var(--blanco); */
+        /* transform: scale(1); */
+        font-size: 1.1rem;
+    }
+    .group6 {
+    grid-area: btnEnviar;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 90%;
+}
+
+    .group__leyend {
+        width: 100%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1rem;
+        word-spacing: 0.5em;
+    }
+
+    .group__leyend--hover::after {
+        content: "";
+        display: block;
+        width: 56%;
+        margin-top: 0.4em;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 4.3em;
+        position: relative;
+        bottom: 5px;
+        padding: 2em 0;
+    }
+
+    .figure__link__icon {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .main {
+        margin: 14em 0 0 0;
+    }
+
+    .main__contacto {
+        width: 90%;
+        margin: 2em auto 5em !important;
+        /* margin-top: 3em; */
+        display: grid;
+        grid-template-areas:
+            "mapa mapa mapa mapa"
+            "mapa mapa mapa mapa"
+            "formContacto formContacto formContacto formContacto"
+            "infoContacto infoContacto infoContacto infoContacto";
+        /* border-radius: 20px 20px 0 0; */
+        /* margin-bottom: 3em; */
+        box-shadow: -8px 20px 50px 30px #d0cdcd66;
+    }
+
+    .mapa {
+        grid-area: mapa;
+        min-height: max-content;
+        overflow: hidden;
+        height: 250px;
+    }
+
+    .contacto__information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: max-content;
+        background-image: linear-gradient(to bottom, #000000ee, #0000007b), url(../img/jpg/fondo.jpg);
+        background-size: cover;
+    }
+
+    .contacto__title {
+        font-size: 1.1rem;
+        padding: 1em 0;
+        color: var(--color1);
+    }
+
+    .contacto__paragraph,
+    .group__label {
+        font-size: 0.8rem;
+        padding: 0 0 0.5em 0;
+    }
+
+    .formulario {
+        display: grid;
+        gap: 1.3em;
+        grid-template-areas:
+            "nombres nombres"
+            "apellidos apellidos"
+            "celular celular"
+            "correo correo"
+            "mensaje mensaje"
+            "btnEnviar btnEnviar";
+        margin-top: 2em;
+    }
+
+    .mensaje {
+        width: 100%;
+        height: 155px;
+    }
+
+    .group__enviar {
+        width: 100%;
+        /* border: 1px solid var(--borderInput-color); */
+        /* cursor: pointer; */
+        /* background-color: var(--color3); */
+        /* color: var(--blanco); */
+        /* transform: scale(1); */
+        font-size: 1.1rem;
+    }
+    .group6 {
+    grid-area: btnEnviar;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    width: 90%;
+}
+
+    .group__leyend {
+        width: 100%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1rem;
+        word-spacing: 0.5em;
+    }
+
+    .group__leyend--hover::after {
+        content: "";
+        display: block;
+        width: 56%;
+        margin-top: 0.4em;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 4.3em;
+        position: relative;
+        bottom: 5px;
+        padding: 2em 0;
+    }
+
+    .figure__link__icon {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (min-width: 960px) {
+    .main {
+        margin: 14em 0 0 0;
+    }
+
+    .main__contacto {
+        width: 90%;
+        margin: 2em auto 5em !important;
+        /* margin-top: 3em; */
+        display: grid;
+        grid-template-areas:
+            "mapa mapa mapa mapa"
+            "mapa mapa mapa mapa"
+            "formContacto formContacto formContacto formContacto"
+            "infoContacto infoContacto infoContacto infoContacto";
+        /* border-radius: 20px 20px 0 0; */
+        /* margin-bottom: 3em; */
+        box-shadow: -8px 20px 50px 30px #d0cdcd66;
+    }
+
+    .mapa {
+        grid-area: mapa;
+        min-height: max-content;
+        overflow: hidden;
+        height: 250px;
+    }
+
+    .contacto__information {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: max-content;
+        background-image: linear-gradient(to bottom, #000000ee, #0000007b), url(../img/jpg/fondo.jpg);
+        background-size: cover;
+    }
+
+    .contacto__title {
+        font-size: 1.1rem;
+        padding: 1em 0;
+        color: var(--color1);
+    }
+
+    .contacto__paragraph,
+    .group__label {
+        font-size: 0.8rem;
+        padding: 0 0 0.5em 0;
+    }
+
+    .formulario {
+        display: grid;
+        gap: 1.3em;
+        grid-template-areas:
+            "nombres apellidos"
+            "celular correo"
+            "mensaje mensaje"
+            ".       btnEnviar";
+        margin-top: 2em;
+    }
+
+    .mensaje {
+        width: 100%;
+        height: 155px;
+    }
+
+    .group__enviar {
+        width: 45%;
+        /* border: 1px solid var(--borderInput-color); */
+        /* cursor: pointer; */
+        /* background-color: var(--color3); */
+        /* color: var(--blanco); */
+        /* transform: scale(1); */
+        font-size: .9rem;
+    }
+
+    .group__leyend {
+        width: 100%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1rem;
+        word-spacing: 0.5em;
+    }
+
+    .group__leyend--hover::after {
+        content: "";
+        display: block;
+        width: 56%;
+        margin-top: 0.4em;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 4.3em;
+        position: relative;
+        bottom: 5px;
+        padding: 2em 0;
+    }
+
+    .figure__link__icon {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .main {
+        margin: 14em 0 0 0;
+    }
+
+    .main__contacto {
+        width: 90%;
+        margin: 3em auto 5em !important;
+        margin-top: 3em;
+        display: grid;
+        grid-template-areas:
+            "mapa         mapa         mapa         mapa"
+            "mapa         mapa         mapa         mapa"
+            "formContacto formContacto infoContacto infoContacto"
+            "formContacto formContacto infoContacto infoContacto";
+        border-radius: 20px 20px 0 0;
+        margin-bottom: 3em;
+        box-shadow: -8px 20px 50px 30px #d0cdcd66;
+    }
+
+    .contacto__title {
+        font-size: 1.2rem;
+        padding: 1em 0;
+        color: var(--color1);
+    }
+
+    .contacto__paragraph,
+    .group__label {
+        font-size: 0.8rem;
+        padding: 0 0 0.7em 0;
+    }
+
+    .group__enviar {
+        width: 50%;
+        border: 1px solid var(--borderInput-color);
+        cursor: pointer;
+        background-color: var(--color3);
+        color: var(--blanco);
+        transform: scale(1);
+        font-size: 1rem;
+    }
+
+    .group__leyend {
+        width: 100%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .group__leyend--hover::after {
+        content: "";
+        display: block;
+        width: 64%;
+        margin-top: 0.4em;
+    }
+
+    .formulario {
+        display: grid;
+        gap: 1.3em;
+        grid-template-areas:
+            "nombres apellidos"
+            "celular correo"
+            "mensaje mensaje"
+            ".       btnEnviar";
+        margin-top: 2em;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 3.3em;
+        position: relative;
+        bottom: 100px;
+    }
+
+    .figure__link__icon {
+        font-size: 2.2rem;
+    }
+
+}
+
+@media (min-width: 1336px) {
+    .main {
+        margin: 14em 0 0 0;
+    }
+
+    .main__contacto {
+        width: 85%;
+        margin: 1em auto 5em !important;
+        margin-top: 3em;
+        display: grid;
+        grid-template-areas:
+            "mapa         mapa         mapa         mapa"
+            "mapa         mapa         mapa         mapa"
+            "formContacto formContacto infoContacto infoContacto"
+            "formContacto formContacto infoContacto infoContacto";
+        border-radius: 20px 20px 0 0;
+        margin-bottom: 3em;
+        box-shadow: -8px 20px 50px 30px #d0cdcd66;
+    }
+
+    .contacto__title {
+        font-size: 1.5rem;
+        padding: 1em 0;
+        color: var(--color1);
+    }
+    
+
+    .contacto__paragraph,
+    .group__label {
+        font-size: 1.1rem;
+        padding: 0 0 0.7em 0;
+    }
+
+    .group__enviar {
+        width: 50%;
+        border: 1px solid var(--borderInput-color);
+        cursor: pointer;
+        background-color: var(--color3);
+        color: var(--blanco);
+        transform: scale(1);
+    }
+
+    .group__leyend {
+        width: 100%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    .group__leyend--hover::after {
+        content: "";
+        display: block;
+        width: 64%;
+        margin-top: 0.4em;
+    }
+
+    .formulario {
+        display: grid;
+        gap: 1.3em;
+        grid-template-areas:
+            "nombres apellidos"
+            "celular correo"
+            "mensaje mensaje"
+            ".       btnEnviar";
+        margin-top: 2em;
+    }
+    
+    .group__input, .group__enviar {
+        height: 60px;
+        font-size: inherit;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 3.3em;
+        position: relative;
+        bottom: 100px;
+    }
+
+    .figure__link__icon {
+
+        font-size: 2.5rem;
+    }
+
 }
