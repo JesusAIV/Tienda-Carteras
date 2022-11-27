@@ -8,23 +8,23 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="<?php echo SERVERURL ?>img/jpg/img1.jpg">
+                <img src="<?php echo SERVERURL ?>img/jpg/img1.jpg" alt="imagen de slider">
                 <div class="text">Caption Text</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="<?php echo SERVERURL ?>img/jpg/img2.jpg">
+                <img src="<?php echo SERVERURL ?>img/jpg/img2.jpg" alt="imagen de slider">
                 <div class="text">Caption Two</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="<?php echo SERVERURL ?>img/jpg/img3.jpg">
+                <img src="<?php echo SERVERURL ?>img/jpg/img3.jpg" alt="imagen de slider">
                 <div class="text">Caption Three</div>
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="nextslider" onclick="plusSlides(1)">&#10095;</a>
+            <a href="#" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a href="#" class="nextslider" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
         <div style="text-align:center">
@@ -140,7 +140,7 @@
     </div>
 
     <div class="principal__opiniones">
-        <img src="<?php echo SERVERURL?>img/svg/left-arrow.svg" class="slider__arrow" id="before">
+        <img src="<?php echo SERVERURL?>img/svg/left-arrow.svg" class="slider__arrow" id="before" alt="anterior opinion">
 
         <section class="slider__body slider__body--show" data-id="1">
             <div class="slider__texts">
@@ -181,6 +181,6 @@
             </figure>
         </section>
 
-        <img src="<?php echo SERVERURL?>img/svg/right-arrow.svg" class="slider__arrow" id="next">
+        <img src="<?php echo SERVERURL?>img/svg/right-arrow.svg" class="slider__arrow" id="next" alt="siguiente opinion">
     </div>
 </div>
