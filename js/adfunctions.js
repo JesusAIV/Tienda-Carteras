@@ -211,3 +211,24 @@ function previsualizarImagen() {
 
     })
 }
+
+function RegritroCategorias(filtro){
+    $.ajax({
+        url: './ajax/productos.php',
+        type: 'POST',
+        dataType: 'html',
+        data: { filtro : filtro, action : filtrocategoria},
+    })
+    .done(function(resultado){
+        $('#container__products').html(resultado);
+    })
+}
+$(document).on('change', '#ordenar', function(){
+    var valorfiltro = $(this).val();
+    if (valorfiltro != ""){
+        RegritroCategorias(valorfiltro);
+        console.log(valorfiltro)
+    }else{
+        RegritroCategorias();
+    }
+});
