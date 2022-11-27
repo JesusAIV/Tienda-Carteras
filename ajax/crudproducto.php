@@ -20,12 +20,3 @@
         }
 
     }
-
-
-
-    $this -> host='localhost';
-    $this -> db='localhost';
-    $this -> user='localhost';
-    $this -> charset='localhost';
-
-    $conexion="mysql:host='.$this->host.'; dbname='.$this->db.'; charset='.$this->charset.'";

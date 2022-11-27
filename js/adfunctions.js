@@ -204,12 +204,12 @@ function previsualizarImagen() {
     })
 }
 
-function RegritroCategorias(filtro){
+function RegritroCategorias(filtro, categoria){
     $.ajax({
         url: 'http://localhost:8085/Tienda-Carteras/ajax/productos.php',
         type: 'POST',
         dataType: 'html',
-        data: { filtro : filtro, action : 'filtrocategoria'},
+        data: { filtro : filtro, action : 'filtrocategoria', dcategoria: categoria},
     })
     .done(function(resultado){
         $('#container__products').html(resultado);
@@ -217,9 +217,9 @@ function RegritroCategorias(filtro){
 }
 $(document).on('change', '#ordenar', function(){
     var valorfiltro = $(this).val();
+    var categoria = $('#categoria').val();
     if (valorfiltro != ""){
-        RegritroCategorias(valorfiltro);
-        console.log(valorfiltro);
+        RegritroCategorias(valorfiltro, categoria);
     }else{
         RegritroCategorias();
     }

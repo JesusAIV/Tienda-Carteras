@@ -12,6 +12,7 @@
             <img src="./img/jpg/banner-carteras.jpg" alt="banner-carteras" class="banner__img">
         </div> -->
 
+        <input type="hidden" name="categoria" value="<?php echo $categoria; ?>" id="categoria">
         <div class="content__carteras">
             <div class="caja1">
                 <h2 class="caja1__title">CARTERAS</h2>
