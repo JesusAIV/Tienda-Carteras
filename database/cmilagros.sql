@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-11-2022 a las 01:09:38
+-- Tiempo de generación: 28-11-2022 a las 23:28:00
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -20,6 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `cmilagros`
 --
+
 CREATE DATABASE IF NOT EXISTS `cmilagros` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `cmilagros`;
 
@@ -74,7 +75,7 @@ ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 ON (tbp.idcolor = tbcol.idcolor)
 WHERE tbp.producto = nomproducto$$
 
-CREATE PROCEDURE `EditarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT, IN `imagen` VARCHAR(200), IN `idproducto` INT)   BEGIN
+CREATE PROCEDURE `EditarProducto` (IN `producto` VARCHAR(50), IN `precio` DOUBLE, IN `descripcion` VARCHAR(150), IN `idcolor` INT, IN `idcategoria` INT, IN `stock` INT, IN `imagen` VARCHAR(200), IN `idproducto` INT(20))   BEGIN
 SET FOREIGN_KEY_CHECKS=0;
 UPDATE 
 	producto 
@@ -87,7 +88,7 @@ SET
     `idcolor` = idcolor,
     `imagen` = imagen
 WHERE 
-	`idproducto` = idproducto;
+	`producto`.`idproducto` = idproducto;
 END$$
 
 CREATE PROCEDURE `FiltradoPrecios` (IN `orden` VARCHAR(20), IN `categoria` VARCHAR(30), IN `inicio` INT, IN `registros` INT)   IF orden = 'preciobajo' THEN
@@ -245,14 +246,8 @@ CREATE TABLE `producto` (
 --
 
 INSERT INTO `producto` (`idproducto`, `idcategoria`, `idcolor`, `producto`, `descripcion`, `stock`, `precio`, `imagen`) VALUES
-(42, 1, 3, 'Campana', 'Cartera exclusiva para usarlo en toda ocasión', 50, 12.5, 'img/productos/carteras/campana01.jpg-1669211932.jpeg'),
-(43, 1, 1, 'Bandolera', 'Buen espacio para guardar y mantener seguro tus objetos', 50, 19.5, 'img/productos/carteras/bandolera.webp-1669219807.webp'),
-(44, 1, 4, 'Nicoletta', 'Interior: 3 compartimientos, 2 bolsillos abiertos, 1 bolsillo con cierre.', 50, 188.1, 'img/productos/carteras/1494-2067916.jpg-1669525056.jpeg'),
-(45, 1, 1, 'Brianna', 'Interior: 1 compartimientos, 3 bolsillos abiertos, 1 bolsillo con cierre.', 40, 179.1, 'img/productos/carteras/1404-2066488.jpg-1669525105.jpeg'),
-(46, 1, 2, 'Annalisa', 'Interior: 3 compartimientos, 1 bolsillo abierto, 1 bolsillo con cierre. • Exterior: 1 bolsillo posterior.', 80, 206.1, 'img/productos/carteras/1399-2066465.jpg-1669525150.jpeg'),
-(47, 2, 14, 'Gabriela', 'Interior: 1 bolsill interno', 40, 125.1, 'img/productos/morrales/0678-2068094.jpg-1669525425.jpeg'),
-(48, 2, 5, 'Amaia', 'Interior: 1 bolsill interno', 70, 98.1, 'img/productos/morrales/3577-2068168.jpg-1669525467.jpeg'),
-(49, 2, 4, 'Dania', 'Morral con asa regulable', 70, 143.1, 'img/productos/morrales/3627-2068098.jpg-1669525523.jpeg');
+(51, 1, 2, 'Satchel', 'Villas, una colección que reúne las piezas necesarias para tener los básicos siempre a la mano. ', 50, 219.85, 'img/productos/carteras/19336908_1.jpeg-1669673859.jpeg'),
+(52, 1, 1, 'Amphora', 'Es una cartera grande tipo bolso donde entra perfecto cualquier laptop, el material es suave y el color es negro brilloso super elegante.', 50, 99, 'img/productos/carteras/19330826_1 (1).jpeg-1669669640.jpeg');
 
 -- --------------------------------------------------------
 
@@ -354,7 +349,7 @@ ALTER TABLE `colores`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `idproducto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `idproducto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT de la tabla `rol`
