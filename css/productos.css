@@ -175,6 +175,8 @@ ul.paginacion-ul {
 .paginacion-ul>li>a{
     color: #000000;
 }
-.paginacion-ul>li.paginacion-li-active{
-    background-color: rgb(32, 185, 27);
+.paginacion-ul>li.paginacion-li-active,
+.paginacion-ul>li.paginacion-li-active a{
+    background-color: rgb(4, 77, 185);
+    color: #FFFFFF;
 }
