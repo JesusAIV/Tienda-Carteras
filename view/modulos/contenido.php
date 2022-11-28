@@ -1,7 +1,7 @@
 <div>
     <div class="menu-lateral" id="menu-lateral">
         <div class="logo">
-            <img class="logo-img--header" src="<?php echo SERVERURL?>img/png/bolso.png" alt="Logo">
+            <!-- <img class="logo-img--header" src="<?php echo SERVERURL?>img/png/bolso.png" alt="Logo"> -->
             <a class="logo-enlace" href="<?php echo SERVERURL ?>inicio">Confecciones Milagros</a>
         </div>
         <div class="bienvenida-inventario">

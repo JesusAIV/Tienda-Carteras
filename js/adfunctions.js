@@ -33,6 +33,13 @@ function listarproductos() {
     });
 }
 function modalNew() {
+    $("#update-producto").click(function () {
+        $("#productoupdate").show();
+    });
+    $(".modal-registro-nuevo-close").click(function () {
+        $("#productoupdate").hide();
+    });
+    
     $("#new-producto").click(function () {
         $("#productonuevo").show();
     });
@@ -53,6 +60,7 @@ function modalNew() {
     $(".modal-registro-nuevo-close").click(function () {
         $("#categorianew").hide();
     });
+
 }
 function crudProducto() {
     $('.ProductosAjax').submit(function (e) {

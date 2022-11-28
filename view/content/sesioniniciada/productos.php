@@ -67,4 +67,5 @@
     include "modals/newproducto.php";
     include "modals/newcolor.php";
     include "modals/newcategoria.php";
+    include "modals/updateproducto.php";
 ?>
