@@ -337,13 +337,17 @@
             $consulta = $conexion->query($consulta);
             $consulta = $consulta->fetch_all(MYSQLI_ASSOC);
 
-            $total = 10;
+            mysqli_next_result($conexion);
+
+            $total = "SELECT FOUND_ROWS()";
+            $total = $conexion->query($total);
+            $total = (int) $total->fetch_column();
 
             $Npaginas = ceil($total/$registros);
 
             $resultado = "";
 
-            $resultado .= '<div class="container__products" id="container__products">';
+            $resultado .= '<div id="container__products"><div class="container__products">';
             if($total>=1 && $pagina<=$Npaginas){
                 foreach ($consulta as $key) {
                     $resultado .= '
@@ -370,20 +374,56 @@
             $resultado .= '</div>';
 
             if($total>=1 && $pagina<=$Npaginas){
-                $resultado .= '<div><ul>';
+                $resultado .= '<nav class="paginacion-productos"><ul class="paginacion-ul">';
 
                 if ($pagina==1){
-                    $resultado .='<li>
-                                    <a>
+                    $resultado .='
+                                <li class="paginacion-li-disabled">
+                                    <a class="paginacion-a">
                                         <i class="fa-solid fa-circle-chevron-left"></i>
                                     </a>
                                 </li>';
                 }else{
-                    $resultado .= '<li></li>';
+                    $resultado .= '
+                                <li class="paginacion-li">
+                                    <a class="paginacion-a" href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.($pagina-1).'">
+                                        <i class="fa-solid fa-circle-chevron-left"></i>
+                                    </a>
+                                </li>';
                 }
 
+                for ($i=1; $i <= $Npaginas; $i++) {
+                    if ($pagina == $i) {
+                    $resultado .= '
+                                <li class="paginacion-li-active">
+                                    <a href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.$i.'/">'.$i.'</a>
+                                </li>
+                                    ';
+                    }else{
+                    $resultado .= '
+                                <li class="paginacion-li">
+                                    <a href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.$i.'/">'.$i.'</a>
+                                </li>
+                                    ';
+                    }
+                }
 
-                $resultado .= '</div></ul>';
+                if ($pagina==$Npaginas){
+                    $resultado .='
+                                <li class="paginacion-li-disabled">
+                                    <a>
+                                        <i class="fa-solid fa-circle-chevron-right"></i>
+                                    </a>
+                                </li>';
+                }else{
+                    $resultado .= '
+                                <li class="paginacion-li">
+                                    <a href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.($pagina+1).'">
+                                        <i class="fa-solid fa-circle-chevron-right"></i>
+                                    </a>
+                                </li>';
+                }
+                $resultado .= '</ul></nav></div>';
             }
             return $resultado;
         }
