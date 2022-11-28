@@ -81,7 +81,7 @@ function crudProducto() {
             textoAlerta = "Los datos que enviaras quedaran almacenados en el sistema";
         } else if (tipo == "delete") {
             textoAlerta = "Los datos serán eliminados completamente del sistema";
-        } else if (tipo === "update") {
+        } else if (tipo === "up-producto") {
             textoAlerta = "Los datos del sistema serán actualizados";
         } else if (tipo === "generate") {
             textoAlerta = "Se va a generar un nuevo usuario";
@@ -113,7 +113,6 @@ function crudProducto() {
                     processData: false,
                     success: function (data) {
                         respuesta.html(data);
-                        form[0].reset();
                     },
                     error: function () {
                         respuesta.html(msjError);

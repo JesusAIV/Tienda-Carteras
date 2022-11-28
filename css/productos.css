@@ -109,6 +109,9 @@
     margin: 1em 0;
     width: 100%;
 }
+input#uppimagen {
+    display: none;
+}
 .campos-new-produc{
     display: grid;
     gap: 2em;

@@ -427,4 +427,87 @@
             }
             return $resultado;
         }
+        public function actualizarProductoC(){
+            $idproducto = $_POST['uppid'];
+            $idcategoria = $_POST['uppcategoria'];
+            $idcolor = $_POST['uppcolor'];
+            $producto = $_POST['uppname'];
+            $descripcion = $_POST['uppdescripcion'];
+            $stock = $_POST['uppstock'];
+            $precio = $_POST['uppprecio'];
+
+            $conexion = Conexion::conectar();
+
+            $sqlcat = "SELECT * FROM categoria WHERE idcategoria = '$idcategoria'";
+            $consultacat = $conexion->query($sqlcat);
+            $consultacat = $consultacat->fetch_all(MYSQLI_ASSOC);
+
+            $sqlprod = "SELECT * FROM producto WHERE idproducto = '$idproducto'";
+            $consultaprod = $conexion->query($sqlprod);
+            $consultaprod = $consultaprod->fetch_all(MYSQLI_ASSOC);
+
+            foreach ($consultacat as $key){}
+            foreach ($consultaprod as $keyp){}
+
+            if($_FILES['uppimagen']['name']){
+                $dir = "../img/productos/".$key['categoria']."/";
+                $nombreArchivo = $_FILES['uppimagen']['name'];
+                $tipo = $_FILES['uppimagen']['type'];
+                $tipo = strtolower($tipo);
+                $extension = substr($tipo,strpos($tipo,'/')+1);
+                $name = $nombreArchivo.'-'.time().'.'.$extension;
+
+                if(!is_dir($dir)){
+                    mkdir($dir, 0777, true);
+                }
+
+                move_uploaded_file($_FILES['uppimagen']['tmp_name'], $dir.$name);
+
+                $directorio = $dir.$name;
+
+                $imagen = substr($directorio, 3);
+            }else{
+                $imagen = $keyp['imagen'];
+            }
+
+            $datosP = [
+                "idproducto" => $idproducto,
+                "idcategoria" => $idcategoria,
+                "idcolor" => $idcolor,
+                "producto" => $producto,
+                "descripcion" => $descripcion,
+                "stock" => $stock,
+                "precio" => $precio,
+                "imagen" => $imagen
+            ];
+
+            // Ejecuta la función agregarPersonal obteniendo el array de datos
+            $addProducto = adminModel::actualizarProducto($datosP);
+
+            if ($addProducto >= 1) { /* Si la consulta se ejecuta correctamente */
+                // Dará una alerta de éxito
+                $alerta = [
+                    "Alerta" => "simple",
+                    "Titulo" => "Producto actualizado",
+                    "Texto" => "El producto se actualizó correctamente en el sistema",
+                    "Tipo" => "success"
+                ];
+                echo '
+                    <script>
+                        $( function() {
+                            $("#table-productos").DataTable().ajax.reload();
+                        });
+                    </script>';
+            } else {
+                // Dará una alerta de error
+                $alerta = [
+                    "Alerta" => "simple",
+                    "Titulo" => "Ocurrio un error inesperado",
+                    "Texto" => "No hemos podido actualizar el producto",
+                    "Tipo" => "error"
+                ];
+            }
+
+            return mainModel::sweet_alert($alerta);
+        }
     }

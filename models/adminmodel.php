@@ -70,4 +70,22 @@
 
             return $result;
         }
+        protected function actualizarProducto($datos){
+            $conexion = Conexion::conectar();
+
+            $idproducto=$datos['idproducto'];
+            $idcategoria=$datos['idcategoria'];
+            $idcolor=$datos['idcolor'];
+            $producto=$datos['producto'];
+            $descripcion=$datos['descripcion'];
+            $stock=$datos['stock'];
+            $precio=$datos['precio'];
+            $imagen=$datos['imagen'];
+
+            $sql = "CALL EditarProducto('$producto', $precio, '$descripcion', $idcolor, $idcategoria, $stock, '$imagen', $idproducto)";
+
+            $result = $conexion->query($sql);
+
+            return $result;
+        }
     }

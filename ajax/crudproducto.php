@@ -5,7 +5,7 @@
     require_once "../controller/admincontroller.php";
     $opciones = new adminController();
 
-    if (isset($_POST['addpname']) || isset($_POST['addpimagencolorhex']) || isset($_POST['addpnamecategoria'])){
+    if (isset($_POST['addpname']) || isset($_POST['addpimagencolorhex']) || isset($_POST['addpnamecategoria']) || isset($_POST['uppid'])){
 
         if (isset($_POST['addpname'])) {
             echo $opciones->agregarProductoC();
@@ -19,8 +19,8 @@
             echo $opciones->agregarCategoriaC();
         }
 
-        if (isset($_POST['uppname'])) {
-            echo $opciones->agregarProductoC();
+        if (isset($_POST['uppid'])) {
+            echo $opciones->actualizarProductoC();
         }
 
     }
