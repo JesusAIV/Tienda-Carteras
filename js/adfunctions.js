@@ -212,7 +212,7 @@ function previsualizarImagen() {
 
 function RegritroCategorias(filtro, categoria, npagina){
     $.ajax({
-        url: 'http://localhost:8085/Tienda-Carteras/ajax/productos.php',
+        url: '../ajax/productos.php',
         type: 'POST',
         dataType: 'html',
         data: { filtro : filtro, action : 'filtrocategoria', dcategoria: categoria, numpagina: npagina},
