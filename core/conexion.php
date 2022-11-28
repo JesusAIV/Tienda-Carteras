@@ -1,4 +1,5 @@
 <?php
+
 class Conexion{
     // Función protegida para la Conexion
     public static function conectar(){
@@ -12,6 +13,7 @@ class Conexion{
         return $conexion;
     }
 }
+
 /*
 //Conexion Hosting
 class Conexion{

@@ -4,7 +4,6 @@ $(document).ready(function () {
     crudProducto();
     validarPrecio();
     previsualizarImagen();
-    // obtenerColorImagen();
 });
 
 function listarproductos() {
