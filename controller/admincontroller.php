@@ -36,7 +36,7 @@
                     "categoria" => $row['categoria'],
                     "color" => $row['color'],
                     "imagen" => '<img class="image-table-product" src="'.$directorio.'">',
-                    "editar" => '<button class="mostrar-producto" id="update-producto">
+                    "editar" => '<button class="mostrar-producto" data-bs-toggle="modal" data-bs-target="#productoupdate">
                                     <img src="'.SERVERURL.'img/svg/eyes.svg">
                                 </button>',
                     "estado" => $estadoproduc

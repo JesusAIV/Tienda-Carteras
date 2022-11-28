@@ -12,7 +12,7 @@ editaModal.addEventListener('shown.bs.modal', event => {
     let inputTelefono = editaModal.querySelector('.modal-body #telefonoup')
     let inputDni = editaModal.querySelector('.modal-body #dniup')
 
-    let url = "http://localhost:8085/jhardsystex/ajax/modal.php"
+    let url = "./ajax/modal.php"
     let formData = new FormData()
     formData.append('id', id)
 

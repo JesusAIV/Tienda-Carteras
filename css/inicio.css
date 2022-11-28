@@ -93,8 +93,8 @@
 
 /* Fading animation */
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+    /* animation-name: fade; */
+    /* animation-duration: 1.5s; */
 }
 
 @keyframes fade {
@@ -369,9 +369,9 @@
     }
 
     .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-        width: 100%;
+        /* animation-name: fade; */
+        /* animation-duration: 1.5s; */
+        /* width: 100%; */
     }
 
     .numbertext {
@@ -576,9 +576,9 @@
     }
 
     .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-        width: 100%;
+        /* animation-name: fade; */
+        /* animation-duration: 1.5s; */
+        /* width: 100%; */
     }
 
     .numbertext {
@@ -787,9 +787,9 @@
     }
 
     .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-        width: 100%;
+        /* animation-name: fade; */
+        /* animation-duration: 1.5s; */
+        /* width: 100%; */
     }
 
     .numbertext {
@@ -990,9 +990,9 @@
     }
 
     .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-        width: 100%;
+        /* animation-name: fade; */
+        /* animation-duration: 1.5s; */
+        /* width: 100%; */
     }
 
     .numbertext {
@@ -1198,9 +1198,9 @@
     }
 
     .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-        width: 100%;
+        /* animation-name: fade; */
+        /* animation-duration: 1.5s; */
+        /* width: 100%; */
     }
 
     .numbertext {
@@ -1388,9 +1388,9 @@
     }
 
     .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-        width: 100%;
+        /* animation-name: fade; */
+        /* animation-duration: 1.5s; */
+        /* width: 100%; */
     }
 
     .numbertext {
@@ -1590,9 +1590,9 @@
     }
 
     .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-        width: 100%;
+        /* animation-name: fade; */
+        /* animation-duration: 1.5s; */
+        /* width: 100%; */
     }
 
     .numbertext {
@@ -1775,9 +1775,9 @@
     }
 
     .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-        width: 100%;
+        /* animation-name: fade; */
+        /* animation-duration: 1.5s; */
+        /* width: 100%; */
     }
 
     .numbertext {
@@ -1940,12 +1940,6 @@
         max-width: 900px;
         position: relative;
         margin: auto;
-        width: 100%;
-    }
-
-    .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
         width: 100%;
     }
 
