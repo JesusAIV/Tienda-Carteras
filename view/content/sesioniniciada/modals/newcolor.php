@@ -21,7 +21,7 @@
                         </label>
                         <label for="addpimagencolorinput" class="addpimagencolor">Seleccionar imagen</label>
                         <input type="file" id="addpimagencolorinput" class="addpimagencolor" name="addpimagencolor">
-                        <img src="" alt="imagen de color" id="addpimagencolor" data-adaptive-background >
+                        <img src="" alt="imagen de color" id="addpimagencolor" data-adaptive-background style="display: none;">
                     </div>
                     <p class="text-center">Seleccione una imagen del que desea obtener el color</p>
                     <div class="labelincolor">

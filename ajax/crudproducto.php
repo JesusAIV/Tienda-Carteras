@@ -19,4 +19,8 @@
             echo $opciones->agregarCategoriaC();
         }
 
+        if (isset($_POST['uppname'])) {
+            echo $opciones->agregarProductoC();
+        }
+
     }
