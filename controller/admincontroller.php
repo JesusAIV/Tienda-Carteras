@@ -326,34 +326,104 @@
 
             return mainModel::sweet_alert($alerta);
         }
-        public function filtradoCategoria($filtro, $nombrecategoria){
+        public function filtradoCategoria($filtro, $nombrecategoria, $pagina, $registros){
 
             $conexion = Conexion::conectar();
-            $sql = "CALL FiltradoPrecios('$filtro', '$nombrecategoria')";
-            $consulta = $conexion->query($sql);
+
+            $pagina = (isset($pagina) && $pagina > 0) ? (int) $pagina : 1;
+            $inicio = ($pagina > 0) ? (($pagina * $registros) - $registros) : 0;
+
+            $consulta = "CALL FiltradoPrecios('$filtro', '$nombrecategoria', $inicio, $registros)";
+            $consulta = $conexion->query($consulta);
             $consulta = $consulta->fetch_all(MYSQLI_ASSOC);
+
+            mysqli_next_result($conexion);
+
+            $total = "SELECT FOUND_ROWS()";
+            $total = $conexion->query($total);
+            $total = (int) $total->fetch_column();
+
+            $Npaginas = ceil($total/$registros);
 
             $resultado = "";
 
-            foreach ($consulta as $key) {
-                $resultado .= '
-                            <div class="card__product">
-                                <picture class="product">
-                                    <a href="'.SERVERURL.'productoDetalle/'.$key['producto'].'" class="product__item">
-                                        <img src="'.SERVERURL.$key['imagen'].'" alt="'.$key['producto'].'" class="product__show">
+            $resultado .= '<div id="container__products"><div class="container__products">';
+            if($total>=1 && $pagina<=$Npaginas){
+                foreach ($consulta as $key) {
+                    $resultado .= '
+                                <div class="card__product">
+                                    <picture class="product">
+                                        <a href="'.SERVERURL.'productoDetalle/'.$key['producto'].'" class="product__item">
+                                            <img src="'.SERVERURL.$key['imagen'].'" alt="'.$key['producto'].'" class="product__show">
+                                        </a>
+                                    </picture>
+                                    <h3 class="product__title">'.$key['producto'].'</h3>
+                                    <span class="product__price">S/'.$key['precio'].'</span>
+                                    <a href="'.SERVERURL.'productoDetalle/'.$key['producto'].'" class="product__ver button">
+                                    <span class="button__span"></span>
+                                    <span class="button__span"></span>
+                                    <span class="button__span"></span>
+                                    <span class="button__span"></span>
+                                    Ver producto
+                                </a>
+                            </div>
+                        ';
+                }
+            }
+
+            $resultado .= '</div>';
+
+            if($total>=1 && $pagina<=$Npaginas){
+                $resultado .= '<nav class="paginacion-productos"><ul class="paginacion-ul">';
+
+                if ($pagina==1){
+                    $resultado .='
+                                <li class="paginacion-li-disabled">
+                                    <a class="paginacion-a">
+                                        <i class="fa-solid fa-circle-chevron-left"></i>
                                     </a>
-                                </picture>
-                                <h3 class="product__title">'.$key['producto'].'</h3>
-                                <span class="product__price">S/'.$key['precio'].'</span>
-                                <a href="'.SERVERURL.'productoDetalle/'.$key['producto'].'" class="product__ver button">
-                                <span class="button__span"></span>
-                                <span class="button__span"></span>
-                                <span class="button__span"></span>
-                                <span class="button__span"></span>
-                                Ver producto
-                            </a>
-                        </div>
-                    ';
+                                </li>';
+                }else{
+                    $resultado .= '
+                                <li class="paginacion-li">
+                                    <a class="paginacion-a" id="paginar" href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.($pagina-1).'">
+                                        <i class="fa-solid fa-circle-chevron-left"></i>
+                                    </a>
+                                </li>';
+                }
+
+                for ($i=1; $i <= $Npaginas; $i++) {
+                    if ($pagina == $i) {
+                    $resultado .= '
+                                <li class="paginacion-li-active">
+                                    <a id="paginar" href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.$i.'">'.$i.'</a>
+                                </li>
+                                    ';
+                    }else{
+                    $resultado .= '
+                                <li class="paginacion-li">
+                                    <a id="paginar" href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.$i.'">'.$i.'</a>
+                                </li>
+                                    ';
+                    }
+                }
+
+                if ($pagina==$Npaginas){
+                    $resultado .='
+                                <li class="paginacion-li-disabled">
+                                    <a>
+                                        <i class="fa-solid fa-circle-chevron-right"></i>
+                                    </a>
+                                </li>';
+                }else{
+                    $resultado .= '
+                                <li class="paginacion-li">
+                                    <a id="paginar" href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.($pagina+1).'">
+                                        <i class="fa-solid fa-circle-chevron-right"></i>
+                                    </a>
+                                </li>';
+                }
+                $resultado .= '</ul></nav></div>';
             }
             return $resultado;
         }

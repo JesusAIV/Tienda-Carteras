@@ -152,3 +152,31 @@ input#averagecolor{
     width: 100%;
     text-align: center;
 }
+.paginacion-productos {
+    margin-top: 2em;
+    width: 100%;
+}
+ul.paginacion-ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.paginacion-ul>li{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #000000;
+    background-color: #fff;
+    border: 1px solid #4e4e4e;
+}
+.paginacion-ul>li>a{
+    color: #000000;
+}
+.paginacion-ul>li.paginacion-li-active,
+.paginacion-ul>li.paginacion-li-active a{
+    background-color: rgb(4, 77, 185);
+    color: #FFFFFF;
+}

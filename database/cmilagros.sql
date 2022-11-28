@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-11-2022 a las 06:13:55
+-- Tiempo de generación: 28-11-2022 a las 01:09:38
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -42,7 +42,8 @@ INSERT INTO producto
 (idcategoria, idcolor, producto, descripcion, stock, precio, imagen);
 END$$
 
-CREATE PROCEDURE `DatosCategoria` (IN `categoria` VARCHAR(50))   SELECT 
+CREATE PROCEDURE `DatosCategoria` (IN `categoria` VARCHAR(50), IN `inicio` INT, IN `registros` INT)   SELECT 
+SQL_CALC_FOUND_ROWS
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -56,7 +57,7 @@ JOIN categoria AS tbc
 ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 ON (tbp.idcolor = tbcol.idcolor)
 WHERE tbc.categoria = categoria
-ORDER BY tbp.producto ASC$$
+ORDER BY tbp.producto ASC LIMIT inicio, registros$$
 
 CREATE PROCEDURE `DatosProducto` (IN `nomproducto` VARCHAR(50))   SELECT 
 	tbp.idproducto,
@@ -89,8 +90,9 @@ WHERE
 	`idproducto` = idproducto;
 END$$
 
-CREATE PROCEDURE `FiltradoPrecios` (IN `orden` VARCHAR(20), IN `categoria` VARCHAR(30))   IF orden = 'preciobajo' THEN
-	SELECT 
+CREATE PROCEDURE `FiltradoPrecios` (IN `orden` VARCHAR(20), IN `categoria` VARCHAR(30), IN `inicio` INT, IN `registros` INT)   IF orden = 'preciobajo' THEN
+	SELECT
+    SQL_CALC_FOUND_ROWS
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -103,9 +105,10 @@ CREATE PROCEDURE `FiltradoPrecios` (IN `orden` VARCHAR(20), IN `categoria` VARCH
 	JOIN categoria AS tbc
 	ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 	ON (tbp.idcolor = tbcol.idcolor)
-	WHERE tbc.categoria = categoria ORDER BY tbp.precio ASC;
+	WHERE tbc.categoria = categoria ORDER BY tbp.precio ASC LIMIT inicio, registros;
 ELSEIF orden = 'precioalto' THEN
-	SELECT 
+	SELECT
+    SQL_CALC_FOUND_ROWS
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -118,9 +121,10 @@ ELSEIF orden = 'precioalto' THEN
 	JOIN categoria AS tbc
 	ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 	ON (tbp.idcolor = tbcol.idcolor)
-	WHERE tbc.categoria = categoria ORDER BY tbp.precio DESC;
+	WHERE tbc.categoria = categoria ORDER BY tbp.precio DESC LIMIT inicio, registros;
 ELSE
-	SELECT 
+	SELECT
+    SQL_CALC_FOUND_ROWS
 	tbp.idproducto,
 	tbp.producto, 
     tbp.precio,
@@ -133,7 +137,7 @@ ELSE
 	JOIN categoria AS tbc
 	ON (tbp.idcategoria = tbc.idcategoria) INNER JOIN colores AS tbcol
 	ON (tbp.idcolor = tbcol.idcolor)
-	WHERE tbc.categoria = categoria ORDER BY tbp.producto ASC;
+	WHERE tbc.categoria = categoria ORDER BY tbp.producto ASC LIMIT inicio, registros;
 END IF$$
 
 CREATE PROCEDURE `InformacionProducto` (IN `idproducto` INT)   SELECT 
