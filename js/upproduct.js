@@ -1,16 +1,17 @@
-let editaModal = document.getElementById('editaModal')
+let editaModal = document.getElementById('productoupdate')
 
 editaModal.addEventListener('shown.bs.modal', event => {
     let button = event.relatedTarget
     let id = button.getAttribute('data-bs-id')
 
-    let inputid = editaModal.querySelector('.modal-body input#id')
-    let inputNombre = editaModal.querySelector('.modal-body #nombreup')
-    let inputApellido = editaModal.querySelector('.modal-body #apellidoup')
-    let inputNaci = editaModal.querySelector('.modal-body #naciup')
-    let inputCorreo = editaModal.querySelector('.modal-body #correoup')
-    let inputTelefono = editaModal.querySelector('.modal-body #telefonoup')
-    let inputDni = editaModal.querySelector('.modal-body #dniup')
+    let inputid = editaModal.querySelector('.modal-body input#uppid')
+    let inputNombre = editaModal.querySelector('.modal-body #uppname')
+    let inputPrecio = editaModal.querySelector('.modal-body #uppprecio')
+    let inputDescripcion = editaModal.querySelector('.modal-body #uppdescripcion')
+    let inputColor = editaModal.querySelector('.modal-body #uppcolor')
+    let inputCategoria = editaModal.querySelector('.modal-body #uppcategoria')
+    let inputSctock = editaModal.querySelector('.modal-body #uppstock')
+    let inputImagen = editaModal.querySelector('.modal-body #uppimagensrc')
 
     let url = "./ajax/modal.php"
     let formData = new FormData()
@@ -21,13 +22,14 @@ editaModal.addEventListener('shown.bs.modal', event => {
         body: formData
     }).then(response => response.json())
     .then(data => {
-        inputid.value = data.id
-        inputNombre.value = data.nombre
-        inputApellido.value = data.apellido
-        inputNaci.value = data.nacimiento
-        inputCorreo.value = data.correo
-        inputTelefono.value = data.telefono
-        inputDni.value = data.dni
+        inputid.value = data.idproducto
+        inputNombre.value = data.producto
+        inputPrecio.value = data.precio
+        inputDescripcion.value = data.descripcion
+        inputColor.value = data.idcolor
+        inputCategoria.value = data.idcategoria
+        inputSctock.value = data.stock
+        inputImagen.src = './' + data.imagen
     }).catch( err => console.log(err))
 
 })

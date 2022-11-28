@@ -1,25 +1,24 @@
 <?php
-    $host = "127.0.0.1";
-    $username = "root";
-    $pass = "";
-    $database = "jhardsystex";
-    $conexion = mysqli_connect($host,$username,$pass,$database);
+    require_once "../core/conexion.php";
+
+    $conexion = Conexion::conectar();
 
     $id = $_POST['id'];
 
-    $sql = "CALL ListarParticipanteDatos('$id')";
+    $sql = "SELECT * FROM producto WHERE idproducto=$id";
     $result = $conexion->query($sql);
     $result = $result->fetch_all(MYSQLI_ASSOC);
 
     foreach ($result as $row) {}
     $datosP = [
-        "id" => $row['JHARID'],
-        "nombre" => $row['Nomb'],
-        "apellido" => $row['Apell'],
-        "nacimiento" => $row['Fec_nac'],
-        "correo" => $row['Corr'],
-        "telefono" => $row['Cel'],
-        "dni" => $row['DNI']
+        "idproducto" => $row['idproducto'],
+        "idcategoria" => $row['idcategoria'],
+        "idcolor" => $row['idcolor'],
+        "producto" => $row['producto'],
+        "descripcion" => $row['descripcion'],
+        "stock" => $row['stock'],
+        "precio" => $row['precio'],
+        "imagen" => $row['imagen']
     ];
 
     echo json_encode($datosP, JSON_UNESCAPED_UNICODE);

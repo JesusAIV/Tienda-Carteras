@@ -10,24 +10,25 @@
                         <img class="" data-bs-dismiss="modal" style="cursor: pointer;" src="<?php echo SERVERURL?>img/svg/close.svg" alt="cerrar modal">
                     </div>
                 </div>
-                <form action="./ajax/crudproducto.php" method="POST" class="ProductosAjax" data-form="add-producto" autocomplete="off" enctype="multipart/form-data">
+                <form action="./ajax/crudproducto.php" method="POST" class="ProductosAjax" data-form="up-producto" autocomplete="off" enctype="multipart/form-data">
+                    <input type="hidden" name="uppid" id="uppid">
                     <div class="form-new-produc">
                         <div class="form-new-produc-data">
                             <div class="campos-new-produc">
-                                <label for="addpname">Nombre</label>
-                                <input type="text" id="addpname" class="addpname" name="addpname">
+                                <label for="uppname">Nombre</label>
+                                <input type="text" id="uppname" class="uppname" name="uppname">
                             </div>
                             <div class="campos-new-produc">
-                                <label for="addpprecio">Precio</label>
-                                <input type="text" id="addpprecio" class="addpprecio" name="addpprecio" pattern="^\d*(\.\d{0,2})?$">
+                                <label for="uppprecio">Precio</label>
+                                <input type="text" id="uppprecio" class="uppprecio" name="uppprecio" pattern="^\d*(\.\d{0,2})?$">
                             </div>
                             <div class="campos-new-produc">
-                                <label for="addpdescripcion">Descripcion</label>
-                                <input type="text" id="addpdescripcion" class="addpdescripcion" name="addpdescripcion">
+                                <label for="uppdescripcion">Descripcion</label>
+                                <textarea type="text" id="uppdescripcion" class="uppdescripcion" name="uppdescripcion"></textarea>
                             </div>
                             <div class="campos-new-produc">
-                                <label for="addpcolor">Color</label>
-                                <select id="addpcolor" class="addpcolor" name="addpcolor">
+                                <label for="uppcolor">Color</label>
+                                <select id="uppcolor" class="uppcolor" name="uppcolor">
                                     <?php
                                         $centros =  $Admin->ListarColores();
                                         foreach ($centros as $key) {
@@ -39,8 +40,8 @@
                                 </select>
                             </div>
                             <div class="campos-new-produc">
-                                <label for="addpcategoria">Categoria</label>
-                                <select id="addpcategoria" class="addpcategoria" name="addpcategoria">
+                                <label for="uppcategoria">Categoria</label>
+                                <select id="uppcategoria" class="uppcategoria" name="uppcategoria">
                                     <?php
                                         $centros =  $Admin->ListarCategorias();
                                         foreach ($centros as $key) {
@@ -52,13 +53,16 @@
                                 </select>
                             </div>
                             <div class="campos-new-produc">
-                                <label for="addpstock">Stock</label>
-                                <input type="number" min="0" id="addpstock" class="addpstock" name="addpstock">
+                                <label for="uppstock">Stock</label>
+                                <input type="number" min="0" id="uppstock" class="uppstock" name="uppstock">
                             </div>
                             <div class="campos-new-produc">
-                                <label for="addpimagen01">Imagen</label>
-                                <label for="addpimagen" class="addpimagen">Seleccionar imagen</label>
-                                <input type="file" min="0" id="addpimagen" class="addpimagen" name="addpimagen">
+                                <img src="" alt="" id="uppimagensrc" width="200px">
+                            </div>
+                            <div class="campos-new-produc">
+                                <label for="uppimagen01">Imagen</label>
+                                <label for="uppimagen" class="uppimagen">Seleccionar imagen</label>
+                                <input type="file" min="0" id="uppimagen" class="uppimagen" name="uppimagen">
                             </div>
                         </div>
                     </div>
