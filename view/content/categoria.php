@@ -6,6 +6,13 @@
     $pagina = explode("/", $_GET['views']);
 
     $categoria = $pagina[1];
+
+    if(empty($pagina[2])){
+        $npagina = 1;
+    }else{
+        $npagina = $pagina[2];
+    }
+
 ?>
 <div class="principal">
         <!-- <div class="banner">
@@ -13,6 +20,7 @@
         </div> -->
 
         <input type="hidden" name="categoria" value="<?php echo $categoria; ?>" id="categoria">
+        <input type="hidden" name="npagina" value="<?php echo $npagina; ?>" id="npagina">
         <div class="content__carteras">
             <div class="caja1">
                 <h2 class="caja1__title">CARTERAS</h2>
@@ -71,32 +79,9 @@
                         </form>
                     </div>
                 </div>
-
-                <div class="container__products" id="container__products">
-                    <?php
-                        $centros =  $Admin->DatosCategoria($categoria);
-                        foreach ($centros as $key) {
-                        ?>
-                        <div class="card__product">
-                            <picture class="product">
-                                <a href="<?php echo SERVERURL ?>productoDetalle/<?php echo $key['producto']?>" class="product__item">
-                                    <img src="<?php echo SERVERURL.$key['imagen'] ?>" alt="<?php echo $key['producto']?>" class="product__show">
-                                </a>
-                            </picture>
-                            <h3 class="product__title"><?php echo $key['producto']?></h3>
-                            <span class="product__price"><?php echo 'S/'.$key['precio']?></span>
-                            <a href="<?php echo SERVERURL ?>productoDetalle/<?php echo $key['producto']?>" class="product__ver button">
-                                <span class="button__span"></span>
-                                <span class="button__span"></span>
-                                <span class="button__span"></span>
-                                <span class="button__span"></span>
-                                Ver producto
-                            </a>
-                        </div>
-                        <?php
-                        }
-                    ?>
-                </div>
+                <?php
+                    echo $centros = $Admin->filtradoCategoria("",$categoria, $npagina, 6);
+                ?>
             </div>
         </div>
     </div>

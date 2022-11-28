@@ -326,34 +326,64 @@
 
             return mainModel::sweet_alert($alerta);
         }
-        public function filtradoCategoria($filtro, $nombrecategoria){
+        public function filtradoCategoria($filtro, $nombrecategoria, $pagina, $registros){
 
             $conexion = Conexion::conectar();
-            $sql = "CALL FiltradoPrecios('$filtro', '$nombrecategoria')";
-            $consulta = $conexion->query($sql);
+
+            $pagina = (isset($pagina) && $pagina > 0) ? (int) $pagina : 1;
+            $inicio = ($pagina > 0) ? (($pagina * $registros) - $registros) : 0;
+
+            $consulta = "CALL FiltradoPrecios('$filtro', '$nombrecategoria', $inicio, $registros)";
+            $consulta = $conexion->query($consulta);
             $consulta = $consulta->fetch_all(MYSQLI_ASSOC);
+
+            $total = 10;
+
+            $Npaginas = ceil($total/$registros);
 
             $resultado = "";
 
-            foreach ($consulta as $key) {
-                $resultado .= '
-                            <div class="card__product">
-                                <picture class="product">
-                                    <a href="'.SERVERURL.'productoDetalle/'.$key['producto'].'" class="product__item">
-                                        <img src="'.SERVERURL.$key['imagen'].'" alt="'.$key['producto'].'" class="product__show">
+            $resultado .= '<div class="container__products" id="container__products">';
+            if($total>=1 && $pagina<=$Npaginas){
+                foreach ($consulta as $key) {
+                    $resultado .= '
+                                <div class="card__product">
+                                    <picture class="product">
+                                        <a href="'.SERVERURL.'productoDetalle/'.$key['producto'].'" class="product__item">
+                                            <img src="'.SERVERURL.$key['imagen'].'" alt="'.$key['producto'].'" class="product__show">
+                                        </a>
+                                    </picture>
+                                    <h3 class="product__title">'.$key['producto'].'</h3>
+                                    <span class="product__price">S/'.$key['precio'].'</span>
+                                    <a href="'.SERVERURL.'productoDetalle/'.$key['producto'].'" class="product__ver button">
+                                    <span class="button__span"></span>
+                                    <span class="button__span"></span>
+                                    <span class="button__span"></span>
+                                    <span class="button__span"></span>
+                                    Ver producto
+                                </a>
+                            </div>
+                        ';
+                }
+            }
+
+            $resultado .= '</div>';
+
+            if($total>=1 && $pagina<=$Npaginas){
+                $resultado .= '<div><ul>';
+
+                if ($pagina==1){
+                    $resultado .='<li>
+                                    <a>
+                                        <i class="fa-solid fa-circle-chevron-left"></i>
                                     </a>
-                                </picture>
-                                <h3 class="product__title">'.$key['producto'].'</h3>
-                                <span class="product__price">S/'.$key['precio'].'</span>
-                                <a href="'.SERVERURL.'productoDetalle/'.$key['producto'].'" class="product__ver button">
-                                <span class="button__span"></span>
-                                <span class="button__span"></span>
-                                <span class="button__span"></span>
-                                <span class="button__span"></span>
-                                Ver producto
-                            </a>
-                        </div>
-                    ';
+                                </li>';
+                }else{
+                    $resultado .= '<li></li>';
+                }
+
+
+                $resultado .= '</div></ul>';
             }
             return $resultado;
         }
