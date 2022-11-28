@@ -10,5 +10,5 @@
     }
 
     if ($_POST['action'] == 'filtrocategoria') {
-        echo $opciones->filtradoCategoria($_POST['filtro'], $_POST['dcategoria'], $_POST['numpagina'], 2);
+        echo $opciones->filtradoCategoria($_POST['filtro'], $_POST['dcategoria'], $_POST['numpagina'], 6);
     }

@@ -386,7 +386,7 @@
                 }else{
                     $resultado .= '
                                 <li class="paginacion-li">
-                                    <a class="paginacion-a" href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.($pagina-1).'">
+                                    <a class="paginacion-a" id="paginar" href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.($pagina-1).'">
                                         <i class="fa-solid fa-circle-chevron-left"></i>
                                     </a>
                                 </li>';
@@ -396,13 +396,13 @@
                     if ($pagina == $i) {
                     $resultado .= '
                                 <li class="paginacion-li-active">
-                                    <a href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.$i.'/">'.$i.'</a>
+                                    <a id="paginar" href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.$i.'">'.$i.'</a>
                                 </li>
                                     ';
                     }else{
                     $resultado .= '
                                 <li class="paginacion-li">
-                                    <a href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.$i.'/">'.$i.'</a>
+                                    <a id="paginar" href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.$i.'">'.$i.'</a>
                                 </li>
                                     ';
                     }
@@ -418,7 +418,7 @@
                 }else{
                     $resultado .= '
                                 <li class="paginacion-li">
-                                    <a href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.($pagina+1).'">
+                                    <a id="paginar" href="'.SERVERURL.'categoria/'.$nombrecategoria.'/'.($pagina+1).'">
                                         <i class="fa-solid fa-circle-chevron-right"></i>
                                     </a>
                                 </li>';

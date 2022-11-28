@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 <?php
-                    echo $centros = $Admin->filtradoCategoria("",$categoria, $npagina, 2);
+                    echo $centros = $Admin->filtradoCategoria("",$categoria, $npagina, 6);
                 ?>
             </div>
         </div>
