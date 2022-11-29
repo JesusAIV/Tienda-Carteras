@@ -113,6 +113,7 @@ function crudProducto() {
                     processData: false,
                     success: function (data) {
                         respuesta.html(data);
+                        form[0].reset();
                     },
                     error: function () {
                         respuesta.html(msjError);
