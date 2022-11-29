@@ -472,7 +472,7 @@
             "caja2 caja2";
         padding: 6em 0 3em;
         margin: 0;
-        width: auto;
+        /* width: auto; */
     }
 
     .carteras__menu {
@@ -1756,9 +1756,10 @@
     }
     .caja2 {
     grid-area: caja2;
-    grid-column: 1/4;
+    grid-column: 2/4;
     padding: 1em 2em;
-    /* width: 100%; */
+    width: 100%;
+    max-width: 100%;
 }
 
     .menu__caja1--show{
@@ -1974,8 +1975,8 @@
         padding: 2em 1em 3em;
         display: grid;
         grid-template-areas:
-            "caja1 caja2 caja2"
-            "caja1 caja2 caja2";
+            "caja1 caja2"
+            "caja1 caja2";
     }
     .carteras__menu {
     grid-area: menu;
