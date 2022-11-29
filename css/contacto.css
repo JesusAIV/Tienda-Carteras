@@ -1044,7 +1044,7 @@
 
 @media (min-width: 960px) {
     .main {
-        margin: 14em 0 0 0;
+        margin: 1em 0 0 0;
     }
 
     .main__contacto {
@@ -1150,7 +1150,7 @@
 
 @media (min-width: 1024px) {
     .main {
-        margin: 14em 0 0 0;
+        margin: 7em 0 0 0;
     }
 
     .main__contacto {
@@ -1231,7 +1231,7 @@
 
 @media (min-width: 1336px) {
     .main {
-        margin: 14em 0 0 0;
+        margin: 15em 0 0 0;
     }
 
     .main__contacto {
