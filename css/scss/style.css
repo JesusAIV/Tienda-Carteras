@@ -54,12 +54,12 @@
     display: grid;
     grid-template-rows: auto auto;
     grid-template-areas:
-      "manu menu"
-      "caja2 caja2"
-      "caja2 caja2";
+    "manu menu"
+    "caja2 caja2"
+    "caja2 caja2";
   }
   .caja1, .caja2 {
-    grid-area: auto;
+    /* grid-area: auto; */
     width: 100%;
   }
   .categorias__links {
