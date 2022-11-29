@@ -45,6 +45,29 @@ $(document).ready(function () {
     });
 });
 
+$(function () {
+    $('#resultados').hide();
+    $("#buscarProducto").on("keyup", function () {
+        var buscar = $("#buscarProducto").val();
+
+        if(buscar != ""){
+            $('#resultados').show();
+            $.ajax({
+                type: "post",
+                url: "http://localhost:8085/Tienda-Carteras/ajax/search.php",
+                data: {
+                    key: buscar
+                },
+                success: function (respuesta) {
+                    $("#resultados").html(respuesta);
+                }
+            });
+        }else{
+            $('#resultados').hide();
+        }
+    })
+})
+
 window.onscroll = function () {
     var y = window.scrollY;
 

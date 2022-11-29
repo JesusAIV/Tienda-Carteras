@@ -98,8 +98,9 @@
                 <div class="search">
                     <input class="search-input" type="text" name="buscarProducto" id="buscarProducto" placeholder="Buscar producto">
                     <button class="search-boton">
-                        <img class="search-icon" src="<?php echo SERVERURL ?>img/svg/search.svg" alt="search" name="buscar" id="buscar">
+                        <img class="search-icon" src="<?php echo SERVERURL ?>img/svg/search.svg" alt="search" name="search" id="search">
                     </button>
+                    <div id="resultados"></div>
                 </div>
             </div>
         </nav>

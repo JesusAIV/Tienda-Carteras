@@ -270,6 +270,7 @@ header {
     margin: 0;
     justify-content: center;
     padding: 0 1em 0 0;
+    position: relative;
 }
 
 .search-input {
@@ -3664,4 +3665,26 @@ hr {
 }
 .navbar:first-child{
     border-bottom: 1px solid #000000;
+}
+div#resultados {
+    position: absolute;
+    top: 3em;
+    background-color: darkgray;
+    width: 100%;
+    /* padding: 10px; */
+    right: 0;
+    border: 1px solid #000000;
+    max-height: 500px;
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+a.search-li a {
+    color: #ffffff;
+}
+a.search-li li{
+    width: 100%;
+    padding: 10px;
+    color: #ffffff;
+    border: 1px solid #000000;
 }

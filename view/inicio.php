@@ -58,6 +58,7 @@
     <script defer src="<?php echo SERVERURL ?>js/functions.js"></script>
     <script defer src="<?php echo SERVERURL ?>js/adfunctions.js"></script>
     <script defer src="<?php echo SERVERURL ?>js/upproduct.js"></script>
+    <script defer src="<?php echo SERVERURL ?>js/typeahead.bundle.js"></script>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
 </head>
 <body>
