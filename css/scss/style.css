@@ -53,7 +53,10 @@
     padding: 3em 2em 5em;
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-areas: none;
+    grid-template-areas:
+      "manu menu"
+      "caja2 caja2"
+      "caja2 caja2";
   }
   .caja1, .caja2 {
     grid-area: auto;
