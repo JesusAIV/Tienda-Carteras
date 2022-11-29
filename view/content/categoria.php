@@ -23,7 +23,7 @@
         <input type="hidden" name="npagina" value="<?php echo $npagina; ?>" id="npagina">
         <div class="content__carteras">
             <div class="carteras__menu">
-                <img src="../img/svg/menu.svg" alt="menu" class="carteras__menu__img">
+                <img src="<?php echo SERVERURL ?>img/svg/menu.svg" alt="menu" class="carteras__menu__img">
             </div>
             <div class="caja1">
                 <h2 class="caja1__title">CARTERAS</h2>
