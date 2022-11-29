@@ -50,7 +50,7 @@
     height: auto;
   }
   .content__carteras {
-    padding: 2em 2em 5em;
+    padding: 2em 1em 5em;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-areas:
