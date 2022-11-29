@@ -59,8 +59,8 @@
       "caja2 caja2";
   }
   .caja1, .caja2 {
-    /* grid-area: auto; */
-    /* width: 100%; */
+    grid-area: auto;
+    width: 100%;
   }
   .categorias__links {
     /* flex-direction: initial; */
