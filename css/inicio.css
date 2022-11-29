@@ -1377,7 +1377,7 @@
 
 @media (min-width: 650px) {
     .main {
-        margin: 14em 0 0 0;
+        margin: 14em 0 0 0 !important;
     }
 
     .slideshow-container {
