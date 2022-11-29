@@ -15,7 +15,7 @@ $(document).ready(function () {
         $(".modulo-cuenta-iniciar").hide();
     });
 
-    $('.btn-exit').on('click', function(e){
+    $('.btn-exit').on('click', function (e) {
         e.preventDefault();
         Swal.fire({
             title: '¿Seguro que desea cerrar sesion?',
@@ -27,20 +27,53 @@ $(document).ready(function () {
             confirmButtonText: '<i class="fa-solid fa-check"></i>'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href='ajax/logoutAjax.php'
+                window.location.href = 'ajax/logoutAjax.php'
             }
         })
     })
 
     $("#menu-bars").click(function () {
-        if ($(".header-inventario").css("margin-left") == "240px" || $(".header-inventario").css("margin-left") == "210px"){
+        if ($(".header-inventario").css("margin-left") == "240px" || $(".header-inventario").css("margin-left") == "210px") {
             $(".header-inventario").css("margin-left", "0");
             $(".main-inventario").css("margin-left", "0");
             $(".menu-lateral").hide();
-        }else{
+        } else {
             $(".header-inventario").css("margin-left", "15em");
             $(".main-inventario").css("margin-left", "15em");
             $(".menu-lateral").show();
         }
     });
 });
+
+$(function () {
+    $('#resultados').hide();
+    $("#buscarProducto").on("keyup", function () {
+        var buscar = $("#buscarProducto").val();
+
+        if(buscar != ""){
+            $('#resultados').show();
+            $.ajax({
+                type: "post",
+                url: "http://localhost:8085/Tienda-Carteras/ajax/search.php",
+                data: {
+                    key: buscar
+                },
+                success: function (respuesta) {
+                    $("#resultados").html(respuesta);
+                }
+            });
+        }else{
+            $('#resultados').hide();
+        }
+    })
+})
+
+window.onscroll = function () {
+    var y = window.scrollY;
+
+    if (y > 0) {
+        $('.fixed-header').css('top', '0');
+    } else {
+        $('.fixed-header').css('top', 'auto');
+    }
+}

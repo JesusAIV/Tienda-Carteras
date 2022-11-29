@@ -63,30 +63,46 @@
 
     </section>
 
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-center">
-        <div class="navbar-container-grid">
-            <div class="navbar-center-ul">
-                <ul class="navbar-center navbar-center--items">
-                    <?php
-                        $centros =  $Admin->ListarCategorias();
-                        foreach ($centros as $key) {
-                            ?>
-                            <li class="nav-item">
-                                <a href="<?php echo SERVERURL.'categoria/'.$key['categoria'] ?>"><?php echo $key['categoria'] ?></a>
-                            </li>
-                    <?php
-                        }
-                    ?>
-                </ul>
+    <div class="fixed-header">
+        <nav class="navbar navbar-center">
+            <div class="navbar-container-grid">
+                <div class="navbar-center-ul">
+                    <ul class="navbar-center navbar-center--items">
+                        <li class="nav-item">
+                            <a href="tiendas">TIENDAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="quienessomos">QUIENES SOMOS</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="search">
-                <input class="search-input" type="text" name="buscarProducto" id="buscarProducto" placeholder="Buscar producto">
-                <button class="search-boton">
-                    <img class="search-icon" src="<?php echo SERVERURL ?>img/svg/search.svg" alt="search" name="buscar" id="buscar">
-                </button>
+        </nav>
+
+        <nav class="navbar navbar-center">
+            <div class="navbar-container-grid">
+                <div class="navbar-center-ul">
+                    <ul class="navbar-center navbar-center--items">
+                        <?php
+                            $centros =  $Admin->ListarCategorias();
+                            foreach ($centros as $key) {
+                                ?>
+                                <li class="nav-item">
+                                    <a href="<?php echo SERVERURL.'categoria/'.$key['categoria'] ?>"><?php echo $key['categoria'] ?></a>
+                                </li>
+                        <?php
+                            }
+                        ?>
+                    </ul>
+                </div>
+                <div class="search">
+                    <input class="search-input" type="text" name="buscarProducto" id="buscarProducto" placeholder="Buscar producto">
+                    <button class="search-boton">
+                        <img class="search-icon" src="<?php echo SERVERURL ?>img/svg/search.svg" alt="search" name="search" id="search">
+                    </button>
+                    <div id="resultados"></div>
+                </div>
             </div>
-        </div>
-            
-    </nav>
+        </nav>
+    </div>
 </header>
