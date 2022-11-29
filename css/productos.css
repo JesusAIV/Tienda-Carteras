@@ -156,7 +156,7 @@ input#averagecolor{
     text-align: center;
 }
 .paginacion-productos {
-    margin-top: 2em;
+    margin-top: 3em;
     width: 100%;
 }
 ul.paginacion-ul {
@@ -168,18 +168,23 @@ ul.paginacion-ul {
 .paginacion-ul>li{
     position: relative;
     display: block;
-    padding: .5rem .75rem;
+    padding: .5rem 1.75rem;
     margin-left: -1px;
     line-height: 1.25;
     color: #000000;
     background-color: #fff;
-    border: 1px solid #4e4e4e;
 }
 .paginacion-ul>li>a{
     color: #000000;
 }
 .paginacion-ul>li.paginacion-li-active,
 .paginacion-ul>li.paginacion-li-active a{
-    background-color: rgb(4, 77, 185);
+    background-color: var(--bg-boton);
     color: #FFFFFF;
+    max-width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    /* font-size: 1rem; */
 }
