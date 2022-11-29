@@ -3688,3 +3688,6 @@ a.search-li li{
     color: #ffffff;
     border: 1px solid #000000;
 }
+.navone {
+    display: inherit !important;
+}

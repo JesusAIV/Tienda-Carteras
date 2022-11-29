@@ -65,7 +65,7 @@
 
     <div class="fixed-header">
         <nav class="navbar navbar-center">
-            <div class="navbar-container-grid">
+            <div class="navone navbar-container-grid">
                 <div class="navbar-center-ul">
                     <ul class="navbar-center navbar-center--items">
                         <li class="nav-item">
