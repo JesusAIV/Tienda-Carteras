@@ -45,13 +45,16 @@ $Admin = new adminController();
                     }
                     ?>
                 </div>
+                <div class="menu-hamburguer">
+                    <img src="./img/svg/menu.svg" class="menu-img">
+                </div>
     </section>
 
     <div class="fixed-header">
         <nav class="navbar navbar-center">
             <div class="navone navbar-container-grid">
-                <div class="navbar-center-ul">
-                    <ul class="navbar-center navbar-center--items">
+                <div class="nav-links">
+                    <ul class="nav-links">
 
                         <li class="nav-item">
                             <a href="tiendas" class="nav-link">TIENDAS</a>
@@ -81,22 +84,24 @@ $Admin = new adminController();
 
                     </ul>
 
+                    <div class="search">
+                        <input class="search-input" type="text" name="buscarProducto" id="buscarProducto" placeholder="Buscar producto">
+                        <button class="search-boton">
+                            <img class="search-icon" src="<?php echo SERVERURL ?>img/svg/search.svg" alt="search" name="search" id="search">
+                        </button>
+                        <div id="resultados"></div>
+                    </div>
+
 
                 </div>
 
-                <div class="search">
-                    <input class="search-input" type="text" name="buscarProducto" id="buscarProducto" placeholder="Buscar producto">
-                    <button class="search-boton">
-                        <img class="search-icon" src="<?php echo SERVERURL ?>img/svg/search.svg" alt="search" name="search" id="search">
-                    </button>
-                    <div id="resultados"></div>
-                </div>
+
 
             </div>
 
-            <div class="menu-hamburguer">
-                <img src="./img/svg/menu.svg" class="menu-img">
-            </div>
+
         </nav>
+
     </div>
+
 </header>

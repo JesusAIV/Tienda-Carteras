@@ -49,12 +49,6 @@ $Admin = new adminController();
                 <div class="text">Caption Three</div>
             </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 7</div>
-                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img1.jpg" alt="imagen de slider">
-                <div class="text">Caption Text</div>
-            </div>
-
             <div class="direcciones">
                 <a href="#" class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a href="#" class="nextslider" onclick="plusSlides(1)">&#10095;</a>
