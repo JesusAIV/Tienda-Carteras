@@ -9,6 +9,11 @@ function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
+// FUNCTION PARA QUE EL SLIDER AVANCE DE ACUERDO A UN INTERVALO DE TIEMPO
+setInterval(function(){
+    showSlides(slideIndex += 1);
+}, 3500);
+
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");

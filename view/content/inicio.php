@@ -1,37 +1,77 @@
 <?php
-    $Ajax = false;
-    require_once "./controller/admincontroller.php";
-    $Admin = new adminController();
+$Ajax = false;
+require_once "./controller/admincontroller.php";
+$Admin = new adminController();
 ?>
 <div class="principal">
     <div class="slider">
         <div class="slideshow-container">
+
             <div class="mySlides fade">
-                <div class="numbertext">1 / 3</div>
-                <img src="<?php echo SERVERURL ?>img/jpg/img1.jpg" alt="imagen de slider">
+                <div class="numbertext">1 / 7</div>
+                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img1.jpg" alt="imagen de slider">
                 <div class="text">Caption Text</div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">2 / 3</div>
-                <img src="<?php echo SERVERURL ?>img/jpg/img2.jpg" alt="imagen de slider">
+                <div class="numbertext">2 / 7</div>
+                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img2.jpg" alt="imagen de slider">
                 <div class="text">Caption Two</div>
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">3 / 3</div>
-                <img src="<?php echo SERVERURL ?>img/jpg/img3.jpg" alt="imagen de slider">
+                <div class="numbertext">3 / 7</div>
+                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img3.jpg" alt="imagen de slider">
                 <div class="text">Caption Three</div>
             </div>
-            <a href="#" class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a href="#" class="nextslider" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img4.jpg" alt="imagen de slider">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img5.jpg" alt="imagen de slider">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img6.jpg" alt="imagen de slider">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img7.jpg" alt="imagen de slider">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 7</div>
+                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img1.jpg" alt="imagen de slider">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="direcciones">
+                <a href="#" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a href="#" class="nextslider" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
         </div>
-        <br>
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
+
+        <div class="circulos" style="text-align:center">
+            <span class="dot active" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
         </div>
+
     </div>
 
     <div class="principal__productos">
@@ -40,21 +80,21 @@
         </div>
         <div class="principal__productos--lista">
             <?php
-                $centros =  $Admin->ListarCategorias();
-                $numcategoria = 1;
-                foreach ($centros as $key) {
-                    ?>
+            $centros =  $Admin->ListarCategorias();
+            $numcategoria = 1;
+            foreach ($centros as $key) {
+            ?>
                 <div class="product__list--center category<?php echo $numcategoria ?>">
-                    <a class="product__enlace product__leyend leyend<?php echo $numcategoria ?>" href="<?php echo 'categoria/'.$key['categoria'] ?>">
-                        <img class="product__img" src="<?php echo SERVERURL.$key['imagen'] ?>" alt="<?php echo $key['categoria'] ?>">
+                    <a class="product__enlace product__leyend leyend<?php echo $numcategoria ?>" href="<?php echo 'categoria/' . $key['categoria'] ?>">
+                        <img class="product__img" src="<?php echo SERVERURL . $key['imagen'] ?>" alt="<?php echo $key['categoria'] ?>">
                     </a>
                     <style>
-                        <?php echo '.leyend'.$numcategoria.'::after{ content: "'.strtoupper($key['categoria']).'"}' ?>
+                        <?php echo '.leyend' . $numcategoria . '::after{ content: "' . strtoupper($key['categoria']) . '"}' ?>
                     </style>
                 </div>
             <?php
-                $numcategoria ++;
-                }
+                $numcategoria++;
+            }
             ?>
         </div>
     </div>
@@ -67,7 +107,7 @@
             <div class="ofrece__opcion--grid">
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL?>img/svg/card.svg" alt="pago tarjeta">
+                        <img src="<?php echo SERVERURL ?>img/svg/card.svg" alt="pago tarjeta">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Pagos 100% seguros</p>
@@ -75,7 +115,7 @@
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL?>img/svg/camion.svg" alt="entrega domicilio">
+                        <img src="<?php echo SERVERURL ?>img/svg/camion.svg" alt="entrega domicilio">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Envíos a domicilio</p>
@@ -83,7 +123,7 @@
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL?>img/svg/recojo.svg" alt="recogo en tienda">
+                        <img src="<?php echo SERVERURL ?>img/svg/recojo.svg" alt="recogo en tienda">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Recojo en tienda</p>
@@ -91,7 +131,7 @@
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL?>img/svg/atencioncliente.svg" alt="atencion al cliente">
+                        <img src="<?php echo SERVERURL ?>img/svg/atencioncliente.svg" alt="atencion al cliente">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Atención al cliente</p>
@@ -107,7 +147,7 @@
             <div class="opcion__pago--grid">
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL?>img/svg/yape.svg" alt="pago yape">
+                        <img src="<?php echo SERVERURL ?>img/svg/yape.svg" alt="pago yape">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Yape</p>
@@ -115,7 +155,7 @@
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL?>img/svg/efectivo.svg" alt="pago efectivo">
+                        <img src="<?php echo SERVERURL ?>img/svg/efectivo.svg" alt="pago efectivo">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Efectivo</p>
@@ -123,7 +163,7 @@
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL?>img/svg/dtbancaria.svg" alt="pago banco">
+                        <img src="<?php echo SERVERURL ?>img/svg/dtbancaria.svg" alt="pago banco">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Transferecia Bancaria</p>
@@ -140,7 +180,7 @@
     </div>
 
     <div class="principal__opiniones">
-        <img src="<?php echo SERVERURL?>img/svg/left-arrow.svg" class="slider__arrow" id="before" alt="anterior opinion">
+        <img src="<?php echo SERVERURL ?>img/svg/left-arrow.svg" class="slider__arrow" id="before" alt="anterior opinion">
 
         <section class="slider__body slider__body--show" data-id="1">
             <div class="slider__texts">
@@ -151,7 +191,7 @@
             </div>
 
             <figure class="slider__picture">
-                <img src="<?php echo SERVERURL?>img/jpg/person1.jpg" alt="comentario1" class="slider__img">
+                <img src="<?php echo SERVERURL ?>img/jpg/person1.jpg" alt="comentario1" class="slider__img">
             </figure>
         </section>
 
@@ -164,7 +204,7 @@
             </div>
 
             <figure class="slider__picture">
-                <img src="<?php echo SERVERURL?>img/jpg/person2.jpg" alt="comentario2" class="slider__img">
+                <img src="<?php echo SERVERURL ?>img/jpg/person2.jpg" alt="comentario2" class="slider__img">
             </figure>
         </section>
 
@@ -177,10 +217,10 @@
             </div>
 
             <figure class="slider__picture">
-                <img src="<?php echo SERVERURL?>img/jpg/person3.jpg" alt="comentario3" class="slider__img">
+                <img src="<?php echo SERVERURL ?>img/jpg/person3.jpg" alt="comentario3" class="slider__img">
             </figure>
         </section>
 
-        <img src="<?php echo SERVERURL?>img/svg/right-arrow.svg" class="slider__arrow" id="next" alt="siguiente opinion">
+        <img src="<?php echo SERVERURL ?>img/svg/right-arrow.svg" class="slider__arrow" id="next" alt="siguiente opinion">
     </div>
 </div>
