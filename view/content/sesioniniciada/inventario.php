@@ -6,7 +6,7 @@
         <a href="<?php echo SERVERURL ?>clientes">
             <div class="opc-inventario-main">
                 <div class="opc-inventario-icon">
-                    <img src="<?php echo SERVERURL?>img/svg/clientes.svg" alt="clientes">
+                    <img src="<?php echo SERVERURL?>view/img/svg/clientes.svg" alt="clientes">
                 </div>
                 <div class="opc-inventario-title">
                     <p>Clientes</p>
@@ -16,7 +16,7 @@
         <a href="<?php echo SERVERURL ?>productos">
             <div class="opc-inventario-main">
                 <div class="opc-inventario-icon">
-                    <img src="<?php echo SERVERURL?>img/svg/bag.svg" alt="bolsa">
+                    <img src="<?php echo SERVERURL?>view/img/svg/bag.svg" alt="bolsa">
                 </div>
                 <div class="opc-inventario-title">
                     <p>Productos</p>

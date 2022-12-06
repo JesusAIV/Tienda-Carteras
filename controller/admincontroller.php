@@ -3,13 +3,13 @@
     if ($Ajax) {
         // obtiene el archivo model/adminModel.php
         require_once "../models/adminmodel.php";
-        require_once "../core/conexion.php";
-        require_once "../core/constantes.php";
+        require_once "../view/core/conexion.php";
+        require_once "../view/core/constantes.php";
     } else {
         // obtiene el archivo model/adminModel.php
         require_once "./models/adminmodel.php";
-        require_once "./core/conexion.php";
-        require_once "./core/constantes.php";
+        require_once "./view/core/conexion.php";
+        require_once "./view/core/constantes.php";
     }
 
     // Se cre la clase adminController obteniendo las funciones de la clase adminModel

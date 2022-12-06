@@ -1,10 +1,10 @@
 <?php
     if ($Ajax){
         require_once "../models/mainmodel.php";
-        require_once "../core/constantes.php";
+        require_once "../view/core/constantes.php";
     }else {
         require_once "./models/mainmodel.php";
-        require_once "./core/constantes.php";
+        require_once "./view/core/constantes.php";
     }
 
     class adminModel extends mainModel{

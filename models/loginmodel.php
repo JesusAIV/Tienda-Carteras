@@ -1,10 +1,10 @@
 <?php
 
     if ($Ajax){
-        require_once "../core/conexion.php";
+        require_once "../view/core/conexion.php";
         require_once "../models/mainmodel.php";
     } else {
-        require_once "./core/conexion.php";
+        require_once "./view/core/conexion.php";
         require_once "./models/mainmodel.php";
     }
 

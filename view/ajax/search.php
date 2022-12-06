@@ -1,6 +1,6 @@
 <?php
-    require_once "../core/conexion.php";
-    require_once "../core/constantes.php";
+    require_once "../view/core/conexion.php";
+    require_once "../view/core/constantes.php";
 
     $conexion = Conexion::conectar();
 

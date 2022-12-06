@@ -7,7 +7,7 @@
                         <p>Nuevo producto</p>
                     </div>
                     <div>
-                        <img class="" data-bs-dismiss="modal" style="cursor: pointer;" src="<?php echo SERVERURL?>img/svg/close.svg" alt="cerrar modal">
+                        <img class="" data-bs-dismiss="modal" style="cursor: pointer;" src="<?php echo SERVERURL?>view/img/svg/close.svg" alt="cerrar modal">
                     </div>
                 </div>
                 <form action="<?php echo SERVERURL?>ajax/crudproducto.php" method="POST" class="ProductosAjax" data-form="up-producto" autocomplete="off" enctype="multipart/form-data">

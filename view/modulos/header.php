@@ -21,7 +21,7 @@ $Admin = new adminController();
     <section class=" container container__login">
                 <div class="logo">
                     <input class="menu__input" type="checkbox" id="menu">
-                    <a href="<?php echo SERVERURL ?>inicio"><img class="logo-img--header" src="<?php echo SERVERURL ?>img/png/bolso.png" alt="Logo"></a>
+                    <a href="<?php echo SERVERURL ?>inicio"><img class="logo-img--header" src="<?php echo SERVERURL ?>view/img/png/bolso.png" alt="Logo"></a>
                     <a class="logo-enlace" href="<?php echo SERVERURL ?>inicio">
                         <h1>Confecciones Milagros</h1>
                     </a>
@@ -32,7 +32,7 @@ $Admin = new adminController();
                     if (!isset($_SESSION['email'])) {
                     ?>
                         <a class="cuenta-iniciarSesion" href="<?php echo SERVERURL ?>cuenta">
-                            <img class="cuenta__img" src="<?php echo SERVERURL ?>img/svg/user.svg" alt="user">
+                            <img class="cuenta__img" src="<?php echo SERVERURL ?>view/img/svg/user.svg" alt="user">
                         </a>
                     <?php
                     } else {
@@ -55,7 +55,7 @@ $Admin = new adminController();
 
                 <li class="nav-item nav-item--show">
                     <a href="#" class="nav-link">¿QUIENES SOMOS?
-                        <img src="./img/svg/arrow-bottom.svg" alt="arrow icon" class="nav-arrow">
+                        <img src="<?php echo SERVERURL ?>view/img/svg/arrow-bottom.svg" alt="arrow icon" class="nav-arrow">
                     </a>
 
                     <ul class="nav-sublinks">
@@ -70,7 +70,7 @@ $Admin = new adminController();
 
                 <li class="nav-item nav-item--show">
                     <a href="#" class="nav-link">CATEGORIAS
-                        <img src="./img/svg/arrow-bottom.svg" alt="arrow icon" class="nav-arrow">
+                        <img src="<?php echo SERVERURL ?>view/img/svg/arrow-bottom.svg" alt="arrow icon" class="nav-arrow">
                     </a>
                     <ul class="nav-sublinks">
                         <?php
@@ -95,7 +95,7 @@ $Admin = new adminController();
             <div class="search">
                 <input class="search-input" type="text" name="buscarProducto" id="buscarProducto" placeholder="Buscar producto">
                 <button class="search-boton">
-                    <img class="search-icon" src="<?php echo SERVERURL ?>img/svg/search.svg" alt="search" name="search" id="search">
+                    <img class="search-icon" src="<?php echo SERVERURL ?>view/img/svg/search.svg" alt="search" name="search" id="search">
                 </button>
                 <div id="resultados"></div>
             </div>

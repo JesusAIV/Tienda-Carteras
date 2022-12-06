@@ -1,10 +1,10 @@
 <?php
     if ($Ajax){
         require_once "../models/loginmodel.php";
-        require_once "../core/conexion.php";
+        require_once "../view/core/conexion.php";
     } else {
         require_once "./models/loginmodel.php";
-        require_once "./core/conexion.php";
+        require_once "./view/core/conexion.php";
     }
 
     class logincontrolador extends LoginModel{

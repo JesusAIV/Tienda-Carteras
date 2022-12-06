@@ -17,7 +17,7 @@
         <section class="principal__show">
             <div class="principal__image">
                 <div class="principal__circle">
-                    <img src="<?php echo SERVERURL ?>img/svg/lupa.svg" alt="lupa" class="principal__icon">
+                    <img src="<?php echo SERVERURL ?>view/img/svg/lupa.svg" alt="lupa" class="principal__icon">
                     <img src="<?php echo SERVERURL.$key['imagen'] ?>" alt="img_producto" class="principal__img">
                 </div>
             </div>
@@ -55,7 +55,7 @@
                     </ul>
 
                     <div class="stock">
-                        <img class="stock__icon" src="<?php echo SERVERURL ?>img/svg/check.svg" alt="check-icon">
+                        <img class="stock__icon" src="<?php echo SERVERURL ?>view/img/svg/check.svg" alt="check-icon">
                         <h3 class="stock__number"><?php echo $key['stock'] ?></h3>
                         <h3 class="stock__text">disponibles</h3>
                     </div>
@@ -63,7 +63,7 @@
                     <ul class="detail__extra">
                         <li class="detail__item">
                             <label class="detail__name" for="acordion">Garantía
-                                <img src="<?php echo SERVERURL ?>img/svg/arrow-bottom.svg" class="detail__icon">
+                                <img src="<?php echo SERVERURL ?>view/img/svg/arrow-bottom.svg" class="detail__icon">
                             </label>
                             <input type="checkbox" id="acordion" class="detail__input">
 
@@ -74,7 +74,7 @@
 
                         <li class="detail__item">
                             <label class="detail__name" for="acordion_cuidado">Cuidado del producto
-                                <img src="<?php echo SERVERURL ?>img/svg/arrow-bottom.svg" class="detail__icon">
+                                <img src="<?php echo SERVERURL ?>view/img/svg/arrow-bottom.svg" class="detail__icon">
                             </label>
                             <input type="checkbox" id="acordion_cuidado" class="detail__input">
                             <ul class="product__care">

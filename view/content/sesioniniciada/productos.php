@@ -15,15 +15,15 @@
                 </div>
                 <div class="new-producto">
                     <button id="new-producto">
-                        <img src="<?php echo SERVERURL?>img/svg/bag.svg" alt="bolsa">
+                        <img src="<?php echo SERVERURL?>view/img/svg/bag.svg" alt="bolsa">
                         <span>Nuevo Producto</span>
                     </button>
                     <button id="new-color">
-                        <img src="<?php echo SERVERURL?>img/svg/bag.svg" alt="bolsa">
+                        <img src="<?php echo SERVERURL?>view/img/svg/bag.svg" alt="bolsa">
                         <span>Nuevo Color</span>
                     </button>
                     <button id="new-categoria">
-                        <img src="<?php echo SERVERURL?>img/svg/bag.svg" alt="bolsa">
+                        <img src="<?php echo SERVERURL?>view/img/svg/bag.svg" alt="bolsa">
                         <span>Nueva Categoria</span>
                     </button>
                 </div>

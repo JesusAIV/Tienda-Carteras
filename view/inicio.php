@@ -1,6 +1,6 @@
 <?php
     session_start();
-    require_once "./core/constantes.php";
+    require_once "./view/core/constantes.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -35,32 +35,32 @@
         }
     ?>
     <!-- CSS -->
-    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/sweetalert2.min.css">
-    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/datatables.min.css">
-    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/style.css">
-    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/inicio.css">
-    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/quienesSomos.css">
-    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/contacto.css">
-    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/carteras.css">
-    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/micuenta.css">
-    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/productoDetalle.css">
-    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/contenido.css">
-    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/productos.css">
-    <link rel="stylesheet" href="<?php echo SERVERURL ?>css/scss/style.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>view/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>view/css/datatables.min.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>view/css/style.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>view/css/inicio.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>view/css/quienesSomos.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>view/css/contacto.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>view/css/carteras.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>view/css/micuenta.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>view/css/productoDetalle.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>view/css/contenido.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>view/css/productos.css">
+    <link rel="stylesheet" href="<?php echo SERVERURL ?>view/css/scss/style.css">
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="<?php echo SERVERURL ?>img/jpg/bolso.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo SERVERURL ?>view/img/jpg/bolso.ico" type="image/x-icon">
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/a9045ee35a.js" crossorigin="anonymous"></script>
-    <script defer src="<?php echo SERVERURL ?>js/jquery.js"></script>
-    <script src="<?php echo SERVERURL ?>js/sweetalert2.min.js"></script>
-    <script defer src="<?php echo SERVERURL ?>js/datatables.min.js"></script>
-    <script defer src="<?php echo SERVERURL ?>js/main.js"></script>
-    <script defer src="<?php echo SERVERURL ?>js/functions.js"></script>
-    <script defer src="<?php echo SERVERURL ?>js/adfunctions.js"></script>
-    <script defer src="<?php echo SERVERURL ?>js/upproduct.js"></script>
-    <script defer src="<?php echo SERVERURL ?>js/typeahead.bundle.js"></script>
-    <script defer src="<?php echo SERVERURL ?>js/slider.js"></script>
-    <script defer src="<?php echo SERVERURL ?>js/navbar.js"></script>
+    <script defer src="<?php echo SERVERURL ?>view/js/jquery.js"></script>
+    <script src="<?php echo SERVERURL ?>view/js/sweetalert2.min.js"></script>
+    <script defer src="<?php echo SERVERURL ?>view/js/datatables.min.js"></script>
+    <script defer src="<?php echo SERVERURL ?>view/js/main.js"></script>
+    <script defer src="<?php echo SERVERURL ?>view/js/functions.js"></script>
+    <script defer src="<?php echo SERVERURL ?>view/js/adfunctions.js"></script>
+    <script defer src="<?php echo SERVERURL ?>view/js/upproduct.js"></script>
+    <script defer src="<?php echo SERVERURL ?>view/js/typeahead.bundle.js"></script>
+    <script defer src="<?php echo SERVERURL ?>view/js/slider.js"></script>
+    <script defer src="<?php echo SERVERURL ?>view/js/navbar.js"></script>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css">
 </head>
 <body>

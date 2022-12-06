@@ -9,43 +9,43 @@ $Admin = new adminController();
 
             <div class="mySlides fade">
                 <div class="numbertext">1 / 7</div>
-                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img1.jpg" alt="imagen de slider">
+                <img src="<?php echo SERVERURL ?>view/img/jpg/img-slider/img1.jpg" alt="imagen de slider">
                 <div class="text">Caption One</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 7</div>
-                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img2.jpg" alt="imagen de slider">
+                <img src="<?php echo SERVERURL ?>view/img/jpg/img-slider/img2.jpg" alt="imagen de slider">
                 <div class="text">Caption Two</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 7</div>
-                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img3.jpg" alt="imagen de slider">
+                <img src="<?php echo SERVERURL ?>view/img/jpg/img-slider/img3.jpg" alt="imagen de slider">
                 <div class="text">Caption Three</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">4 / 7</div>
-                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img4.jpg" alt="imagen de slider">
+                <img src="<?php echo SERVERURL ?>view/img/jpg/img-slider/img4.jpg" alt="imagen de slider">
                 <div class="text">Caption Four</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">5 / 7</div>
-                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img5.jpg" alt="imagen de slider">
+                <img src="<?php echo SERVERURL ?>view/img/jpg/img-slider/img5.jpg" alt="imagen de slider">
                 <div class="text">Caption Five</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">6 / 7</div>
-                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img6.jpg" alt="imagen de slider">
+                <img src="<?php echo SERVERURL ?>view/img/jpg/img-slider/img6.jpg" alt="imagen de slider">
                 <div class="text">Caption Six</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">7 / 7</div>
-                <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img7.jpg" alt="imagen de slider">
+                <img src="<?php echo SERVERURL ?>view/img/jpg/img-slider/img7.jpg" alt="imagen de slider">
                 <div class="text">Caption Seven</div>
             </div>
 
@@ -101,7 +101,7 @@ $Admin = new adminController();
             <div class="ofrece__opcion--grid">
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL ?>img/svg/card.svg" alt="pago tarjeta">
+                        <img src="<?php echo SERVERURL ?>view/img/svg/card.svg" alt="pago tarjeta">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Pagos 100% seguros</p>
@@ -109,7 +109,7 @@ $Admin = new adminController();
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL ?>img/svg/camion.svg" alt="entrega domicilio">
+                        <img src="<?php echo SERVERURL ?>view/img/svg/camion.svg" alt="entrega domicilio">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Envíos a domicilio</p>
@@ -117,7 +117,7 @@ $Admin = new adminController();
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL ?>img/svg/recojo.svg" alt="recogo en tienda">
+                        <img src="<?php echo SERVERURL ?>view/img/svg/recojo.svg" alt="recogo en tienda">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Recojo en tienda</p>
@@ -125,7 +125,7 @@ $Admin = new adminController();
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL ?>img/svg/atencioncliente.svg" alt="atencion al cliente">
+                        <img src="<?php echo SERVERURL ?>view/img/svg/atencioncliente.svg" alt="atencion al cliente">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Atención al cliente</p>
@@ -141,7 +141,7 @@ $Admin = new adminController();
             <div class="opcion__pago--grid">
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL ?>img/svg/yape.svg" alt="pago yape">
+                        <img src="<?php echo SERVERURL ?>view/img/svg/yape.svg" alt="pago yape">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Yape</p>
@@ -149,7 +149,7 @@ $Admin = new adminController();
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL ?>img/svg/efectivo.svg" alt="pago efectivo">
+                        <img src="<?php echo SERVERURL ?>view/img/svg/efectivo.svg" alt="pago efectivo">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Efectivo</p>
@@ -157,7 +157,7 @@ $Admin = new adminController();
                 </div>
                 <div>
                     <div class="opcion--center">
-                        <img src="<?php echo SERVERURL ?>img/svg/dtbancaria.svg" alt="pago banco">
+                        <img src="<?php echo SERVERURL ?>view/img/svg/dtbancaria.svg" alt="pago banco">
                     </div>
                     <div class="opcion__parrafo">
                         <p>Transferecia Bancaria</p>
@@ -174,7 +174,7 @@ $Admin = new adminController();
     </div>
 
     <div class="principal__opiniones">
-        <img src="<?php echo SERVERURL ?>img/svg/left-arrow.svg" class="slider__arrow" id="before" alt="anterior opinion">
+        <img src="<?php echo SERVERURL ?>view/img/svg/left-arrow.svg" class="slider__arrow" id="before" alt="anterior opinion">
 
         <section class="slider__body slider__body--show" data-id="1">
             <div class="slider__texts">
@@ -185,7 +185,7 @@ $Admin = new adminController();
             </div>
 
             <figure class="slider__picture">
-                <img src="<?php echo SERVERURL ?>img/jpg/person1.jpg" alt="comentario1" class="slider__img">
+                <img src="<?php echo SERVERURL ?>view/img/jpg/person1.jpg" alt="comentario1" class="slider__img">
             </figure>
         </section>
 
@@ -198,7 +198,7 @@ $Admin = new adminController();
             </div>
 
             <figure class="slider__picture">
-                <img src="<?php echo SERVERURL ?>img/jpg/person2.jpg" alt="comentario2" class="slider__img">
+                <img src="<?php echo SERVERURL ?>view/img/jpg/person2.jpg" alt="comentario2" class="slider__img">
             </figure>
         </section>
 
@@ -211,10 +211,10 @@ $Admin = new adminController();
             </div>
 
             <figure class="slider__picture">
-                <img src="<?php echo SERVERURL ?>img/jpg/person3.jpg" alt="comentario3" class="slider__img">
+                <img src="<?php echo SERVERURL ?>view/img/jpg/person3.jpg" alt="comentario3" class="slider__img">
             </figure>
         </section>
 
-        <img src="<?php echo SERVERURL ?>img/svg/right-arrow.svg" class="slider__arrow" id="next" alt="siguiente opinion">
+        <img src="<?php echo SERVERURL ?>view/img/svg/right-arrow.svg" class="slider__arrow" id="next" alt="siguiente opinion">
     </div>
 </div>

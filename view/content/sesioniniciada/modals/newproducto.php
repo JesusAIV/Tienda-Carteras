@@ -5,7 +5,7 @@
                 <p>Nuevo producto</p>
             </div>
             <div>
-                <img class="modal-registro-nuevo-close" src="<?php echo SERVERURL?>img/svg/close.svg" alt="cerrar modal">
+                <img class="modal-registro-nuevo-close" src="<?php echo SERVERURL?>view/img/svg/close.svg" alt="cerrar modal">
             </div>
         </div>
         <form action="./ajax/crudproducto.php" method="POST" class="ProductosAjax" data-form="add-producto" autocomplete="off" enctype="multipart/form-data">
