@@ -54,7 +54,7 @@ $(function () {
             $('#resultados').show();
             $.ajax({
                 type: "post",
-                url: "http://localhost:8085/Tienda-Carteras/ajax/search.php",
+                url: "http://localhost:8085/Tienda-Carteras/view/ajax/search.php",
                 data: {
                     key: buscar
                 },
