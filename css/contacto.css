@@ -230,7 +230,7 @@
 
 @media (min-width: 300px) {
     .main {
-        margin: 18em 0 0 0;
+        /* margin: 18em 0 0 0; */
     }
 
     .main__contacto {
@@ -350,7 +350,7 @@
 
 @media (min-width: 375px) {
     .main {
-        margin: 18em 0 0 0;
+        /* margin: 18em 0 0 0; */
     }
 
     .main__contacto {
@@ -466,7 +466,7 @@
 
 @media (min-width: 425px) {
     .main {
-        margin: 21em 0 0 0;
+        /* margin: 21em 0 0 0; */
     }
 
     .main__contacto {
@@ -582,7 +582,7 @@
 
 @media (min-width: 500px) {
     .main {
-        margin: 18em 0 0 0;
+        /* margin: 18em 0 0 0; */
     }
 
     .main__contacto {
@@ -698,7 +698,7 @@
 
 @media (min-width: 580px) {
     .main {
-        margin: 19em 0 0 0;
+        /* margin: 19em 0 0 0; */
     }
 
     .main__contacto {
@@ -814,7 +814,7 @@
 
 @media (min-width: 650px) {
     .main {
-        margin: 21em 0 0 0;
+        /* margin: 21em 0 0 0; */
     }
 
     .main__contacto {

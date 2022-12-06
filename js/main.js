@@ -6,7 +6,3 @@
     
     menu.addEventListener('click', ()=> menu__caja1.classList.toggle("menu__caja1--show"));
 })();
-
-// NAVBAR RESPONSIVO
-
-

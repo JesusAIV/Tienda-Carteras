@@ -10,7 +10,7 @@ $Admin = new adminController();
             <div class="mySlides fade">
                 <div class="numbertext">1 / 7</div>
                 <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img1.jpg" alt="imagen de slider">
-                <div class="text">Caption Text</div>
+                <div class="text">Caption One</div>
             </div>
 
             <div class="mySlides fade">
@@ -28,25 +28,25 @@ $Admin = new adminController();
             <div class="mySlides fade">
                 <div class="numbertext">4 / 7</div>
                 <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img4.jpg" alt="imagen de slider">
-                <div class="text">Caption Three</div>
+                <div class="text">Caption Four</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">5 / 7</div>
                 <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img5.jpg" alt="imagen de slider">
-                <div class="text">Caption Three</div>
+                <div class="text">Caption Five</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">6 / 7</div>
                 <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img6.jpg" alt="imagen de slider">
-                <div class="text">Caption Three</div>
+                <div class="text">Caption Six</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">7 / 7</div>
                 <img src="<?php echo SERVERURL ?>./img/jpg/img-slider/img7.jpg" alt="imagen de slider">
-                <div class="text">Caption Three</div>
+                <div class="text">Caption Seven</div>
             </div>
 
             <div class="direcciones">

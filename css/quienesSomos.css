@@ -187,7 +187,7 @@
 
 @media (min-width: 425px){
     .main{
-        margin: 19em 0 0 0;
+        /* margin: 19em 0 0 0; */
     }
 
     .hero{
