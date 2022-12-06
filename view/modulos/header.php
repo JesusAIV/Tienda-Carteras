@@ -101,7 +101,7 @@ $Admin = new adminController();
             </div>
 
             <div class="menu-hamburguer">
-                <img src="./img/svg/menu.svg" class="menu-img">
+                <img src="<?php echo SERVERURL ?>view/img/svg/menu.svg" class="menu-img">
             </div>
 
             <!-- </div> -->
