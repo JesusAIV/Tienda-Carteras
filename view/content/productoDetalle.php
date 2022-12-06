@@ -18,7 +18,7 @@
             <div class="principal__image">
                 <div class="principal__circle">
                     <img src="<?php echo SERVERURL ?>view/img/svg/lupa.svg" alt="lupa" class="principal__icon">
-                    <img src="<?php echo SERVERURL.$key['imagen'] ?>" alt="img_producto" class="principal__img">
+                    <img src="<?php echo SERVERURL.'view/'.$key['imagen'] ?>" alt="img_producto" class="principal__img">
                 </div>
             </div>
         </section>

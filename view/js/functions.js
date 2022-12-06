@@ -27,7 +27,7 @@ $(document).ready(function () {
             confirmButtonText: '<i class="fa-solid fa-check"></i>'
         }).then((result) => {
             if (result.isConfirmed) {
-                window.location.href = './view/ajax/logoutAjax.php'
+                window.location.href = 'http://localhost:8085/Tienda-Carteras/view/ajax/logoutAjax.php'
             }
         })
     })

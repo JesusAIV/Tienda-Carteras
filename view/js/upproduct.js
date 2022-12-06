@@ -13,7 +13,7 @@ editaModal.addEventListener('shown.bs.modal', event => {
     let inputSctock = editaModal.querySelector('.modal-body #uppstock')
     let inputImagen = editaModal.querySelector('.modal-body #uppimagensrc')
 
-    let url = "./ajax/modal.php"
+    let url = "http://localhost:8085/Tienda-Carteras/view/ajax/modal.php"
     let formData = new FormData()
     formData.append('id', id)
 

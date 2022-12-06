@@ -80,7 +80,7 @@
 
             foreach ($consultacat as $key){}
 
-            $dir = "../view/img/productos/".$key['categoria']."/";
+            $dir = "../img/productos/".$key['categoria']."/";
             $nombreArchivo = $_FILES['addpimagen']['name'];
             $tipo = $_FILES['addpimagen']['type'];
             $tipo = strtolower($tipo);
@@ -95,7 +95,7 @@
 
             $directorio = $dir.$name;
 
-            $imagen = substr($directorio, 8);
+            $imagen = substr($directorio, 3);
 
 
             if (empty($idcategoria) || empty($idcolor) || empty($producto) || empty($descripcion) || empty($stock) || empty($precio)) {

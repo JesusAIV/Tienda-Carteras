@@ -1,5 +1,5 @@
 <?php
-    require_once "../view/core/conexion.php";
+    require_once "../core/conexion.php";
 
     $conexion = Conexion::conectar();
 

@@ -15,10 +15,6 @@
 
 ?>
 <div class="principal">
-        <!-- <div class="banner">
-            <img src="./img/jpg/banner-carteras.jpg" alt="banner-carteras" class="banner__img">
-        </div> -->
-
         <input type="hidden" name="categoria" value="<?php echo $categoria; ?>" id="categoria">
         <input type="hidden" name="npagina" value="<?php echo $npagina; ?>" id="npagina">
         <div class="content__carteras">
