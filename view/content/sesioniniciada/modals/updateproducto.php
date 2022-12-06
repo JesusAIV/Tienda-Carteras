@@ -10,7 +10,7 @@
                         <img class="" data-bs-dismiss="modal" style="cursor: pointer;" src="<?php echo SERVERURL?>view/img/svg/close.svg" alt="cerrar modal">
                     </div>
                 </div>
-                <form action="<?php echo SERVERURL?>ajax/crudproducto.php" method="POST" class="ProductosAjax" data-form="up-producto" autocomplete="off" enctype="multipart/form-data">
+                <form action="<?php echo SERVERURL?>view/ajax/crudproducto.php" method="POST" class="ProductosAjax" data-form="up-producto" autocomplete="off" enctype="multipart/form-data">
                     <input type="hidden" name="uppid" id="uppid">
                     <div class="form-new-produc">
                         <div class="form-new-produc-data">

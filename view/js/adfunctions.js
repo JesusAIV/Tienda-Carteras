@@ -9,7 +9,7 @@ $(document).ready(function () {
 function listarproductos() {
     $('#table-productos').DataTable({
         'ajax': {
-            'url': "./ajax/productos.php",
+            'url': "./view/ajax/productos.php",
             'dataSrc': '',
             'data': { action: 'listarproductos' },
             'method': 'POST'
@@ -213,7 +213,7 @@ function previsualizarImagen() {
 
 function RegritroCategorias(filtro, categoria, npagina){
     $.ajax({
-        url: '../ajax/productos.php',
+        url: 'http://localhost:8085/Tienda-Carteras/view/ajax/productos.php',
         type: 'POST',
         dataType: 'html',
         data: { filtro : filtro, action : 'filtrocategoria', dcategoria: categoria, numpagina: npagina},

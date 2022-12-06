@@ -2,7 +2,7 @@
     $Ajax = true;
     session_start();
 
-    require_once "../controller/admincontroller.php";
+    require_once "../../controller/admincontroller.php";
     $opciones = new adminController();
 
     if (isset($_POST['addpname']) || isset($_POST['addpimagencolorhex']) || isset($_POST['addpnamecategoria']) || isset($_POST['uppid'])){

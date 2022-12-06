@@ -1,7 +1,7 @@
 <?php
     if ($Ajax){
-        require_once "../models/mainmodel.php";
-        require_once "../view/core/constantes.php";
+        require_once "../../models/mainmodel.php";
+        require_once "../../view/core/constantes.php";
     }else {
         require_once "./models/mainmodel.php";
         require_once "./view/core/constantes.php";
@@ -42,7 +42,7 @@
             return $result;
         }
         protected function imagenProducto($ruta){
-            $directorio = SERVERURL.$ruta;
+            $directorio = SERVERURL.'view/'.$ruta;
 
             return $directorio;
         }

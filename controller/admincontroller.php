@@ -2,9 +2,9 @@
     // Si se realiza la petición Ajax
     if ($Ajax) {
         // obtiene el archivo model/adminModel.php
-        require_once "../models/adminmodel.php";
-        require_once "../view/core/conexion.php";
-        require_once "../view/core/constantes.php";
+        require_once "../../models/adminmodel.php";
+        require_once "../../view/core/conexion.php";
+        require_once "../../view/core/constantes.php";
     } else {
         // obtiene el archivo model/adminModel.php
         require_once "./models/adminmodel.php";
@@ -37,7 +37,7 @@
                     "color" => $row['color'],
                     "imagen" => '<img class="image-table-product" src="'.$directorio.'">',
                     "editar" => '<button class="mostrar-producto" data-bs-toggle="modal" data-bs-target="#productoupdate" data-bs-id="'.$row['idproducto'].'">
-                                    <img src="'.SERVERURL.'img/svg/eyes.svg">
+                                    <img src="'.SERVERURL.'view/img/svg/eyes.svg">
                                 </button>',
                     "estado" => $estadoproduc
 
@@ -80,7 +80,7 @@
 
             foreach ($consultacat as $key){}
 
-            $dir = "../img/productos/".$key['categoria']."/";
+            $dir = "../view/img/productos/".$key['categoria']."/";
             $nombreArchivo = $_FILES['addpimagen']['name'];
             $tipo = $_FILES['addpimagen']['type'];
             $tipo = strtolower($tipo);
@@ -95,7 +95,7 @@
 
             $directorio = $dir.$name;
 
-            $imagen = substr($directorio, 3);
+            $imagen = substr($directorio, 8);
 
 
             if (empty($idcategoria) || empty($idcolor) || empty($producto) || empty($descripcion) || empty($stock) || empty($precio)) {
@@ -354,7 +354,7 @@
                                 <div class="card__product">
                                     <picture class="product">
                                         <a href="'.SERVERURL.'productoDetalle/'.$key['producto'].'" class="product__item">
-                                            <img src="'.SERVERURL.$key['imagen'].'" alt="'.$key['producto'].'" class="product__show">
+                                            <img src="'.SERVERURL.'view/'.$key['imagen'].'" alt="'.$key['producto'].'" class="product__show">
                                         </a>
                                     </picture>
                                     <h3 class="product__title">'.$key['producto'].'</h3>
