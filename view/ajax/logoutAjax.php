@@ -17,5 +17,5 @@
     // Finalmente, destruir la sesión.
     session_destroy();
     // Direcciona al login
-    header('Location: ../inicio');
+    header('Location: ../../inicio');
 ?>
