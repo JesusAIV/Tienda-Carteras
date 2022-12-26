@@ -51,7 +51,10 @@ margin: 0;
   }
 
   .footer-center {
-    grid-template: "footer-datos" 1fr "footer-siguenos" 1fr "footer-puntos" 1fr/1fr;
+    grid-template:
+      "footer-datos" auto
+      "footer-siguenos" auto
+      "footer-puntos" auto/auto;
   }
 
   .footer-siguenos {
