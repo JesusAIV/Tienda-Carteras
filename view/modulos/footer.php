@@ -70,7 +70,7 @@
                                 <li><a class="footer__link" href="<?php echo SERVERURL ?>tiendas">Nuestras tiendas</a></li>
                                 <li><a class="footer__link" href="<?php echo SERVERURL ?>contacto">Contacto</a></li>
                                 <?php
-                                if (isset($_SESSION['email'])) {
+                                if (isset($_SESSION['email']) && isset($_SESSION['idrol']) && $_SESSION['idrol'] == 1) {
                                 ?>
                                     <li><a class="footer__link" href="<?php echo SERVERURL ?>inventario">Inventario</a></li>
                                 <?php
